@@ -1,0 +1,16 @@
+body,div,section,
+h1,h2,p,input {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: #333;
+    font-size: 12px;
+    cursor: default;
+}
+
+#wrap {
+    min-height: 300px;
+    width: 600px;
+}
+
