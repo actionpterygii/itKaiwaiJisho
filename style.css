@@ -1,5 +1,5 @@
 body,div,section,
-h1,h2,p,input {
+h1,h2,p,input,button {
     box-sizing: border-box;
     padding: 0;
     outline: 0;
