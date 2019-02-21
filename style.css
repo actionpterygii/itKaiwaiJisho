@@ -22,8 +22,7 @@ h1,h2,p,input,button {
 
 #nyuryoku {
     width: 400px;
-
-    border-bottom: solid 3px #04938C;
+    border-bottom: solid 3px #3cc;
 }
 
 #input {
