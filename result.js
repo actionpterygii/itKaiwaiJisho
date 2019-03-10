@@ -19,7 +19,7 @@ class Result
     serch()
     {
 
-        this.requiredElements = 000;
+        this.requiredElements = 'xxx';
     }
 
     createHtml(element)

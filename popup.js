@@ -29,8 +29,8 @@ input.onblur = function()
 input.onkeyup = function()
 {
     let value = input.value;
-
-    result.innerHTML = createResult(value);
+    let result = new Result(jisho,value);
+    result.innerHTML = result.entity;
 };
 
 usageBtn.onclick = function()
