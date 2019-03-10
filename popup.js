@@ -28,8 +28,8 @@ input.onblur = function()
 
 input.onkeyup = function()
 {
-    let value = input.value;
-    let result = new Result(jisho,value);
+    let inputValue = input.value;
+    let result = new Result(jisho,inputValue);
     result.innerHTML = result.entity;
 };
 

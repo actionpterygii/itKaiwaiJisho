@@ -1,9 +1,9 @@
 class Result
 {
-    constructor(jisho,value)
+    constructor(jisho,inputValue)
     {
         this.jisho = jisho;
-        this.value = value;
+        this.inputValue = inputValue;
         createResult();
     }
 
@@ -25,10 +25,10 @@ class Result
     createHtml(element)
     {
         this.html = 0;
-        element.forEach(function(item)
+        for(let key in element)
         {
 
-        });
+        }
         return html;
     }
 }
