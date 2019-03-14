@@ -4,15 +4,16 @@ class Result
     {
         this.jisho = jisho;
         this.inputValue = inputValue;
-        createResult();
+        this.requiredElements = [];
+        this.createResult();
     }
 
     createResult()
     {
-        serch();
-        requiredElements.forEach(function(element)
+        this.serch();
+        this.requiredElements.forEach(function(element)
         {
-            this.entity += createHtml(element);
+            this.entity += this.createHtml(element);
         });
     }
 
@@ -20,7 +21,7 @@ class Result
     {
         if(this.inputValue === '--all')
         {
-            
+            this.requiredElements = this.jisho;
         }
 
         this.requiredElements = 'xxx';
