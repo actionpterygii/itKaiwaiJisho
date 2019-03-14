@@ -16,6 +16,69 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
+function createResult()
+{
+    serch();
+    requiredElements.forEach(function(element)
+    {
+        entity += createHtml(element);
+    });
+}
+
+function serch(value)
+{
+    if(inputValue === '--all')
+    {
+        return jisho;
+    }
+
+    return 'xxx';
+}
+
+function createHtml(element)
+{
+    let html = '<div class="tango">';
+    for(let key in element)
+    {
+        if(element[key] !== null)
+        {
+            switch(key)
+            {
+                case kotb:
+                    html += 
+                        '<h2>' + element[key] + '</h2>';
+                    break;
+                case eigo:
+                    html +=
+                        '<p class="eigo">' + element[key] + '</p>';
+                    break;
+                case kwsk:
+                    html +=
+                        '<p class="kwsk">' + element[key] + '</p>';
+                    break;
+                case tnjt:
+                    html +=
+                        '<dl class="tnjt">' +
+                            '<dt>転じて</dt>' +
+                            '<dd>' + element[key] + '</dd>' +
+                        '</dl>';
+                    break;
+                case tigg:
+                    html +=
+                        '<dl class="tigg">' +
+                            '<dt>対義語</dt>' +
+                            '<dd>' + element[key] + '</dd>' +
+                        '</dl>';
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    html += '</div>';
+    return html;
+}
+
 window.onload = function()
 {
     input.focus();
@@ -29,8 +92,12 @@ input.onblur = function()
 input.onkeyup = function()
 {
     let inputValue = input.value;
-    let result = new Result(jisho,inputValue);
-    result.innerHTML = result.entity;
+
+
+
+
+
+    result.innerHTML = result;
 };
 
 usageBtn.onclick = function()
