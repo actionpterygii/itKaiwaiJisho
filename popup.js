@@ -4,8 +4,8 @@ const usageBtn = document.getElementById('usageBtn');
 const readme = document.getElementById('readme');
 
 const jishoPath = 'jisho.json';
-var jisho = {};
-var xhr = new XMLHttpRequest();
+const jisho = {};
+const xhr = new XMLHttpRequest();
 xhr.open('GET', chrome.extension.getURL(jishoPath), true);
 xhr.onreadystatechange = function()
 {
@@ -16,22 +16,12 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
-function createResult()
-{
-    serch();
-    requiredElements.forEach(function(element)
-    {
-        entity += createHtml(element);
-    });
-}
-
-function serch(value)
+function serch(jisho, inputValue)
 {
     if(inputValue === '--all')
     {
         return jisho;
     }
-
     return 'xxx';
 }
 
@@ -44,26 +34,26 @@ function createHtml(element)
         {
             switch(key)
             {
-                case kotb:
+                case 'kotb':
                     html += 
                         '<h2>' + element[key] + '</h2>';
                     break;
-                case eigo:
+                case 'eigo':
                     html +=
                         '<p class="eigo">' + element[key] + '</p>';
                     break;
-                case kwsk:
+                case 'kwsk':
                     html +=
                         '<p class="kwsk">' + element[key] + '</p>';
                     break;
-                case tnjt:
+                case 'tnjt':
                     html +=
                         '<dl class="tnjt">' +
                             '<dt>転じて</dt>' +
                             '<dd>' + element[key] + '</dd>' +
                         '</dl>';
                     break;
-                case tigg:
+                case 'tigg':
                     html +=
                         '<dl class="tigg">' +
                             '<dt>対義語</dt>' +
@@ -79,6 +69,17 @@ function createHtml(element)
     return html;
 }
 
+function createResult(jisho, inputValue)
+{
+    let entity;
+    const requiredElements = serch(jisho, inputValue);
+    for(let key in requiredElements)
+    {
+        entity += createHtml(requiredElements[key]);
+    }
+    return entity;
+}
+
 window.onload = function()
 {
     input.focus();
@@ -91,13 +92,8 @@ input.onblur = function()
 
 input.onkeyup = function()
 {
-    let inputValue = input.value;
-
-
-
-
-
-    result.innerHTML = result;
+    const inputValue = input.value;
+    result.innerHTML = createResult(jisho, inputValue);
 };
 
 usageBtn.onclick = function()
