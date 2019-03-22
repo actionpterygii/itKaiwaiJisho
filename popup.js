@@ -22,7 +22,7 @@ function serch(jisho, inputValue)
     {
         return jisho;
     }
-    else
+    else if(inputValue !== "")
     {
         var requiredElements = {};
         var i = 0;
@@ -33,7 +33,26 @@ function serch(jisho, inputValue)
                 requiredElements[i] = jisho[key];
                 i++;
             }
-
+            else if(jisho[key]['eigo'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
+            else if(jisho[key]['kwsk'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
+            else if(jisho[key]['tnjt'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
+            else if(jisho[key]['tigg'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
         }
         return requiredElements;
     }
@@ -44,7 +63,7 @@ function createHtml(element)
     let html = '<div class="tango">';
     for(let key in element)
     {
-        if(element[key] !== null)
+        if(element[key] !== "")
         {
             switch(key)
             {

@@ -3,14 +3,14 @@
         "kotb": "アーキテクチャ",
         "eigo": "architecture",
         "kwsk": "ある方向に導くための構造/設計",
-        "tnjt": null,
-        "tigg": null
+        "tnjt": "",
+        "tigg": ""
     },
     {
         "kotb": "イグジスト",
         "eigo": "exist",
         "kwsk": "存在する",
-        "tnjt": null,
+        "tnjt": "",
         "tigg": "none"
     },
     {
@@ -18,6 +18,6 @@
         "eigo": "sanitizing",
         "kwsk": "無害化、消毒",
         "tnjt": "\"&\"などのプログラムにとって意味のある文字列を別の表記に置き換える",
-        "tigg": null
+        "tigg": ""
     }
 ]
