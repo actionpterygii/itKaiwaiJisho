@@ -24,10 +24,18 @@ function serch(jisho, inputValue)
     }
     else
     {
+        var requiredElements = {};
+        var i = 0;
         for(let key in jisho)
         {
-            
+            if(jisho[key]['kotb'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
+
         }
+        return requiredElements;
     }
 }
 
