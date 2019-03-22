@@ -4,7 +4,7 @@ const usageBtn = document.getElementById('usageBtn');
 const readme = document.getElementById('readme');
 
 const jishoPath = 'jisho.json';
-const jisho = {};
+var jisho = {};
 const xhr = new XMLHttpRequest();
 xhr.open('GET', chrome.extension.getURL(jishoPath), true);
 xhr.onreadystatechange = function()
@@ -22,7 +22,13 @@ function serch(jisho, inputValue)
     {
         return jisho;
     }
-    return 'xxx';
+    else
+    {
+        for(let key in jisho)
+        {
+            
+        }
+    }
 }
 
 function createHtml(element)
