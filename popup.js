@@ -16,11 +16,11 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
-function elseIf(keys)
+function hiraToKata(inputValue)
 {
-    keys.forEach(function(key)
+    return inputValue.replace(/[\u3041-\u3096]/g, function(inputValue)
     {
-        eval('else if(jisho[key][\'' + key + '\'].match(inputValue)){requiredElements[i] = jisho[key];i++;}');
+        return String.fromCharCode(inputValue.charCodeAt(0) + 0x60);
     });
 }
 
@@ -36,32 +36,31 @@ function serch(jisho, inputValue)
         var i = 0;
         for(let key in jisho)
         {
-            if(jisho[key]['kotb'].match(inputValue))
+            if(jisho[key]['kotb'].match(inputValue) || jisho[key]['kotb'].match(hiraToKata(inputValue)))
             {
                 requiredElements[i] = jisho[key];
                 i++;
             }
-            elseIf(['eigo', 'kwsk', 'tnjt', 'tigg']);
-            // else if(jisho[key]['eigo'].match(inputValue))
-            // {
-            //     requiredElements[i] = jisho[key];
-            //     i++;
-            // }
-            // else if(jisho[key]['kwsk'].match(inputValue))
-            // {
-            //     requiredElements[i] = jisho[key];
-            //     i++;
-            // }
-            // else if(jisho[key]['tnjt'].match(inputValue))
-            // {
-            //     requiredElements[i] = jisho[key];
-            //     i++;
-            // }
-            // else if(jisho[key]['tigg'].match(inputValue))
-            // {
-            //     requiredElements[i] = jisho[key];
-            //     i++;
-            // }
+            else if(jisho[key]['eigo'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
+            else if(jisho[key]['kwsk'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
+            else if(jisho[key]['tnjt'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
+            else if(jisho[key]['tigg'].match(inputValue))
+            {
+                requiredElements[i] = jisho[key];
+                i++;
+            }
         }
         return requiredElements;
     }
