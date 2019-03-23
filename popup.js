@@ -16,6 +16,14 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
+function elseIf(keys)
+{
+    keys.forEach(function(key)
+    {
+        eval('else if(jisho[key][\'' + key + '\'].match(inputValue)){requiredElements[i] = jisho[key];i++;}');
+    });
+}
+
 function serch(jisho, inputValue)
 {
     if(inputValue === '--all')
@@ -33,26 +41,27 @@ function serch(jisho, inputValue)
                 requiredElements[i] = jisho[key];
                 i++;
             }
-            else if(jisho[key]['eigo'].match(inputValue))
-            {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
-            else if(jisho[key]['kwsk'].match(inputValue))
-            {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
-            else if(jisho[key]['tnjt'].match(inputValue))
-            {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
-            else if(jisho[key]['tigg'].match(inputValue))
-            {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
+            elseIf(['eigo', 'kwsk', 'tnjt', 'tigg']);
+            // else if(jisho[key]['eigo'].match(inputValue))
+            // {
+            //     requiredElements[i] = jisho[key];
+            //     i++;
+            // }
+            // else if(jisho[key]['kwsk'].match(inputValue))
+            // {
+            //     requiredElements[i] = jisho[key];
+            //     i++;
+            // }
+            // else if(jisho[key]['tnjt'].match(inputValue))
+            // {
+            //     requiredElements[i] = jisho[key];
+            //     i++;
+            // }
+            // else if(jisho[key]['tigg'].match(inputValue))
+            // {
+            //     requiredElements[i] = jisho[key];
+            //     i++;
+            // }
         }
         return requiredElements;
     }
