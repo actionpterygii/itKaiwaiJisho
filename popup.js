@@ -30,7 +30,7 @@ function serch(jisho, inputValue)
     {
         return jisho;
     }
-    else if(inputValue !== "")
+    else if(inputValue !== '')
     {
         var requiredElements = {};
         var i = 0;
@@ -71,7 +71,7 @@ function createHtml(element)
     let html = '<div class="tango">';
     for(let key in element)
     {
-        if(element[key] !== "")
+        if(element[key] !== '')
         {
             switch(key)
             {
@@ -112,13 +112,13 @@ function createHtml(element)
 
 function createResult(jisho, inputValue)
 {
-    let entity;
+    let entity = '';
     const requiredElements = serch(jisho, inputValue);
     for(let key in requiredElements)
     {
         entity += createHtml(requiredElements[key]);
     }
-    return entity;
+    return entity.replace('undefined','');
 }
 
 window.onload = function()
