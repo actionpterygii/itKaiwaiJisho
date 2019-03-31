@@ -23,6 +23,24 @@ h1,h2,p,input,button {
 #nyuryoku {
     width: 400px;
     border-bottom: solid 3px #3cc;
+    animation-name: inputarea;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.265, 0.260, 0.995, -0.385);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes inputarea {
+    0% {
+        width: 10px;
+    }
+    100% {
+        width: 400px;
+    }
+
 }
 
 #input {
