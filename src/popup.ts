@@ -1,4 +1,4 @@
-const input = document.getElementById('input');
+const input: HTMLInputElement =<HTMLInputElement>document.getElementById('input');
 const result = document.getElementById('result');
 const usageBtn = document.getElementById('usageBtn');
 const readme = document.getElementById('readme');
@@ -133,7 +133,7 @@ input.onblur = function()
 
 input.onkeyup = function()
 {
-    const inputValue = input.value;
+    const value: inputValue = input.value;
     result.innerHTML = createResult(jisho, inputValue);
 };
 

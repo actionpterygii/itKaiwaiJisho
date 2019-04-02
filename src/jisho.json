@@ -1,0 +1,114 @@
+[
+    {
+        "kotb": "アーキテクチャ",
+        "eigo": "architecture",
+        "kwsk": "ある方向に導くための構造/設計",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アクセシビリティ",
+        "eigo": "accessibility",
+        "kwsk": "アクセスのしやすさ、利用しやすさ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アノテーション",
+        "eigo": "annotation",
+        "kwsk": "メタデータ(データに付けるデータ)を注釈として付与する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アベイラビリティ",
+        "eigo": "availability",
+        "kwsk": "入手のしやすさ、耐久性、可用性",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イディオム",
+        "eigo": "idiom",
+        "kwsk": "熟語。慣習的に意味と用例が固定されてる",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インセンティブ",
+        "eigo": "incentive",
+        "kwsk": "ある方向に向かわせるための外部からの刺激",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イグジスト",
+        "eigo": "exist",
+        "kwsk": "存在する",
+        "tnjt": "",
+        "tigg": "none"
+    },
+    {
+        "kotb": "サニタイジング",
+        "eigo": "sanitizing",
+        "kwsk": "無害化、消毒",
+        "tnjt": "\"&\"などのプログラムにとって意味のある文字列を別の表記に置き換える",
+        "tigg": ""
+    },
+    {
+        "kotb": "サステナビリティ",
+        "eigo": "sustainability",
+        "kwsk": "持続可能性",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トレーサビリティ",
+        "eigo": "traceability",
+        "kwsk": "追跡可能性",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スニペット",
+        "eigo": "snippet",
+        "kwsk": "切れ端、再利用できるもの",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "センシティビティ",
+        "eigo": "sensitivity",
+        "kwsk": "感度",
+        "tnjt": "",
+        "tigg": ""
+    }, 
+    {
+        "kotb": "パラダイム",
+        "eigo": "paradigm",
+        "kwsk": "見方、考え方を支配する認識の枠組み",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リファクタリング",
+        "eigo": "refactoring",
+        "kwsk": "見た目や振る舞いは変えず内部の処理を改善",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ユーザビリティ",
+        "eigo": "usability",
+        "kwsk": "使いやすさ、利用性",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ユースケース",
+        "eigo": "usecase",
+        "kwsk": "ユーザー目線でのシステムの振る舞い",
+        "tnjt": "",
+        "tigg": ""
+    }
+]
