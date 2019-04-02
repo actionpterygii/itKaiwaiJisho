@@ -133,7 +133,7 @@ input.onblur = function()
 
 input.onkeyup = function()
 {
-    const value: inputValue = input.value;
+    const inputValue = input.value;
     result.innerHTML = createResult(jisho, inputValue);
 };
 

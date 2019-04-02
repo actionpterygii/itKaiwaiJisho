@@ -43,9 +43,9 @@ gulp.task('js', function()
         .pipe(gulp.dest(dist));
 });
 
-gulp.task('jisho', function()
+gulp.task('json', function()
 {
-    return gulp.src(src + 'jisho.json')
+    return gulp.src(src + '*.json')
         .pipe(changed(dist))
         .pipe(gulp.dest(dist));
 });
@@ -63,4 +63,4 @@ gulp.task('img', function()
 
 });
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'jisho', 'img'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'json', 'img'));
