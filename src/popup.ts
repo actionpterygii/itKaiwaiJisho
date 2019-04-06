@@ -16,7 +16,7 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
-function hiraToKata(inputValue)
+function hiraToKata(inputValue: string)
 {
     return inputValue.replace(/[\u3041-\u3096]/g, function(inputValue)
     {
@@ -24,7 +24,7 @@ function hiraToKata(inputValue)
     });
 }
 
-function serch(jisho, inputValue)
+function serch(jisho, inputValue: string)
 {
     if(inputValue === '--all')
     {
@@ -110,7 +110,7 @@ function createHtml(element)
     return html;
 }
 
-function createResult(jisho, inputValue)
+function createResult(jisho, inputValue: string)
 {
     let entity = '';
     const requiredElements = serch(jisho, inputValue);
@@ -133,7 +133,7 @@ input.onblur = function()
 
 input.onkeyup = function()
 {
-    const inputValue = input.value;
+    const inputValue: string = input.value;
     result.innerHTML = createResult(jisho, inputValue);
 };
 
