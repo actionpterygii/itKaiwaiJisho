@@ -37,7 +37,7 @@ gulp.task('js', function()
 {
     return gulp.src(src + '*.ts')
         .pipe(changed(dist))
-        .pipe(tysc({ target: "ES5", removeComments: true, noExternalResolve: true }))
+        .pipe(tysc({ target: "ES5", removeComments: true}))
         .pipe(babel({"presets": ["@babel/preset-env"]}))
         .pipe(jsmin())
         .pipe(gulp.dest(dist));
