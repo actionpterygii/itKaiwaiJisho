@@ -5,6 +5,12 @@
 - ChromeExtension (Chrome拡張機能)
 - jsonを外部から読み込んでパース
 - Sass(SCSS),TypeScriptをgulpでトランスパイル 
+
+## 雑記
+- 型が確定していないのに文字列オブジェクト用のメソッド使っちゃう男の人って、、、
+- `const readme: HTMLDivElement = document.getElementById('divxample') as HTMLDivElement;`みたいな感じでしなあかん。HTMLElementは。しらんけど
+- jsonめんどいからany型にしてる
+
 ## きもち
 この業界は何かしらの解説に専門用語やら英語が多すぎるので  
 何回か同じ語をググるのが嫌で  
