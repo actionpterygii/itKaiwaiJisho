@@ -1,11 +1,11 @@
-const input: HTMLInputElement =<HTMLInputElement>document.getElementById('input');
-const result = document.getElementById('result');
-const usageBtn = document.getElementById('usageBtn');
-const readme = document.getElementById('readme');
+const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
+const result: HTMLElement = document.getElementById('result') as HTMLElement;
+const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
+const readme: HTMLDivElement = document.getElementById('readme') as HTMLDivElement;
 
-const jishoPath = 'jisho.json';
-var jisho = {};
-const xhr = new XMLHttpRequest();
+const jishoPath: string = 'jisho.json';
+var jisho: any = {};
+const xhr: any = new XMLHttpRequest();
 xhr.open('GET', chrome.extension.getURL(jishoPath), true);
 xhr.onreadystatechange = function()
 {
@@ -24,7 +24,7 @@ function hiraToKata(inputValue: string)
     });
 }
 
-function serch(jisho, inputValue: string)
+function serch(jisho: any, inputValue: string)
 {
     if(inputValue === '--all')
     {
@@ -32,8 +32,8 @@ function serch(jisho, inputValue: string)
     }
     else if(inputValue !== '')
     {
-        var requiredElements = {};
-        var i = 0;
+        var requiredElements: any = {};
+        var i: number = 0;
         for(let key in jisho)
         {
             if(jisho[key]['kotb'].match(inputValue) || jisho[key]['kotb'].match(hiraToKata(inputValue)))
@@ -66,9 +66,9 @@ function serch(jisho, inputValue: string)
     }
 }
 
-function createHtml(element)
+function createHtml(element: {[key: string]: string;})
 {
-    let html = '<div class="tango">';
+    let html: string = '<div class="tango">';
     for(let key in element)
     {
         if(element[key] !== '')
@@ -110,10 +110,10 @@ function createHtml(element)
     return html;
 }
 
-function createResult(jisho, inputValue: string)
+function createResult(jisho: any, inputValue: string)
 {
-    let entity = '';
-    const requiredElements = serch(jisho, inputValue);
+    let entity: string = '';
+    const requiredElements: any = serch(jisho, inputValue);
     for(let key in requiredElements)
     {
         entity += createHtml(requiredElements[key]);
