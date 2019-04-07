@@ -148,3 +148,12 @@ usageBtn.onclick = function()
         readme.style.display = 'none';
     }
 };
+
+window.document.onkeydown = function(event)
+{
+    if(event.keyCode === 13)
+    {
+        const inputValue: string = input.value;
+        window.open('https://www.google.com/search?q=' + inputValue);
+    }
+};
