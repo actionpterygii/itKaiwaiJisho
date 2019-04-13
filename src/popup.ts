@@ -3,6 +3,7 @@ const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
 const readme: HTMLDivElement = document.getElementById('readme') as HTMLDivElement;
 
+// 辞書情報を辞書jsonから取得してく
 const jishoPath: string = 'jisho.json';
 var jisho: any = {};
 const xhr: any = new XMLHttpRequest();
@@ -16,6 +17,7 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
+// ひらがなをカナカナに変換するための
 function hiraToKata(inputValue: string)
 {
     return inputValue.replace(/[\u3041-\u3096]/g, function(inputValue)
@@ -24,15 +26,20 @@ function hiraToKata(inputValue: string)
     });
 }
 
+// 入力された値を辞書jsonから検索してマッチしたものを返す
 function serch(jisho: any, inputValue: string)
 {
+    // '--all'と入力された場合はすべて
     if(inputValue === '--all')
     {
         return jisho;
     }
+    // 何か入力がった場合
     else if(inputValue !== '')
     {
+        // 最終的に返すことになる単語要素
         var requiredElements: any = {};
+        // 最終的に返すことになる単語要素の連番つけるための
         var i: number = 0;
         for(let key in jisho)
         {
@@ -66,6 +73,7 @@ function serch(jisho: any, inputValue: string)
     }
 }
 
+// 必要な部分の辞書jsonからHTMLを作成
 function createHtml(element: {[key: string]: string;})
 {
     let html: string = '<div class="tango">';
@@ -110,6 +118,7 @@ function createHtml(element: {[key: string]: string;})
     return html;
 }
 
+// 入力から結果を返す
 function createResult(jisho: any, inputValue: string)
 {
     let entity: string = '';
@@ -118,19 +127,23 @@ function createResult(jisho: any, inputValue: string)
     {
         entity += createHtml(requiredElements[key]);
     }
+    // よくわからんけどundefinedを消す
     return entity.replace('undefined','');
 }
 
+// 拡張機能開いたら入力部分にフォーカスを当てる
 window.onload = function()
 {
     input.focus();
 };
 
+// 入力部分にフォーカスを当てる
 input.onblur = function()
 {
     input.focus();
 };
 
+// 文字が入力されるたんびに
 input.onkeyup = function()
 {
     const inputValue: string = input.value;
@@ -149,6 +162,7 @@ usageBtn.onclick = function()
     }
 };
 
+// エンター押されたらぐぐる
 window.document.onkeydown = function(event)
 {
     if(event.keyCode === 13)
