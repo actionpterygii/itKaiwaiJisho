@@ -17,6 +17,9 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
+// 一単語にある項目
+const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'tnjt', 'tigg'];
+
 // ひらがなをカナカナに変換するための
 function hiraToKata(inputValue: string)
 {
@@ -29,46 +32,36 @@ function hiraToKata(inputValue: string)
 // 入力された値を辞書jsonから検索してマッチしたものを返す
 function serch(jisho: any, inputValue: string)
 {
-    // '--all'と入力された場合はすべて
+    // '--all'と入力された場合
     if(inputValue === '--all')
     {
+        // 辞書jsonのすべてを返す
         return jisho;
     }
-    // 何か入力がった場合
+    // 何か入力があった場合
     else if(inputValue !== '')
     {
         // 最終的に返すことになる単語要素
         var requiredElements: any = {};
         // 最終的に返すことになる単語要素の連番つけるための
         var i: number = 0;
+        // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
         for(let key in jisho)
         {
-            if(jisho[key]['kotb'].match(inputValue) || jisho[key]['kotb'].match(hiraToKata(inputValue)))
+            // 一単語に対して、先に定義してあるwordItemsの要素ぶん回す。itemにはwordItemsの内容が順番に入っていく
+            wordItems.forEach(function(item: string)
             {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
-            else if(jisho[key]['eigo'].match(inputValue))
-            {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
-            else if(jisho[key]['kwsk'].match(inputValue))
-            {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
-            else if(jisho[key]['tnjt'].match(inputValue))
-            {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
-            else if(jisho[key]['tigg'].match(inputValue))
-            {
-                requiredElements[i] = jisho[key];
-                i++;
-            }
+                // 入力した内容があるか
+                if(jisho[key][item].match(inputValue) || jisho[key][item].match(hiraToKata(inputValue)))
+                {
+                    // 必要な単語ということで追加する
+                    requiredElements[i] = jisho[key];
+                    // 単語が追加されたので増やす
+                    i++;
+                }
+            });
         }
+        // 辞書jsonから必要な部分を
         return requiredElements;
     }
 }
@@ -146,7 +139,9 @@ input.onblur = function()
 // 文字が入力されるたんびに
 input.onkeyup = function()
 {
+    // inputにあるvalueを格納
     const inputValue: string = input.value;
+    // そこから結果を作成して描画
     result.innerHTML = createResult(jisho, inputValue);
 };
 
@@ -165,9 +160,12 @@ usageBtn.onclick = function()
 // エンター押されたらぐぐる
 window.document.onkeydown = function(event)
 {
+    // エンターキーのキーコードは13ゆえ
     if(event.keyCode === 13)
     {
+        // inputにあるvalueを格納
         const inputValue: string = input.value;
+        // ぐぐる
         window.open('https://www.google.com/search?q=' + inputValue);
     }
 };
