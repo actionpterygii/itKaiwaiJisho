@@ -9,6 +9,8 @@ const jsmin = require('gulp-uglify');
 const imgmin = require('gulp-imagemin');
 const imgminp = require('imagemin-pngquant');
 const imgminj = require('imagemin-mozjpeg');
+const prcs = require('child_process').exec;
+
 
 const src = './src/';
 const srcImages = src + 'images/';
@@ -50,6 +52,11 @@ gulp.task('json', function()
         .pipe(gulp.dest(dist));
 });
 
+gulp.task('jishoJson', function()
+{
+    return prcs('python jishoJsonWoSort.py');
+});
+
 gulp.task('img', function()
 {
     return gulp.src(srcImages + '*.{png,jpg,gif,svg}')
@@ -63,4 +70,4 @@ gulp.task('img', function()
 
 });
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'json', 'img'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'json','jishoJson', 'img'));
