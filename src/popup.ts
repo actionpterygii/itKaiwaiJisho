@@ -48,9 +48,11 @@ function serch(jisho: any, inputValue: string)
         // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
         for(let key in jisho)
         {
-            // 一単語に対して、先に定義してあるwordItemsの要素ぶん回す。itemにはwordItemsの内容が順番に入っていく
-            wordItems.forEach(function(item: string)
+            // 一単語に対して、先に定義してあるwordItemsの要素ぶん回す。
+            for(let itemKey in wordItems)
             {
+                // 単語の中の一つの項目のキー
+                const item: string = wordItems[itemKey];
                 // 入力した内容があるか
                 if(jisho[key][item].match(inputValue) || jisho[key][item].match(hiraToKata(inputValue)))
                 {
@@ -58,8 +60,11 @@ function serch(jisho: any, inputValue: string)
                     requiredElements[i] = jisho[key];
                     // 単語が追加されたので増やす
                     i++;
+                    // 追加したらその単語に用はないのでこのforループを抜ける
+                    // これがないと単語内で入力文字が複数項目である場合に重複する
+                    break;
                 }
-            });
+            }
         }
         // 辞書jsonから必要な部分を
         return requiredElements;
@@ -120,7 +125,7 @@ function createResult(jisho: any, inputValue: string)
     {
         entity += createHtml(requiredElements[key]);
     }
-    // よくわからんけどundefinedを消す
+    // よくわからんけど出るundefinedを消す
     return entity.replace('undefined','');
 }
 
