@@ -2,7 +2,7 @@
     {
         "kotb": "アーキテクチャ",
         "eigo": "architecture",
-        "kwsk": "ある方向に導くための構造/設計",
+        "kwsk": "ある方向に導くための構造、設計",
         "tnjt": "",
         "tigg": ""
     },
@@ -30,7 +30,7 @@
     {
         "kotb": "スニペット",
         "eigo": "snippet",
-        "kwsk": "切れ端、再利用できるもの",
+        "kwsk": "切れ端。再利用できるもの",
         "tnjt": "",
         "tigg": ""
     },
@@ -65,21 +65,21 @@
     {
         "kotb": "アクセシビリティ",
         "eigo": "accessibility",
-        "kwsk": "アクセスのしやすさ、利用しやすさ",
+        "kwsk": "アクセスのしやすさ。利用しやすさ",
         "tnjt": "",
         "tigg": ""
     },
     {
         "kotb": "アベイラビリティ",
         "eigo": "availability",
-        "kwsk": "入手のしやすさ、耐久性、可用性",
+        "kwsk": "入手のしやすさ。耐久性。可用性",
         "tnjt": "",
         "tigg": ""
     },
     {
         "kotb": "ユーザビリティ",
         "eigo": "usability",
-        "kwsk": "使いやすさ、利用性",
+        "kwsk": "使いやすさ。利用性",
         "tnjt": "",
         "tigg": ""
     },
@@ -114,14 +114,1092 @@
     {
         "kotb": "ステートフル",
         "eigo": "stateful",
-        "kwsk": "状況によって、同じリクエストでレスポンスが変わる",
+        "kwsk": "状況によって同じリクエストでレスポンスが変わる",
         "tnjt": "",
         "tigg": ""
     },
     {
         "kotb": "ステートレス",
         "eigo": "stateless",
-        "kwsk": "状況によって、同じリクエストでレスポンスが変わらない",
+        "kwsk": "状況によって同じリクエストでレスポンスが変わらない",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エントロピー",
+        "eigo": "entropy",
+        "kwsk": "",
+        "tnjt": "乱雑さ、不可逆性",
+        "tigg": ""
+    },
+    {
+        "kotb": "アトリビュート",
+        "eigo": "attribute",
+        "kwsk": "属性",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディレクトリトラバーサル",
+        "eigo": "directory traversal",
+        "kwsk": "直接指定でディレクトリを横断して勝手に見る",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "SQLインジェクション",
+        "eigo": "SQL Injection",
+        "kwsk": "SQLを送り外部からデータベースを操作",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クロスサイトスクリプティング",
+        "eigo": "cross site scripting",
+        "kwsk": "標的サイトの権限でスクリプトを実行させる(利用者のWebブラウザで)。XSS",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トレイリングスラッシュ",
+        "eigo": "trailing slash",
+        "kwsk": "URL末尾の\"\/\"",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リテラル",
+        "eigo": "literal",
+        "kwsk": "数値や文字列を直接記述した定数",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アフォーダンス",
+        "eigo": "affordance",
+        "kwsk": "動物と者の間に存在する行為についての関係性そのもの",
+        "tnjt": "人と物の関係性をユーザに伝達すること",
+        "tigg": ""
+    },
+    {
+        "kotb": "シンタックス",
+        "eigo": "syntax",
+        "kwsk": "構文規則",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "セマンティクス",
+        "eigo": "semantics",
+        "kwsk": "データ(変数)の意味、中身",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エンティティ",
+        "eigo": "entity",
+        "kwsk": "実体として管理したい対象",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ダイアグラム",
+        "eigo": "diagram",
+        "kwsk": "情報を整理し図示したもの(関数のそれはグラフ)",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プリプロセッサ",
+        "eigo": "preprocessor",
+        "kwsk": "中心的な処理を行うプログラムの前処理を行うプログラム",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "バイラル",
+        "eigo": "viral",
+        "kwsk": "ウィルスのように広まる",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ノーム",
+        "eigo": "nome",
+        "kwsk": "基準",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "キュレーション",
+        "eigo": "curation",
+        "kwsk": "収集して選別して共有する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パーミッション",
+        "eigo": "permission",
+        "kwsk": "許可",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オーバーヘッド",
+        "eigo": "overhead",
+        "kwsk": "処理に付加して発生する処理、負荷",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オプティマイゼーション",
+        "eigo": "optimization",
+        "kwsk": "最適な状態に近づける。正規化",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アビューズ",
+        "eigo": "abuse",
+        "kwsk": "不正使用",
+        "tnjt": "迷惑行為を通報する窓口",
+        "tigg": ""
+    },
+    {
+        "kotb": "シグネチャ",
+        "eigo": "signature",
+        "kwsk": "署名。識別するための情報。特徴的なパターン",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サンクコスト",
+        "eigo": "sunk cost",
+        "kwsk": "すでに回収できないコスト。埋没費用",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アイソレーション",
+        "eigo": "isolation",
+        "kwsk": "分離。独立。絶縁",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アロケーション",
+        "eigo": "allocation",
+        "kwsk": "割当て。配分。プログラムの起動時に動作のために必要なメモリ領域をOSが確保すること",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "バッファ",
+        "eigo": "buffer",
+        "kwsk": "データを一時保存する場所",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イニシャライズ",
+        "eigo": "initialize",
+        "kwsk": "ハードディスク等をOSが利用可能な状態にすること。初期化",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デプロイ",
+        "eigo": "deploy",
+        "kwsk": "配備。展開",
+        "tnjt": "ソフトウェアを本番環境に展開すること",
+        "tigg": ""
+    },
+    {
+        "kotb": "モジュール",
+        "eigo": "module",
+        "kwsk": "単体でも動くが通常は他のものと組み合わせる部品",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディストリビューション",
+        "eigo": "distribution",
+        "kwsk": "流通。分布",
+        "tnjt": "コンパイル済みで設定済みのソフトウェアの集まり",
+        "tigg": ""
+    },
+    {
+        "kotb": "レイテンシー",
+        "eigo": "latency",
+        "kwsk": "潜伏時間。待ち時間。反応時間",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サーティフィケート",
+        "eigo": "certificate",
+        "kwsk": "証明書。鑑定書。免許書",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トランスペアレンシー",
+        "eigo": "transparency",
+        "kwsk": "透明性",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンシステンシー",
+        "eigo": "consistency",
+        "kwsk": "一貫性。整合性",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エクスペクテーション",
+        "eigo": "expectation",
+        "kwsk": "期待",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "TL;DR",
+        "eigo": "Too long; didn't read.",
+        "kwsk": "長すぎたから読まなかった",
+        "tnjt": "要約",
+        "tigg": ""
+    },
+    {
+        "kotb": "パース",
+        "eigo": "parse",
+        "kwsk": "構文解析(コンパイルとかで)",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オフセット",
+        "eigo": "offset",
+        "kwsk": "ずれ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トートロジー",
+        "eigo": "tautology",
+        "kwsk": "同じ意味を持つ別の物の無意味な繰り返し",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "レプリケーション",
+        "eigo": "replication",
+        "kwsk": "複製",
+        "tnjt": "別のデータベースに複製して同期しておく",
+        "tigg": ""
+    },
+    {
+        "kotb": "フェイルオーバー",
+        "eigo": "failover",
+        "kwsk": "異常が発生した時に自動的に予備に切り替える",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スイッチオーバー",
+        "eigo": "switchover",
+        "kwsk": "異常が発生した時に手動で予備に切り替える",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イネーブル",
+        "eigo": "enable",
+        "kwsk": "有効化",
+        "tnjt": "",
+        "tigg": "ディセーブル(diable)"
+    },
+    {
+        "kotb": "ディセーブル",
+        "eigo": "disable",
+        "kwsk": "無効化",
+        "tnjt": "",
+        "tigg": "イネーブル(enable)"
+    },
+    {
+        "kotb": "オーバービュー",
+        "eigo": "overview",
+        "kwsk": "概要",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インクルーシブ",
+        "eigo": "inclusive",
+        "kwsk": "包括しているさま",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シナジー",
+        "eigo": "synergy",
+        "kwsk": "相乗効果",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パーミッション",
+        "eigo": "permission",
+        "kwsk": "許可。アクセス権",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ノーティス",
+        "eigo": "notice",
+        "kwsk": "通知",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リクワイア",
+        "eigo": "require",
+        "kwsk": "必要とする",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フィックス",
+        "eigo": "fix",
+        "kwsk": "決定する。修正する。解決する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アド",
+        "eigo": "add",
+        "kwsk": "追加する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リムーブ",
+        "eigo": "remove",
+        "kwsk": "取り除く",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ユーズ",
+        "eigo": "use",
+        "kwsk": "用いる",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アップデート",
+        "eigo": "update",
+        "kwsk": "更新する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "メイク",
+        "eigo": "make",
+        "kwsk": "作成する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ムーブ",
+        "eigo": "move",
+        "kwsk": "移動させる",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アロー",
+        "eigo": "allow",
+        "kwsk": "許す",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンバート",
+        "eigo": "convert",
+        "kwsk": "変換する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リネーム",
+        "eigo": "rename",
+        "kwsk": "名前を変更する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リバート",
+        "eigo": "revert",
+        "kwsk": "もとに戻す",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アボイド",
+        "eigo": "avoid",
+        "kwsk": "避ける",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スタブ",
+        "eigo": "stub",
+        "kwsk": "呼び出される側の代用品",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ドライバ",
+        "eigo": "driver",
+        "kwsk": "伝達機構",
+        "tnjt": "パソコンに接続されているハードウェアをOSによって制御可能にするためのソフトウェア",
+        "tigg": ""
+    },
+    {
+        "kotb": "ニュー",
+        "eigo": "new",
+        "kwsk": "新しい",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アンユーズド",
+        "eigo": "unused",
+        "kwsk": "使用されていない",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スタティック",
+        "eigo": "static",
+        "kwsk": "静的な",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エンプティ",
+        "eigo": "empty",
+        "kwsk": "空の",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オールド",
+        "eigo": "old",
+        "kwsk": "古い",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イニシャル",
+        "eigo": "initial",
+        "kwsk": "最初の",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ローカル",
+        "eigo": "local",
+        "kwsk": "局所的",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ロング",
+        "eigo": "wrong",
+        "kwsk": "間違った",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コモン",
+        "eigo": "common",
+        "kwsk": "共通の",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アザー",
+        "eigo": "other",
+        "kwsk": "他の",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デッド",
+        "eigo": "dead",
+        "kwsk": "死んだ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デーモン",
+        "eigo": "deamon",
+        "kwsk": "守護神",
+        "tnjt": "UNIX系での常駐プログラム",
+        "tigg": ""
+    },
+    {
+        "kotb": "リドゥ",
+        "eigo": "rid",
+        "kwsk": "取り除く",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ポッシブル",
+        "eigo": "possible",
+        "kwsk": "可能性のある",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "セイム",
+        "eigo": "same",
+        "kwsk": "同じ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "グローバル",
+        "eigo": "global",
+        "kwsk": "全体的な",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インバリッド",
+        "eigo": "invalid",
+        "kwsk": "不正な",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スペシフィック",
+        "eigo": "specific",
+        "kwsk": "特定の",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エクストラ",
+        "eigo": "extra",
+        "kwsk": "追加の。余分の",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エラー",
+        "eigo": "error",
+        "kwsk": "間違い",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ストリング",
+        "eigo": "string",
+        "kwsk": "文字列",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インテジャー",
+        "eigo": "integer",
+        "kwsk": "整数",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ヌル",
+        "eigo": "null",
+        "kwsk": "なにもない",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トゥルー",
+        "eigo": "true",
+        "kwsk": "真",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フォルス",
+        "eigo": "false",
+        "kwsk": "偽",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "タイポ",
+        "eigo": "typographic error",
+        "kwsk": "打ち間違い",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ドキュメント",
+        "eigo": "document",
+        "kwsk": "文書",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "バグ",
+        "eigo": "bug",
+        "kwsk": "不具合",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リターン",
+        "eigo": "return",
+        "kwsk": "戻る",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "タグ",
+        "eigo": "tag",
+        "kwsk": "札(ふだ)",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デフォルト",
+        "eigo": "default",
+        "kwsk": "初期値",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デバイス",
+        "eigo": "device",
+        "kwsk": "機器",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハンドリング",
+        "eigo": "handling",
+        "kwsk": "処理",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "タイプ",
+        "eigo": "type",
+        "kwsk": "型式",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オート",
+        "eigo": "auto",
+        "kwsk": "自動",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ネーム",
+        "eigo": "name",
+        "kwsk": "名前",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ワーニング",
+        "eigo": "warning",
+        "kwsk": "警告",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スーパーセット",
+        "eigo": "superset",
+        "kwsk": "上位互換",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サロゲートペア",
+        "eigo": "surrogate pair",
+        "kwsk": "2文字文の文字コードを使い1文字を表す",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インタラクティブ",
+        "eigo": "interactive",
+        "kwsk": "対話的",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンソーシアム",
+        "eigo": "consortium",
+        "kwsk": "様々な枠を超えて連携する集団。共同事業体",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イミュータブル",
+        "eigo": "immutable",
+        "kwsk": "不変",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ミュータブル",
+        "eigo": "mutable",
+        "kwsk": "可変",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クロスサイトリクエストフォージェリ",
+        "eigo": "Cross-Site Request Forgeries",
+        "kwsk": "Webアプリケーションの処理を利用者の権限で実行させる。CSRF",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エクステンド",
+        "eigo": "extend",
+        "kwsk": "拡張",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スケールアップ",
+        "eigo": "scale up",
+        "kwsk": "単体の性能を向上させて高める。スケールイン",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スケールアウト",
+        "eigo": "scale out",
+        "kwsk": "数を増やして高める",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トランスコンパイラ",
+        "eigo": "transcompiler",
+        "kwsk": "ソースコードを別のプログラミング言語に変換するやつ。トランスパイラ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンパイラ",
+        "eigo": "compiler",
+        "kwsk": "ソースコードから、機械語(0,1)等のより低級の言語に変換するやつ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インタプリタ",
+        "eigo": "interpreter",
+        "kwsk": "ソースコードを逐次変換しながら実行するやつ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エコシステム",
+        "eigo": "ecosystem",
+        "kwsk": "実際の生態系のようにたくさんが関わり合っていろいろなる",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディスラプティブ",
+        "eigo": "disruptive",
+        "kwsk": "破壊的",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ミセレイニアス",
+        "eigo": "miscellaneous",
+        "kwsk": "雑多",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "セレンディピティ",
+        "eigo": "serendipity",
+        "kwsk": "偶然に予想外のものと出会うこと",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ウェブフック",
+        "eigo": "Webhook",
+        "kwsk": "POSTリクエストの送信先を指定するやつ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ポートホワーディング",
+        "eigo": "port fowarding",
+        "kwsk": "特定ポートへの通信を別のポートに自動的に転送する",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "キープアライブ",
+        "eigo": "keep alive",
+        "kwsk": "接続が有効かを確認する定期的な通信",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サジェスト",
+        "eigo": "suggest",
+        "kwsk": "予測変換",
+        "tnjt": "提案",
+        "tigg": ""
+    },
+    {
+        "kotb": "プロプライエタリ",
+        "eigo": "proprietary",
+        "kwsk": "ソースコード等をを公開しない方式",
+        "tnjt": "独占的な、非公開の",
+        "tigg": ""
+    },
+    {
+        "kotb": "アーキテクチャ宇宙飛行士",
+        "eigo": "Architecture Astronauts",
+        "kwsk": "アーキテクチャを過剰に考えてしまうひと",
+        "tnjt": "",
+        "tigg": "ダクトテーププログラマ"
+    },
+    {
+        "kotb": "ダクトテーププログラマ",
+        "eigo": "Duct Tape Programmer",
+        "kwsk": "構造の美しさよりもリリースを優先するプログラマ",
+        "tnjt": "",
+        "tigg": "アーキテクチャ宇宙飛行士"
+    },
+    {
+        "kotb": "ブートストラップ",
+        "eigo": "bootstrap",
+        "kwsk": "入力によらず実行される。自己開始型",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アブストラクト",
+        "eigo": "abstract",
+        "kwsk": "文書の要約",
+        "tnjt": "抽象的な",
+        "tigg": ""
+    },
+    {
+        "kotb": "アプリケーションプログラミングインターフェース",
+        "eigo": "Application Programming Interface",
+        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。API",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ナレッジ",
+        "eigo": "knowledge",
+        "kwsk": "知識",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハンドル",
+        "eigo": "handle",
+        "kwsk": "操作対象を指し示すもの",
+        "tnjt": "取っ手",
+        "tigg": ""
+    },
+    {
+        "kotb": "インフォメーションアーキテクチャ",
+        "eigo": "Information Architecture",
+        "kwsk": "情報をわかりやすく伝えるるための技法。情報アーキテクチャ。IA",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マシンリーダビリティ",
+        "eigo": "machine readability",
+        "kwsk": "機械からの読みやすさ。機械可読性",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シリアライズ",
+        "eigo": "serialize",
+        "kwsk": "複数の要素を一列に並べる",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "セグメント",
+        "eigo": "segment",
+        "kwsk": "断片。分割されたもの",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "セグメンテーション",
+        "eigo": "segmentation",
+        "kwsk": "セグメントに分割すること",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "セグメンテーション違反",
+        "eigo": "segmentation fault",
+        "kwsk": "アクセスが許可されていないメモリにアクセスしたときにでる",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シンタックスエラー",
+        "eigo": "syntax error",
+        "kwsk": "プログラムの構文間違いのエラー",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンバージョン",
+        "eigo": "conversion",
+        "kwsk": "最終的な成果。CV",
+        "tnjt": "変換",
+        "tigg": ""
+    },
+    {
+        "kotb": "インプレッション",
+        "eigo": "impression",
+        "kwsk": "表示された回数",
+        "tnjt": "印象",
+        "tigg": ""
+    },
+    {
+        "kotb": "エンゲージメント",
+        "eigo": "engagement",
+        "kwsk": "二者間の関係性",
+        "tnjt": "約束",
+        "tigg": ""
+    },
+    {
+        "kotb": "バズワード",
+        "eigo": "buzzword",
+        "kwsk": "新しくて流行りの定義が曖昧な用語",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "LGTM",
+        "eigo": "Looks Good To Me",
+        "kwsk": "わたしはいいとおもいます",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プリミティブ",
+        "eigo": "primitive",
+        "kwsk": "単純な基本構造",
+        "tnjt": "原始的な。未発達な",
+        "tigg": ""
+    },
+    {
+        "kotb": "ユーザーエクスペリエンス",
+        "eigo": "User Experience",
+        "kwsk": "モノを使うことでユーザーが得る経験。UX",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ブーリアン",
+        "eigo": "boolean",
+        "kwsk": "TRUE/FALSEとかの二択の",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サーチエンジンオプティマイゼーション",
+        "eigo": "Search Engine Optimization",
+        "kwsk": "検索エンジンで上位に表示されるよう調整すること。SEO",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ラッパー",
+        "eigo": "wrapper",
+        "kwsk": "プログラムの機能を異なる環境でも使えるようにするもの",
+        "tnjt": "覆うもの",
+        "tigg": ""
+    },
+    {
+        "kotb": "ユーザーインターフェース",
+        "eigo": "User Interface",
+        "kwsk": "コンピュータと人間の間で情報を伝達するもの",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "グラフィカルユーザーインターフェース",
+        "eigo": "Graphical User Interface",
+        "kwsk": "画面にグラフィカルなものがあってマウス等使ってやりとりするようなやつ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "キャラクタユーザーインターフェース",
+        "eigo": "Character User Interface",
+        "kwsk": "キーの入力でのみやりとりするようなやつ",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ノーマライゼーション",
+        "eigo": "normalization",
+        "kwsk": "違いを吸収し全体を均一化すること",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インターフェース",
+        "eigo": "interface",
+        "kwsk": "コンピュータとなにかの接続部分",
+        "tnjt": "接触面",
+        "tigg": ""
+    },
+    {
+        "kotb": "メタファー",
+        "eigo": "metaphor",
+        "kwsk": "隠喩",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ブラッシュアップ",
+        "eigo": "brush up",
+        "kwsk": "磨き上げる",
+        "tnjt": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アイオー",
+        "eigo": "I/O",
+        "kwsk": "入出力。input/output",
         "tnjt": "",
         "tigg": ""
     }
