@@ -17,8 +17,8 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
-// 一単語にある項目
-const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'tnjt', 'tigg'];
+// 一単語にある項目の中で調べるべきもの
+const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 
 // ひらがなをカナカナに変換するための
 function hiraToKata(inputValue: string)
@@ -93,10 +93,10 @@ function createHtml(element: {[key: string]: string;})
                     html +=
                         '<p class="kwsk">' + element[key] + '</p>';
                     break;
-                case 'tnjt':
+                case 'mnim':
                     html +=
-                        '<dl class="tnjt">' +
-                            '<dt>転じて</dt>' +
+                        '<dl class="mnim">' +
+                            '<dt>もとの意味</dt>' +
                             '<dd>' + element[key] + '</dd>' +
                         '</dl>';
                     break;
