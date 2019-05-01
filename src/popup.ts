@@ -3,7 +3,7 @@ const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
 const readme: HTMLDivElement = document.getElementById('readme') as HTMLDivElement;
 
-// 辞書情報を辞書jsonから取得してく
+// 辞書情報を辞書jsonから取得する
 const jishoPath: string = 'jisho.json';
 var jisho: any = {};
 const xhr: any = new XMLHttpRequest();
@@ -23,10 +23,37 @@ const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 // ひらがなをカナカナに変換するための
 function hiraToKata(inputValue: string)
 {
+    // ひらがなをおきかえるよって
     return inputValue.replace(/[\u3041-\u3096]/g, function(inputValue)
     {
+        // 文字コード的にずらしてカタカナにする
         return String.fromCharCode(inputValue.charCodeAt(0) + 0x60);
     });
+}
+
+// itemの内容がinputValueのなかにあればtrueるなければfalseる
+function containing(item: string, inputValue: string)
+{
+    // そのまま確認
+    if(item.match(inputValue))
+    {
+        return true;
+    }
+    // ひらがなをカタカナにして確認
+    else if(item.match(hiraToKata(inputValue)))
+    {
+        return true;
+    }
+    // 大文字小文字の区別をなくして確認
+    else if(item.toLowerCase().match(inputValue.toLowerCase()))
+    {
+        return true;
+    }
+    // ない場合
+    else
+    {
+        return false;
+    }
 }
 
 // 入力された値を辞書jsonから検索してマッチしたものを返す
@@ -54,7 +81,7 @@ function serch(jisho: any, inputValue: string)
                 // 単語の中の一つの項目のキー
                 const item: string = wordItems[itemKey];
                 // 入力した内容があるか
-                if(jisho[key][item].match(inputValue) || jisho[key][item].match(hiraToKata(inputValue)))
+                if(containing(jisho[key][item], inputValue))
                 {
                     // 必要な単語ということで追加する
                     requiredElements[i] = jisho[key];
@@ -74,11 +101,15 @@ function serch(jisho: any, inputValue: string)
 // 必要な部分の辞書jsonからHTMLを作成
 function createHtml(element: {[key: string]: string;})
 {
+    // 一単語をつつむおおいなるdiv(これに追加していって最後返す)
     let html: string = '<div class="tango">';
+    // 単語内の各要素を一つづつみていく
     for(let key in element)
     {
+        // 内容が空でなかったら
         if(element[key] !== '')
         {
+            // 単語内の各要素の種類に応じて内容を含めたHTML要素をつくる
             switch(key)
             {
                 case 'kotb':
@@ -112,32 +143,40 @@ function createHtml(element: {[key: string]: string;})
             }
         }
     }
+    // 最後の綴じdiv
     html += '</div>';
+    // かえせ
     return html;
 }
 
 // 入力から結果を返す
 function createResult(jisho: any, inputValue: string)
 {
+    // 最後かえす文字列
     let entity: string = '';
+    // 必要な要素を選定する
     const requiredElements: any = serch(jisho, inputValue);
+    // 選定した要素から一つづついじる
     for(let key in requiredElements)
     {
+        // HTMLを作成して追加していく
         entity += createHtml(requiredElements[key]);
     }
     // よくわからんけど出るundefinedを消す
     return entity.replace('undefined','');
 }
 
-// 拡張機能開いたら入力部分にフォーカスを当てる
+// 拡張機能開いたら、
 window.onload = function()
 {
+    // 入力部分にフォーカスを当てる
     input.focus();
 };
 
-// 入力部分にフォーカスを当てる
+// 入力部分以外を触ったら
 input.onblur = function()
 {
+    // 入力部分にフォーカスを当てる
     input.focus();
 };
 
@@ -150,14 +189,19 @@ input.onkeyup = function()
     result.innerHTML = createResult(jisho, inputValue);
 };
 
+// 使い方ボタンを押したら
 usageBtn.onclick = function()
 {
+    // でてなかったら
     if(readme.style.display == 'none')
     {
+        // だす
         readme.style.display = 'block';
     }
+    // でてたら
     else
     {
+        // ひっこめる
         readme.style.display = 'none';
     }
 };
