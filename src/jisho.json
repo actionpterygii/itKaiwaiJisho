@@ -2,1204 +2,1204 @@
     {
         "kotb": "アーキテクチャ",
         "eigo": "architecture",
-        "kwsk": "ある方向に導くための構造、設計",
+        "kwsk": "ある方向に導くための構造、設計。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インセンティブ",
         "eigo": "incentive",
-        "kwsk": "ある方向に向かわせるための外部からの刺激",
+        "kwsk": "ある方向に向かわせるための外部からの刺激。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "イディオム",
         "eigo": "idiom",
-        "kwsk": "熟語。慣習的に意味と用例が固定されてる",
+        "kwsk": "熟語。慣習的に意味と用例が固定されてる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "パラダイム",
         "eigo": "paradigm",
-        "kwsk": "見方、考え方を支配する認識の枠組み",
+        "kwsk": "見方、考え方を支配する認識の枠組み。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スニペット",
         "eigo": "snippet",
-        "kwsk": "切れ端。再利用できるもの",
+        "kwsk": "切れ端。再利用できるもの。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リファクタリング",
         "eigo": "refactoring",
-        "kwsk": "見た目や振る舞いは変えず内部の処理を改善",
+        "kwsk": "見た目や振る舞いは変えず内部の処理を改善。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アノテーション",
         "eigo": "annotation",
-        "kwsk": "メタデータ(データに付けるデータ)を注釈として付与する",
+        "kwsk": "メタデータ(データに付けるデータ)を注釈として付与する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ユースケース",
         "eigo": "usecase",
-        "kwsk": "ユーザー目線でのシステムの振る舞い",
+        "kwsk": "ユーザー目線でのシステムの振る舞い。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "センシティビティ",
         "eigo": "sensitivity",
-        "kwsk": "感度",
+        "kwsk": "感度。",
         "mnim": "",
         "tigg": ""
     }, 
     {
         "kotb": "アクセシビリティ",
         "eigo": "accessibility",
-        "kwsk": "アクセスのしやすさ。利用しやすさ",
+        "kwsk": "アクセスのしやすさ。利用しやすさ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アベイラビリティ",
         "eigo": "availability",
-        "kwsk": "入手のしやすさ。耐久性。可用性",
+        "kwsk": "入手のしやすさ。耐久性。可用性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ユーザビリティ",
         "eigo": "usability",
-        "kwsk": "使いやすさ。利用性",
+        "kwsk": "使いやすさ。利用性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トレーサビリティ",
         "eigo": "traceability",
-        "kwsk": "追跡可能性",
+        "kwsk": "追跡可能性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "サステナビリティ",
         "eigo": "sustainability",
-        "kwsk": "持続可能性",
+        "kwsk": "持続可能性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "イグジスト",
         "eigo": "exist",
-        "kwsk": "存在する",
+        "kwsk": "存在する。",
         "mnim": "",
         "tigg": "none"
     },
     {
         "kotb": "サニタイジング",
         "eigo": "sanitizing",
-        "kwsk": "\"&\"などのプログラムにとって意味のある文字列を別の表記に置き換える",
+        "kwsk": "\"&\"などのプログラムにとって意味のある文字列を別の表記に置き換える。",
         "mnim": "無害化、消毒",
         "tigg": ""
     },
     {
         "kotb": "ステートフル",
         "eigo": "stateful",
-        "kwsk": "状況によって同じリクエストでレスポンスが変わる",
+        "kwsk": "状況によって同じリクエストでレスポンスが変わる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ステートレス",
         "eigo": "stateless",
-        "kwsk": "状況によって同じリクエストでレスポンスが変わらない",
+        "kwsk": "状況によって同じリクエストでレスポンスが変わらない。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エントロピー",
         "eigo": "entropy",
-        "kwsk": "乱雑さ、不可逆性",
+        "kwsk": "乱雑さ、不可逆性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アトリビュート",
         "eigo": "attribute",
-        "kwsk": "属性",
+        "kwsk": "属性。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "ディレクトリトラバーサル",
+        "kotb": "ディレクトリ トラバーサル",
         "eigo": "directory traversal",
-        "kwsk": "直接指定でディレクトリを横断して勝手に見る",
+        "kwsk": "直接指定でディレクトリを横断して勝手に見る。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "SQLインジェクション",
         "eigo": "SQL Injection",
-        "kwsk": "SQLを送り外部からデータベースを操作",
+        "kwsk": "SQLを送り外部からデータベースを操作。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "クロスサイトスクリプティング",
+        "kotb": "クロス サイト スクリプティング",
         "eigo": "cross site scripting",
-        "kwsk": "標的サイトの権限でスクリプトを実行させる(利用者のWebブラウザで)。XSS",
+        "kwsk": "標的サイトの権限でスクリプトを実行させる(利用者のWebブラウザで)。XSS。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トレイリングスラッシュ",
         "eigo": "trailing slash",
-        "kwsk": "URL末尾の\"\/\"",
+        "kwsk": "URL末尾の\"\/\"。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リテラル",
         "eigo": "literal",
-        "kwsk": "数値や文字列を直接記述した定数",
+        "kwsk": "数値や文字列を直接記述した定数。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アフォーダンス",
         "eigo": "affordance",
-        "kwsk": "人と物の関係性をユーザに伝達すること",
+        "kwsk": "人と物の関係性をユーザに伝達すること。",
         "mnim": "動物と者の間に存在する行為についての関係性そのもの",
         "tigg": ""
     },
     {
         "kotb": "シンタックス",
         "eigo": "syntax",
-        "kwsk": "構文規則",
+        "kwsk": "構文規則。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "セマンティクス",
         "eigo": "semantics",
-        "kwsk": "データ(変数)の意味、中身",
+        "kwsk": "データ(変数)の意味、中身。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エンティティ",
         "eigo": "entity",
-        "kwsk": "実体として管理したい対象",
+        "kwsk": "実体として管理したい対象。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ダイアグラム",
         "eigo": "diagram",
-        "kwsk": "情報を整理し図示したもの(関数のそれはグラフ)",
+        "kwsk": "情報を整理し図示したもの(関数のそれはグラフ)。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プリプロセッサ",
         "eigo": "preprocessor",
-        "kwsk": "中心的な処理を行うプログラムの前処理を行うプログラム",
+        "kwsk": "中心的な処理を行うプログラムの前処理を行うプログラム。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "バイラル",
         "eigo": "viral",
-        "kwsk": "ウィルスのように広まる",
+        "kwsk": "ウィルスのように広まる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ノーム",
         "eigo": "nome",
-        "kwsk": "基準",
+        "kwsk": "基準。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "キュレーション",
         "eigo": "curation",
-        "kwsk": "収集して選別して共有する",
+        "kwsk": "収集して選別して共有する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "パーミッション",
         "eigo": "permission",
-        "kwsk": "許可",
+        "kwsk": "許可。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オーバーヘッド",
         "eigo": "overhead",
-        "kwsk": "処理に付加して発生する処理、負荷",
+        "kwsk": "処理に付加して発生する処理、負荷。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オプティマイゼーション",
         "eigo": "optimization",
-        "kwsk": "最適な状態に近づける。正規化",
+        "kwsk": "最適な状態に近づける。正規化。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アビューズ",
         "eigo": "abuse",
-        "kwsk": "迷惑行為を通報する窓口",
+        "kwsk": "迷惑行為を通報する窓口。",
         "mnim": "不正使用",
         "tigg": ""
     },
     {
         "kotb": "シグネチャ",
         "eigo": "signature",
-        "kwsk": "署名。識別するための情報。特徴的なパターン",
+        "kwsk": "署名。識別するための情報。特徴的なパターン。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "サンクコスト",
         "eigo": "sunk cost",
-        "kwsk": "すでに回収できないコスト。埋没費用",
+        "kwsk": "すでに回収できないコスト。埋没費用。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アイソレーション",
         "eigo": "isolation",
-        "kwsk": "分離。独立。絶縁",
+        "kwsk": "分離。独立。絶縁。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アロケーション",
         "eigo": "allocation",
-        "kwsk": "割当て。配分。プログラムの起動時に動作のために必要なメモリ領域をOSが確保すること",
+        "kwsk": "割当て。配分。プログラムの起動時に動作のために必要なメモリ領域をOSが確保すること。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "バッファ",
         "eigo": "buffer",
-        "kwsk": "データを一時保存する場所",
+        "kwsk": "データを一時保存する場所。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "イニシャライズ",
         "eigo": "initialize",
-        "kwsk": "ハードディスク等をOSが利用可能な状態にすること。初期化",
+        "kwsk": "ハードディスク等をOSが利用可能な状態にすること。初期化。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "デプロイ",
         "eigo": "deploy",
-        "kwsk": "ソフトウェアを本番環境に展開すること",
+        "kwsk": "ソフトウェアを本番環境に展開すること。",
         "mnim": "配備。展開",
         "tigg": ""
     },
     {
         "kotb": "モジュール",
         "eigo": "module",
-        "kwsk": "単体でも動くが通常は他のものと組み合わせる部品",
+        "kwsk": "単体でも動くが通常は他のものと組み合わせる部品。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ディストリビューション",
         "eigo": "distribution",
-        "kwsk": "コンパイル済みで設定済みのソフトウェアの集まり",
+        "kwsk": "コンパイル済みで設定済みのソフトウェアの集まり。",
         "mnim": "流通。分布",
         "tigg": ""
     },
     {
         "kotb": "レイテンシー",
         "eigo": "latency",
-        "kwsk": "潜伏時間。待ち時間。反応時間",
+        "kwsk": "潜伏時間。待ち時間。反応時間。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "サーティフィケート",
         "eigo": "certificate",
-        "kwsk": "証明書。鑑定書。免許書",
+        "kwsk": "証明書。鑑定書。免許書。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トランスペアレンシー",
         "eigo": "transparency",
-        "kwsk": "透明性",
+        "kwsk": "透明性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンシステンシー",
         "eigo": "consistency",
-        "kwsk": "一貫性。整合性",
+        "kwsk": "一貫性。整合性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エクスペクテーション",
         "eigo": "expectation",
-        "kwsk": "期待",
+        "kwsk": "期待。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "TL;DR",
         "eigo": "Too long; didn't read.",
-        "kwsk": "要約",
+        "kwsk": "要約。",
         "mnim": "長すぎたから読まなかった",
         "tigg": ""
     },
     {
         "kotb": "パース",
         "eigo": "parse",
-        "kwsk": "構文解析(コンパイルとかで)",
+        "kwsk": "構文解析(コンパイルとかで)。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オフセット",
         "eigo": "offset",
-        "kwsk": "ずれ",
+        "kwsk": "ずれ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トートロジー",
         "eigo": "tautology",
-        "kwsk": "同じ意味を持つ別の物の無意味な繰り返し",
+        "kwsk": "同じ意味を持つ別の物の無意味な繰り返し。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "レプリケーション",
         "eigo": "replication",
-        "kwsk": "別のデータベースに複製して同期しておく",
+        "kwsk": "別のデータベースに複製して同期しておく。",
         "mnim": "複製",
         "tigg": ""
     },
     {
         "kotb": "フェイルオーバー",
         "eigo": "failover",
-        "kwsk": "異常が発生した時に自動的に予備に切り替える",
+        "kwsk": "異常が発生した時に自動的に予備に切り替える。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スイッチオーバー",
         "eigo": "switchover",
-        "kwsk": "異常が発生した時に手動で予備に切り替える",
+        "kwsk": "異常が発生した時に手動で予備に切り替える。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "イネーブル",
         "eigo": "enable",
-        "kwsk": "有効化",
+        "kwsk": "有効化。",
         "mnim": "",
         "tigg": "ディセーブル(diable)"
     },
     {
         "kotb": "ディセーブル",
         "eigo": "disable",
-        "kwsk": "無効化",
+        "kwsk": "無効化。",
         "mnim": "",
         "tigg": "イネーブル(enable)"
     },
     {
         "kotb": "オーバービュー",
         "eigo": "overview",
-        "kwsk": "概要",
+        "kwsk": "概要。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インクルーシブ",
         "eigo": "inclusive",
-        "kwsk": "包括しているさま",
+        "kwsk": "包括しているさま。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "シナジー",
         "eigo": "synergy",
-        "kwsk": "相乗効果",
+        "kwsk": "相乗効果。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "パーミッション",
         "eigo": "permission",
-        "kwsk": "許可。アクセス権",
+        "kwsk": "許可。アクセス権。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ノーティス",
         "eigo": "notice",
-        "kwsk": "通知",
+        "kwsk": "通知。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リクワイア",
         "eigo": "require",
-        "kwsk": "必要とする",
+        "kwsk": "必要とする。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "フィックス",
         "eigo": "fix",
-        "kwsk": "決定する。修正する。解決する",
+        "kwsk": "決定する。修正する。解決する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アド",
         "eigo": "add",
-        "kwsk": "追加する",
+        "kwsk": "追加する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リムーブ",
         "eigo": "remove",
-        "kwsk": "取り除く",
+        "kwsk": "取り除く。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ユーズ",
         "eigo": "use",
-        "kwsk": "用いる",
+        "kwsk": "用いる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アップデート",
         "eigo": "update",
-        "kwsk": "更新する",
+        "kwsk": "更新する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "メイク",
         "eigo": "make",
-        "kwsk": "作成する",
+        "kwsk": "作成する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ムーブ",
         "eigo": "move",
-        "kwsk": "移動させる",
+        "kwsk": "移動させる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アロー",
         "eigo": "allow",
-        "kwsk": "許す",
+        "kwsk": "許す。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンバート",
         "eigo": "convert",
-        "kwsk": "変換する",
+        "kwsk": "変換する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リネーム",
         "eigo": "rename",
-        "kwsk": "名前を変更する",
+        "kwsk": "名前を変更する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リバート",
         "eigo": "revert",
-        "kwsk": "もとに戻す",
+        "kwsk": "もとに戻す。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アボイド",
         "eigo": "avoid",
-        "kwsk": "避ける",
+        "kwsk": "避ける。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スタブ",
         "eigo": "stub",
-        "kwsk": "呼び出される側の代用品",
+        "kwsk": "呼び出される側の代用品。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ドライバ",
         "eigo": "driver",
-        "kwsk": "パソコンに接続されているハードウェアをOSによって制御可能にするためのソフトウェア",
+        "kwsk": "パソコンに接続されているハードウェアをOSによって制御可能にするためのソフトウェア。",
         "mnim": "伝達機構",
         "tigg": ""
     },
     {
         "kotb": "ニュー",
         "eigo": "new",
-        "kwsk": "新しい",
+        "kwsk": "新しい。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アンユーズド",
         "eigo": "unused",
-        "kwsk": "使用されていない",
+        "kwsk": "使用されていない。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スタティック",
         "eigo": "static",
-        "kwsk": "静的な",
+        "kwsk": "静的な。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エンプティ",
         "eigo": "empty",
-        "kwsk": "空の",
+        "kwsk": "空の。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オールド",
         "eigo": "old",
-        "kwsk": "古い",
+        "kwsk": "古い。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "イニシャル",
         "eigo": "initial",
-        "kwsk": "最初の",
+        "kwsk": "最初の。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ローカル",
         "eigo": "local",
-        "kwsk": "局所的",
+        "kwsk": "局所的。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ロング",
         "eigo": "wrong",
-        "kwsk": "間違った",
+        "kwsk": "間違った。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コモン",
         "eigo": "common",
-        "kwsk": "共通の",
+        "kwsk": "共通の。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アザー",
         "eigo": "other",
-        "kwsk": "他の",
+        "kwsk": "他の。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "デッド",
         "eigo": "dead",
-        "kwsk": "死んだ",
+        "kwsk": "死んだ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "デーモン",
         "eigo": "deamon",
-        "kwsk": "UNIX系での常駐プログラム",
+        "kwsk": "UNIX系での常駐プログラム。",
         "mnim": "守護神",
         "tigg": ""
     },
     {
         "kotb": "リドゥ",
         "eigo": "rid",
-        "kwsk": "取り除く",
+        "kwsk": "取り除く。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ポッシブル",
         "eigo": "possible",
-        "kwsk": "可能性のある",
+        "kwsk": "可能性のある。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "セイム",
         "eigo": "same",
-        "kwsk": "同じ",
+        "kwsk": "同じ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "グローバル",
         "eigo": "global",
-        "kwsk": "全体的な",
+        "kwsk": "全体的な。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インバリッド",
         "eigo": "invalid",
-        "kwsk": "不正な",
+        "kwsk": "不正な。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スペシフィック",
         "eigo": "specific",
-        "kwsk": "特定の",
+        "kwsk": "特定の。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エクストラ",
         "eigo": "extra",
-        "kwsk": "追加の。余分の",
+        "kwsk": "追加の。余分の。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エラー",
         "eigo": "error",
-        "kwsk": "間違い",
+        "kwsk": "間違い。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ストリング",
         "eigo": "string",
-        "kwsk": "文字列",
+        "kwsk": "文字列。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インテジャー",
         "eigo": "integer",
-        "kwsk": "整数",
+        "kwsk": "整数。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ヌル",
         "eigo": "null",
-        "kwsk": "なにもない",
+        "kwsk": "なにもない。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トゥルー",
         "eigo": "true",
-        "kwsk": "真",
+        "kwsk": "真。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "フォルス",
         "eigo": "false",
-        "kwsk": "偽",
+        "kwsk": "偽。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "タイポ",
         "eigo": "typographic error",
-        "kwsk": "打ち間違い",
+        "kwsk": "打ち間違い。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ドキュメント",
         "eigo": "document",
-        "kwsk": "文書",
+        "kwsk": "文書。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "バグ",
         "eigo": "bug",
-        "kwsk": "不具合",
+        "kwsk": "不具合。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リターン",
         "eigo": "return",
-        "kwsk": "戻る",
+        "kwsk": "戻る。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "タグ",
         "eigo": "tag",
-        "kwsk": "札(ふだ)",
+        "kwsk": "札(ふだ)。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "デフォルト",
         "eigo": "default",
-        "kwsk": "初期値",
+        "kwsk": "初期値。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "デバイス",
         "eigo": "device",
-        "kwsk": "機器",
+        "kwsk": "機器。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ハンドリング",
         "eigo": "handling",
-        "kwsk": "処理",
+        "kwsk": "処理。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "タイプ",
         "eigo": "type",
-        "kwsk": "型式",
+        "kwsk": "型式。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オート",
         "eigo": "auto",
-        "kwsk": "自動",
+        "kwsk": "自動。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ネーム",
         "eigo": "name",
-        "kwsk": "名前",
+        "kwsk": "名前。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ワーニング",
         "eigo": "warning",
-        "kwsk": "警告",
+        "kwsk": "警告。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スーパーセット",
         "eigo": "superset",
-        "kwsk": "上位互換",
+        "kwsk": "上位互換。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "サロゲートペア",
+        "kotb": "サロゲート ペア",
         "eigo": "surrogate pair",
-        "kwsk": "2文字文の文字コードを使い1文字を表す",
+        "kwsk": "2文字文の文字コードを使い1文字を表す。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インタラクティブ",
         "eigo": "interactive",
-        "kwsk": "対話的",
+        "kwsk": "対話的。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンソーシアム",
         "eigo": "consortium",
-        "kwsk": "様々な枠を超えて連携する集団。共同事業体",
+        "kwsk": "様々な枠を超えて連携する集団。共同事業体。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "イミュータブル",
         "eigo": "immutable",
-        "kwsk": "不変",
+        "kwsk": "不変。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ミュータブル",
         "eigo": "mutable",
-        "kwsk": "可変",
+        "kwsk": "可変。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "クロスサイトリクエストフォージェリ",
+        "kotb": "クロスサイト リクエスト フォージェリ",
         "eigo": "Cross-Site Request Forgeries",
-        "kwsk": "Webアプリケーションの処理を利用者の権限で実行させる。CSRF",
+        "kwsk": "Webアプリケーションの処理を利用者の権限で実行させる。CSRF。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エクステンド",
         "eigo": "extend",
-        "kwsk": "拡張",
+        "kwsk": "拡張。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "スケールアップ",
+        "kotb": "スケール アップ",
         "eigo": "scale up",
-        "kwsk": "単体の性能を向上させて高める。スケールイン",
+        "kwsk": "単体の性能を向上させて高める。スケールイン。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スケールアウト",
         "eigo": "scale out",
-        "kwsk": "数を増やして高める",
+        "kwsk": "数を増やして高める。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トランスコンパイラ",
         "eigo": "transcompiler",
-        "kwsk": "ソースコードを別のプログラミング言語に変換するやつ。トランスパイラ",
+        "kwsk": "ソースコードを別のプログラミング言語に変換するやつ。トランスパイラ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンパイラ",
         "eigo": "compiler",
-        "kwsk": "ソースコードから、機械語(0,1)等のより低級の言語に変換するやつ",
+        "kwsk": "ソースコードから、機械語(0,1)等のより低級の言語に変換するやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インタプリタ",
         "eigo": "interpreter",
-        "kwsk": "ソースコードを逐次変換しながら実行するやつ",
+        "kwsk": "ソースコードを逐次変換しながら実行するやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エコシステム",
         "eigo": "ecosystem",
-        "kwsk": "実際の生態系のようにたくさんが関わり合っていろいろなる",
+        "kwsk": "実際の生態系のようにたくさんが関わり合っていろいろなる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ディスラプティブ",
         "eigo": "disruptive",
-        "kwsk": "破壊的",
+        "kwsk": "破壊的。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ミセレイニアス",
         "eigo": "miscellaneous",
-        "kwsk": "雑多",
+        "kwsk": "雑多。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "セレンディピティ",
         "eigo": "serendipity",
-        "kwsk": "偶然に予想外のものと出会うこと",
+        "kwsk": "偶然に予想外のものと出会うこと。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ウェブフック",
         "eigo": "Webhook",
-        "kwsk": "POSTリクエストの送信先を指定するやつ",
+        "kwsk": "POSTリクエストの送信先を指定するやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "ポートホワーディング",
+        "kotb": "ポート ホワーディング",
         "eigo": "port fowarding",
-        "kwsk": "特定ポートへの通信を別のポートに自動的に転送する",
+        "kwsk": "特定ポートへの通信を別のポートに自動的に転送する。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "キープアライブ",
+        "kotb": "キープ アライブ",
         "eigo": "keep alive",
-        "kwsk": "接続が有効かを確認する定期的な通信",
+        "kwsk": "接続が有効かを確認する定期的な通信。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "サジェスト",
         "eigo": "suggest",
-        "kwsk": "予測変換",
+        "kwsk": "予測変換。",
         "mnim": "提案",
         "tigg": ""
     },
     {
         "kotb": "プロプライエタリ",
         "eigo": "proprietary",
-        "kwsk": "ソースコード等をを公開しない方式",
+        "kwsk": "ソースコード等をを公開しない方式。",
         "mnim": "独占的な、非公開の",
         "tigg": ""
     },
     {
         "kotb": "アーキテクチャ宇宙飛行士",
         "eigo": "Architecture Astronauts",
-        "kwsk": "アーキテクチャを過剰に考えてしまうひと",
+        "kwsk": "アーキテクチャを過剰に考えてしまうひと。",
         "mnim": "",
         "tigg": "ダクトテーププログラマ"
     },
     {
         "kotb": "ダクトテーププログラマ",
         "eigo": "Duct Tape Programmer",
-        "kwsk": "構造の美しさよりもリリースを優先するプログラマ",
+        "kwsk": "構造の美しさよりもリリースを優先するプログラマ。",
         "mnim": "",
         "tigg": "アーキテクチャ宇宙飛行士"
     },
     {
         "kotb": "ブートストラップ",
         "eigo": "bootstrap",
-        "kwsk": "入力によらず実行される。自己開始型",
+        "kwsk": "入力によらず実行される。自己開始型。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アブストラクト",
         "eigo": "abstract",
-        "kwsk": "文書の要約",
+        "kwsk": "文書の要約。",
         "mnim": "抽象的な",
         "tigg": ""
     },
     {
-        "kotb": "アプリケーションプログラミングインターフェース",
+        "kotb": "アプリケーション プログラミング インターフェース",
         "eigo": "Application Programming Interface",
-        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。API",
+        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。API。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ナレッジ",
         "eigo": "knowledge",
-        "kwsk": "知識",
+        "kwsk": "知識。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ハンドル",
         "eigo": "handle",
-        "kwsk": "操作対象を指し示すもの",
+        "kwsk": "操作対象を指し示すもの。",
         "mnim": "取っ手",
         "tigg": ""
     },
     {
-        "kotb": "インフォメーションアーキテクチャ",
+        "kotb": "インフォメーション アーキテクチャ",
         "eigo": "Information Architecture",
-        "kwsk": "情報をわかりやすく伝えるるための技法。情報アーキテクチャ。IA",
+        "kwsk": "情報をわかりやすく伝えるるための技法。情報アーキテクチャ。IA。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "マシンリーダビリティ",
+        "kotb": "マシン リーダビリティ",
         "eigo": "machine readability",
-        "kwsk": "機械からの読みやすさ。機械可読性",
+        "kwsk": "機械からの読みやすさ。機械可読性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "シリアライズ",
         "eigo": "serialize",
-        "kwsk": "複数の要素を一列に並べる",
+        "kwsk": "複数の要素を一列に並べる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "セグメント",
         "eigo": "segment",
-        "kwsk": "断片。分割されたもの",
+        "kwsk": "断片。分割されたもの。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "セグメンテーション",
         "eigo": "segmentation",
-        "kwsk": "セグメントに分割すること",
+        "kwsk": "セグメントに分割すること。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "セグメンテーション違反",
+        "kotb": "セグメンテーション 違反",
         "eigo": "segmentation fault",
-        "kwsk": "アクセスが許可されていないメモリにアクセスしたときにでる",
+        "kwsk": "アクセスが許可されていないメモリにアクセスしたときにでる。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "シンタックスエラー",
+        "kotb": "シンタックス エラー",
         "eigo": "syntax error",
-        "kwsk": "プログラムの構文間違いのエラー",
+        "kwsk": "プログラムの構文間違いのエラー。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンバージョン",
         "eigo": "conversion",
-        "kwsk": "最終的な成果。CV",
+        "kwsk": "最終的な成果。CV。",
         "mnim": "変換",
         "tigg": ""
     },
     {
         "kotb": "インプレッション",
         "eigo": "impression",
-        "kwsk": "表示された回数",
+        "kwsk": "表示された回数。",
         "mnim": "印象",
         "tigg": ""
     },
     {
         "kotb": "エンゲージメント",
         "eigo": "engagement",
-        "kwsk": "二者間の関係性",
+        "kwsk": "二者間の関係性。",
         "mnim": "約束",
         "tigg": ""
     },
     {
         "kotb": "バズワード",
         "eigo": "buzzword",
-        "kwsk": "新しくて流行りの定義が曖昧な用語",
+        "kwsk": "新しくて流行りの定義が曖昧な用語。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "LGTM",
         "eigo": "Looks Good To Me",
-        "kwsk": "わたしはいいとおもいます",
+        "kwsk": "わたしはいいとおもいます。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プリミティブ",
         "eigo": "primitive",
-        "kwsk": "単純な基本構造",
+        "kwsk": "単純な基本構造。",
         "mnim": "原始的な。未発達な",
         "tigg": ""
     },
     {
-        "kotb": "ユーザーエクスペリエンス",
+        "kotb": "ユーザー エクスペリエンス",
         "eigo": "User Experience",
-        "kwsk": "モノを使うことでユーザーが得る経験。UX",
+        "kwsk": "モノを使うことでユーザーが得る経験。UX。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ブーリアン",
         "eigo": "boolean",
-        "kwsk": "TRUE/FALSEとかの二択の",
+        "kwsk": "TRUE/FALSEとかの二択の。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "サーチエンジンオプティマイゼーション",
+        "kotb": "サーチ エンジン オプティマイゼーション",
         "eigo": "Search Engine Optimization",
-        "kwsk": "検索エンジンで上位に表示されるよう調整すること。SEO",
+        "kwsk": "検索エンジンで上位に表示されるよう調整すること。SEO。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ラッパー",
         "eigo": "wrapper",
-        "kwsk": "プログラムの機能を異なる環境でも使えるようにするもの",
+        "kwsk": "プログラムの機能を異なる環境でも使えるようにするもの。",
         "mnim": "覆うもの",
         "tigg": ""
     },
     {
-        "kotb": "ユーザーインターフェース",
+        "kotb": "ユーザー インターフェース",
         "eigo": "User Interface",
-        "kwsk": "コンピュータと人間の間で情報を伝達するもの",
+        "kwsk": "コンピュータと人間の間で情報を伝達するもの。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "グラフィカルユーザーインターフェース",
+        "kotb": "グラフィカル ユーザー インターフェース",
         "eigo": "Graphical User Interface",
-        "kwsk": "画面にグラフィカルなものがあってマウス等使ってやりとりするようなやつ",
+        "kwsk": "画面にグラフィカルなものがあってマウス等使ってやりとりするようなやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "キャラクタユーザーインターフェース",
+        "kotb": "キャラクタ ユーザー インターフェース",
         "eigo": "Character User Interface",
-        "kwsk": "キーの入力でのみやりとりするようなやつ",
+        "kwsk": "キーの入力でのみやりとりするようなやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ノーマライゼーション",
         "eigo": "normalization",
-        "kwsk": "違いを吸収し全体を均一化すること",
+        "kwsk": "違いを吸収し全体を均一化すること。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インターフェース",
         "eigo": "interface",
-        "kwsk": "コンピュータとなにかの接続部分",
+        "kwsk": "コンピュータとなにかの接続部分。",
         "mnim": "接触面",
         "tigg": ""
     },
     {
         "kotb": "メタファー",
         "eigo": "metaphor",
-        "kwsk": "隠喩",
+        "kwsk": "隠喩。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ブラッシュアップ",
         "eigo": "brush up",
-        "kwsk": "磨き上げる",
+        "kwsk": "磨き上げる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アイオー",
         "eigo": "I/O",
-        "kwsk": "入出力。input/output",
+        "kwsk": "入出力。input/output。",
         "mnim": "",
         "tigg": ""
     }
