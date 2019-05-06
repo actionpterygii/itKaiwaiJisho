@@ -4,7 +4,8 @@
 ## してること
 - ChromeExtension (Chrome拡張機能)
 - jsonを外部から読み込んでパース
-- Sass(SCSS),TypeScriptをgulpでトランスパイル 
+- Sass(SCSS),TypeScriptをgulpでトランスパイル
+- Pythonでjsonをならびかえ
 - gulpでコマンド実行(Pythonした)  
 - TypeScriptでChrome用のオブジェクトを使うために`@types/chrome`を`npm install`した  
 
