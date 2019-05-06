@@ -1,5 +1,6 @@
 body,div,section,
-h1,h2,p,input,button {
+h1,h2,p,input,button,
+dl,dt,dd {
     box-sizing: border-box;
     padding: 0;
     outline: 0;
@@ -12,12 +13,12 @@ h1,h2,p,input,button {
 
 #wrap {
     min-height: 300px;
-    width: 600px;
+    width: 500px;
 }
 
 #textarea {
-    padding-top: 20px;
-    padding-left: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
 }
 
 #nyuryoku {
@@ -54,24 +55,60 @@ h1,h2,p,input,button {
 }
 
 .tango {
-    margin-left: 30px;
+    width: 400px;
+    margin-left: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
+    border: solid 1px #f9f;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
+    background-color: #ff6;
 }
 
 .eigo {
-    font-size: 20px;
+    font-size: 25px;
+    background-color: #ff6;
 }
 
 .kwsk {
-    font-size: 15px;
+    margin-top: 15px;
+    font-size: 18px;
 }
 
+.mnim,.tigg {
+    dt,dd {
+        display: inline-block;
+    }
+}
 
+#iconwrap {
+    margin-left: 50px;
+    div {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin-right: 5px;
+    }
+}
+
+.colorchip {
+    &-333 {
+        background-color: #333;
+    }
+    &-3cc {
+        background-color: #3cc;
+    }
+    &-f9f {
+        background-color: #f9f;
+    }
+    &-ff6 {
+        background-color: #ff6;
+    }
+}
 
 
 

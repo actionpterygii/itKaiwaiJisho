@@ -127,14 +127,14 @@ function createHtml(element: {[key: string]: string;})
                 case 'mnim':
                     html +=
                         '<dl class="mnim">' +
-                            '<dt>もとの意味</dt>' +
+                            '<dt>もとのいみ：</dt>' +
                             '<dd>' + element[key] + '</dd>' +
                         '</dl>';
                     break;
                 case 'tigg':
                     html +=
                         '<dl class="tigg">' +
-                            '<dt>対義語</dt>' +
+                            '<dt>対義語：</dt>' +
                             '<dd>' + element[key] + '</dd>' +
                         '</dl>';
                     break;
