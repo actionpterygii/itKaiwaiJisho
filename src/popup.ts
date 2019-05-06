@@ -34,18 +34,18 @@ function hiraToKata(inputValue: string)
 // itemの内容がinputValueのなかにあればtrueるなければfalseる
 function containing(item: string, inputValue: string)
 {
-    // そのまま確認
+    // 英語は小文字にする、スペースを削除する
+    item = item.toLowerCase().replace(/\s+/g, "");
+    // 英語は小文字する
+    inputValue = inputValue.toLowerCase();
+
+    // inputValueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
     if(item.match(inputValue))
     {
         return true;
     }
     // ひらがなをカタカナにして確認
     else if(item.match(hiraToKata(inputValue)))
-    {
-        return true;
-    }
-    // 大文字小文字の区別をなくして確認
-    else if(item.toLowerCase().match(inputValue.toLowerCase()))
     {
         return true;
     }
