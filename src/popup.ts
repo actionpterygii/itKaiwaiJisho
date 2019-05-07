@@ -5,7 +5,7 @@ const readme: HTMLDivElement = document.getElementById('readme') as HTMLDivEleme
 
 // 辞書情報を辞書jsonから取得する
 const jishoPath: string = 'jisho.json';
-var jisho: any = {};
+var jisho: [{[key: string]: string;}];
 const xhr: any = new XMLHttpRequest();
 xhr.open('GET', chrome.extension.getURL(jishoPath), true);
 xhr.onreadystatechange = function()
@@ -17,7 +17,7 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
-// 一単語にある項目の中で調べるべきもの
+// 一単語にある項目の中で調べるべきもの(対義語以外ね)
 const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 
 // ひらがなをカナカナに変換するための
@@ -34,11 +34,11 @@ function hiraToKata(inputValue: string)
 // itemの内容がinputValueのなかにあればtrueるなければfalseる
 function containing(item: string, inputValue: string)
 {
-    // 英語は小文字にする、スペースを削除する
-    item = item.toLowerCase().replace(/\s+/g, "");
-    // 英語は小文字する
+    // アルファベットは小文字にする、スペースを削除する
+    item = item.toLowerCase().replace(/\s+/g, '');
+    // アルファベットは小文字する
     inputValue = inputValue.toLowerCase();
-
+    
     // inputValueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
     if(item.match(inputValue))
     {
@@ -57,7 +57,7 @@ function containing(item: string, inputValue: string)
 }
 
 // 入力された値を辞書jsonから検索してマッチしたものを返す
-function serch(jisho: any, inputValue: string)
+function serch(jisho: [{[key: string]: string;}], inputValue: string)
 {
     // '--all'と入力された場合
     if(inputValue === '--all')
@@ -93,7 +93,7 @@ function serch(jisho: any, inputValue: string)
                 }
             }
         }
-        // 辞書jsonから必要な部分を
+        // 辞書jsonから必要な部分を返す
         return requiredElements;
     }
 }
@@ -150,19 +150,19 @@ function createHtml(element: {[key: string]: string;})
 }
 
 // 入力から結果を返す
-function createResult(jisho: any, inputValue: string)
+function createResult(jisho: [{[key: string]: string;}], inputValue: string)
 {
     // 最後かえす文字列
     let entity: string = '';
     // 必要な要素を選定する
-    const requiredElements: any = serch(jisho, inputValue);
+    const requiredElements: [{[key: string]: string;}] = serch(jisho, inputValue);
     // 選定した要素から一つづついじる
     for(let key in requiredElements)
     {
         // HTMLを作成して追加していく
         entity += createHtml(requiredElements[key]);
     }
-    // よくわからんけど出るundefinedを消す
+    // よくわからんけど出るundefinedを消しつつ返す
     return entity.replace('undefined','');
 }
 
