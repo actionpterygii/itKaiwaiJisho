@@ -15,7 +15,7 @@ const prcs = require('child_process').exec;
 const src = './src/';
 const srcImages = src + 'images/';
 
-const dist = './dist/';
+const dist = './docs/';
 const distImages = dist + 'images/';
 
 gulp.task('html', function()
@@ -45,13 +45,6 @@ gulp.task('js', function()
         .pipe(gulp.dest(dist));
 });
 
-gulp.task('json', function()
-{
-    return gulp.src(src + '*.json')
-        .pipe(changed(dist))
-        .pipe(gulp.dest(dist));
-});
-
 gulp.task('jishoJson', function()
 {
     return prcs('python jishoJsonWoSort.py ./jisho/ ./docs/');
@@ -70,4 +63,4 @@ gulp.task('img', function()
 
 });
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'json','jishoJson', 'img'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'jishoJson', 'img'));
