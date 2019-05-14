@@ -6,7 +6,7 @@ const readme: HTMLDivElement = document.getElementById('readme') as HTMLDivEleme
 // 辞書情報を辞書jsonから取得する
 const jishoPath: string = 'jisho.json';
 var jisho: [{[key: string]: string;}];
-const xhr: any = new XMLHttpRequest();
+const xhr: XMLHttpRequest = new XMLHttpRequest();
 xhr.open('GET', chrome.extension.getURL(jishoPath), true);
 xhr.onreadystatechange = function()
 {
@@ -69,7 +69,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string)
     else if(inputValue !== '')
     {
         // 最終的に返すことになる単語要素
-        var requiredElements: any = {};
+        var requiredElements: any = {} as [{[key: string]: string;}];
         // 最終的に返すことになる単語要素の連番つけるための
         var i: number = 0;
         // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
