@@ -54,7 +54,7 @@ gulp.task('json', function()
 
 gulp.task('jishoJson', function()
 {
-    return prcs('python jishoJsonWoSort.py ./jisho/ ./docs/');
+    return prcs('python ../jishoJsonWoSort.py ../jisho/ ./dist/');
 });
 
 gulp.task('img', function()
