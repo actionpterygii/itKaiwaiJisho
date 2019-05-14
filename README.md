@@ -18,6 +18,7 @@
   - jisho全体(複数の単語)：`let jisho: [{[key: string]: string;}];`
   - 単語一つ：`let tango: {[key: string]: string;};`
   - とみせかけて返す辞書を先に定義するとこは配列内のオブジェクトでkeyが数字でundefined propertyるのでany
+  - asでいけたかも
 - jsonやからnullとか値に入れてたけどそれで良くなかったりしたから`""`でやります
 - gulp(js)での辞書のソートしようとしたんですけど面倒そうなのでぱいそんでとりあえずします 
 - Pythonで日本語コメ書くし`# -*- coding: utf-8 -*-`をつけておこうって毎回忘れている
