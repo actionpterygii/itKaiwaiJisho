@@ -24,10 +24,21 @@ const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 function hiraToKata(inputValue: string)
 {
     // ひらがなをおきかえるよって
-    return inputValue.replace(/[\u3041-\u3096]/g, function(inputValue)
+    return inputValue.replace(/[\u3041-\u3096]/g, function(inputValue: string)
     {
         // 文字コード的にずらしてカタカナにする
         return String.fromCharCode(inputValue.charCodeAt(0) + 0x60);
+    });
+}
+
+// 全角英数を半角英数に変換するための
+function zenToHan(inputValue: string)
+{
+    //全角英数置き換えるよって
+    return inputValue.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(inputValue: string)
+    {
+        //　文字コード的にずらして半角にする
+        return String.fromCharCode(inputValue.charCodeAt(0) - 65248);
     });
 }
 
@@ -46,6 +57,11 @@ function containing(item: string, inputValue: string)
     }
     // ひらがなをカタカナにして確認
     else if(item.match(hiraToKata(inputValue)))
+    {
+        return true;
+    }
+    // 全角英数を半角英数にして確認
+    else if(item.match(zenToHan(inputValue)))
     {
         return true;
     }
