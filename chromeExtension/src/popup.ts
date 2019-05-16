@@ -73,7 +73,7 @@ function containing(item: string, inputValue: string)
 }
 
 // 入力された値を辞書jsonから検索してマッチしたものを返す
-function serch(jisho: [{[key: string]: string;}], inputValue: string)
+function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch: boolean)
 {
     // '--all'と入力された場合
     if(inputValue === '--all')
@@ -91,21 +91,36 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string)
         // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
         for(let key in jisho)
         {
-            // 一単語に対して、先に定義してあるwordItemsの要素ぶん回す。
-            for(let itemKey in wordItems)
+            // 完全一致検索でしたら
+            if(exactMatch)
             {
-                // 単語の中の一つの項目のキー
-                const item: string = wordItems[itemKey];
-                // 入力した内容があるか
-                if(containing(jisho[key][item], inputValue))
+                // kotbのみで探す
+                const item: string = wordItems[0];
+                // 一緒なら
+                if(jisho[key][item] === inputValue)
                 {
-                    // 必要な単語ということで追加する
-                    requiredElements[i] = jisho[key];
-                    // 単語が追加されたので増やす
-                    i++;
-                    // 追加したらその単語に用はないのでこのforループを抜ける
-                    // これがないと単語内で入力文字が複数項目である場合に重複する
-                    break;
+                    // その単語を追加する
+                    return jisho[key];
+                }
+            }
+            else
+            {
+                // 一単語に対して、先に定義してあるwordItemsの要素ぶん回す。
+                for(let itemKey in wordItems)
+                {
+                    // 単語の中の一つの項目のキー
+                    const item: string = wordItems[itemKey];
+                    // 入力した内容があるか
+                    if(containing(jisho[key][item], inputValue))
+                    {
+                        // 必要な単語ということで追加する
+                        requiredElements[i] = jisho[key];
+                        // 単語が追加されたので増やす
+                        i++;
+                        // 追加したらその単語に用はないのでこのforループを抜ける
+                        // これがないと単語内で入力文字が複数項目である場合に重複する
+                        break;
+                    }
                 }
             }
         }
@@ -152,6 +167,7 @@ function createHtml(element: {[key: string]: string;})
                         '<dl class="tigg">' +
                             '<dt>対義語：</dt>' +
                             '<dd>' + element[key] + '</dd>' +
+                            createHtml(serch(jisho, element[key], true)) +
                         '</dl>';
                     break;
                 default:
@@ -171,7 +187,7 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
     // 最後かえす文字列
     let entity: string = '';
     // 必要な要素を選定する
-    const requiredElements: [{[key: string]: string;}] = serch(jisho, inputValue);
+    const requiredElements: [{[key: string]: string;}] = serch(jisho, inputValue, false);
     // 選定した要素から一つづついじる
     for(let key in requiredElements)
     {
