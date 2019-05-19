@@ -130,7 +130,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
 }
 
 // 必要な部分の辞書jsonからHTMLを作成
-function createHtml(element: {[key: string]: string;})
+function createHtml(element: {[key: string]: string;}, base: boolean)
 {
     // 一単語をつつむおおいなるdiv(これに追加していって最後返す)
     let html: string = '<div class="tango">';
@@ -167,7 +167,13 @@ function createHtml(element: {[key: string]: string;})
                         '<dl class="tigg">' +
                             '<dt>対義語：</dt>' +
                             '<dd>' + element[key] + '</dd>' +
-                            createHtml(serch(jisho, element[key], true)) +
+                            (function()
+                            {
+                                if(base)
+                                {
+                                    return createHtml(serch(jisho, element[key], true), false);
+                                }
+                            })(); +
                         '</dl>';
                     break;
                 default:
@@ -192,7 +198,7 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
     for(let key in requiredElements)
     {
         // HTMLを作成して追加していく
-        entity += createHtml(requiredElements[key]);
+        entity += createHtml(requiredElements[key], true);
     }
     // よくわからんけど出るundefinedを消しつつ返す
     return entity.replace('undefined','');

@@ -105,6 +105,13 @@
         "tigg": "ノーン"
     },
     {
+        "kotb": "ノーン",
+        "eigo": "none",
+        "kwsk": "存在しない。",
+        "mnim": "",
+        "tigg": "イグジスト"
+    },
+    {
         "kotb": "サニタイジング",
         "eigo": "sanitizing",
         "kwsk": "\"&\"などのプログラムにとって意味のある文字列を別の表記に置き換える。",
@@ -1106,6 +1113,13 @@
         "tigg": ""
     },
     {
+        "kotb": "ラウンドロビン",
+        "eigo": "round robin",
+        "kwsk": "総当たり。",
+        "mnim": "リボン。",
+        "tigg": ""
+    },
+    {
         "kotb": "LGTM",
         "eigo": "Looks Good To Me",
         "kwsk": "わたしはいいとおもいます。",
@@ -1200,6 +1214,517 @@
         "kotb": "アイオー",
         "eigo": "I/O",
         "kwsk": "入出力。input/output。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パスフレーズ",
+        "eigo": "passphrase",
+        "kwsk": "長いパスワード。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シェアリングエコノミー",
+        "eigo": "sharing economy",
+        "kwsk": "個人所有のモノを共有・交換する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スタティック",
+        "eigo": "static",
+        "kwsk": "静的。",
+        "mnim": "",
+        "tigg": "ダイナミック"
+    },
+    {
+        "kotb": "ダイナミック",
+        "eigo": "dynamic",
+        "kwsk": "動的。",
+        "mnim": "",
+        "tigg": "スタティック"
+    },
+    {
+        "kotb": "よしなに",
+        "eigo": "yoshina-ni",
+        "kwsk": "いいかんじに。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フールプルーフ",
+        "eigo": "",
+        "kwsk": "仕組み。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フェールセーフ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "セマフォ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハッシュ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "カラミティ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シーイーオー",
+        "eigo": "CEO",
+        "kwsk": "最高経営責任者。Chief Exective Officer。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シーオーオー",
+        "eigo": "COO",
+        "kwsk": "最高執行責任者。Chief Operating Officer。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シーエフオー",
+        "eigo": "CFO",
+        "kwsk": "最高財務責任者。Cheif Financial Officer。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シーアイオー",
+        "eigo": "CIO",
+        "kwsk": "最高情報責任者。Chief Information Officer。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シーティーオー",
+        "eigo": "CTO",
+        "kwsk": "最高技術責任者。Chief Technology Officer。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シーケーオー",
+        "eigo": "CKO",
+        "kwsk": "最高知識責任者。Chief Knowledge Officer。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ストラテジパターン",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "カーディナリティ",
+        "eigo": "cardinality",
+        "kwsk": "。カージナリティ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リレーション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アイディーイー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エヴァリュエーション",
+        "eigo": "evaluation",
+        "kwsk": "評価",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トランケイトゥ",
+        "eigo": "truncate",
+        "kwsk": "切り捨て",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ウィザード",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インセンティブ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハッシュ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "タプル",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クッキー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アナリティクス",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スクリプト",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ブート",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "カーネル",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エスケープシーケンス",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンティニュー",
+        "eigo": "continue",
+        "kwsk": "続ける。持続する。継続する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ユニコード",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ダイレクトリンクライブラリ",
+        "eigo": "",
+        "kwsk": "。dll。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンピューターレイジ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "バグ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プロダクティビティ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トロール",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アジェンダ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "生存者バイアス",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プログラミング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コーディング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コモディティ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インセンティブ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プリンシパル",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サブジェクティブ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンペティション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オーサティング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディーティーピー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リライアビリティ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "グリッチ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ダウナーソー",
+        "eigo": "downasaur",
+        "kwsk": "GoogleChromeでインター接続がない状態のときに表示される恐竜。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オートスケーリング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ロギング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ムーアの法則",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ジーピーユー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シーピーユー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マザーボード",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プロセッサ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ゲラフィックボード",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンテンツ デリバリ ネットワーク",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ニアショア",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オフショア",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オンショア",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "メッセージ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マッサージ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アジャイル",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ウォーターフォール",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プロトタイプ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プロトタイピング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ヒアリング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ファイアウォール",
+        "eigo": "",
+        "kwsk": "",
         "mnim": "",
         "tigg": ""
     }
