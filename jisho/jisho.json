@@ -9,7 +9,7 @@
     {
         "kotb": "インセンティブ",
         "eigo": "incentive",
-        "kwsk": "ある方向に向かわせるための外部からの刺激。",
+        "kwsk": "ある方向に向かわせるための外部からの刺激。誘因。",
         "mnim": "",
         "tigg": ""
     },
@@ -1254,36 +1254,36 @@
     },
     {
         "kotb": "フールプルーフ",
-        "eigo": "",
-        "kwsk": "仕組み。",
+        "eigo": "fool proof",
+        "kwsk": "必ず誤った使い方をされることを前提とし、そうであっても危険にならない仕組み。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "フェールセーフ",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "フェイルセーフ",
+        "eigo": "fail safe",
+        "kwsk": "必ず障害が発生することを前提とし、そうであっても危険になない仕組み。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "セマフォ",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "semaphore",
+        "kwsk": "並列処理の際に利用可能な残りの数を表す。",
+        "mnim": "リアルの信号",
         "tigg": ""
     },
     {
         "kotb": "ハッシュ",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "hash",
+        "kwsk": "データを決まったルールに従って要約したもの。",
+        "mnim": "細切れ",
         "tigg": ""
     },
     {
         "kotb": "カラミティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "calamity",
+        "kwsk": "絡みやすさ。",
         "mnim": "",
         "tigg": ""
     },
@@ -1330,30 +1330,9 @@
         "tigg": ""
     },
     {
-        "kotb": "ストラテジパターン",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "カーディナリティ",
-        "eigo": "cardinality",
-        "kwsk": "。カージナリティ。",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
         "kotb": "リレーション",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "アイディーイー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "relation",
+        "kwsk": "関係",
         "mnim": "",
         "tigg": ""
     },
@@ -1373,71 +1352,50 @@
     },
     {
         "kotb": "ウィザード",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "インセンティブ",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "ハッシュ",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "タプル",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "wizard",
+        "kwsk": "複雑な作業をわかりやすく行う主に対話型の機能。すごいひと。",
+        "mnim": "魔法使い",
         "tigg": ""
     },
     {
         "kotb": "クッキー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "cookie",
+        "kwsk": "webサイトに必要なデータを使い回すためにユーザ側に保存するしくみ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アナリティクス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "analytics",
+        "kwsk": "データの関係をみつける。分析論。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スクリプト",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "script",
+        "kwsk": "簡易的なプログラム。",
+        "mnim": "台本",
         "tigg": ""
     },
     {
         "kotb": "ブート",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "boot",
+        "kwsk": "起動。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "カーネル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "kernel",
+        "kwsk": "ハードウェアとソフトウェアの仲介をするソフトウェア",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エスケープシーケンス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "escape sequence",
+        "kwsk": "\"¥n\"などの、そのまま文字として出力されるのではなく制御を行う特殊な文字列。",
         "mnim": "",
         "tigg": ""
     },
@@ -1520,13 +1478,6 @@
     },
     {
         "kotb": "コモディティ",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "インセンティブ",
         "eigo": "",
         "kwsk": "",
         "mnim": "",
@@ -1716,6 +1667,146 @@
     },
     {
         "kotb": "ヒアリング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インデント",
+        "eigo": "indent",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハック",
+        "eigo": "hack",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "バーンアウト",
+        "eigo": "burnout",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インシデント",
+        "eigo": "incident",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デバッグ",
+        "eigo": "debug",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ユーティリティ",
+        "eigo": "utility",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トラスト",
+        "eigo": "trust",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トランスクリプト",
+        "eigo": "transcript",
+        "kwsk": "文字起こし",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンスピラシー",
+        "eigo": "conspiracy",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ナラティブ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ネットニュートラリティ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンクリフト",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サブスクリプション",
+        "eigo": "subscription",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プラットフォーム",
+        "eigo": "platform",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "OSコマンドインジェクション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フォーク",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "引数",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "戻り値",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "メソドロジー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オペレーション",
         "eigo": "",
         "kwsk": "",
         "mnim": "",
