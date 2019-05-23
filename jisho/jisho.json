@@ -1407,31 +1407,24 @@
         "tigg": ""
     },
     {
-        "kotb": "ユニコード",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "ダイレクトリンクライブラリ",
-        "eigo": "",
-        "kwsk": "。dll。",
+        "kotb": "ダイナミックリンクライブラリ",
+        "eigo": "Dynamic Link Library",
+        "kwsk": "プログラムの実行時に読み込まれる外部ファイル。DLL。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンピューターレイジ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "computer rage",
+        "kwsk": "コンピューターに腹が立つ事によって起こる反応。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "バグ",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "bug",
+        "kwsk": "プログラムの中の誤り。",
+        "mnim": "虫",
         "tigg": ""
     },
     {
