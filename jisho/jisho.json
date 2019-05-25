@@ -424,14 +424,14 @@
         "eigo": "enable",
         "kwsk": "有効化。",
         "mnim": "",
-        "tigg": "ディセーブル(diable)"
+        "tigg": "ディセーブル"
     },
     {
         "kotb": "ディセーブル",
         "eigo": "disable",
         "kwsk": "無効化。",
         "mnim": "",
-        "tigg": "イネーブル(enable)"
+        "tigg": "イネーブル"
     },
     {
         "kotb": "オーバービュー",
@@ -1429,22 +1429,22 @@
     },
     {
         "kotb": "プロダクティビティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "productivity",
+        "kwsk": "生産性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トロール",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "troll",
+        "kwsk": "荒らし",
+        "mnim": "流し釣り",
         "tigg": ""
     },
     {
         "kotb": "アジェンダ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "agenda",
+        "kwsk": "予定表。",
         "mnim": "",
         "tigg": ""
     },
@@ -1809,6 +1809,125 @@
         "kotb": "ファイアウォール",
         "eigo": "",
         "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マテリアルデザイン",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スキューモーフィズム",
+        "eigo": "skeuomorphism",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フラットデザイン",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オペレーション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ヒューリスティック",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ブルートフォース",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ナイーブソリューション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インバイト",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デモレーション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ドリブン",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エンドポイント",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オーアールマッパー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アグリゲート",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マイルストーン",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プリーヴィァス",
+        "eigo": "previous",
+        "kwsk": "前の。",
+        "mnim": "",
+        "tigg": "ネクスト"
+    },
+    {
+        "kotb": "ネクスト",
+        "eigo": "next",
+        "kwsk": "後の。",
+        "mnim": "",
+        "tigg": "プリーヴィァス"
+    },
+    {
+        "kotb": "カレント",
+        "eigo": "current",
+        "kwsk": "今の",
         "mnim": "",
         "tigg": ""
     }
