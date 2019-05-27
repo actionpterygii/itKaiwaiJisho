@@ -1842,72 +1842,72 @@
     },
     {
         "kotb": "ヒューリスティック",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "heuristic",
+        "kwsk": "経験則の。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ブルートフォース",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "brute force",
+        "kwsk": "力ずく。強引な。総当たり。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ナイーブソリューション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "naive solution",
+        "kwsk": "愚直な解決法。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インバイト",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "invite",
+        "kwsk": "招待すること。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "デモレーション",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "モデレーション",
+        "eigo": "moderation",
+        "kwsk": "ユーザーの投稿に対して管理者がチェックすること。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ドリブン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "driven",
+        "kwsk": "原動力",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エンドポイント",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "endpoint",
+        "kwsk": "端末。",
+        "mnim": "終点",
         "tigg": ""
     },
     {
         "kotb": "オーアールマッパー",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "O/R Mapper",
+        "kwsk": "Object-Relational mapping tool。",
+        "mnim": "リレーショナルデータベースをオブジェクト指向プログラミングで操作するためのもの。",
         "tigg": ""
     },
     {
         "kotb": "アグリゲート",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "aggregate",
+        "kwsk": "集約すること。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "マイルストーン",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "milestone",
+        "kwsk": "進捗管理のための節目。",
+        "mnim": "距離標識",
         "tigg": ""
     },
     {
@@ -1928,6 +1928,76 @@
         "kotb": "カレント",
         "eigo": "current",
         "kwsk": "今の",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "優しい終身の独裁者",
+        "eigo": "Benevolent Dictator For Life",
+        "kwsk": "論争の最終的な仲裁を行う、おもにプロジェクト創設者。BDFL。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンフィグレーション",
+        "eigo": "configuration",
+        "kwsk": "設定。cfg",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディスピュート",
+        "eigo": "dispute",
+        "kwsk": "論争する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エンベッド",
+        "eigo": "embed",
+        "kwsk": "埋め込むこと。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディスカバリー",
+        "eigo": "discovery",
+        "kwsk": "発見。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンテキスト",
+        "eigo": "context",
+        "kwsk": "文脈。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エスキューエル",
+        "eigo": "SQL",
+        "kwsk": "リレーショナルデータベースの操作を行う言語。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リレーショナルデータベース",
+        "eigo": "relational database",
+        "kwsk": "表と表の関係を定義する方式のデータベース。関係データベース。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ブルーオーシャン",
+        "eigo": "blue ocean",
+        "kwsk": "競争がない。未開拓。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "レッドオーシャン",
+        "eigo": "red ocean",
+        "kwsk": "競争が激しい。",
         "mnim": "",
         "tigg": ""
     }
