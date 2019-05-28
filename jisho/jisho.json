@@ -2000,5 +2000,47 @@
         "kwsk": "競争が激しい。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "コンペティター",
+        "eigo": "competitor",
+        "kwsk": "競争相手。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ロイヤルティ",
+        "eigo": "loyalty",
+        "kwsk": "消費者からの愛着や信頼性",
+        "mnim": "忠誠",
+        "tigg": ""
+    },
+    {
+        "kotb": "キューエー",
+        "eigo": "QA",
+        "kwsk": "品質保証。Quality Assurance。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デリゲート",
+        "eigo": "delegate",
+        "kwsk": "代表者。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スタックトレース",
+        "eigo": "stack trace",
+        "kwsk": "エラーが発生するまでの過程の表示。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エクセプション",
+        "eigo": "exception",
+        "kwsk": "例外。",
+        "mnim": "",
+        "tigg": ""
     }
 ]
