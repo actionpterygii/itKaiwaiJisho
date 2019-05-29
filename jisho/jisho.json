@@ -1449,13 +1449,6 @@
         "tigg": ""
     },
     {
-        "kotb": "生存者バイアス",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
         "kotb": "プログラミング",
         "eigo": "",
         "kwsk": "",
@@ -1793,15 +1786,8 @@
     },
     {
         "kotb": "メソドロジー",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "オペレーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "methodology",
+        "kwsk": "方法の分析。方法論。",
         "mnim": "",
         "tigg": ""
     },
@@ -2041,6 +2027,356 @@
         "eigo": "exception",
         "kwsk": "例外。",
         "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オブザーバー",
+        "eigo": "observer",
+        "kwsk": "傍聴者。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スケーラビリティ",
+        "eigo": "scalability",
+        "kwsk": "拡張可能性。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ライブラリ",
+        "eigo": "library",
+        "kwsk": "汎用性の高いプログラムをまとめたもの。",
+        "mnim": "図書館",
+        "tigg": ""
+    },
+    {
+        "kotb": "フレームワーク",
+        "eigo": "framework",
+        "kwsk": "骨組み",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エルティーエス",
+        "eigo": "LTS",
+        "kwsk": "サポート期間が長いやつ。Long Term Support。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "バンドル",
+        "eigo": "bundle",
+        "kwsk": "製品に別の製品が付属しているやつ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オフライン",
+        "eigo": "offline",
+        "kwsk": "ネットワークに接続されていない状態。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オンライン",
+        "eigo": "online",
+        "kwsk": "ネットワークに接続されている状態。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サンドボックス",
+        "eigo": "sandbox",
+        "kwsk": "隔離されている環境。",
+        "mnim": "砂場",
+        "tigg": ""
+    },
+    {
+        "kotb": "モビリティ",
+        "eigo": "mobility",
+        "kwsk": "流動性。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ステーブル",
+        "eigo": "stable",
+        "kwsk": "安定した。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パブリッシュ",
+        "eigo": "publish",
+        "kwsk": "発行する。発表する。公表する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オプトイン",
+        "eigo": "optin",
+        "kwsk": "広告配信の許可を事前に求める。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オプトアウト",
+        "eigo": "optout",
+        "kwsk": "広告配信の許可を事前に求めない。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コントラスト",
+        "eigo": "contrast",
+        "kwsk": "対比。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トンマナ",
+        "eigo": "tone and manner",
+        "kwsk": "デザインの一貫性。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "レスポンシブウェブデザイン",
+        "eigo": "responsive web design",
+        "kwsk": "複数のサイズの端末に単一のHTMLで対応する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デリゲート",
+        "eigo": "delegate",
+        "kwsk": "代表。委譲。委託。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デュプリケーション",
+        "eigo": "duplication",
+        "kwsk": "複製。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フィンガープリンティング",
+        "eigo": "fingerprinting",
+        "kwsk": "アクセスの情報からデバイスを識別する。",
+        "mnim": "指紋を取る",
+        "tigg": ""
+    },
+    {
+        "kotb": "クリプトマイニング",
+        "eigo": "crypto mining",
+        "kwsk": "仮想通貨の採掘。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クリプトジャッキング",
+        "eigo": "crypto jacking",
+        "kwsk": "仮想通貨の採掘を他人の機器で無断で行わせる。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アウテージ",
+        "eigo": "outage",
+        "kwsk": "事故。故障。停電。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プラグイン",
+        "eigo": "plug in",
+        "kwsk": "ソフトウェアの機能を拡張するプログラム。(アドオン[add on],アドイン[add in])。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インフラストラクチャ",
+        "eigo": "infrastructure",
+        "kwsk": "基盤。インフラ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アドホック",
+        "eigo": "ad hoc",
+        "kwsk": "暫定的な。その場限りの。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アホドッグ",
+        "eigo": "aho dog",
+        "kwsk": "アホなイヌ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ダウンタイム",
+        "eigo": "downtime",
+        "kwsk": "システムが稼働していない時間",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アップタイム",
+        "eigo": "uptime",
+        "kwsk": "システムが稼働している時間",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "バリアブル",
+        "eigo": "variable",
+        "kwsk": "変数。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デファクトスタンダード",
+        "eigo": "de facto standard",
+        "kwsk": "機関が定めたものでなく、広まっているため標準になる。事実上の標準。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インスペクタ",
+        "eigo": "inspector",
+        "kwsk": "状態や内部構造を表示するやつ。",
+        "mnim": "検査官",
+        "tigg": ""
+    },
+    {
+        "kotb": "サード パーティー",
+        "eigo": "third party",
+        "kwsk": "第三者。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ウェル ノウン",
+        "eigo": "well known",
+        "kwsk": "有名な",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デスティネーション",
+        "eigo": "destination",
+        "kwsk": "変換先。",
+        "mnim": "目的地",
+        "tigg": ""
+    },
+    {
+        "kotb": "トラッキング",
+        "eigo": "tracking",
+        "kwsk": "インターネット上のユーザ行動を収集する。",
+        "mnim": "追跡する",
+        "tigg": ""
+    },
+    {
+        "kotb": "バズる",
+        "eigo": "buzz ru",
+        "kwsk": "話題が爆発的に広がり注目を浴びる。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サース",
+        "eigo": "SaaS",
+        "kwsk": "ソフトウェアを、インターネットを通して提供する。Software as a Service。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パース",
+        "eigo": "PaaS",
+        "kwsk": "プラットフォームを、インターネットを通して提供する。Platform as a Service。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イァース",
+        "eigo": "IaaS",
+        "kwsk": "インフラストラクチャを、インターネットを通して提供する。Infrastructure as a Service。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ステート",
+        "eigo": "state",
+        "kwsk": "状態。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トークン",
+        "eigo": "token",
+        "kwsk": "証拠。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ドメイン",
+        "eigo": "domain",
+        "kwsk": "領域。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディーエヌエス",
+        "eigo": "DNS",
+        "kwsk": "ドメイン名をIPアドレスに変換する。Domain Name System。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アイピー アドレス",
+        "eigo": "Internet Protocol address",
+        "kwsk": "ネットワーク上の機器を識別する番号。IPアドレス。",
+        "mnim": "",
+        "tigg": ""
+    },
+        {
+        "kotb": "マック アドレス",
+        "eigo": "Media Access Control address",
+        "kwsk": "ネットワーク機器に一意に割り当てられている番号。MACアドレス。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ビルド",
+        "eigo": "build",
+        "kwsk": "ソースコード等から実行可能なモノを作成する。",
+        "mnim": "組み立てる",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンパチブル",
+        "eigo": "compatible",
+        "kwsk": "互換性がある。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンパチビリティ",
+        "eigo": "compatibility",
+        "kwsk": "適合性。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クラウド",
+        "eigo": "cloud",
+        "kwsk": "インターネットを通じてサービスを提供する。",
+        "mnim": "雲",
         "tigg": ""
     }
 ]

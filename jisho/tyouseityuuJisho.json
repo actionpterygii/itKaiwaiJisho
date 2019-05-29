@@ -98,6 +98,27 @@
         "tigg": ""
     },
     {
+        "kotb": "ユーアールエル",
+        "eigo": "URL",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ユーアールアイ",
+        "eigo": "URI",
+        "kwsk": "Uniform Resource Identifier。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ぬるぽ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
         "kotb": "カージナリティ",
         "eigo": "cardinality",
         "kwsk": "。多重度。",
