@@ -115,19 +115,19 @@
         "kotb": "サニタイジング",
         "eigo": "sanitizing",
         "kwsk": "\"&\"などのプログラムにとって意味のある文字列を別の表記に置き換える。",
-        "mnim": "無害化、消毒",
+        "mnim": "無害化。消毒",
         "tigg": ""
     },
     {
-        "kotb": "ステートフル",
-        "eigo": "stateful",
+        "kotb": "ステート フル",
+        "eigo": "state ful",
         "kwsk": "状況によって同じリクエストでレスポンスが変わる。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "ステートレス",
-        "eigo": "stateless",
+        "kotb": "ステート レス",
+        "eigo": "state less",
         "kwsk": "状況によって同じリクエストでレスポンスが変わらない。",
         "mnim": "",
         "tigg": ""
@@ -154,7 +154,7 @@
         "tigg": ""
     },
     {
-        "kotb": "SQLインジェクション",
+        "kotb": "SQL インジェクション",
         "eigo": "SQL Injection",
         "kwsk": "SQLを送り外部からデータベースを操作。",
         "mnim": "",
@@ -280,7 +280,7 @@
         "tigg": ""
     },
     {
-        "kotb": "サンクコスト",
+        "kotb": "サンク コスト",
         "eigo": "sunk cost",
         "kwsk": "すでに回収できないコスト。埋没費用。",
         "mnim": "",
@@ -896,7 +896,7 @@
         "tigg": ""
     },
     {
-        "kotb": "スケールアウト",
+        "kotb": "スケール アウト",
         "eigo": "scale out",
         "kwsk": "数を増やして高める。",
         "mnim": "",
@@ -1015,9 +1015,9 @@
         "tigg": ""
     },
     {
-        "kotb": "アプリケーション プログラミング インターフェース",
-        "eigo": "Application Programming Interface",
-        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。API。",
+        "kotb": "エーピーアイ",
+        "eigo": "API",
+        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。Application Programming Interface。",
         "mnim": "",
         "tigg": ""
     },
