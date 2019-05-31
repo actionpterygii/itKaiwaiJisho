@@ -2378,5 +2378,54 @@
         "kwsk": "インターネットを通じてサービスを提供する。",
         "mnim": "雲",
         "tigg": ""
+    },
+    {
+        "kotb": "コンスピラシー",
+        "eigo": "conspiracy",
+        "kwsk": "陰謀。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アールエフシー",
+        "eigo": "RFC",
+        "kwsk": "インターネットで用いられる技術仕様文書。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オブソリート",
+        "eigo": "obsolete",
+        "kwsk": "廃れた。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リファレンス",
+        "eigo": "reference",
+        "kwsk": "参照。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リファレンス マニュアル",
+        "eigo": "reference manual",
+        "kwsk": "説明書。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クライアント",
+        "eigo": "client",
+        "kwsk": "取引先。お客さん。依頼人。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ステークホルダー",
+        "eigo": "stakeholder",
+        "kwsk": "利害関係者。",
+        "mnim": "",
+        "tigg": ""
     }
 ]
