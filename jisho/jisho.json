@@ -1450,141 +1450,127 @@
     },
     {
         "kotb": "プログラミング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "programming",
+        "kwsk": "コンピュータープログラムを作成する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コーディング",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "coding",
+        "kwsk": "コンピュータープログラムの処理を記述する。",
+        "mnim": "符号化。",
         "tigg": ""
     },
     {
-        "kotb": "コモディティ",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "コモディティ化",
+        "eigo": "commoditization",
+        "kwsk": "商品の個性がなくなる。汎用品化。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プリンシパル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "principal",
+        "kwsk": "重要な。主要な。主な。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "サブジェクティブ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "subjective",
+        "kwsk": "主観的な。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンペティション",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "オーサティング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "competition",
+        "kwsk": "競争。協議会。コンペ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ディーティーピー",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "DTP",
+        "kwsk": "DeskTop Publishing。",
+        "mnim": "パソコンで印刷物のデータをつくること。卓上出版。",
         "tigg": ""
     },
     {
         "kotb": "リライアビリティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "reliability",
+        "kwsk": "信頼性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "グリッチ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "glitch",
+        "kwsk": "誤動作。欠陥。故障。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ダウナーソー",
         "eigo": "downasaur",
-        "kwsk": "GoogleChromeでインター接続がない状態のときに表示される恐竜。",
+        "kwsk": "GoogleChromeでインターネット接続がない状態のときに表示される恐竜。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オートスケーリング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "auto scaling",
+        "kwsk": "自動で拡大縮小する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ロギング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "logging",
+        "kwsk": "履歴を記録し蓄積すること。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ムーアの法則",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "Moore's law",
+        "kwsk": "「半導体の集積率は18か月で2倍になる」。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ジーピーユー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "GPU",
+        "kwsk": "画像処理に特化した処理装置。コアが多い。CPUのように汎用的な処理もできる。グラフィックボード。ビデオカード。Graphics Processing Unit。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "シーピーユー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "CPU",
+        "kwsk": "中央処理装置。Central Processing Unit。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "マザーボード",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "motherboard",
+        "kwsk": "パソコンの主要な基盤。ロジックボード。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プロセッサ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "processor",
+        "kwsk": "処理装置。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "ゲラフィックボード",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "コンテンツ デリバリ ネットワーク",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "シーディーエヌ",
+        "eigo": "CDN",
+        "kwsk": "Content Delivery Network。",
         "mnim": "",
         "tigg": ""
     },
