@@ -763,13 +763,6 @@
         "tigg": ""
     },
     {
-        "kotb": "バグ",
-        "eigo": "bug",
-        "kwsk": "不具合。",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
         "kotb": "リターン",
         "eigo": "return",
         "kwsk": "戻る。",
@@ -1423,7 +1416,7 @@
     {
         "kotb": "バグ",
         "eigo": "bug",
-        "kwsk": "プログラムの中の誤り。",
+        "kwsk": "プログラムの中の誤り。不具合。",
         "mnim": "虫",
         "tigg": ""
     },
@@ -1570,126 +1563,140 @@
     {
         "kotb": "シーディーエヌ",
         "eigo": "CDN",
-        "kwsk": "Content Delivery Network。",
+        "kwsk": "分散された中で最適なサーバーからデータを取得するやつ。コンテンツデリバリネットワーク。Content Delivery Network。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ニアショア",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "nearshore",
+        "kwsk": "近い場所での外注。地方都市とか。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オフショア",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "Offshore",
+        "kwsk": "海外。沖釣り。",
+        "mnim": "陸風",
         "tigg": ""
     },
     {
         "kotb": "オンショア",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "Onshore",
+        "kwsk": "国内。陸っぱり。",
+        "mnim": "海風",
         "tigg": ""
     },
     {
         "kotb": "メッセージ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "message",
+        "kwsk": "伝言。声明。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "マッサージ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "massage",
+        "kwsk": "揉んだり叩いたりすることで血やリンパの循環を改善する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アジャイル",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "agile",
+        "kwsk": "短い期間での「計画→実行→完成」を何度も行う。",
+        "mnim": "俊敏な",
         "tigg": ""
     },
     {
         "kotb": "ウォーターフォール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "waterfall",
+        "kwsk": "「計画→実行→完成」を普通に順番に一度行う。",
+        "mnim": "滝",
+        "tigg": ""
+    },
+    {
+        "kotb": "メテオフォール",
+        "eigo": "meteofall",
+        "kwsk": "堕ちる流星。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プロトタイプ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "prototype",
+        "kwsk": "原型。試作品。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プロトタイピング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "prototyping",
+        "kwsk": "とりあえず最初にプロトタイプ作ろって。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ヒアリング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "hearing",
+        "kwsk": "聞き取り。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インデント",
         "eigo": "indent",
-        "kwsk": "",
-        "mnim": "",
+        "kwsk": "字下げ。",
+        "mnim": "凹み",
         "tigg": ""
     },
     {
         "kotb": "ハック",
         "eigo": "hack",
-        "kwsk": "",
+        "kwsk": "役立てる。工夫する。小技。システムに不正侵入する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "バーンアウト",
         "eigo": "burnout",
-        "kwsk": "",
+        "kwsk": "燃え尽きる。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "飛ぶ",
+        "eigo": "tobu",
+        "kwsk": "突然いなくなる、連絡もつかない。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インシデント",
         "eigo": "incident",
-        "kwsk": "",
+        "kwsk": "事件。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "デバッグ",
         "eigo": "debug",
-        "kwsk": "",
+        "kwsk": "バグを見つけてなおす。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ユーティリティ",
         "eigo": "utility",
-        "kwsk": "",
+        "kwsk": "役に立つもの。補助的なソフトウェア。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トラスト",
         "eigo": "trust",
-        "kwsk": "",
+        "kwsk": "信頼。信用。",
         "mnim": "",
         "tigg": ""
     },
@@ -1703,70 +1710,70 @@
     {
         "kotb": "コンスピラシー",
         "eigo": "conspiracy",
-        "kwsk": "",
+        "kwsk": "共謀。陰謀。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ナラティブ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "narrative",
+        "kwsk": "消費する側が選択し、進める物語。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ネットニュートラリティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "network neutrality",
+        "kwsk": "インフラや端末等によって差別なくコンテンツにアクセスできる。インターネット中立性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンクリフト",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "conflict",
+        "kwsk": "衝突。競合。対立。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "サブスクリプション",
         "eigo": "subscription",
-        "kwsk": "",
-        "mnim": "",
+        "kwsk": "買い取り式ではなく、利用した期間に応じてお金を払う。",
+        "mnim": "予約購読",
         "tigg": ""
     },
     {
         "kotb": "プラットフォーム",
         "eigo": "platform",
-        "kwsk": "",
-        "mnim": "",
+        "kwsk": "基盤となるところ。",
+        "mnim": "壇上",
         "tigg": ""
     },
     {
-        "kotb": "OSコマンドインジェクション",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "OS コマンド インジェクション",
+        "eigo": "OS Command injection",
+        "kwsk": "OSコマンドを送り外部からOSを操作。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "フォーク",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "fork",
+        "kwsk": "プロジェクトから分岐して別のプロジェクトがはじまる。",
+        "mnim": "又に分かれているもの",
         "tigg": ""
     },
     {
         "kotb": "引数",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "hikisu",
+        "kwsk": "関数に渡される値",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "戻り値",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "modoriti",
+        "kwsk": "関数が渡す値",
         "mnim": "",
         "tigg": ""
     },
@@ -1779,36 +1786,36 @@
     },
     {
         "kotb": "ファイアウォール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "Firewall",
+        "kwsk": "不正アクセスから守るやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "マテリアルデザイン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "Material Design",
+        "kwsk": "ペラペラの物質が重なっているような影もあるやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スキューモーフィズム",
         "eigo": "skeuomorphism",
-        "kwsk": "",
+        "kwsk": "立体感や素材感等、実際の物質に似せたデザイン。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "フラットデザイン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "flat design",
+        "kwsk": "立体感や素材感を出さないシンプルなデザイン。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オペレーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "operation",
+        "kwsk": "機械の操作。作戦。",
         "mnim": "",
         "tigg": ""
     },
@@ -2412,6 +2419,13 @@
         "eigo": "stakeholder",
         "kwsk": "利害関係者。",
         "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "バックボーン",
+        "eigo": "backbone",
+        "kwsk": "ネットワークの基幹。",
+        "mnim": "背骨",
         "tigg": ""
     }
 ]
