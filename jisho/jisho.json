@@ -318,7 +318,7 @@
         "kotb": "デプロイ",
         "eigo": "deploy",
         "kwsk": "ソフトウェアを本番環境に展開すること。",
-        "mnim": "配備。展開",
+        "mnim": "配備",
         "tigg": ""
     },
     {
@@ -332,7 +332,7 @@
         "kotb": "ディストリビューション",
         "eigo": "distribution",
         "kwsk": "コンパイル済みで設定済みのソフトウェアの集まり。",
-        "mnim": "流通。分布",
+        "mnim": "流通",
         "tigg": ""
     },
     {
@@ -749,9 +749,9 @@
         "tigg": ""
     },
     {
-        "kotb": "タイポ",
+        "kotb": "タイポグラフィック エラー",
         "eigo": "typographic error",
-        "kwsk": "打ち間違い。",
+        "kwsk": "打ち間違い。タイポ。",
         "mnim": "",
         "tigg": ""
     },
@@ -772,7 +772,7 @@
     {
         "kotb": "タグ",
         "eigo": "tag",
-        "kwsk": "札(ふだ)。",
+        "kwsk": "ふだ。",
         "mnim": "",
         "tigg": ""
     },
@@ -1008,9 +1008,9 @@
         "tigg": ""
     },
     {
-        "kotb": "エーピーアイ",
-        "eigo": "API",
-        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。Application Programming Interface。",
+        "kotb": "アプリケーション プログラミング インターフェース",
+        "eigo": "Application Programming Interface",
+        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。API。",
         "mnim": "",
         "tigg": ""
     },
@@ -1109,7 +1109,7 @@
         "kotb": "ラウンドロビン",
         "eigo": "round robin",
         "kwsk": "総当たり。",
-        "mnim": "リボン。",
+        "mnim": "リボン",
         "tigg": ""
     },
     {
@@ -1123,7 +1123,7 @@
         "kotb": "プリミティブ",
         "eigo": "primitive",
         "kwsk": "単純な基本構造。",
-        "mnim": "原始的な。未発達な",
+        "mnim": "原始的な",
         "tigg": ""
     },
     {
@@ -1205,7 +1205,7 @@
     },
     {
         "kotb": "アイオー",
-        "eigo": "I/O",
+        "eigo": "IO",
         "kwsk": "入出力。input/output。",
         "mnim": "",
         "tigg": ""
@@ -1240,7 +1240,7 @@
     },
     {
         "kotb": "よしなに",
-        "eigo": "yoshina-ni",
+        "eigo": "yoshinani",
         "kwsk": "いいかんじに。",
         "mnim": "",
         "tigg": ""
@@ -1281,65 +1281,65 @@
         "tigg": ""
     },
     {
-        "kotb": "シーイーオー",
-        "eigo": "CEO",
-        "kwsk": "最高経営責任者。Chief Exective Officer。",
+        "kotb": "チーフ エグゼクティブ オフィサー",
+        "eigo": "Chief Exective Officer",
+        "kwsk": "最高経営責任者。CEO。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "シーオーオー",
-        "eigo": "COO",
-        "kwsk": "最高執行責任者。Chief Operating Officer。",
+        "kotb": "チーフ オペレーティング オフィサー",
+        "eigo": "Chief Operating Officer",
+        "kwsk": "最高執行責任者。COO。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "シーエフオー",
-        "eigo": "CFO",
-        "kwsk": "最高財務責任者。Cheif Financial Officer。",
+        "kotb": "チーフ ファイナンシャル オフィサー",
+        "eigo": "Cheif Financial Officer",
+        "kwsk": "最高財務責任者。CFO。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "シーアイオー",
-        "eigo": "CIO",
-        "kwsk": "最高情報責任者。Chief Information Officer。",
+        "kotb": "チーフ インフォメーション オフィサー",
+        "eigo": "Chief Information Officer",
+        "kwsk": "最高情報責任者。CIO。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "シーティーオー",
-        "eigo": "CTO",
-        "kwsk": "最高技術責任者。Chief Technology Officer。",
+        "kotb": "チーフ ナレッジ オフィサー",
+        "eigo": "Chief Technology Officer",
+        "kwsk": "最高技術責任者。CTO。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "シーケーオー",
-        "eigo": "CKO",
-        "kwsk": "最高知識責任者。Chief Knowledge Officer。",
+        "kotb": "チーフ ナレッジ オフィサー",
+        "eigo": "Chief Knowledge Officer",
+        "kwsk": "最高知識責任者。CKO。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リレーション",
         "eigo": "relation",
-        "kwsk": "関係",
+        "kwsk": "関係。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エヴァリュエーション",
         "eigo": "evaluation",
-        "kwsk": "評価",
+        "kwsk": "評価。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "トランケイトゥ",
         "eigo": "truncate",
-        "kwsk": "切り捨て",
+        "kwsk": "切り捨て。",
         "mnim": "",
         "tigg": ""
     },
@@ -1381,7 +1381,7 @@
     {
         "kotb": "カーネル",
         "eigo": "kernel",
-        "kwsk": "ハードウェアとソフトウェアの仲介をするソフトウェア",
+        "kwsk": "ハードウェアとソフトウェアの仲介をするソフトウェア。",
         "mnim": "",
         "tigg": ""
     },
@@ -1430,7 +1430,7 @@
     {
         "kotb": "トロール",
         "eigo": "troll",
-        "kwsk": "荒らし",
+        "kwsk": "荒らし。",
         "mnim": "流し釣り",
         "tigg": ""
     },
@@ -1484,10 +1484,10 @@
         "tigg": ""
     },
     {
-        "kotb": "ディーティーピー",
-        "eigo": "DTP",
-        "kwsk": "DeskTop Publishing。",
-        "mnim": "パソコンで印刷物のデータをつくること。卓上出版。",
+        "kotb": "デスクトップ パブリッシング",
+        "eigo": "DeskTop Publishing",
+        "kwsk": "パソコンで印刷物のデータをつくること。DTP。",
+        "mnim": "卓上出版",
         "tigg": ""
     },
     {
@@ -1533,16 +1533,16 @@
         "tigg": ""
     },
     {
-        "kotb": "ジーピーユー",
-        "eigo": "GPU",
-        "kwsk": "画像処理に特化した処理装置。コアが多い。CPUのように汎用的な処理もできる。グラフィックボード。ビデオカード。Graphics Processing Unit。",
+        "kotb": "グラフィック プロセッシング ユニット",
+        "eigo": "Graphics Processing Unit",
+        "kwsk": "画像処理に特化した処理装置。コアが多い。CPUのように汎用的な処理もできる。グラフィックボード。ビデオカード。GPU。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "シーピーユー",
-        "eigo": "CPU",
-        "kwsk": "中央処理装置。Central Processing Unit。",
+        "kotb": "セントラル プロセッシング ユニット",
+        "eigo": "Central Processing Unit",
+        "kwsk": "中央処理装置。CPU。",
         "mnim": "",
         "tigg": ""
     },
@@ -1561,9 +1561,9 @@
         "tigg": ""
     },
     {
-        "kotb": "シーディーエヌ",
-        "eigo": "CDN",
-        "kwsk": "分散された中で最適なサーバーからデータを取得するやつ。コンテンツデリバリネットワーク。Content Delivery Network。",
+        "kotb": "コンテンツデリバリネットワーク",
+        "eigo": "Content Delivery Network",
+        "kwsk": "分散された中で最適なサーバーからデータを取得するやつ。CDN。",
         "mnim": "",
         "tigg": ""
     },
@@ -1703,7 +1703,7 @@
     {
         "kotb": "トランスクリプト",
         "eigo": "transcript",
-        "kwsk": "文字起こし",
+        "kwsk": "文字起こし。",
         "mnim": "",
         "tigg": ""
     },
@@ -1766,14 +1766,14 @@
     {
         "kotb": "引数",
         "eigo": "hikisu",
-        "kwsk": "関数に渡される値",
+        "kwsk": "関数に渡される値。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "戻り値",
         "eigo": "modoriti",
-        "kwsk": "関数が渡す値",
+        "kwsk": "関数が渡す値。",
         "mnim": "",
         "tigg": ""
     },
@@ -1857,7 +1857,7 @@
     {
         "kotb": "ドリブン",
         "eigo": "driven",
-        "kwsk": "原動力",
+        "kwsk": "原動力。",
         "mnim": "",
         "tigg": ""
     },
@@ -1906,7 +1906,7 @@
     {
         "kotb": "カレント",
         "eigo": "current",
-        "kwsk": "今の",
+        "kwsk": "今の。",
         "mnim": "",
         "tigg": ""
     },
@@ -1920,7 +1920,7 @@
     {
         "kotb": "コンフィグレーション",
         "eigo": "configuration",
-        "kwsk": "設定。cfg",
+        "kwsk": "設定。cfg。",
         "mnim": "",
         "tigg": ""
     },
@@ -1953,8 +1953,8 @@
         "tigg": ""
     },
     {
-        "kotb": "エスキューエル",
-        "eigo": "SQL",
+        "kotb": "SQL",
+        "eigo": "",
         "kwsk": "リレーショナルデータベースの操作を行う言語。",
         "mnim": "",
         "tigg": ""
@@ -1990,14 +1990,14 @@
     {
         "kotb": "ロイヤルティ",
         "eigo": "loyalty",
-        "kwsk": "消費者からの愛着や信頼性",
+        "kwsk": "消費者からの愛着や信頼性。",
         "mnim": "忠誠",
         "tigg": ""
     },
     {
-        "kotb": "キューエー",
-        "eigo": "QA",
-        "kwsk": "品質保証。Quality Assurance。",
+        "kotb": "クオリティ アシュランス",
+        "eigo": "Quality Assurance",
+        "kwsk": "品質保証。QA。",
         "mnim": "",
         "tigg": ""
     },
@@ -2009,7 +2009,7 @@
         "tigg": ""
     },
     {
-        "kotb": "スタックトレース",
+        "kotb": "スタック トレース",
         "eigo": "stack trace",
         "kwsk": "エラーが発生するまでの過程の表示。",
         "mnim": "",
@@ -2046,14 +2046,14 @@
     {
         "kotb": "フレームワーク",
         "eigo": "framework",
-        "kwsk": "骨組み",
+        "kwsk": "骨組み。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "エルティーエス",
-        "eigo": "LTS",
-        "kwsk": "サポート期間が長いやつ。Long Term Support。",
+        "kotb": "ロング ターム サポート",
+        "eigo": "Long Term Support",
+        "kwsk": "サポート期間が長いやつ。LTS。",
         "mnim": "",
         "tigg": ""
     },
@@ -2214,14 +2214,14 @@
     {
         "kotb": "ダウンタイム",
         "eigo": "downtime",
-        "kwsk": "システムが稼働していない時間",
+        "kwsk": "システムが稼働していない時間。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アップタイム",
         "eigo": "uptime",
-        "kwsk": "システムが稼働している時間",
+        "kwsk": "システムが稼働している時間。",
         "mnim": "",
         "tigg": ""
     },
@@ -2256,7 +2256,7 @@
     {
         "kotb": "ウェル ノウン",
         "eigo": "well known",
-        "kwsk": "有名な",
+        "kwsk": "有名な。",
         "mnim": "",
         "tigg": ""
     },
@@ -2324,9 +2324,9 @@
         "tigg": ""
     },
     {
-        "kotb": "ディーエヌエス",
-        "eigo": "DNS",
-        "kwsk": "ドメイン名をIPアドレスに変換する。Domain Name System。",
+        "kotb": "ドメイン ネーム システム",
+        "eigo": "Domain Name System",
+        "kwsk": "ドメイン名をIPアドレスに変換する。DNS。",
         "mnim": "",
         "tigg": ""
     },
@@ -2426,6 +2426,20 @@
         "eigo": "backbone",
         "kwsk": "ネットワークの基幹。",
         "mnim": "背骨",
+        "tigg": ""
+    },
+    {
+        "kotb": "バインディング",
+        "eigo": "binding",
+        "kwsk": "束ねる。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハレーション",
+        "eigo": "halation",
+        "kwsk": "周囲に悪影響を与える。",
+        "mnim": "光が当たりすぎて写真が白くぼやける",
         "tigg": ""
     }
 ]
