@@ -1275,7 +1275,7 @@
     },
     {
         "kotb": "カラミティ",
-        "eigo": "calamity",
+        "eigo": "karamity",
         "kwsk": "絡みやすさ。",
         "mnim": "",
         "tigg": ""
@@ -1871,8 +1871,8 @@
     {
         "kotb": "オーアールマッパー",
         "eigo": "O/R Mapper",
-        "kwsk": "Object-Relational mapping tool。",
-        "mnim": "リレーショナルデータベースをオブジェクト指向プログラミングで操作するためのもの。",
+        "kwsk": "リレーショナルデータベースをオブジェクト指向プログラミングで操作するためのもの。Object-Relational mapping tool。",
+        "mnim": "",
         "tigg": ""
     },
     {
@@ -1962,7 +1962,7 @@
     {
         "kotb": "リレーショナルデータベース",
         "eigo": "relational database",
-        "kwsk": "表と表の関係を定義する方式のデータベース。関係データベース。",
+        "kwsk": "表と表の関係を定義する方式のデータベース。関係データベース。RDB。",
         "mnim": "",
         "tigg": ""
     },
@@ -2440,6 +2440,34 @@
         "eigo": "halation",
         "kwsk": "周囲に悪影響を与える。",
         "mnim": "光が当たりすぎて写真が白くぼやける",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハッカー",
+        "eigo": "hacker",
+        "kwsk": "コンピューターに精通してるひと。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クラッカー",
+        "eigo": "cracker",
+        "kwsk": "コンピューターに対して不正侵入・破壊・改ざんをするひと。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パーパス",
+        "eigo": "purpose",
+        "kwsk": "存在意義。",
+        "mnim": "目的",
+        "tigg": ""
+    },
+    {
+        "kotb": "リビジョン",
+        "eigo": "revision",
+        "kwsk": "修正。補正。改訂。",
+        "mnim": "",
         "tigg": ""
     }
 ]
