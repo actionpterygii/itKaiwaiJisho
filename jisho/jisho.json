@@ -49,8 +49,8 @@
         "tigg": ""
     },
     {
-        "kotb": "ユースケース",
-        "eigo": "usecase",
+        "kotb": "ユース ケース",
+        "eigo": "use case",
         "kwsk": "ユーザー目線でのシステムの振る舞い。",
         "mnim": "",
         "tigg": ""
@@ -168,7 +168,7 @@
         "tigg": ""
     },
     {
-        "kotb": "トレイリングスラッシュ",
+        "kotb": "トレイリング スラッシュ",
         "eigo": "trailing slash",
         "kwsk": "URL末尾の\"\/\"。",
         "mnim": "",
@@ -896,8 +896,8 @@
         "tigg": ""
     },
     {
-        "kotb": "トランスコンパイラ",
-        "eigo": "transcompiler",
+        "kotb": "トランス コンパイラ",
+        "eigo": "trans compiler",
         "kwsk": "ソースコードを別のプログラミング言語に変換するやつ。トランスパイラ。",
         "mnim": "",
         "tigg": ""
@@ -917,8 +917,8 @@
         "tigg": ""
     },
     {
-        "kotb": "エコシステム",
-        "eigo": "ecosystem",
+        "kotb": "エコ システム",
+        "eigo": "eco system",
         "kwsk": "実際の生態系のようにたくさんが関わり合っていろいろなる。",
         "mnim": "",
         "tigg": ""
@@ -981,14 +981,14 @@
     },
     {
         "kotb": "アーキテクチャ宇宙飛行士",
-        "eigo": "Architecture Astronauts",
+        "eigo": "ArchitectureAstronauts",
         "kwsk": "アーキテクチャを過剰に考えてしまうひと。",
         "mnim": "",
         "tigg": "ダクトテーププログラマ"
     },
     {
         "kotb": "ダクトテーププログラマ",
-        "eigo": "Duct Tape Programmer",
+        "eigo": "DuctTapeProgrammer",
         "kwsk": "構造の美しさよりもリリースを優先するプログラマ。",
         "mnim": "",
         "tigg": "アーキテクチャ宇宙飛行士"
@@ -1106,7 +1106,7 @@
         "tigg": ""
     },
     {
-        "kotb": "ラウンドロビン",
+        "kotb": "ラウンド ロビン",
         "eigo": "round robin",
         "kwsk": "総当たり。",
         "mnim": "リボン",
@@ -1204,8 +1204,8 @@
         "tigg": ""
     },
     {
-        "kotb": "アイオー",
-        "eigo": "IO",
+        "kotb": "IO",
+        "eigo": "",
         "kwsk": "入出力。input/output。",
         "mnim": "",
         "tigg": ""
@@ -1218,7 +1218,7 @@
         "tigg": ""
     },
     {
-        "kotb": "シェアリングエコノミー",
+        "kotb": "シェアリング エコノミー",
         "eigo": "sharing economy",
         "kwsk": "個人所有のモノを共有・交換する。",
         "mnim": "",
@@ -1246,14 +1246,14 @@
         "tigg": ""
     },
     {
-        "kotb": "フールプルーフ",
+        "kotb": "フール プルーフ",
         "eigo": "fool proof",
         "kwsk": "必ず誤った使い方をされることを前提とし、そうであっても危険にならない仕組み。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "フェイルセーフ",
+        "kotb": "フェイル セーフ",
         "eigo": "fail safe",
         "kwsk": "必ず障害が発生することを前提とし、そうであっても危険になない仕組み。",
         "mnim": "",
@@ -1386,7 +1386,7 @@
         "tigg": ""
     },
     {
-        "kotb": "エスケープシーケンス",
+        "kotb": "エスケープ シーケンス",
         "eigo": "escape sequence",
         "kwsk": "\"¥n\"などの、そのまま文字として出力されるのではなく制御を行う特殊な文字列。",
         "mnim": "",
@@ -1407,7 +1407,7 @@
         "tigg": ""
     },
     {
-        "kotb": "コンピューターレイジ",
+        "kotb": "コンピューター レイジ",
         "eigo": "computer rage",
         "kwsk": "コンピューターに腹が立つ事によって起こる反応。",
         "mnim": "",
@@ -1533,7 +1533,7 @@
         "tigg": ""
     },
     {
-        "kotb": "グラフィック プロセッシング ユニット",
+        "kotb": "グラフィックス プロセッシング ユニット",
         "eigo": "Graphics Processing Unit",
         "kwsk": "画像処理に特化した処理装置。コアが多い。CPUのように汎用的な処理もできる。グラフィックボード。ビデオカード。GPU。",
         "mnim": "",
@@ -1561,7 +1561,7 @@
         "tigg": ""
     },
     {
-        "kotb": "コンテンツデリバリネットワーク",
+        "kotb": "コンテンツ デリバリ ネットワーク",
         "eigo": "Content Delivery Network",
         "kwsk": "分散された中で最適なサーバーからデータを取得するやつ。CDN。",
         "mnim": "",
@@ -1722,7 +1722,7 @@
         "tigg": ""
     },
     {
-        "kotb": "ネットニュートラリティ",
+        "kotb": "ネット ニュートラリティ",
         "eigo": "network neutrality",
         "kwsk": "インフラや端末等によって差別なくコンテンツにアクセスできる。インターネット中立性。",
         "mnim": "",
@@ -1764,16 +1764,16 @@
         "tigg": ""
     },
     {
-        "kotb": "引数",
-        "eigo": "hikisu",
-        "kwsk": "関数に渡される値。",
+        "kotb": "アーギュメント",
+        "eigo": "argument",
+        "kwsk": "関数に渡される値。引数。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "戻り値",
-        "eigo": "modoriti",
-        "kwsk": "関数が渡す値。",
+        "kotb": "リターン バリュー",
+        "eigo": "return value",
+        "kwsk": "関数が渡す値。戻り値。",
         "mnim": "",
         "tigg": ""
     },
@@ -1792,8 +1792,8 @@
         "tigg": ""
     },
     {
-        "kotb": "マテリアルデザイン",
-        "eigo": "Material Design",
+        "kotb": "マテリアル デザイン",
+        "eigo": "material design",
         "kwsk": "ペラペラの物質が重なっているような影もあるやつ。",
         "mnim": "",
         "tigg": ""
@@ -1806,7 +1806,7 @@
         "tigg": ""
     },
     {
-        "kotb": "フラットデザイン",
+        "kotb": "フラット デザイン",
         "eigo": "flat design",
         "kwsk": "立体感や素材感を出さないシンプルなデザイン。",
         "mnim": "",
@@ -1827,14 +1827,14 @@
         "tigg": ""
     },
     {
-        "kotb": "ブルートフォース",
+        "kotb": "ブルート フォース",
         "eigo": "brute force",
         "kwsk": "力ずく。強引な。総当たり。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "ナイーブソリューション",
+        "kotb": "ナイーブ ソリューション",
         "eigo": "naive solution",
         "kwsk": "愚直な解決法。",
         "mnim": "",
@@ -1869,7 +1869,7 @@
         "tigg": ""
     },
     {
-        "kotb": "オーアールマッパー",
+        "kotb": "オーアール マッパー",
         "eigo": "O/R Mapper",
         "kwsk": "リレーショナルデータベースをオブジェクト指向プログラミングで操作するためのもの。Object-Relational mapping tool。",
         "mnim": "",
@@ -1960,21 +1960,21 @@
         "tigg": ""
     },
     {
-        "kotb": "リレーショナルデータベース",
+        "kotb": "リレーショナル データベース",
         "eigo": "relational database",
         "kwsk": "表と表の関係を定義する方式のデータベース。関係データベース。RDB。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "ブルーオーシャン",
+        "kotb": "ブルー オーシャン",
         "eigo": "blue ocean",
         "kwsk": "競争がない。未開拓。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "レッドオーシャン",
+        "kotb": "レッド オーシャン",
         "eigo": "red ocean",
         "kwsk": "競争が激しい。",
         "mnim": "",
@@ -2107,15 +2107,15 @@
         "tigg": ""
     },
     {
-        "kotb": "オプトイン",
-        "eigo": "optin",
+        "kotb": "オプト イン",
+        "eigo": "opt in",
         "kwsk": "広告配信の許可を事前に求める。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "オプトアウト",
-        "eigo": "optout",
+        "kotb": "オプト アウト",
+        "eigo": "opt out",
         "kwsk": "広告配信の許可を事前に求めない。",
         "mnim": "",
         "tigg": ""
@@ -2135,7 +2135,7 @@
         "tigg": ""
     },
     {
-        "kotb": "レスポンシブウェブデザイン",
+        "kotb": "レスポンシブ ウェブ デザイン",
         "eigo": "responsive web design",
         "kwsk": "複数のサイズの端末に単一のHTMLで対応する。",
         "mnim": "",
@@ -2163,14 +2163,14 @@
         "tigg": ""
     },
     {
-        "kotb": "クリプトマイニング",
+        "kotb": "クリプト マイニング",
         "eigo": "crypto mining",
         "kwsk": "仮想通貨の採掘。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "クリプトジャッキング",
+        "kotb": "クリプト ジャッキング",
         "eigo": "crypto jacking",
         "kwsk": "仮想通貨の採掘を他人の機器で無断で行わせる。",
         "mnim": "",
@@ -2184,7 +2184,7 @@
         "tigg": ""
     },
     {
-        "kotb": "プラグイン",
+        "kotb": "プラグ イン",
         "eigo": "plug in",
         "kwsk": "ソフトウェアの機能を拡張するプログラム。(アドオン[add on],アドイン[add in])。",
         "mnim": "",
@@ -2198,29 +2198,29 @@
         "tigg": ""
     },
     {
-        "kotb": "アドホック",
+        "kotb": "アド ホック",
         "eigo": "ad hoc",
         "kwsk": "暫定的な。その場限りの。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "アホドッグ",
+        "kotb": "アホ ドッグ",
         "eigo": "aho dog",
         "kwsk": "アホなイヌ。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "ダウンタイム",
-        "eigo": "downtime",
+        "kotb": "ダウン タイム",
+        "eigo": "down time",
         "kwsk": "システムが稼働していない時間。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "アップタイム",
-        "eigo": "uptime",
+        "kotb": "アップ タイム",
+        "eigo": "up time",
         "kwsk": "システムが稼働している時間。",
         "mnim": "",
         "tigg": ""
@@ -2233,7 +2233,7 @@
         "tigg": ""
     },
     {
-        "kotb": "デファクトスタンダード",
+        "kotb": "デ ファクト スタンダード",
         "eigo": "de facto standard",
         "kwsk": "機関が定めたものでなく、広まっているため標準になる。事実上の標準。",
         "mnim": "",
@@ -2275,7 +2275,7 @@
         "tigg": ""
     },
     {
-        "kotb": "バズる",
+        "kotb": "バズ る",
         "eigo": "buzz ru",
         "kwsk": "話題が爆発的に広がり注目を浴びる。",
         "mnim": "",
@@ -2488,6 +2488,13 @@
         "kotb": "アドミニストレーター",
         "eigo": "administrator",
         "kwsk": "管理者。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "なるはや",
+        "eigo": "naruhaya",
+        "kwsk": "なるべくはやく。",
         "mnim": "",
         "tigg": ""
     }
