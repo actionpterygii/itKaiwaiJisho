@@ -1,0 +1,119 @@
+body,div,section,
+h1,h2,p,input,button,
+dl,dt,dd {
+    box-sizing: border-box;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    color: #333;
+    font-size: 12px;
+    cursor: default;
+}
+
+#wrap {
+    min-height: 300px;
+    width: 500px;
+}
+
+#textarea {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+#nyuryoku {
+    width: 400px;
+    border-bottom: solid 3px #3cc;
+    animation-name: inputarea;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.265, 0.260, 0.995, -0.385);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes inputarea {
+    0% {
+        width: 10px;
+    }
+    100% {
+        width: 400px;
+    }
+
+}
+
+#input {
+    height: 40px;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#result {
+    margin-top: 40px;
+}
+
+.tango {
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: solid 1px #f9f;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 25px;
+    background-color: #ff6;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.eigo {
+    font-size: 25px;
+    background-color: #ff6;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.kwsk {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.mnim,.tigg {
+    dt,dd {
+        display: inline-block;
+    }
+}
+
+#iconwrap {
+    margin-left: 50px;
+    div {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin-right: 5px;
+    }
+}
+
+.colorchip {
+    &-333 {
+        background-color: #333;
+    }
+    &-3cc {
+        background-color: #3cc;
+    }
+    &-f9f {
+        background-color: #f9f;
+    }
+    &-ff6 {
+        background-color: #ff6;
+    }
+}
+
+
+
+#readme {
+    display: none;
+}
