@@ -2469,5 +2469,26 @@
         "kwsk": "修正。補正。改訂。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "プロダクション",
+        "eigo": "production",
+        "kwsk": "本番。",
+        "mnim": "生産",
+        "tigg": ""
+    },
+    {
+        "kotb": "プレ",
+        "eigo": "pre",
+        "kwsk": "前の。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アドミニストレーター",
+        "eigo": "administrator",
+        "kwsk": "管理者。",
+        "mnim": "",
+        "tigg": ""
     }
 ]
