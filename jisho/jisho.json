@@ -2497,5 +2497,166 @@
         "kwsk": "なるべくはやく。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "アイデンティファー",
+        "eigo": "identifier",
+        "kwsk": "識別子。識別名。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クレデンシャル",
+        "eigo": "credential",
+        "kwsk": "ユーザー認証に使うやつ。IDとかパスワードとか。",
+        "mnim": "資格",
+        "tigg": ""
+    },
+    {
+        "kotb": "リソース",
+        "eigo": "resource",
+        "kwsk": "資源。資産。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "レスポンス",
+        "eigo": "response",
+        "kwsk": "反応。応答。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンセンサス",
+        "eigo": "consensus",
+        "kwsk": "合意。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リリース",
+        "eigo": "release",
+        "kwsk": "公開。開放。頒布。発売。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハンドシェイク",
+        "eigo": "handshake",
+        "kwsk": "調整などデータのやりとり以外に行う通信。",
+        "mnim": "握手",
+        "tigg": ""
+    },
+    {
+        "kotb": "パラメーター",
+        "eigo": "parameter",
+        "kwsk": "引数がない場合に使用される値。仮引数。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ネゴシエーション",
+        "eigo": "negotiation",
+        "kwsk": "交渉。取引。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ストリーム",
+        "eigo": "stream",
+        "kwsk": "連続した処理。",
+        "mnim": "流れ",
+        "tigg": ""
+    },
+    {
+        "kotb": "ストリーミング",
+        "eigo": "streaming",
+        "kwsk": "ダウンロードしながら再生する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デベロッパー",
+        "eigo": "developer",
+        "kwsk": "開発をしている人や会社。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ポータル",
+        "eigo": "portal",
+        "kwsk": "出入口。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コミット",
+        "eigo": "commit",
+        "kwsk": "反映する。関係を持つ。責任を負う。約束する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スタッシュ",
+        "eigo": "stash",
+        "kwsk": "隠す。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フェッチ",
+        "eigo": "fetch",
+        "kwsk": "取り出す。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プッシュ",
+        "eigo": "push",
+        "kwsk": "押す。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プル",
+        "eigo": "pull",
+        "kwsk": "引く。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リジェクト",
+        "eigo": "reject",
+        "kwsk": "却下。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リワード",
+        "eigo": "reward",
+        "kwsk": "報酬。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アクワイア",
+        "eigo": "acuire",
+        "kwsk": "入手する。得る。学ぶ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サマリー",
+        "eigo": "summary",
+        "kwsk": "概要。要約。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スポイラー",
+        "eigo": "spoiler",
+        "kwsk": "害する。",
+        "mnim": "",
+        "tigg": ""
     }
 ]

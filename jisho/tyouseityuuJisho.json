@@ -112,9 +112,51 @@
         "tigg": ""
     },
     {
+        "kotb": "サーバー",
+        "eigo": "server",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ホスト",
+        "eigo": "host",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ゲスト",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オーナー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
         "kotb": "ぬるぽ",
         "eigo": "",
         "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "タイミングアタック",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "",
+        "eigo": "",
+        "kwsk": "wasm。",
         "mnim": "",
         "tigg": ""
     },
