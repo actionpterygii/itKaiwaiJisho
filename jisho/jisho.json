@@ -2644,5 +2644,77 @@
         "kwsk": "害する。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "アノマリー",
+        "eigo": "anomaly",
+        "kwsk": "異常。説明できないやつ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リボーク",
+        "eigo": "revoke",
+        "kwsk": "取り消す。無効にする。廃止する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "サブミット",
+        "eigo": "submit",
+        "kwsk": "送信する。投稿する。提出する。",
+        "mnim": "",
+        "tigg": ""
+    },
+
+    {
+        "kotb": "シングル サイン オン",
+        "eigo": "Single Sign-On",
+        "kwsk": "一つのアカウントで複数のサービスを使えるようなやつ。SSO。",
+        "mnim": "",
+        "tigg": ""
+    },
+
+    {
+        "kotb": "カタリスト",
+        "eigo": "catalyst",
+        "kwsk": "要因になるもの。",
+        "mnim": "触媒",
+        "tigg": ""
+    },
+    {
+        "kotb": "コネクティビティ",
+        "eigo": "connectivity",
+        "kwsk": "接続のしやすさ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コントリビューター",
+        "eigo": "contributor",
+        "kwsk": "貢献者。寄付者。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディクララティブ",
+        "eigo": "declarative",
+        "kwsk": "宣言的。目的だけをいう。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インベラティブ",
+        "eigo": "imperative",
+        "kwsk": "命令的。指示的。実現方法の細かいとこからいう。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ホーリーグレイル",
+        "eigo": "holygrail",
+        "kwsk": "探し求められているもの。",
+        "mnim": "聖杯",
+        "tigg": ""
     }
 ]

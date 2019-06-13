@@ -155,8 +155,50 @@
     },
     {
         "kotb": "",
+        "eigo": "saml",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "",
         "eigo": "",
         "kwsk": "wasm。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "メッシュネットワーク",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マニュファクチュア",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アクセスポイント",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リージョンロック",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アバンギャルド",
+        "eigo": "",
+        "kwsk": "",
         "mnim": "",
         "tigg": ""
     },
@@ -164,6 +206,13 @@
         "kotb": "オーサティング",
         "eigo": "",
         "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "",
+        "eigo": "",
+        "kwsk": "Auth",
         "mnim": "",
         "tigg": ""
     },
