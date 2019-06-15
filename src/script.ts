@@ -212,13 +212,6 @@ window.onload = function()
     input.focus();
 };
 
-// 入力部分以外を触ったら
-input.onblur = function()
-{
-    // 入力部分にフォーカスを当てる
-    input.focus();
-};
-
 // 文字が入力されるたんびに
 input.onkeyup = function()
 {
@@ -226,23 +219,6 @@ input.onkeyup = function()
     const inputValue: string = input.value;
     // そこから結果を作成して描画
     result.innerHTML = createResult(jisho, inputValue);
-};
-
-// 使い方ボタンを押したら
-usageBtn.onclick = function()
-{
-    // でてなかったら
-    if(readme.style.display == 'none')
-    {
-        // だす
-        readme.style.display = 'block';
-    }
-    // でてたら
-    else
-    {
-        // ひっこめる
-        readme.style.display = 'none';
-    }
 };
 
 // エンター押されたらぐぐる
