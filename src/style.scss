@@ -1,4 +1,6 @@
-body,div,section,
+body,
+header,main,section,
+div,section,
 h1,h2,p,input,button,
 dl,dt,dd {
     box-sizing: border-box;
@@ -11,10 +13,12 @@ dl,dt,dd {
     cursor: default;
 }
 
-#wrap {
-    min-height: 300px;
-    width: 500px;
+
+main {
+    margin: 0 auto;
+    height: 1000px;
 }
+
 
 #textarea {
     margin-top: 40px;
