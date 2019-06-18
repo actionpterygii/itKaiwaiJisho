@@ -2765,5 +2765,47 @@
         "kwsk": "渋滞の迂回のための経路。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "ペリフェラル",
+        "eigo": "peripheral",
+        "kwsk": "コンピューターの周辺装置。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スペシフィケーション",
+        "eigo": "specification",
+        "kwsk": "仕様。性能。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ライセンス",
+        "eigo": "license",
+        "kwsk": "許可。免許。認可。許諾。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フレキシブル",
+        "eigo": "flexible",
+        "kwsk": "柔軟。しなやか。融通が利く。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ベネフィット",
+        "eigo": "benefit",
+        "kwsk": "利益。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オーセンティック",
+        "eigo": "authentic",
+        "kwsk": "信頼できる。本格的。正統。正しい。",
+        "mnim": "本物",
+        "tigg": ""
     }
 ]
