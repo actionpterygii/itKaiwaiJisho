@@ -1731,7 +1731,7 @@
     {
         "kotb": "サブスクリプション",
         "eigo": "subscription",
-        "kwsk": "買い取り式ではなく、利用した期間に応じてお金を払う。",
+        "kwsk": "買い取り式ではなく、利用した期間に応じてお金を払う。サブスクライブ。",
         "mnim": "予約購読",
         "tigg": ""
     },
@@ -2366,8 +2366,8 @@
         "tigg": ""
     },
     {
-        "kotb": "アールエフシー",
-        "eigo": "RFC",
+        "kotb": "RFC",
+        "eigo": "",
         "kwsk": "インターネットで用いられる技術仕様文書。",
         "mnim": "",
         "tigg": ""
@@ -2806,6 +2806,132 @@
         "eigo": "authentic",
         "kwsk": "信頼できる。本格的。正統。正しい。",
         "mnim": "本物",
+        "tigg": ""
+    },
+    {
+        "kotb": "トランケート",
+        "eigo": "truncate",
+        "kwsk": "切り詰める。切り捨てる。切り縮める。中断する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トゥー マッチ インフォメーション",
+        "eigo": "too much information",
+        "kwsk": "これ以上はいらない。もう十分。いらんいらん。TMI。",
+        "mnim": "過剰な情報",
+        "tigg": ""
+    },
+    {
+        "kotb": "ソリューション",
+        "eigo": "solution",
+        "kwsk": "解決手段。解決策。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンサルティング",
+        "eigo": "consulting",
+        "kwsk": "企業の課題解決を助ける。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オポチュニティー",
+        "eigo": "opportunity",
+        "kwsk": "機会。好機。チャンス。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アクティビティ",
+        "eigo": "activity",
+        "kwsk": "活動。活気。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ポッドキャスト",
+        "eigo": "podcast",
+        "kwsk": "音声データをWebサーバーにアップロードしてRSSを通して公開。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "RSS",
+        "eigo": "",
+        "kwsk": "ウェブサイトの更新を配信するための文書フォーマット。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ワールド ワイド ウェブ",
+        "eigo": "World Wide Web",
+        "kwsk": "インターネットでハイパーテキストを提供するやつ。WWW。W3。Web。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハイパー テキスト",
+        "eigo": "hyper text",
+        "kwsk": "文書中に別の文書への参照がある。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンピュート",
+        "eigo": "compute",
+        "kwsk": "計算する。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トランスレーター",
+        "eigo": "translator",
+        "kwsk": "翻訳者。通訳。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スケプティカル",
+        "eigo": "skeptical",
+        "kwsk": "疑い深い。懐疑的。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デグレード",
+        "eigo": "degrade",
+        "kwsk": "悪化。退化。低下。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "モデレート",
+        "eigo": "moderate",
+        "kwsk": "適度。普通。並。中間。穏健。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ノーテーション",
+        "eigo": "notation",
+        "kwsk": "表記。表示。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トラックバック",
+        "eigo": "trackback",
+        "kwsk": "リンクを張ったことを通知するやつ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イテレート",
+        "eigo": "iterate",
+        "kwsk": "繰り返す。",
+        "mnim": "",
         "tigg": ""
     }
 ]
