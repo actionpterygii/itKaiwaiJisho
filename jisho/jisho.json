@@ -2933,5 +2933,26 @@
         "kwsk": "繰り返す。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "リカーシブ",
+        "eigo": "recursive",
+        "kwsk": "再帰。入れ子。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ファウンダー",
+        "eigo": "founder",
+        "kwsk": "創業者。創立者。設立者。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リンガ フランカ",
+        "eigo": "Lingua franca",
+        "kwsk": "共通語。",
+        "mnim": "",
+        "tigg": ""
     }
 ]
