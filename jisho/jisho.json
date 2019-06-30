@@ -2954,5 +2954,61 @@
         "kwsk": "共通語。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "ラバー ダッキング",
+        "eigo": "rubber ducking",
+        "kwsk": "問題を物に話しかけ、物事を整理することで問題解決。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リーストゥ リースントゥリィ ユーズド",
+        "eigo": "Least Recently Used",
+        "kwsk": "最後に参照してから最も時間が経っているやつ。RU。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リーストゥ フリークウェントゥリィ ユーズド",
+        "eigo": "Least Frequently Used",
+        "kwsk": "参照頻度が最も少ないやつ。LFU。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アサート",
+        "eigo": "assert",
+        "kwsk": "断言。力説。表明。主張。表明。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "カバレッジ",
+        "eigo": "coverage",
+        "kwsk": "カバー率。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディフ",
+        "eigo": "diff",
+        "kwsk": "比較して差異があるかをみるやつ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スタック",
+        "eigo": "stack",
+        "kwsk": "溜まったデータを取り出すときは後に追加されたものから。",
+        "mnim": "干し草の山。積み重ね。",
+        "tigg": ""
+    },
+    {
+        "kotb": "キュー",
+        "eigo": "queue",
+        "kwsk": "溜まったデータを取り出すときは先に追加されたものから。",
+        "mnim": "待ち列。",
+        "tigg": ""
     }
 ]

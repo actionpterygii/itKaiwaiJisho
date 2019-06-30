@@ -264,5 +264,19 @@
         "kwsk": "。多重度。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "FIFO",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "LIFO",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
     }
 ]
