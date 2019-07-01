@@ -104,6 +104,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
                     return jisho[key];
                 }
             }
+            // 完全一致検索じゃなかったら
             else
             {
                 // 一単語に対して、先に定義してあるwordItemsの要素ぶん回す。
@@ -168,13 +169,17 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                         '<dl class="tigg">' +
                             '<dt>対義語：</dt>' +
                             '<dd>' + element[key] + '</dd>' +
+                            // ここのときにすぐ実行される
                             (function()
                             {
+                                // base==true、つまり何かの対義語として表示されてるやつじゃなかったら
                                 if(base)
                                 {
+                                    // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
                                     return createHtml(serch(jisho, element[key], true), false);
                                 }
-                            })(); +
+                            }
+                            )(); +
                         '</dl>';
                     break;
                 default:
