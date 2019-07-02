@@ -18,6 +18,27 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
+// URLからクエリパラメータからkeyのvalueをとってくる
+function getParamValue(key: string)
+{
+    const url: string = window.location.href;
+    key = key.replace(/[\[\]]/g, "\\$&");
+    const regex: RegExp = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    const results: any  = regex.exec(url);
+    if(!results)
+    {
+        return null;
+    }
+    else if(!results[2])
+    {
+        return '';
+    }
+    else
+    {
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+}
+
 // 一単語にある項目の中で調べるべきもの(対義語以外ね)
 const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 
@@ -210,11 +231,26 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
     return entity.replace('undefined','');
 }
 
-// 拡張機能開いたら、
+// 開いたら
 window.onload = function()
 {
-    // 入力部分にフォーカスを当てる
-    input.focus();
+    const inputValue :string = getParamValue('inputValue');
+    const displayType :string = getParamValue('displayName');
+    if(inputValue)
+    {
+        // 一単語のみ出すのの場合
+        if(displayType == 'oneWord')
+        {
+            // 完全一致検索でひとつだけ検索し、HTMLを構成する(base==falseで)
+            result.innerHTML = createHtml(serch(jisho, inputValue, true), false);
+        }
+        // 検索結果を出すやつの場合
+        else if(displayType == 'searchResult')
+        {
+            // inputValueから結果を作成して描画
+            result.innerHTML = createResult(jisho, inputValue);
+        }
+    }
 };
 
 // 文字が入力されるたんびに
@@ -222,7 +258,7 @@ input.onkeyup = function()
 {
     // inputにあるvalueを格納
     const inputValue: string = input.value;
-    // そこから結果を作成して描画
+    // inputValueから結果を作成して描画
     result.innerHTML = createResult(jisho, inputValue);
 };
 
