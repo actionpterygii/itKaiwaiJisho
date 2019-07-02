@@ -265,6 +265,8 @@ window.onload = function()
             result.innerHTML = createResult(jisho, inputValue);
         }
     }
+    const url: string = window.location.href.replace(/\?.*$/,"");
+    window.history.pushState(null, "itKakwaiJisho", url);
 };
 
 // 文字が入力されるたんびに
