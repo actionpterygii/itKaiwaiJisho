@@ -23,7 +23,7 @@ function getParamValue(key: string)
 {
     const url: string = window.location.href;
     key = key.replace(/[\[\]]/g, "\\$&");
-    const regex: RegExp = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    const regex: RegExp = new RegExp("[?&]" + key + "(=([^&#]*)|&|#|$)");
     const results: any  = regex.exec(url);
     if(!results)
     {
@@ -235,7 +235,7 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
 window.onload = function()
 {
     const inputValue :string = getParamValue('inputValue');
-    const displayType :string = getParamValue('displayName');
+    const displayType :string = getParamValue('displayType');
     if(inputValue)
     {
         // 一単語のみ出すのの場合
