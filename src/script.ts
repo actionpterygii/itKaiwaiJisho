@@ -265,7 +265,9 @@ window.onload = function()
             result.innerHTML = createResult(jisho, inputValue);
         }
     }
+    // 現在のURLからクエリパラメータのところを消す
     const url: string = window.location.href.replace(/\?.*$/,"");
+    // URLを上書き
     window.history.pushState(null, "itKakwaiJisho", url);
 };
 
