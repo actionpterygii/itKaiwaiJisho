@@ -279,6 +279,7 @@ input.onkeyup = function()
 // 結果コピーボタン押したら
 kekkakopi.onclick = function()
 {
+    alert('a');
     const url: string = window.location.href;
     copyTextToClipboard(url + '?inputValue=' + inputValue + '&displayType=searchResult');
 }
