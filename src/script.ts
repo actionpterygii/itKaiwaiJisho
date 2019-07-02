@@ -1,7 +1,7 @@
 const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
 const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
-const kekkakopi: HTMLDivElement = document.getElementById('kekakopi') as HTMLDivElement;
+const kekkakopi: HTMLDivElement = document.getElementById('kekkakopi') as HTMLDivElement;
 
 let inputValue: string = '';
 
