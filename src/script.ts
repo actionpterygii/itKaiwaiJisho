@@ -290,8 +290,6 @@ window.document.onkeydown = function(event)
     // エンターキーのキーコードは13ゆえ
     if(event.keyCode === 13)
     {
-        // inputにあるvalueを格納
-        const inputValue: string = input.value;
         // ぐぐる
         window.open('https://www.google.com/search?q=' + inputValue);
     }
