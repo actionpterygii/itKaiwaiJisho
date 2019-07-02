@@ -1,7 +1,9 @@
 const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
 const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
-const readme: HTMLDivElement = document.getElementById('readme') as HTMLDivElement;
+const kekkakopi: HTMLDivElement = document.getElementById('kekakopi') as HTMLDivElement;
+
+let inputValue: string = '';
 
 // 辞書情報を辞書jsonから取得する
 const jishoPath: string = 'jisho.json';
@@ -17,6 +19,18 @@ xhr.onreadystatechange = function()
     }
 };
 xhr.send();
+
+// 文字列をクリップボードにコピーする
+function copyTextToClipboard(text: string)
+{
+    const copyFrom: HTMLTextAreaElement = document.createElement('textarea');
+    const bodyElm: HTMLBodyElement = document.getElementsByTagName('body')[0];
+    copyFrom.textContent = text;
+    bodyElm.appendChild(copyFrom);
+    copyFrom.select();
+    document.execCommand('copy');
+    bodyElm.removeChild(copyFrom);
+}
 
 // URLからクエリパラメータからkeyのvalueをとってくる
 function getParamValue(key: string)
@@ -257,10 +271,17 @@ window.onload = function()
 input.onkeyup = function()
 {
     // inputにあるvalueを格納
-    const inputValue: string = input.value;
+    inputValue = input.value;
     // inputValueから結果を作成して描画
     result.innerHTML = createResult(jisho, inputValue);
 };
+
+// 結果コピーボタン押したら
+kekkakopi.onclick = function()
+{
+    const url: string = window.location.href;
+    copyTextToClipboard(url + '?inputValue=' + inputValue + '&displayType=searchResult');
+}
 
 // エンター押されたらぐぐる
 window.document.onkeydown = function(event)
