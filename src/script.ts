@@ -248,14 +248,17 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
 // 開いたら
 window.onload = function()
 {
+    // URLのクエリパラメーターからinputValueの値をとってくる
     const inputValue :string = getParamValue('inputValue');
+    // URLのクエリパラメーターからdisplayTypeの値をとってくる
     const displayType :string = getParamValue('displayType');
+    // inputValueの値があったとき
     if(inputValue)
     {
         // 一単語のみ出すのの場合
         if(displayType == 'oneWord')
         {
-            // 完全一致検索でひとつだけ検索し、HTMLを構成する(base==falseで)
+            // 完全一致検索でひとつだけ検索し、HTMLを構成して描画(base==falseで)
             result.innerHTML = createHtml(serch(jisho, inputValue, true), false);
         }
         // 検索結果を出すやつの場合
@@ -283,8 +286,9 @@ input.onkeyup = function()
 // 結果コピーボタン押したら
 kekkakopi.onclick = function()
 {
-    alert('a');
+    // 今のURL持ってくる
     const url: string = window.location.href;
+    // 結果表示させれるクエリパラメーター付きのURLをコピーさせる
     copyTextToClipboard(url + '?inputValue=' + inputValue + '&displayType=searchResult');
 }
 
