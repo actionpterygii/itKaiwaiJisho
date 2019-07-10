@@ -3010,5 +3010,19 @@
         "kwsk": "溜まったデータを取り出すときは先に追加されたものから。",
         "mnim": "待ち列",
         "tigg": ""
+    },
+    {
+        "kotb": "ベンダー",
+        "eigo": "vendor",
+        "kwsk": "製造元。販売元。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "BYOD",
+        "eigo": "Bring Your Own Device",
+        "kwsk": "個人所有の情報機器を業務で使うこと。",
+        "mnim": "",
+        "tigg": ""
     }
 ]
