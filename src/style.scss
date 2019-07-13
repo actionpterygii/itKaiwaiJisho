@@ -40,10 +40,8 @@ main {
     margin-top: 40px;
     margin-left: 50px;
     @include mq(max,se) {
-        padding-left:  30px;
-        padding-right: 30px;
-        margin-top: 0px;
-        margin-left: 0px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -58,7 +56,6 @@ main {
     animation-direction: alternate;
     animation-fill-mode: none;
     animation-play-state: running;
-
     @include mq(max,se) {
         width: 100%;
     }
@@ -69,9 +66,8 @@ main {
         width: 10px;
     }
     100% {
-        width: 400px;
+        width: 100%;
     }
-
 }
 
 #input {
@@ -97,8 +93,8 @@ main {
     border-radius: 5px;
     padding: 5px;
     @include mq(max,se) {
-        width: 100%;
-        margin-left: 0px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
