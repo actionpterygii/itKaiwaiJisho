@@ -98,6 +98,7 @@ main {
     padding: 5px;
     @include mq(max,se) {
         width: 100%;
+        margin-left: 0px;
     }
 }
 
