@@ -20,7 +20,10 @@ main {
 }
 
 
-#textarea {
+#control {
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
     margin-top: 40px;
     margin-left: 50px;
     @media (max-width: 320px) {
