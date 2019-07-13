@@ -96,6 +96,9 @@ main {
     border: solid 1px #f9f;
     border-radius: 5px;
     padding: 5px;
+    @include mq(max,se) {
+        width: 100%;
+    }
 }
 
 h2 {
