@@ -1,3 +1,15 @@
+$breakpoints:(
+    se: 320px,
+    sp: 480px,
+    pc: 1000px
+);
+
+@mixin mq($range, $breakpoint) {
+    @media (#{$range}-width:#{map-get($breakpoints,$breakpoint)}) {
+        @content;
+    }
+}
+
 body,
 header,main,section,
 div,section,
@@ -27,7 +39,7 @@ main {
     top: 0px;
     margin-top: 40px;
     margin-left: 50px;
-    @media (max-width: 320px) {
+    @include mq(max,se) {
         padding-left:  30px;
         padding-right: 30px;
         margin-top: 0px;
@@ -47,7 +59,7 @@ main {
     animation-fill-mode: none;
     animation-play-state: running;
 
-    @media (max-width: 320px) {
+    @include mq(max,se) {
         width: 100%;
     }
 }
@@ -66,7 +78,7 @@ main {
     height: 40px;
     font-size: 40px;
     margin-bottom: 5px;
-    @media (max-width: 320px) {
+    @include mq(max,se) {
         width: 100%;
     }
 }
