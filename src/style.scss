@@ -40,7 +40,7 @@ main {
     margin-top: 40px;
     margin-left: 50px;
     @include mq(max,se) {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
     }
 }
@@ -93,7 +93,7 @@ main {
     border-radius: 5px;
     padding: 5px;
     @include mq(max,se) {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
     }
 }
