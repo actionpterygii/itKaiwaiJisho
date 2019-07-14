@@ -10,6 +10,7 @@ const imgmin = require('gulp-imagemin');
 const imgminp = require('imagemin-pngquant');
 const imgminj = require('imagemin-mozjpeg');
 const prcs = require('child_process').exec;
+const webserver = require('gulp-webserver');
 
 
 const src = './src/';
@@ -17,6 +18,7 @@ const srcImages = src + 'images/';
 
 const dist = './docs/';
 const distImages = dist + 'images/';
+
 
 gulp.task('html', function()
 {
@@ -26,6 +28,11 @@ gulp.task('html', function()
         .pipe(gulp.dest(dist));
 });
 
+gulp.task('watchHtml', function()
+{
+    return gulp.watch(src + '*.html', gulp.task('html'));
+});
+
 gulp.task('css', function()
 {
     return gulp.src(src + '*.scss')
@@ -33,6 +40,11 @@ gulp.task('css', function()
         .pipe(scss({outputStyle: 'compressed'}).on('error', scss.logError))
         .pipe(bprfx(['last 3 versions', 'ie >= 10', 'Android >= 4', 'iOS >= 8']))
         .pipe(gulp.dest(dist));
+});
+
+gulp.task('watchCss', function()
+{
+    return gulp.watch(src + '*.scss', gulp.task('css'));
 });
 
 gulp.task('js', function()
@@ -45,9 +57,9 @@ gulp.task('js', function()
         .pipe(gulp.dest(dist));
 });
 
-gulp.task('jishoJson', function()
+gulp.task('watchJs', function()
 {
-    return prcs('python jishoJsonWoSort.py ./jisho/ ./docs/');
+    return gulp.watch(src + '*.ts', gulp.task('js'));
 });
 
 gulp.task('img', function()
@@ -60,7 +72,38 @@ gulp.task('img', function()
             imgminj({quality: 85, progressive: true}), imgmin.svgo(), imgmin.optipng(), imgmin.gifsicle()])
         )
         .pipe(gulp.dest(distImages));
-
 });
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'jishoJson', 'img'));
+gulp.task('watchImg', function ()
+{
+    return gulp.watch(srcImages + '*.{png,jpg,gif,svg}', gulp.task('img'));
+});
+
+
+gulp.task('jishoJson', function()
+{
+    return prcs('python jishoJsonWoSort.py ./jisho/ ./docs/');
+});
+
+gulp.task('watchJishoJson', function()
+{
+    return gulp.watch('./jisho/jisho.json', gulp.task('jishoJson'));
+});
+
+
+gulp.task('webserver', function()
+{
+    return gulp.src(dist)
+        .pipe(webserver(
+        {
+            livereload: true,
+            port: 8001,
+            fallback: 'index.html',
+            open: true
+        }));
+});
+
+
+gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchImg', 'watchJishoJson'));
+
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'img', 'jishoJson'));

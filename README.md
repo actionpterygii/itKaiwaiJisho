@@ -2,6 +2,8 @@
 ググれば幸せになれるこの時代に、私は、辞書を作りたいのです  
 
 ## 仕様
+- 文字入力によってリアルタイムで検索できる
+- すぐぐぐれる機能がある
 - URL
   - 普通にしてればURLはずっといっしょ
   - シェアして使えるようにクエリパラメーター付きでURLを持っていける(以下2パターンで)
@@ -14,9 +16,12 @@
 - docsディレクトリでGitHubPages
 - ChromeExtension (Chrome拡張機能)
 - jsonを外部から読み込んでパース
-- Sass(SCSS),TypeScriptをgulpでトランスパイル
+- gulp
+  - Sass(SCSS),TypeScriptをトランスパイル
+  - ソースファイルの諸々の変更を監視して自動で変換(更新)
+  - ローカルサーバーで公開用HTMLを見続ける(ファイルの更新があればリロード)
+  - gulpでコマンド実行(Pythonした)
 - Pythonでjsonをならびかえ
-- gulpでコマンド実行(Pythonした)  
 - TypeScriptでChrome用のオブジェクトを使うために`@types/chrome`を`npm install`した  
 
 ## 雑記
@@ -37,14 +42,17 @@
 - ディレクトリの大文字小文字変更はpushしてもいかなかったのですかもね
 - JSONをよみこむのがめんどくさいのか、JSONのよみこみにきびしすぎるのか、JSがさいしょからもっとがんばってほしかったのか
 - 今の書き方で、GitHubPagesに上げてるやつはJSON読み込みできるけど、ローカルでは読めない。それはChromeが悪い。
+  - ローカル環境で、確認していたくて、`gulp-webserver`はじめました
+  - それだといける。うれしいね。
+  - `watch`とあわせてデザイン()修正の際もやっぱ楽で良いです。
 - アルファベットの読み方はみんなわかっているとおもいますねん
 - (英語辞書ではありません)
 - `RegExp`の`exec`が`RegExpExecArray | null`なようで、`any`
 - VisualStudioCodeは`ブロック スコープの変数 'xxx' を再宣言することはできません。 'xxx' was also declared here.`とかいうけどぜんぜん普通に行けるし知らんわ
 - CSSアニメーションの関係か、メディアクエリで指定している前の`width`がでたりしたのでよくわからないガチガチ指定で矯正かなしいね
-- 新しいgulpのモジュール追加したからなんかで`Error: Cannot find module 'typescript'`とか言われて意味わからんけど`npm install --save typescript`で解決しました？
+- 新しいgulpのモジュール追加したからなんかで`Error: Cannot find module 'typescript'`とか言われて意味わからんけど`npm install --save typescript`で解決しましたね
+- gulpに監視されるのを終わらせるのに`control + Z`はよくない`control + C`にしよう
 
-- 新しいgulpのモジュール追加したからなんかで`Error: Cannot find module 'typescript'`とか
 ## きもち
 この業界は何かしらの解説に専門用語やら英語が多すぎるので  
 何回か同じ語をググるのが嫌で  
