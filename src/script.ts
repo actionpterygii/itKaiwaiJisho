@@ -1,7 +1,10 @@
 const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
 const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
-const kekkakopi: HTMLDivElement = document.getElementById('kekkakopi') as HTMLDivElement;
+const kekkaKopi: HTMLAnchorElement = document.getElementById('kekkaKopi') as HTMLAnchorElement;
+
+// 現在のURLからクエリパラメータのところを消す
+const url: string = window.location.href.replace(/\?.*$/,"");
 
 let inputValue: string = '';
 
@@ -268,10 +271,10 @@ window.onload = function()
             result.innerHTML = createResult(jisho, inputValue);
         }
     }
-    // 現在のURLからクエリパラメータのところを消す
-    const url: string = window.location.href.replace(/\?.*$/,"");
     // URLを上書き
     window.history.pushState(null, "itKakwaiJisho", url);
+    // 結果コピーをデフォルトのURLリンクに
+    kekkaKopi.setAttribute('href', url);
 };
 
 // 文字が入力されるたんびに
@@ -281,16 +284,9 @@ input.onkeyup = function()
     inputValue = input.value;
     // inputValueから結果を作成して描画
     result.innerHTML = createResult(jisho, inputValue);
+    // 結果コピーボタンのリンク先内容を書き換え
+    kekkaKopi.setAttribute('href', url + '?inputValue=' + inputValue + '&displayType=searchResult');
 };
-
-// 結果コピーボタン押したら
-kekkakopi.onclick = function()
-{
-    // 今のURL持ってくる
-    const url: string = window.location.href;
-    // 結果表示させれるクエリパラメーター付きのURLをコピーさせる
-    copyTextToClipboard(url + '?inputValue=' + inputValue + '&displayType=searchResult');
-}
 
 // エンター押されたらぐぐる
 window.document.onkeydown = function(event)
