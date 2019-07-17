@@ -273,7 +273,7 @@ window.onload = function()
         }
     }
     // URLを上書き
-    window.history.pushState(null, "itKakwaiJisho", url);
+    // window.history.pushState(null, "itKakwaiJisho", url);  検証用に
     // 結果コピーをデフォルトのURLリンクに
     kekkaKopi.setAttribute('href', url);
 };
