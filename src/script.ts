@@ -172,8 +172,9 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
 // 必要な部分の辞書jsonからHTMLを作成
 function createHtml(element: {[key: string]: string;}, base: boolean)
 {
-    // 一単語をつつむおおいなるdiv(これに追加していって最後返す)
-    let html: string = '<div class="tango">';
+    // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
+    let html: string = '<a href="' + url + '?inputValue=' + element['kotb'] + '&displayType=oneWord' + '" class="tango">';
+    // let html: string = '<div class="tango">';
     // 単語内の各要素を一つづつみていく
     for(let key in element)
     {
@@ -225,8 +226,8 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
             }
         }
     }
-    // 最後の綴じdiv
-    html += '</div>';
+    // 最後の綴じa要素
+    html += '</a>';
     // かえせ
     return html;
 }
