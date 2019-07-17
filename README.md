@@ -52,6 +52,9 @@
 - CSSアニメーションの関係か、メディアクエリで指定している前の`width`がでたりしたのでよくわからないガチガチ指定で矯正かなしいね
 - 新しいgulpのモジュール追加したからなんかで`Error: Cannot find module 'typescript'`とか言われて意味わからんけど`npm install --save typescript`で解決しましたね
 - gulpに監視されるのを終わらせるのに`control + Z`はよくない`control + C`にしよう
+- URL書き換え
+  - `pushState()`(履歴に追加する)
+  - `replaceState()`(履歴を上書く)
 
 ## きもち
 この業界は何かしらの解説に専門用語やら英語が多すぎるので  
