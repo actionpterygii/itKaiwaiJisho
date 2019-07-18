@@ -14,7 +14,8 @@ var jisho: [{[key: string]: string;}];
 const xhr: XMLHttpRequest = new XMLHttpRequest();
 xhr.overrideMimeType("application/json");
 xhr.open('GET', jishoPath, true);
-xhr.onreadystatechange = function()
+// xhr.onreadystatechange = function()
+xhr.onload = function()
 {
     if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
     {
@@ -173,7 +174,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
 function createHtml(element: {[key: string]: string;}, base: boolean)
 {
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
-    let html: string = '<a href="' + encodeURI(url + '?inputValue=' + element['kotb'] + '&displayType=oneWord') + '" class="tango">';
+    let html: string = '<a href="' + url + '?inputValue=' + element['kotb'] + '&displayType=oneWord' + '" class="tango">';
     console.log(url + '?inputValue=' + element['kotb'] + '&displayType=oneWord');
     console.log(element);
     // let html: string = '<div class="tango">';
