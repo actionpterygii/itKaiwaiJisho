@@ -174,6 +174,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
 {
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
     let html: string = '<a href="' + url + '?inputValue=' + element['kotb'] + '&displayType=oneWord' + '" class="tango">';
+    console.log(url + '?inputValue=' + element['kotb'] + '&displayType=oneWord');
     // let html: string = '<div class="tango">';
     // 単語内の各要素を一つづつみていく
     for(let key in element)
@@ -254,20 +255,24 @@ window.onload = function()
 {
     // URLのクエリパラメーターからinputValueの値をとってくる
     const inputValue :string = getParamValue('inputValue');
+    console.log(inputValue);
     // URLのクエリパラメーターからdisplayTypeの値をとってくる
     const displayType :string = getParamValue('displayType');
+    console.log(displayType);
     // inputValueの値があったとき
     if(inputValue)
     {
         // 一単語のみ出すのの場合
         if(displayType == 'oneWord')
         {
+            console.log('oneWord');
             // 完全一致検索でひとつだけ検索し、HTMLを構成して描画(base==falseで)
             result.innerHTML = createHtml(serch(jisho, inputValue, true), false);
         }
         // 検索結果を出すやつの場合
         else if(displayType == 'searchResult')
         {
+            console.log('searchResult')
             // inputValueから結果を作成して描画
             result.innerHTML = createResult(jisho, inputValue);
         }
