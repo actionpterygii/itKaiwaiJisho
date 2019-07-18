@@ -19,7 +19,7 @@ xhr.onreadystatechange = function()
 {
     // if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
     // {
-        jisho = JSON.parse(xhr.responseText);
+        jisho = JSON.parse(xhr.responseText || "null");
     // }
 };
 xhr.send();
