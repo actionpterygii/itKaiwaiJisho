@@ -15,12 +15,12 @@ const xhr: XMLHttpRequest = new XMLHttpRequest();
 xhr.overrideMimeType("application/json");
 xhr.open('GET', jishoPath, true);
 // xhr.onreadystatechange = function()
-xhr.onloadstart = function()
+xhr.onreadystatechange = function()
 {
-    if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
-    {
+    // if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+    // {
         jisho = JSON.parse(xhr.responseText);
-    }
+    // }
 };
 xhr.send();
 
