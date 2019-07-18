@@ -15,7 +15,7 @@ const xhr: XMLHttpRequest = new XMLHttpRequest();
 xhr.overrideMimeType("application/json");
 xhr.open('GET', jishoPath, true);
 // xhr.onreadystatechange = function()
-window.onload = function()
+xhr.onloadstart = function()
 {
     if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
     {
@@ -174,7 +174,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
 function createHtml(element: {[key: string]: string;}, base: boolean)
 {
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
-    let html: string = '<a href="' + url + '?inputValue=' + element['kotb'] + '&displayType=oneWord' + '" class="tango">';
+    let html: string = '<a href="' + encodeURI(url + '?inputValue=' + element['kotb'] + '&displayType=oneWord') + '" class="tango">';
     console.log(url + '?inputValue=' + element['kotb'] + '&displayType=oneWord');
     console.log(element);
     // let html: string = '<div class="tango">';
@@ -295,7 +295,7 @@ input.onkeyup = function()
     // inputValueから結果を作成して描画
     result.innerHTML = createResult(jisho, inputValue);
     // 結果コピーボタンのリンク先内容を書き換え
-    kekkaKopi.setAttribute('href', url + '?inputValue=' + inputValue + '&displayType=searchResult');
+    kekkaKopi.setAttribute('href', encodeURI(url + '?inputValue=' + inputValue + '&displayType=searchResult'));
 };
 
 // エンター押されたらぐぐる
