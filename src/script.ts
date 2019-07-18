@@ -15,7 +15,7 @@ const xhr: XMLHttpRequest = new XMLHttpRequest();
 xhr.overrideMimeType("application/json");
 xhr.open('GET', jishoPath, true);
 // xhr.onreadystatechange = function()
-xhr.onload = function()
+window.onload = function()
 {
     if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
     {
