@@ -175,6 +175,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
     let html: string = '<a href="' + url + '?inputValue=' + element['kotb'] + '&displayType=oneWord' + '" class="tango">';
     console.log(url + '?inputValue=' + element['kotb'] + '&displayType=oneWord');
+    console.log(element);
     // let html: string = '<div class="tango">';
     // 単語内の各要素を一つづつみていく
     for(let key in element)
