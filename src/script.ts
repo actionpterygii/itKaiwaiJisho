@@ -269,6 +269,8 @@ window.onload = function()
             console.log('oneWord');
             // 完全一致検索でひとつだけ検索し、HTMLを構成して描画(base==falseで)
             result.innerHTML = createHtml(serch(jisho, inputValue, true), false);
+            console.log(jisho);
+            console.log(inputValue);
         }
         // 検索結果を出すやつの場合
         else if(displayType == 'searchResult')
