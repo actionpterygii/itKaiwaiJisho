@@ -3045,5 +3045,320 @@
         "kwsk": "引きつける。興味をひく。中毒性のある。ややこしい。",
         "mnim": "べたべたする",
         "tigg": ""
+    },
+    {
+        "kotb": "プロポーサル",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ソーシャル エンジニアリング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アンチ パターン",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "レイオフ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リーク",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スタック オーバーフロー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スポール",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "シャドーイング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "トランザクション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ポーリング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ヴァルナラビリティ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンティニュアス インテグレーション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スイート",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マニファクチュア",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンプレイン",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オープンエンド",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リタリエーション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クラッシュ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パーセプション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "レジストリ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パブリシティ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オープン ソース",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "キャピタリズム",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "セントラライズ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アクセプタブル",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プロフィット",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ガバナンス",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フィンテック",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イジェクト",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エッジ コンピューティング",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プライオリティ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スレッド",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ネームスペース",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オリジン",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディスミス",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アンドゥ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "リドゥ",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ノーティフィケーション",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ピッカー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エレメント",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アーティクル",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インテント",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "エナジャイザー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "カーネルパニック",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "イシュー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
     }
 ]
