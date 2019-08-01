@@ -3047,58 +3047,51 @@
         "tigg": ""
     },
     {
-        "kotb": "プロポーサル",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "プロポーザル",
+        "eigo": "proposal",
+        "kwsk": "企画。提案。提案。申し込み。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ソーシャル エンジニアリング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "social engineering",
+        "kwsk": "機密情報を入手する際に、情報技術ではなく心理的なものを利用する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アンチ パターン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "anti pattern",
+        "kwsk": "あかんやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "レイオフ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "layoff",
+        "kwsk": "一時解雇。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リーク",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "leak",
+        "kwsk": "流出。漏れる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スタック オーバーフロー",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "スポール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "stack overflow",
+        "kwsk": "格納できるできる以上の情報が来てあふれてしまう。プログラミング系の質問したりするサイト。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "シャドーイング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "shadowing",
+        "kwsk": "物の陰影を描画する。",
         "mnim": "",
         "tigg": ""
     },
