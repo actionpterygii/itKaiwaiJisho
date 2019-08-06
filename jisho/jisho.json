@@ -3097,176 +3097,169 @@
     },
     {
         "kotb": "トランザクション",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "transaction",
+        "kwsk": "分割できない複数の処理をまとめたもの。",
+        "mnim": "取引",
         "tigg": ""
     },
     {
         "kotb": "ポーリング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "polling",
+        "kwsk": "一定間隔で要求を確認する。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "ヴァルナラビリティ",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "ヴァルネラビリティ",
+        "eigo": "vulnerability",
+        "kwsk": "攻撃されやすさ。攻撃誘発性。脆弱性。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンティニュアス インテグレーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "continuous integration",
+        "kwsk": "継続的にビルドやテストを行う。CI。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スイート",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "suite",
+        "kwsk": "一式。一組。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "マニファクチュア",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "kotb": "マニュファクチュア",
+        "eigo": "manufacture",
+        "kwsk": "人の手で分業。",
+        "mnim": "工場制手工業。",
         "tigg": ""
     },
     {
         "kotb": "コンプレイン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "complain",
+        "kwsk": "苦情。不満。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "オープンエンド",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "オープン エンド",
+        "eigo": "open end",
+        "kwsk": "終わりが決められていない。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リタリエーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "retaliation",
+        "kwsk": "報復。仕返し。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "クラッシュ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "crash",
+        "kwsk": "故障。衝突。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "パーセプション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "perception",
+        "kwsk": "認知。認識。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "レジストリ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "registry",
+        "kwsk": "ソフトウェアの設定が記載されている。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "パブリシティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "publicity",
+        "kwsk": "対価を払って宣伝してもらうのではなく取り上げられて宣伝となる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "オープン ソース",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
-        "tigg": ""
-    },
-    {
-        "kotb": "キャピタリズム",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "open source",
+        "kwsk": "ソースコードが公開されている。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "セントラライズ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "centralize",
+        "kwsk": "中央集権化。集中方式。中央に集まる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アクセプタブル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "acceptable",
+        "kwsk": "受入可能。受諾可能。受理可能。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プロフィット",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "profit",
+        "kwsk": "利益。利潤。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ガバナンス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "governance",
+        "kwsk": "統治。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "フィンテック",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "FinTech",
+        "kwsk": "金融と情報技術を組み合わせた革新的ないろいろ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "イジェクト",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "eject",
+        "kwsk": "取り出す。押し出す。追い出す。排出する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エッジ コンピューティング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "edge computing",
+        "kwsk": "端末もしくはそこに近いところでデータを処理する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プライオリティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "priority",
+        "kwsk": "優先順位。優先権。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "スレッド",
-        "eigo": "",
-        "kwsk": "",
-        "mnim": "",
+        "eigo": "thread",
+        "kwsk": "並行処理の実行単位。",
+        "mnim": "より糸の中の一本。",
         "tigg": ""
     },
     {
-        "kotb": "ネームスペース",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "ネーム スペース",
+        "eigo": "name space",
+        "kwsk": "同じ命名になってかぶらないためそれぞれに付けられる名前。それによって参照しやすくもなる。名前空間。",
         "mnim": "",
         "tigg": ""
     },
@@ -3349,6 +3342,41 @@
     },
     {
         "kotb": "イシュー",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ロールバック",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プラクティス",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "コンプライアンス",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インターネット オブ シングス",
+        "eigo": "Internet of Things",
+        "kwsk": "様々なモノがインターネットに接続されていろいろする。IoT。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スコープ",
         "eigo": "",
         "kwsk": "",
         "mnim": "",
