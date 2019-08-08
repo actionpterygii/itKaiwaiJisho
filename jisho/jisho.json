@@ -3265,106 +3265,106 @@
     },
     {
         "kotb": "オリジン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "origin",
+        "kwsk": "原点。起源。発端。根源。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ディスミス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "dismiss",
+        "kwsk": "解雇する。解散させる。追放する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アンドゥ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "undo",
+        "kwsk": "取り消し。もとに戻す。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "リドゥ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "redo",
+        "kwsk": "取り消した処理を再び実行する。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ノーティフィケーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "notification",
+        "kwsk": "通知。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ピッカー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "picker",
+        "kwsk": "選ぶやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エレメント",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "element",
+        "kwsk": "要素。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "アーティクル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "article",
+        "kwsk": "品物。記事。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "インテント",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "intent",
+        "kwsk": "意図。目的。真意。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "エナジャイザー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "energizer",
+        "kwsk": "活力を与えるやつ。",
         "mnim": "",
         "tigg": ""
     },
     {
-        "kotb": "カーネルパニック",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "カーネル パニック",
+        "eigo": "kernel panic",
+        "kwsk": "カーネルがあかんくなってる。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "イシュー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "issue",
+        "kwsk": "問題。課題。論点。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "ロールバック",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "rollback",
+        "kwsk": "巻き戻し。障害が起こった際にその前の大丈夫なときに戻す。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "プラクティス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "practice",
+        "kwsk": "練習。",
         "mnim": "",
         "tigg": ""
     },
     {
         "kotb": "コンプライアンス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "compliance",
+        "kwsk": "法令遵守。",
         "mnim": "",
         "tigg": ""
     },
@@ -3377,8 +3377,43 @@
     },
     {
         "kotb": "スコープ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "scope",
+        "kwsk": "範囲。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "パースペクティブ",
+        "eigo": "perspective",
+        "kwsk": "展望。見取り図。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "クリーピー",
+        "eigo": "creepy",
+        "kwsk": "身の毛がよだつような気持ち悪さ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マニュピレート",
+        "eigo": "manipulate",
+        "kwsk": "操る。操縦する。操作する。コントロールする。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ディスクリプション",
+        "eigo": "description",
+        "kwsk": "説明。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ブルー スクリーン",
+        "eigo": "blue screen",
+        "kwsk": "WindowsでOSの異常でなる青い画面。",
         "mnim": "",
         "tigg": ""
     }
