@@ -3416,5 +3416,47 @@
         "kwsk": "WindowsでOSの異常でなる青い画面。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "コンフォータブル",
+        "eigo": "comfortable",
+        "kwsk": "心地良い。気楽。快適。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ヒア ドキュメント",
+        "eigo": "here document",
+        "kwsk": "改行や空白が保持される文字列を扱うやつ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "インターナショナライゼーション",
+        "eigo": "internationalization",
+        "kwsk": "多言語対応する。国際化。i18n。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ローカライゼーション",
+        "eigo": "localization",
+        "kwsk": "特定の地域(国)に適した形に変える。地域化。l10n",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "マルチリンガライゼーション",
+        "eigo": "multilingualization",
+        "kwsk": "複数の言語を同時に利用できるようにする。多言語化。m17n。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "フォールバック",
+        "eigo": "fallback",
+        "kwsk": "正常に機能しなくなったときに制限をかけて動かす。縮退運用。",
+        "mnim": "",
+        "tigg": ""
     }
 ]
