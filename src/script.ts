@@ -12,17 +12,17 @@ let inputValue: string = '';
 const jishoPath: string = 'jisho.json';
 var jisho: [{[key: string]: string;}];
 const xhr: XMLHttpRequest = new XMLHttpRequest();
-xhr.overrideMimeType("application/json");
-xhr.open('GET', jishoPath, true);
+// xhr.overrideMimeType("application/json");
+// xhr.open('GET', jishoPath, true);
+// // xhr.onreadystatechange = function()
 // xhr.onreadystatechange = function()
-xhr.onreadystatechange = function()
-{
-    // if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
-    // {
-        jisho = JSON.parse(xhr.responseText || "null");
-    // }
-};
-xhr.send();
+// {
+//     // if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+//     // {
+//         jisho = JSON.parse(xhr.responseText || "null");
+//     // }
+// };
+// xhr.send();
 
 // 文字列をクリップボードにコピーする
 function copyTextToClipboard(text: string)
@@ -255,6 +255,19 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
 // 開いたら
 window.onload = function()
 {
+    xhr.overrideMimeType("application/json");
+    xhr.open('GET', jishoPath, true);
+    // xhr.onreadystatechange = function()
+    xhr.onreadystatechange = function()
+    {
+        // if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+        // {
+            jisho = JSON.parse(xhr.responseText || "null");
+        // }
+    };
+    xhr.send();
+
+
     // URLのクエリパラメーターからinputValueの値をとってくる
     const inputValue :string = getParamValue('inputValue');
     console.log(inputValue);
