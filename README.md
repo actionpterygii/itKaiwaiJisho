@@ -50,7 +50,7 @@
 - `RegExp`の`exec`が`RegExpExecArray | null`なようで、`any`
 - VisualStudioCodeは`ブロック スコープの変数 'xxx' を再宣言することはできません。 'xxx' was also declared here.`とかいうけどぜんぜん普通に行けるし知らんわ
 - CSSアニメーションの関係か、メディアクエリで指定している前の`width`がでたりしたのでよくわからないガチガチ指定で矯正かなしいね
-- 新しいgulpのモジュール追加したからなんかで`Error: Cannot find module 'typescript'`とか言われて意味わからんけど`npm install --save typescript`で解決しましたね
+- 新しいgulpのモジュール追加したからなんかで`Error: Cannot find module 'typescript'`とか言われて意味わからんけど`npm install typescript`で解決しましたね
 - gulpに監視されるのを終わらせるのに`control + Z`はよくない`control + C`にしよう
 - URL書き換え
   - `pushState()`(履歴に追加する)
