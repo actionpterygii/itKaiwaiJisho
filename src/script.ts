@@ -12,17 +12,16 @@ let inputValue: string = '';
 const jishoPath: string = 'jisho.json';
 var jisho: [{[key: string]: string;}];
 const xhr: XMLHttpRequest = new XMLHttpRequest();
-// xhr.overrideMimeType("application/json");
-// xhr.open('GET', jishoPath, true);
-// // xhr.onreadystatechange = function()
-// xhr.onreadystatechange = function()
-// {
-//     // if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
-//     // {
-//         jisho = JSON.parse(xhr.responseText || "null");
-//     // }
-// };
-// xhr.send();
+xhr.overrideMimeType("application/json");
+xhr.open('GET', jishoPath, true);
+xhr.onreadystatechange = function()
+{
+    if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+    {
+        jisho = JSON.parse(xhr.responseText || "null");
+    }
+};
+xhr.send();
 
 // 文字列をクリップボードにコピーする
 function copyTextToClipboard(text: string)
