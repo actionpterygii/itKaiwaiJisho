@@ -3,9 +3,6 @@ const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
 const kekkaKopi: HTMLAnchorElement = document.getElementById('kekkaKopi') as HTMLAnchorElement;
 
-// 現在のURLからクエリパラメータのところを消す
-const url: string = window.location.href.replace(/\?.*$/,"");
-
 let inputValue: string = '';
 
 // 辞書情報を辞書jsonから取得する
