@@ -35,27 +35,6 @@ function copyTextToClipboard(text: string)
     bodyElm.removeChild(copyFrom);
 }
 
-// URLからクエリパラメータからkeyのvalueをとってくる
-function getParamValue(key: string)
-{
-    const url: string = window.location.href;
-    key = key.replace(/[\[\]]/g, "\\$&");
-    const regex: RegExp = new RegExp("[?&]" + key + "(=([^&#]*)|&|#|$)");
-    const results: any  = regex.exec(url);
-    if(!results)
-    {
-        return null;
-    }
-    else if(!results[2])
-    {
-        return '';
-    }
-    else
-    {
-        return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-}
-
 // 一単語にある項目の中で調べるべきもの(対義語以外ね)
 const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 
@@ -173,8 +152,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
 function createHtml(element: {[key: string]: string;}, base: boolean)
 {
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
-    let html: string = '<a href="' + encodeURI(url + '?inputValue=' + element['kotb'] + '&displayType=oneWord') + '" class="tango">';
-    // let html: string = '<div class="tango">';
+    let html: string = '<div class="tango">';
     // 単語内の各要素を一つづつみていく
     for(let key in element)
     {
@@ -226,8 +204,8 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
             }
         }
     }
-    // 最後の綴じa要素
-    html += '</a>';
+    // 最後の綴じdiv
+    html += '</div>';
     // かえせ
     return html;
 }
@@ -249,54 +227,6 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
     return entity.replace('undefined','');
 }
 
-// 開いたら
-window.onload = function()
-{
-    xhr.overrideMimeType("application/json");
-    xhr.open('GET', jishoPath, true);
-    // xhr.onreadystatechange = function()
-    xhr.onreadystatechange = function()
-    {
-        if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
-        {
-            jisho = JSON.parse(xhr.responseText || "null");
-        }
-    };
-    xhr.send();
-
-
-    // URLのクエリパラメーターからinputValueの値をとってくる
-    const inputValue :string = getParamValue('inputValue');
-    console.log(inputValue);
-    // URLのクエリパラメーターからdisplayTypeの値をとってくる
-    const displayType :string = getParamValue('displayType');
-    console.log(displayType);
-    // inputValueの値があったとき
-    if(inputValue)
-    {
-        // 一単語のみ出すのの場合
-        if(displayType == 'oneWord')
-        {
-            console.log('oneWord');
-            // 完全一致検索でひとつだけ検索し、HTMLを構成して描画(base==falseで)
-            result.innerHTML = createHtml(serch(jisho, inputValue, true), false);
-            console.log(jisho);
-            console.log(inputValue);
-        }
-        // 検索結果を出すやつの場合
-        else if(displayType == 'searchResult')
-        {
-            console.log('searchResult')
-            // inputValueから結果を作成して描画
-            result.innerHTML = createResult(jisho, inputValue);
-        }
-    }
-    // URLを上書き
-    // window.history.replaceState(null, "itKakwaiJisho", url);
-    // 結果コピーをデフォルトのURLリンクに
-    kekkaKopi.setAttribute('href', url);
-};
-
 // 文字が入力されるたんびに
 input.onkeyup = function()
 {
@@ -304,8 +234,6 @@ input.onkeyup = function()
     inputValue = input.value;
     // inputValueから結果を作成して描画
     result.innerHTML = createResult(jisho, inputValue);
-    // 結果コピーボタンのリンク先内容を書き換え
-    kekkaKopi.setAttribute('href', encodeURI(url + '?inputValue=' + inputValue + '&displayType=searchResult'));
 };
 
 // エンター押されたらぐぐる
