@@ -3479,5 +3479,33 @@
         "kwsk": "見出し。",
         "mnim": "",
         "tigg": ""
+    },
+    {
+        "kotb": "アキュラシー",
+        "eigo": "accuracy",
+        "kwsk": "正確さ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "オペランド",
+        "eigo": "operand",
+        "kwsk": "被演算子。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "スナップショット",
+        "eigo": "snapshot",
+        "kwsk": "ある瞬間での状態を保存したやつ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "デブオプス",
+        "eigo": "DevOps",
+        "kwsk": "開発と運用の人らが協力していい感じにする。",
+        "mnim": "",
+        "tigg": ""
     }
 ]
