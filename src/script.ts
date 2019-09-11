@@ -1,7 +1,7 @@
 const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
 const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
-const kekkaKopi: HTMLAnchorElement = document.getElementById('kekkaKopi') as HTMLAnchorElement;
+const guguru: HTMLAnchorElement = document.getElementById('guguru') as HTMLAnchorElement;
 
 let inputValue: string = '';
 
@@ -218,12 +218,8 @@ input.onkeyup = function()
 };
 
 // エンター押されたらぐぐる
-window.document.onkeydown = function(event)
+guguru.onclick = function(event)
 {
-    // エンターキーのキーコードは13ゆえ
-    if(event.keyCode === 13)
-    {
-        // ぐぐる
-        window.open('https://www.google.com/search?q=' + inputValue);
-    }
+    // ぐぐる
+    window.open('https://www.google.com/search?q=' + inputValue);
 };
