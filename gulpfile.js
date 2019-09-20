@@ -91,6 +91,19 @@ gulp.task('watchJishoJson', function()
 });
 
 
+gulp.task('json', function()
+{
+    return gulp.src(src + '*.json')
+        .pipe(changed(dist))
+        .pipe(gulp.dest(dist));
+});
+
+gulp.task('watchJson', function()
+{
+    return gulp.watch(src + '*.json', gulp.task('json'));
+});
+
+
 gulp.task('webserver', function()
 {
     return gulp.src(dist)
@@ -104,6 +117,6 @@ gulp.task('webserver', function()
 });
 
 
-gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchImg', 'watchJishoJson'));
+gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchImg', 'watchJson', 'watchJishoJson'));
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'img', 'jishoJson'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'img',  'json', 'jishoJson'));
