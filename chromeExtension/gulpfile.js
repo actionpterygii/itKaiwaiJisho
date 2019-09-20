@@ -13,7 +13,7 @@ const prcs = require('child_process').exec;
 
 
 const src = './src/';
-const srcImages = src + 'images/';
+const srcImages = '../images/';
 
 const dist = './dist/';
 const distImages = dist + 'images/';

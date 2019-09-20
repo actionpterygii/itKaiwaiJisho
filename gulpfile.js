@@ -14,7 +14,7 @@ const webserver = require('gulp-webserver');
 
 
 const src = './src/';
-const srcImages = src + 'images/';
+const srcImages = './images/';
 
 const dist = './docs/';
 const distImages = dist + 'images/';
