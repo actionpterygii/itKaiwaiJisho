@@ -1,3 +1,21 @@
+if ('serviceWorker' in navigator)
+{
+    window.addEventListener('load', function()
+    {
+        navigator.serviceWorker.register('serviceWorker.js').then(function(registration)
+        {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        },
+        function(err)
+        {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
+
+
 const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
 const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
