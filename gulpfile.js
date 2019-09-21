@@ -33,6 +33,7 @@ gulp.task('watchHtml', function()
     return gulp.watch(src + '*.html', gulp.task('html'));
 });
 
+
 gulp.task('css', function()
 {
     return gulp.src(src + '*.scss')
@@ -49,6 +50,21 @@ gulp.task('watchCss', function()
 
 gulp.task('js', function()
 {
+    return gulp.src(src + '*.js')
+        .pipe(changed(dist))
+        .pipe(babel({"presets": ["@babel/preset-env"]}))
+        .pipe(jsmin())
+        .pipe(gulp.dest(dist));
+});
+
+gulp.task('watchJs', function()
+{
+    return gulp.watch(src + '*.js', gulp.task('js'));
+});
+
+
+gulp.task('ts', function()
+{
     return gulp.src(src + '*.ts')
         .pipe(changed(dist))
         .pipe(tysc({ target: "ES5", removeComments: true}))
@@ -57,10 +73,11 @@ gulp.task('js', function()
         .pipe(gulp.dest(dist));
 });
 
-gulp.task('watchJs', function()
+gulp.task('watchTs', function()
 {
     return gulp.watch(src + '*.ts', gulp.task('js'));
 });
+
 
 gulp.task('img', function()
 {
@@ -117,6 +134,6 @@ gulp.task('webserver', function()
 });
 
 
-gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchImg', 'watchJson', 'watchJishoJson'));
+gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchTs', 'watchImg', 'watchJson', 'watchJishoJson'));
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'img',  'json', 'jishoJson'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'ts', 'img',  'json', 'jishoJson'));
