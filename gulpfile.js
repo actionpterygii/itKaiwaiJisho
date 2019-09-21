@@ -97,6 +97,19 @@ gulp.task('watchImg', function ()
 });
 
 
+gulp.task('ico', function()
+{
+    return gulp.src(srcImages + '*.ico')
+        .pipe(changed(distImages))
+        .pipe(gulp.dest(distImages));
+});
+
+gulp.task('watchIco', function ()
+{
+    return gulp.watch(srcImages + '*.{ico}', gulp.task('ico'));
+});
+
+
 gulp.task('jishoJson', function()
 {
     return prcs('python jishoJsonWoSort.py ./jisho/ ./docs/');
@@ -134,6 +147,6 @@ gulp.task('webserver', function()
 });
 
 
-gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchTs', 'watchImg', 'watchJson', 'watchJishoJson'));
+gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchTs', 'watchImg', 'watchIco' 'watchJson', 'watchJishoJson'));
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'ts', 'img',  'json', 'jishoJson'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'ts', 'img', 'ico', 'json', 'jishoJson'));
