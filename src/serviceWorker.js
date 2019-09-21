@@ -1,7 +1,6 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'itKaiwaiJishoCaches';
 var urlsToCache = [
-    '/',
     './index.html',
     './style.css',
     './script.js',
