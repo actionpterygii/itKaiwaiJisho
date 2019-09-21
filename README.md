@@ -68,6 +68,7 @@
   - `setServiceWorker.js`の`urlsToCache`の`'/'`がいらんかった(?)それがあると`Uncaught (in promise) TypeError: Request failed`
   - iPhoneのSafariからホーム画面に追加するときのアイコン対応が必要でGoogleさんのpwacompat使用。
   - 確認の為に逐一GitHubに上げなあかんので草が濃くなってしまうため他が相対的に下がったりとかあるんやね
+  - iOSで他のWebページに遷移して戻るの体験がすてきでした
 
 ## きもち
 この業界は何かしらの解説に専門用語やら英語が多すぎるので  
