@@ -147,6 +147,6 @@ gulp.task('webserver', function()
 });
 
 
-gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchTs', 'watchImg', 'watchIco' 'watchJson', 'watchJishoJson'));
+gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchTs', 'watchImg', 'watchIco', 'watchJson', 'watchJishoJson'));
 
 gulp.task('default', gulp.parallel('html', 'css', 'js', 'ts', 'img', 'ico', 'json', 'jishoJson'));
