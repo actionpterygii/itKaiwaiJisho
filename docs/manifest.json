@@ -4,7 +4,7 @@
     "display": "standalone",
     "start_url": "index.html",
     "theme_color": "#33CCCC",
-    "background_color": "#FF6666",
+    "background_color": "#FFFF66",
     "icons": [
         {
             "src": "images/icon_72_nise.png",
