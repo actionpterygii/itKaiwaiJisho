@@ -1,8 +1,46 @@
+//後で使うHTML要素
 const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
 const result: HTMLElement = document.getElementById('result') as HTMLElement;
 const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
 const guguru: HTMLAnchorElement = document.getElementById('guguru') as HTMLAnchorElement;
 
+// スワイプを見るために記録しておく
+let startX: number;
+let startY: number;
+let moveX: number;
+let moveY: number;
+let buffer: number = 50;
+
+// スワイプはじめを記録
+window.addEventListener('touchstart', function(e)
+{
+    e.preventDefault();
+    startX = e.touches[0].pageX;
+    startY = e.touches[0].pageY;
+});
+
+// スワイプ動きを記録
+window.addEventListener('touchmove', function(e)
+{
+    e.preventDefault();
+    moveX = e.changedTouches[0].pageX;
+    moveY = e.changedTouches[0].pageY;
+});
+
+// スワイプ離したとき
+window.addEventListener('touchend', function(e)
+{
+    if (startX > moveX && startX > moveX + buffer)
+    {
+        alert('左');
+    }
+    else if (startX < moveX && startX + buffer < moveX)
+    {
+        alert('右');
+    }
+  });
+
+// 入力内容を保存しておく
 let inputValue: string = '';
 
 // 辞書情報を辞書jsonから取得する
@@ -13,7 +51,7 @@ xhr.overrideMimeType("application/json");
 xhr.open('GET', jishoPath, true);
 xhr.onreadystatechange = function()
 {
-    if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+    if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
     {
         jisho = JSON.parse(xhr.responseText || "null");
     }
@@ -66,17 +104,17 @@ function containing(item: string, inputValue: string)
     inputValue = inputValue.toLowerCase();
     
     // inputValueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
-    if(item.match(inputValue))
+    if (item.match(inputValue))
     {
         return true;
     }
     // ひらがなをカタカナにして確認
-    else if(item.match(hiraToKata(inputValue)))
+    else if (item.match(hiraToKata(inputValue)))
     {
         return true;
     }
     // 全角英数を半角英数にして確認
-    else if(item.match(zenToHan(inputValue)))
+    else if (item.match(zenToHan(inputValue)))
     {
         return true;
     }
@@ -91,28 +129,28 @@ function containing(item: string, inputValue: string)
 function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch: boolean)
 {
     // '--all'と入力された場合
-    if(inputValue === '--all')
+    if (inputValue === '--all')
     {
         // 辞書jsonのすべてを返す
         return jisho;
     }
     // 何か入力があった場合
-    else if(inputValue !== '')
+    else if (inputValue !== '')
     {
         // 最終的に返すことになる単語要素
         var requiredElements: any = {} as [{[key: string]: string;}];
         // 最終的に返すことになる単語要素の連番つけるための
         var i: number = 0;
         // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
-        for(let key in jisho)
+        for (let key in jisho)
         {
             // 完全一致検索でしたら
-            if(exactMatch)
+            if (exactMatch)
             {
                 // kotbのみで探す
                 const item: string = wordItems[0];
                 // 一緒なら
-                if(jisho[key][item] === inputValue)
+                if (jisho[key][item] === inputValue)
                 {
                     // その単語を追加する
                     return jisho[key];
@@ -122,12 +160,12 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
             else
             {
                 // 一単語に対して、先に定義してあるwordItemsの要素ぶん回す。
-                for(let itemKey in wordItems)
+                for (let itemKey in wordItems)
                 {
                     // 単語の中の一つの項目のキー
                     const item: string = wordItems[itemKey];
                     // 入力した内容があるか
-                    if(containing(jisho[key][item], inputValue))
+                    if (containing(jisho[key][item], inputValue))
                     {
                         // 必要な単語ということで追加する
                         requiredElements[i] = jisho[key];
@@ -151,13 +189,13 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
     let html: string = '<div class="tango">';
     // 単語内の各要素を一つづつみていく
-    for(let key in element)
+    for (let key in element)
     {
         // 内容が空でなかったら
-        if(element[key] !== '')
+        if (element[key] !== '')
         {
             // 単語内の各要素の種類に応じて内容を含めたHTML要素をつくる
-            switch(key)
+            switch (key)
             {
                 case 'kotb':
                     html += 
@@ -187,7 +225,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                             (function()
                             {
                                 // base==true、つまり何かの対義語として表示されてるやつじゃなかったら
-                                if(base)
+                                if (base)
                                 {
                                     // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
                                     return createHtml(serch(jisho, element[key], true), false);
@@ -215,7 +253,7 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
     // 必要な要素を選定する
     const requiredElements: [{[key: string]: string;}] = serch(jisho, inputValue, false);
     // 選定した要素から一つづついじる
-    for(let key in requiredElements)
+    for (let key in requiredElements)
     {
         // HTMLを作成して追加していく
         entity += createHtml(requiredElements[key], true);
