@@ -32,11 +32,11 @@ window.addEventListener('touchend', function(e)
 {
     if (startX > moveX && startX > moveX + buffer)
     {
-        alert('左');
+        console.log('左');
     }
     else if (startX < moveX && startX + buffer < moveX)
     {
-        alert('右');
+        console.log('右');
     }
   });
 
