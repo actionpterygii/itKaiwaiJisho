@@ -1,6 +1,6 @@
 // キャッシュファイルの指定
 const CACHE_NAME = 'itKaiwaiJishoCaches';
-// const CACHE_KEYS = [CACHE_NAME];
+const CACHE_KEYS = [CACHE_NAME];
 var urlsToCache = [
     './index.html',
     './style.css',
@@ -35,18 +35,18 @@ self.addEventListener('fetch', function(event)
     }));
 });
 
-// self.addEventListener('activate', function(event)
-// {
-//     event.waitUntil(caches.keys().then(function(keys)
-//     {
-//         return Promise.all(keys.filter(function(key)
-//         {
-//             return !CACHE_KEYS.includes(key);
-//         }
-//         ).map(function(key)
-//         {
-//             // 不要なキャッシュを削除
-//             return caches.delete(key);
-//         }));
-//     }));
-// });
+self.addEventListener('activate', function(event)
+{
+    event.waitUntil(caches.keys().then(function(keys)
+    {
+        return Promise.all(keys.filter(function(key)
+        {
+            return !CACHE_KEYS.includes(key);
+        }
+        ).map(function(key)
+        {
+            // 不要なキャッシュを削除
+            return caches.delete(key);
+        }));
+    }));
+});
