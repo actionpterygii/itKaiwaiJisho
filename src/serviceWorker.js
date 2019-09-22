@@ -14,11 +14,10 @@ self.addEventListener('install', function(event)
 {
     event.waitUntil(caches.open(CACHE_NAME).then(function(cache)
     {
-        return cache.addAll(urlsToCache);
-            //     .map(function(url)
-            // {
-            //     new Request(url, {credentials: 'same-origin'})
-            // })
+        return cache.addAll(urlsToCache.map(function(url)
+        {
+                new Request(url, {credentials: 'same-origin'})
+        }));
     }));
 });
 
