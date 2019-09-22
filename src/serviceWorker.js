@@ -2,11 +2,11 @@
 const CACHE_NAME = 'itKaiwaiJishoCaches';
 const CACHE_KEYS = [CACHE_NAME];
 var urlsToCache = [
-    'index.html',
-    'style.css',
-    'script.js',
-    'jisho.json',
-    'images/favicon.ico'
+    './index.html',
+    './style.css',
+    './script.js',
+    './jisho.json',
+    './images/favicon.ico'
 ];
 
 // インストール処理
