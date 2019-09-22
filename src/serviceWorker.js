@@ -1,7 +1,7 @@
 // キャッシュファイルの指定
 const CACHE_NAME = 'itKaiwaiJishoCaches';
 const CACHE_KEYS = [CACHE_NAME];
-const urlsToCache = [
+var urlsToCache = [
     'index.html',
     'style.css',
     'script.js',
