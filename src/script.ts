@@ -5,42 +5,42 @@ const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLB
 const guguru: HTMLAnchorElement = document.getElementById('guguru') as HTMLAnchorElement;
 const main: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
 
-// スワイプを見るために記録しておく
-let startX: number;
-let startY: number;
-let moveX: number;
-let moveY: number;
-let buffer: number = 50;
+// // スワイプを見るために記録しておく
+// let startX: number;
+// let startY: number;
+// let moveX: number;
+// let moveY: number;
+// let buffer: number = 50;
 
-// スワイプはじめを記録
-main.addEventListener('touchstart', function(e)
-{
-    e.preventDefault();
-    startX = e.touches[0].pageX;
-    startY = e.touches[0].pageY;
-});
+// // スワイプはじめを記録
+// main.addEventListener('touchstart', function(e)
+// {
+//     e.preventDefault();
+//     startX = e.touches[0].pageX;
+//     startY = e.touches[0].pageY;
+// });
 
-// スワイプ動きを記録
-main.addEventListener('touchmove', function(e)
-{
-    e.preventDefault();
-    moveX = e.changedTouches[0].pageX;
-    moveY = e.changedTouches[0].pageY;
-});
-// {passive: false});
+// // スワイプ動きを記録
+// main.addEventListener('touchmove', function(e)
+// {
+//     e.preventDefault();
+//     moveX = e.changedTouches[0].pageX;
+//     moveY = e.changedTouches[0].pageY;
+// });
+// // {passive: false});
 
-// スワイプ離したとき
-main.addEventListener('touchend', function(e)
-{
-    if (startX > moveX && startX > moveX + buffer)
-    {
-        console.log('左');
-    }
-    else if (startX < moveX && startX + buffer < moveX)
-    {
-        console.log('右');
-    }
-});
+// // スワイプ離したとき
+// main.addEventListener('touchend', function(e)
+// {
+//     if (startX > moveX && startX > moveX + buffer)
+//     {
+//         console.log('左');
+//     }
+//     else if (startX < moveX && startX + buffer < moveX)
+//     {
+//         console.log('右');
+//     }
+// });
 
 // 入力内容を保存しておく
 let inputValue: string = '';
