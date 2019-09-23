@@ -6,7 +6,7 @@ if ('serviceWorker' in navigator)
         {
             // Registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            更新があったら更新
+            // 更新があったら更新
             registration.onupdatefound = function()
             {
                 console.log('Update A Ruyo.');
