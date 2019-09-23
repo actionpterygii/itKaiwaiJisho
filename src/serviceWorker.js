@@ -13,7 +13,10 @@ self.addEventListener('install', function(event)
 {
     event.waitUntil(caches.open(CACHE_NAME).then(function(cache)
     {
-            return cache.addAll(urlsToCache.map(url => new Request(url, {credentials: 'same-origin'})));
+        return cache.addAll(urlsToCache.map(function(url)
+        {
+            new Request(url, {credentials: 'same-origin'});
+        }));
     }));
 });
 
@@ -27,5 +30,21 @@ self.addEventListener('fetch', function(event)
             return response;
         }
         return fetch(event.request);
+    }));
+});
+
+self.addEventListener('activate', function(event)
+{
+    event.waitUntil(caches.keys().then(function(keys)
+    {
+        return Promise.all(keys.filter(function(key)
+        {
+            return !CACHE_KEYS.includes(key);
+        }
+        ).map(function(key)
+        {
+            // 不要なキャッシュを削除
+            return caches.delete(key);
+        }));
     }));
 });
