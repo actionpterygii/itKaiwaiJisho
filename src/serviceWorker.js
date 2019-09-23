@@ -33,18 +33,18 @@ self.addEventListener('fetch', function(event)
     }));
 });
 
-self.addEventListener('activate', function(event)
-{
-    event.waitUntil(caches.keys().then(function(keys)
-    {
-        return Promise.all(keys.filter(function(key)
-        {
-            return !CACHE_KEYS.includes(key);
-        }
-        ).map(function(key)
-        {
-            // 不要なキャッシュを削除
-            return caches.delete(key);
-        }));
-    }));
-});
+// self.addEventListener('activate', function(event)
+// {
+//     event.waitUntil(caches.keys().then(function(keys)
+//     {
+//         return Promise.all(keys.filter(function(key)
+//         {
+//             return !CACHE_KEYS.includes(key);
+//         }
+//         ).map(function(key)
+//         {
+//             // 不要なキャッシュを削除
+//             return caches.delete(key);
+//         }));
+//     }));
+// });
