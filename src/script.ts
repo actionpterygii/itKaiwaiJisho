@@ -18,8 +18,7 @@ main.addEventListener('touchstart', function(e)
     e.preventDefault();
     startX = e.touches[0].pageX;
     startY = e.touches[0].pageY;
-},
-{passive: false});
+});
 
 // スワイプ動きを記録
 main.addEventListener('touchmove', function(e)
@@ -27,8 +26,8 @@ main.addEventListener('touchmove', function(e)
     e.preventDefault();
     moveX = e.changedTouches[0].pageX;
     moveY = e.changedTouches[0].pageY;
-},
-{passive: false});
+});
+// {passive: false});
 
 // スワイプ離したとき
 main.addEventListener('touchend', function(e)
@@ -41,8 +40,7 @@ main.addEventListener('touchend', function(e)
     {
         console.log('右');
     }
-},
-{passive: false});
+});
 
 // 入力内容を保存しておく
 let inputValue: string = '';
