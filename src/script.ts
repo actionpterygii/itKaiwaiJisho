@@ -15,7 +15,6 @@ let buffer: number = 50;
 // スワイプはじめを記録
 display.addEventListener('touchstart', function(e)
 {
-    e.preventDefault();
     startX = e.touches[0].pageX;
     startY = e.touches[0].pageY;
 });
@@ -23,7 +22,6 @@ display.addEventListener('touchstart', function(e)
 // スワイプ動きを記録
 display.addEventListener('touchmove', function(e)
 {
-    e.preventDefault();
     moveX = e.changedTouches[0].pageX;
     moveY = e.changedTouches[0].pageY;
 });
@@ -34,12 +32,13 @@ display.addEventListener('touchend', function(e)
 {
     if (startX > moveX && startX > moveX + buffer)
     {
-        console.log('左');
-        input.focus();
+        window.open('https://www.google.com/search?q=' + inputValue);
+        // console.log('左');
     }
     else if (startX < moveX && startX + buffer < moveX)
     {
-        console.log('右');
+        input.focus();
+        // console.log('右');
     }
 });
 
@@ -274,9 +273,9 @@ input.onkeyup = function()
     result.innerHTML = createResult(jisho, inputValue);
 };
 
-// エンター押されたらぐぐる
-guguru.onclick = function()
-{
-    // ぐぐる
-    window.open('https://www.google.com/search?q=' + inputValue);
-};
+// // 押されたらぐぐる
+// guguru.onclick = function()
+// {
+//     // ぐぐる
+//     window.open('https://www.google.com/search?q=' + inputValue);
+// };
