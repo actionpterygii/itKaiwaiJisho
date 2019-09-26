@@ -35,6 +35,7 @@ display.addEventListener('touchend', function(e)
     if (startX > moveX && startX > moveX + buffer)
     {
         console.log('左');
+        input.focus();
     }
     else if (startX < moveX && startX + buffer < moveX)
     {
