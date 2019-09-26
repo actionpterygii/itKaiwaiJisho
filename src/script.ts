@@ -28,7 +28,7 @@ display.addEventListener('touchmove', function(e)
 // {passive: false});
 
 // スワイプ離したとき
-display.addEventListener('touchend', function(inputValue)
+display.addEventListener('touchend', function(e)
 {
     if (startX > moveX && startX > moveX + buffer)
     {
@@ -273,9 +273,9 @@ input.onkeyup = function()
     result.innerHTML = createResult(jisho, inputValue);
 };
 
-// // 押されたらぐぐる
-// guguru.onclick = function()
-// {
-//     // ぐぐる
-//     window.open('https://www.google.com/search?q=' + inputValue);
-// };
+// ぐぐる押されたらぐぐる
+guguru.onclick = function()
+{
+    // ぐぐる
+    window.open('https://www.google.com/search?q=' + inputValue);
+};
