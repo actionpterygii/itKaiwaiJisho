@@ -28,7 +28,7 @@ display.addEventListener('touchmove', function(e)
 // {passive: false});
 
 // スワイプ離したとき
-display.addEventListener('touchend', function(e)
+display.addEventListener('touchend', function(inputValue)
 {
     if (startX > moveX && startX > moveX + buffer)
     {
