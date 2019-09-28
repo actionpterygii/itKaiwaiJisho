@@ -10,7 +10,7 @@ let startX: number;
 let startY: number;
 let moveX: number;
 let moveY: number;
-let buffer: number = 50;
+let buffer: number = 200;
 
 // スワイプはじめを記録
 display.addEventListener('touchstart', function(e)
