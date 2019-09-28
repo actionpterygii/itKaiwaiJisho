@@ -1374,7 +1374,7 @@
     {
         "kotb": "カーネル",
         "eigo": "kernel",
-        "kwsk": "ハードウェアとソフトウェアの仲介をするソフトウェア。",
+        "kwsk": "OSの中核。ハードウェアとソフトウェアの仲介をするソフトウェア。",
         "mnim": "",
         "tigg": ""
     },
@@ -3520,6 +3520,69 @@
         "eigo": "statement",
         "kwsk": "プログラムの一文(\";\"まで的な)。",
         "mnim": "声名",
+        "tigg": ""
+    },
+    {
+        "kotb": "デリミタ",
+        "eigo": "delimiter",
+        "kwsk": "区切り文字。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "プログレッシブ ウェブ アプリ",
+        "eigo": "Progressive Web Apps",
+        "kwsk": "Webサイトをネイティブアプリのように使えるようになる仕組み。PWA。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "アクセラレーティッド モバイル ページ",
+        "eigo": "Accelerated Mobile Pages",
+        "kwsk": "モバイルのWebサイトを高速に閲覧できるようになるやつ。AMP。アンプ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ネイティブ アプリケーション",
+        "eigo": "native application",
+        "kwsk": "端末上にインストールし使用するアプリケーション。ウェブアプリじゃないやつ。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ウェブ アプリケーション",
+        "eigo": "web application",
+        "kwsk": "インターネット上からWebブラウザを通して使用するアプリケーション。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ウェブ ブラウザ",
+        "eigo": "web browser",
+        "kwsk": "インターネット上にあるWebページを閲覧するソフトウェア。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ソフトウェア",
+        "eigo": "software",
+        "kwsk": "コンピューターにデータとしてある部分のプログラムやアプリケーションやOSなど。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ハードウェア",
+        "eigo": "hardware",
+        "kwsk": "コンピューターの物理的な部分。",
+        "mnim": "",
+        "tigg": ""
+    },
+    {
+        "kotb": "ミドルウェア",
+        "eigo": "middleware",
+        "kwsk": "OSとアプリケーションの間に入るソフトウェア。",
+        "mnim": "",
         "tigg": ""
     }
 ]
