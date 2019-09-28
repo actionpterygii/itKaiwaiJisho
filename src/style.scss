@@ -24,6 +24,7 @@ dl,dt,dd {
     color: #333;
     font-size: 12px;
     font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    word-break: break-all;
     cursor: default;
     text-decoration: none;
 }
@@ -89,7 +90,6 @@ main {
 #input {
     height: 40px;
     font-size: 40px;
-    margin-bottom: 5px;
     vertical-align: bottom;
     @include mq(max,sp) {
         width: 100%;
