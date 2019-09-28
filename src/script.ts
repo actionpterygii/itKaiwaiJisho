@@ -237,7 +237,7 @@ input.onkeyup = function()
 };
 
 // 入力押されたら入力
-guguruBtn.onclick = function()
+nyuryokuBtn.onclick = function()
 {
     // いんぷっとえりあにフォーカス
     input.focus();
