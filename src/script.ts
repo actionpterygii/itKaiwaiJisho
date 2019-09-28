@@ -1,46 +1,9 @@
 //後で使うHTML要素
 const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
 const result: HTMLDivElement = document.getElementById('result') as HTMLDivElement;
-const usageBtn: HTMLButtonElement = document.getElementById('usageBtn') as HTMLButtonElement;
-const guguru: HTMLAnchorElement = document.getElementById('guguru') as HTMLAnchorElement;
-const display: HTMLElement = document.getElementById('display') as HTMLElement;
+const nyuryokuBtn: HTMLButtonElement = document.getElementById('nyuryokuBtn') as HTMLButtonElement;
+const guguruBtn: HTMLAnchorElement = document.getElementById('guguruBtn') as HTMLAnchorElement;
 
-// スワイプを見るために記録しておく
-let startX: number;
-let startY: number;
-let moveX: number;
-let moveY: number;
-let buffer: number = 200;
-
-// スワイプはじめを記録
-display.addEventListener('touchstart', function(e)
-{
-    startX = e.touches[0].pageX;
-    startY = e.touches[0].pageY;
-});
-
-// スワイプ動きを記録
-display.addEventListener('touchmove', function(e)
-{
-    moveX = e.changedTouches[0].pageX;
-    moveY = e.changedTouches[0].pageY;
-});
-// {passive: false});
-
-// スワイプ離したとき
-display.addEventListener('touchend', function(e)
-{
-    if (startX > moveX && startX > moveX + buffer)
-    {
-        window.open('https://www.google.com/search?q=' + inputValue);
-        // console.log('左');
-    }
-    else if (startX < moveX && startX + buffer < moveX)
-    {
-        input.focus();
-        // console.log('右');
-    }
-});
 
 // 入力内容を保存しておく
 let inputValue: string = '';
@@ -273,8 +236,16 @@ input.onkeyup = function()
     result.innerHTML = createResult(jisho, inputValue);
 };
 
+// 入力押されたら入力
+guguruBtn.onclick = function()
+{
+    // いんぷっとえりあにフォーカス
+    input.focus();
+};
+
+
 // ぐぐる押されたらぐぐる
-guguru.onclick = function()
+guguruBtn.onclick = function()
 {
     // ぐぐる
     window.open('https://www.google.com/search?q=' + inputValue);
