@@ -88,8 +88,8 @@ main {
 }
 
 #input {
-    height: 40px;
-    font-size: 40px;
+    height: 45px;
+    font-size: 35px;
     vertical-align: bottom;
     @include mq(max,sp) {
         width: 100%;
@@ -140,6 +140,8 @@ h2 {
         display: inline-block;
     }
 }
+
+
 
 
 #extra {
