@@ -199,12 +199,13 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                             '<div class="krng_contents">' +
                                 (function()
                                 {
-                                    const krngs = element[key].split(',');
-                                    for (const tango in krngs)
+                                    let tangos: string = "";
+                                    for (const tango in element[key].split(','))
                                     {
                                         // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
-                                        return createHtml(serch(jisho, tango, true), false);
+                                        tangos += createHtml(serch(jisho, tango, true), false);
                                     }
+                                    return tangos;
                                 }
                                 )() +
                             '</div>' +
