@@ -202,6 +202,9 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                                     if(base)
                                     {
                                     console.log('はいった');
+                                    console.log(element[key]);
+                                    console.log('ｈ');
+                                    console.log(element[key].split(','));
                                     
                                     let tangos: string = "";
                                     for (const tango in element[key].split(','))
