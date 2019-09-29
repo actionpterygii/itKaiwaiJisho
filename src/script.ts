@@ -199,6 +199,8 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                             '<div class="krng_contents">' +
                                 (function()
                                 {
+                                    if(base)
+                                    {
                                     console.log('はいった');
                                     
                                     let tangos: string = "";
@@ -212,6 +214,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
 
                                     }
                                     return tangos;
+                                }
                                 }
                                 )() +
                             '</div>' +
