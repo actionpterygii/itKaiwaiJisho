@@ -206,8 +206,11 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                                     console.log('ｈ');
                                     console.log(element[key].split(','));
                                     
-                                    let tangos: string = "";
-                                    for (const tango in element[key].split(','))
+                                    let tangosHTML: string = "";
+                                    const tangos: string[] = element[key].split(',');
+                                    console.log('tangos');
+                                    console.log(tangos);
+                                    for (const tango in tangos)
                                     {
                                         console.log('tango');
                                         console.log(tango);
@@ -220,11 +223,11 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
 
 
                                         // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
-                                        tangos += createHtml(serch(jisho, element[tango], true), false);
-                                        console.log(tangos);
+                                        tangosHTML += createHtml(serch(jisho, tango, true), false);
+                                        console.log(tangosHTML);
 
                                     }
-                                    return tangos;
+                                    return tangosHTML;
                                 }
                                 }
                                 )() +
