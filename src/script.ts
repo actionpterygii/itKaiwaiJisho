@@ -176,17 +176,6 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                         '<dl class="tigg">' +
                             '<dt>対義語：</dt>' +
                             '<dd>' + element[key] + '</dd>' +
-                            // ここのときにすぐ実行される
-                            // (function()
-                            // {
-                            //     // base==true、つまり何かの対義語として表示されてるやつじゃなかったら
-                            //     if (base)
-                            //     {
-                            //         // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
-                            //         return createHtml(serch(jisho, element[key], true), false);
-                            //     }
-                            // }
-                            // )() +
                         '</dl>';
                     break;
                 case 'krng':
@@ -200,16 +189,16 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                                 (function()
                                 {
                                     if(base)
-                                    {                                    
-                                    let tangosHTML: string = "";
-                                    const tangos: string[] = element[key].split(',');
-                                    for (const tangoKey in tangos)
                                     {
-                                        // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
-                                        tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true), false);
+                                        let tangosHTML: string = "";
+                                        const tangos: string[] = element[key].split(',');
+                                        for (const tangoKey in tangos)
+                                        {
+                                            // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで) xxxxxxx
+                                            tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true), false);
+                                        }
+                                        return tangosHTML;
                                     }
-                                    return tangosHTML;
-                                }
                                 }
                                 )() +
                             '</div>' +
@@ -258,7 +247,6 @@ nyuryokuBtn.onclick = function()
     // いんぷっとえりあにフォーカス
     input.focus();
 };
-
 
 // ぐぐる押されたらぐぐる
 guguruBtn.onclick = function()
