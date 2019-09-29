@@ -213,6 +213,8 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                                         console.log(tango);
                                         console.log('element[key]');
                                         console.log(element[key]);
+                                        console.log('element[tango]');
+                                        console.log(element[tango]);
                                         console.log('element[key][tango]');
                                         console.log(element[key][tango]);
 
