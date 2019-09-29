@@ -23,19 +23,8 @@ xhr.onreadystatechange = function()
 };
 xhr.send();
 
-// 文字列をクリップボードにコピーする
-function copyTextToClipboard(text: string)
-{
-    const copyFrom: HTMLTextAreaElement = document.createElement('textarea');
-    const bodyElm: HTMLBodyElement = document.getElementsByTagName('body')[0];
-    copyFrom.textContent = text;
-    bodyElm.appendChild(copyFrom);
-    copyFrom.select();
-    document.execCommand('copy');
-    bodyElm.removeChild(copyFrom);
-}
 
-// 一単語にある項目の中で調べるべきもの(対義語以外ね)
+// 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
 const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 
 // ひらがなをカナカナに変換するための
@@ -149,6 +138,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
 }
 
 // 必要な部分の辞書jsonからHTMLを作成
+// base は 対義語をそのまま1単語検索で表示していたときに無限ループにならないようにです。
 function createHtml(element: {[key: string]: string;}, base: boolean)
 {
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
@@ -187,17 +177,38 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                             '<dt>対義語：</dt>' +
                             '<dd>' + element[key] + '</dd>' +
                             // ここのときにすぐ実行される
-                            (function()
-                            {
-                                // base==true、つまり何かの対義語として表示されてるやつじゃなかったら
-                                if (base)
-                                {
-                                    // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
-                                    return createHtml(serch(jisho, element[key], true), false);
-                                }
-                            }
-                            )(); +
+                            // (function()
+                            // {
+                            //     // base==true、つまり何かの対義語として表示されてるやつじゃなかったら
+                            //     if (base)
+                            //     {
+                            //         // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
+                            //         return createHtml(serch(jisho, element[key], true), false);
+                            //     }
+                            // }
+                            // )() +
                         '</dl>';
+                    break;
+                case 'krng':
+                    html += 
+                        '<div class="krng">' +
+                            '<div class="krng_facade">' +
+                                '<span class="krng_facade_title">関連語</span>' +
+                                '<span class="krng_facade_mark"></span>' +
+                            '</div>' +
+                            '<div class="krng_contents">' +
+                                (function()
+                                {
+                                    const krngs = element[key].split(',');
+                                    for (const tango in krngs)
+                                    {
+                                        // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
+                                        return createHtml(serch(jisho, tango, true), false);
+                                    }
+                                }
+                                )() +
+                            '</div>' +
+                        '</div>';
                     break;
                 default:
                     break;

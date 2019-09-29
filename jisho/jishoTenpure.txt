@@ -3,5 +3,6 @@
     "eigo": "",
     "kwsk": "",
     "mnim": "",
-    "tigg": ""
+    "tigg": "",
+    "krng": ""
 },
