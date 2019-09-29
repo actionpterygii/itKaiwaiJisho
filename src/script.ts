@@ -213,7 +213,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                                         console.log(tango);
 
                                         // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
-                                        tangos += createHtml(serch(jisho, tango, true), false);
+                                        tangos += createHtml(serch(jisho, element[key][tango], true), false);
                                         console.log(tangos);
 
                                     }
