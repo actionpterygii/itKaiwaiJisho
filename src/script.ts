@@ -209,8 +209,13 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                                     let tangos: string = "";
                                     for (const tango in element[key].split(','))
                                     {
-                                        console.log('さらに');
+                                        console.log('tango');
                                         console.log(tango);
+                                        console.log('element[key]');
+                                        console.log(element[key]);
+                                        console.log('element[key][tango]');
+                                        console.log(element[key][tango]);
+
 
                                         // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで)
                                         tangos += createHtml(serch(jisho, element[key][tango], true), false);
