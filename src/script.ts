@@ -179,16 +179,16 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                         '</dl>';
                     break;
                 case 'krng':
-                    html += 
-                        '<div class="krng">' +
-                            '<div class="krng_facade">' +
-                                '<span class="krng_facade_title">関連語</span>' +
-                                '<span class="krng_facade_mark"></span>' +
-                            '</div>' +
-                            '<div class="krng_contents">' +
-                                (function()
-                                {
-                                    if(base)
+                    if(base)
+                    {
+                        html += 
+                            '<div class="krng">' +
+                                '<div class="krng_facade">' +
+                                    '<span class="krng_facade_title">関連語</span>' +
+                                    '<span class="krng_facade_mark"></span>' +
+                                '</div>' +
+                                '<div class="krng_contents">' +
+                                    (function()
                                     {
                                         let tangosHTML: string = "";
                                         const tangos: string[] = element[key].split(',');
@@ -199,10 +199,10 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                                         }
                                         return tangosHTML;
                                     }
-                                }
-                                )() +
-                            '</div>' +
-                        '</div>';
+                                    )() +
+                                '</div>' +
+                            '</div>';
+                    }
                     break;
                 default:
                     break;
