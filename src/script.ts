@@ -181,7 +181,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                 case 'krng':
                     // if(base)
                     // {
-                        const randomId: string = element['kotb'] + new Date();
+                        const randomId: string = element['kotb'] + new Date().getTime();
                         html += 
                             '<div class="krng">' +
                                 '<label class="krng_facade" for="' + randomId + '" value="' + element[key] + '" onClick="createKanrengo(this)">' +
@@ -231,7 +231,7 @@ function createKanrengo(krngLabel: HTMLElement)
     console.log(krngContents);
 
     // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
-    const tangos: string[] = krngContents.getAttribute('value').split(',');
+    const tangos: string[] = krngLabel.getAttribute('value').split(',');
     // の内容を検索して設置
     krngContents.innerHTML = (function()
     {
