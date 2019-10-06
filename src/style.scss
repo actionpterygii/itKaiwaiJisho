@@ -141,6 +141,24 @@ h2 {
     }
 }
 
+.krng input {
+    display: none;
+}
+
+.krng .krng_contents {
+    height: 0;/*高さを0に*/
+    padding: 0;/*余白を0に*/
+    overflow: hidden;/*非表示に*/
+    opacity: 0;/*中身を透明に*/
+    transition: 0.8s;/*クリック時の動きを滑らかに*/
+}
+
+.krng_checkbox:checked + .krng_contents {
+    height: auto;
+    padding: 5px;
+    opacity: 1;
+}
+
 
 
 

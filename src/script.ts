@@ -181,12 +181,14 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                 case 'krng':
                     if(base)
                     {
+                        const randomId: string = element['kotb'];
                         html += 
                             '<div class="krng">' +
-                                '<div class="krng_facade">' +
+                                '<label class="krng_facade" for="' + randomId + '">' +
                                     '<span class="krng_facade_title">関連語</span>' +
                                     '<span class="krng_facade_mark"></span>' +
-                                '</div>' +
+                                '</label>' +
+                                '<input id="' + randomId + '" class="krng_checkbox" type="checkbox">' +
                                 '<div class="krng_contents">' +
                                     (function()
                                     {
