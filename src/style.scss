@@ -148,7 +148,7 @@ h2 {
 .krng .krng_contents {
     height: 0;/*高さを0に*/
     padding: 0;/*余白を0に*/
-    overflow: hidden;/*非表示に*/
+    // overflow: hidden;/*非表示に*/
     opacity: 0;/*中身を透明に*/
     transition: 0.8s;/*クリック時の動きを滑らかに*/
 }
@@ -170,7 +170,7 @@ h2 {
 }
 
 #readme p {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 #iconwrap {
