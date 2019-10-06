@@ -222,6 +222,13 @@ function createKanrengo(this: HTMLElement)
 {
     // 押された開くボタンで開く要素
     const krngContents: Element = this.nextElementSibling.nextElementSibling;
+    console.log('aaa');
+    console.log(this);
+    console.log('aaa');
+    console.log(this.nextElementSibling);
+    console.log('aaa');
+    console.log(krngContents);
+
     // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
     const tangos: string[] = krngContents.getAttribute('value').split(',');
     // の内容を検索して設置
