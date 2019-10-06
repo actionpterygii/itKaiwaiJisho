@@ -179,32 +179,32 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                         '</dl>';
                     break;
                 case 'krng':
-                    if(base)
-                    {
-                        const randomId: string = element['kotb'];
+                    // if(base)
+                    // {
+                        const randomId: string = element['kotb'] + new Date();
                         html += 
                             '<div class="krng">' +
-                                '<label class="krng_facade" for="' + randomId + '">' +
+                                '<label class="krng_facade" for="' + randomId + '" value="' + element[key] + '" onclick="createKanrengo(this)">' +
                                     '<span class="krng_facade_title">関連語</span>' +
                                     '<span class="krng_facade_mark"></span>' +
                                 '</label>' +
                                 '<input id="' + randomId + '" class="krng_checkbox" type="checkbox">' +
                                 '<div class="krng_contents">' +
-                                    (function()
-                                    {
-                                        let tangosHTML: string = "";
-                                        const tangos: string[] = element[key].split(',');
-                                        for (const tangoKey in tangos)
-                                        {
-                                            // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで) xxxxxxx
-                                            tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true), false);
-                                        }
-                                        return tangosHTML;
-                                    }
-                                    )() +
+                                    // (function()
+                                    // {
+                                    //     let tangosHTML: string = "";
+                                    //     const tangos: string[] = element[key].split(',');
+                                    //     for (const tangoKey in tangos)
+                                    //     {
+                                    //         // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで) xxxxxxx
+                                    //         tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true), false);
+                                    //     }
+                                    //     return tangosHTML;
+                                    // }
+                                    // )() +
                                 '</div>' +
                             '</div>';
-                    }
+                    // }
                     break;
                 default:
                     break;
@@ -215,6 +215,27 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
     html += '</div>';
     // かえせ
     return html;
+}
+
+// 関連語を開くボタンがおされたら呼ばれる関数
+function createKanrengo(this: HTMLElement)
+{
+    // 押された開くボタンで開く要素
+    const krngContents: Element = this.nextElementSibling.nextElementSibling;
+    // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
+    const tangos: string[] = krngContents.getAttribute('value').split(',');
+    // の内容を検索して設置
+    krngContents.innerHTML = (function()
+    {
+        let tangosHTML: string = "";
+        for (const tangoKey in tangos)
+        {
+            // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで) xxxxxxx
+            tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true), false);
+        }
+        return tangosHTML;
+    }
+    )();
 }
 
 // 入力から結果を返す
