@@ -184,7 +184,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                         const randomId: string = element['kotb'] + new Date();
                         html += 
                             '<div class="krng">' +
-                                '<label class="krng_facade" for="' + randomId + '" value="' + element[key] + '" onclick="createKanrengo(this)">' +
+                                '<label class="krng_facade" for="' + randomId + '" value="' + element[key] + '" onClick="createKanrengo(this)">' +
                                     '<span class="krng_facade_title">関連語</span>' +
                                     '<span class="krng_facade_mark"></span>' +
                                 '</label>' +
@@ -221,11 +221,11 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
 function createKanrengo(this: HTMLElement)
 {
     // 押された開くボタンで開く要素
-    const krngContents: Element = this.nextElementSibling.nextElementSibling;
     console.log('aaa');
     console.log(this);
     console.log('aaa');
     console.log(this.nextElementSibling);
+    const krngContents: Element = this.nextElementSibling.nextElementSibling;
     console.log('aaa');
     console.log(krngContents);
 
