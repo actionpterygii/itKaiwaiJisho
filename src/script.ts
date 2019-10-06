@@ -139,7 +139,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
 
 // 必要な部分の辞書jsonからHTMLを作成
 // base は 対義語をそのまま1単語検索で表示していたときに無限ループにならないようにです。
-function createHtml(element: {[key: string]: string;}, base: boolean)
+function createHtml(element: {[key: string]: string;})
 {
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
     let html: string = '<div class="tango">';
@@ -179,8 +179,6 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                         '</dl>';
                     break;
                 case 'krng':
-                    // if(base)
-                    // {
                         const randomId: string = element['kotb'] + new Date().getTime();
                         html += 
                             '<div class="krng">' +
@@ -190,21 +188,8 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
                                 '</label>' +
                                 '<input id="' + randomId + '" class="krng_checkbox" type="checkbox">' +
                                 '<div class="krng_contents">' +
-                                    // (function()
-                                    // {
-                                    //     let tangosHTML: string = "";
-                                    //     const tangos: string[] = element[key].split(',');
-                                    //     for (const tangoKey in tangos)
-                                    //     {
-                                    //         // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで) xxxxxxx
-                                    //         tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true), false);
-                                    //     }
-                                    //     return tangosHTML;
-                                    // }
-                                    // )() +
                                 '</div>' +
                             '</div>';
-                    // }
                     break;
                 default:
                     break;
@@ -221,14 +206,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
 function createKanrengo(krngLabel: HTMLElement)
 {
     // 押された開くボタンで開く要素
-    console.log('zzz');
-    console.log('aaa');
-    console.log(krngLabel);
-    console.log('aaa');
-    console.log(krngLabel.nextElementSibling);
     const krngContents: Element = krngLabel.nextElementSibling.nextElementSibling;
-    console.log('aaa');
-    console.log(krngContents);
 
     // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
     const tangos: string[] = krngLabel.getAttribute('value').split(',');
@@ -239,7 +217,7 @@ function createKanrengo(krngLabel: HTMLElement)
         for (const tangoKey in tangos)
         {
             // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで) xxxxxxx
-            tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true), false);
+            tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true));
         }
         return tangosHTML;
     }
@@ -257,7 +235,7 @@ function createResult(jisho: [{[key: string]: string;}], inputValue: string)
     for (let key in requiredElements)
     {
         // HTMLを作成して追加していく
-        entity += createHtml(requiredElements[key], true);
+        entity += createHtml(requiredElements[key]);
     }
     // よくわからんけど出るundefinedを消しつつ返す
     return entity.replace('undefined','');
