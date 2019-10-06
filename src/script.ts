@@ -221,6 +221,7 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
 function createKanrengo(krngLabel: HTMLElement)
 {
     // 押された開くボタンで開く要素
+    console.log('zzz');
     console.log('aaa');
     console.log(krngLabel);
     console.log('aaa');
