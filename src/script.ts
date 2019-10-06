@@ -218,14 +218,14 @@ function createHtml(element: {[key: string]: string;}, base: boolean)
 }
 
 // 関連語を開くボタンがおされたら呼ばれる関数
-function createKanrengo(this: HTMLElement)
+function createKanrengo(krngLabel: HTMLElement)
 {
     // 押された開くボタンで開く要素
     console.log('aaa');
-    console.log(this);
+    console.log(krngLabel);
     console.log('aaa');
-    console.log(this.nextElementSibling);
-    const krngContents: Element = this.nextElementSibling.nextElementSibling;
+    console.log(krngLabel.nextElementSibling);
+    const krngContents: Element = krngLabel.nextElementSibling.nextElementSibling;
     console.log('aaa');
     console.log(krngContents);
 
