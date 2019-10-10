@@ -49,37 +49,47 @@ function zenToHan(inputValue: string)
     });
 }
 
-// itemの内容がinputValueのなかにあればtrueるなければfalseる
-function containing(item: string, inputValue: string)
+// itemの内容がinputValueのなかにあればtrueるなければfalseる。exactMatchは完全一致検索かどうか
+function containing(item: string, inputValue: string, exactMatch: boolean)
 {
     // アルファベットは小文字にする、スペースを削除する
     item = item.toLowerCase().replace(/\s+/g, '');
     // アルファベットは小文字する
     inputValue = inputValue.toLowerCase();
-    
-    // inputValueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
-    if (item.match(inputValue))
+
+    if (exactMatch)
     {
-        return true;
+        if (item === inputValue)
+        {
+            return true;
+        }
     }
-    // ひらがなをカタカナにして確認
-    else if (item.match(hiraToKata(inputValue)))
-    {
-        return true;
-    }
-    // 全角英数を半角英数にして確認
-    else if (item.match(zenToHan(inputValue)))
-    {
-        return true;
-    }
-    // ない場合
     else
     {
-        return false;
+        // inputValueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
+        if (item.match(inputValue))
+        {
+            return true;
+        }
+        // ひらがなをカタカナにして確認
+        else if (item.match(hiraToKata(inputValue)))
+        {
+            return true;
+        }
+        // 全角英数を半角英数にして確認
+        else if (item.match(zenToHan(inputValue)))
+        {
+            return true;
+        }
+        // ない場合
+        else
+        {
+            return false;
+        }
     }
 }
 
-// 入力された値を辞書jsonから検索してマッチしたものを返す
+// 入力された値を辞書jsonから検索してマッチしたものを返す。exactMatchは完全一致検索かどうか
 function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch: boolean)
 {
     // '--all'と入力された場合
@@ -103,8 +113,8 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
             {
                 // kotbのみで探す
                 const item: string = wordItems[0];
-                // 入力した内容があるか
-                if (containing(jisho[key][item], inputValue))
+                // 入力した内容があるか(完全一致検索)
+                if (containing(jisho[key][item], inputValue, exactMatch))
                 {
                     // その単語を追加する
                     return jisho[key];
@@ -119,7 +129,7 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
                     // 単語の中の一つの項目のキー
                     const item: string = wordItems[itemKey];
                     // 入力した内容があるか
-                    if (containing(jisho[key][item], inputValue))
+                    if (containing(jisho[key][item], inputValue, exactMatch))
                     {
                         // 必要な単語ということで追加する
                         requiredElements[i] = jisho[key];
@@ -216,7 +226,7 @@ function createKanrengo(krngLabel: HTMLElement)
         let tangosHTML: string = "";
         for (const tangoKey in tangos)
         {
-            // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する(base==falseで) xxxxxxx
+            // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する
             tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true));
         }
         return tangosHTML;
