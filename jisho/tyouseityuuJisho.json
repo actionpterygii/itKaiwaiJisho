@@ -327,5 +327,37 @@
         "kwsk": "",
         "mnim": "",
         "tigg": ""
-    }
+    },
+    {
+        "kotb": "",
+        "eigo": "swagger",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ポリフィル",
+        "eigo": "Polyfill",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "モバイル",
+        "eigo": "",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "",
+        "eigo": "Backends For Frontends",
+        "kwsk": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
 ]

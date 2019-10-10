@@ -1026,7 +1026,7 @@
     {
         "kotb": "コンパイラ",
         "eigo": "compiler",
-        "kwsk": "ソースコードから、機械語(0,1)等のより低級の言語に変換するやつ。",
+        "kwsk": "ソースコードから、機械語等のより低級の言語に変換するやつ。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4112,5 +4112,213 @@
         "mnim": "",
         "tigg": "",
         "krng": "ソフトウェア"
+    },
+    {
+        "kotb": "カーニング",
+        "eigo": "kerning",
+        "kwsk": "文字間を調整する。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "フォント",
+        "eigo": "font",
+        "kwsk": "コンピューターでつかう書体のデータ。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コンパイル",
+        "eigo": "compile",
+        "kwsk": "ソースコードから、機械語等のより低級の言語に変換すること。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ソースコード,機械語,コンパイラ"
+    },
+    {
+        "kotb": "機械語",
+        "eigo": "machine language",
+        "kwsk": "コンピューターのプロセッサが直接理解できる言語。0と1。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "コンピューター,プロセッサ,プログラミング言語"
+    },
+    {
+        "kotb": "プログラム",
+        "eigo": "program",
+        "kwsk": "コンピューターに動かさせるための命令たち。",
+        "mnim": "予定",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "データベース",
+        "eigo": "database",
+        "kwsk": "データをいいかんじに置いといたり探しやすくなってるやつ。DB。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リクエスト",
+        "eigo": "request",
+        "kwsk": "依頼。要求。要望。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ソースコード",
+        "eigo": "source code",
+        "kwsk": "プログラミング言語で書かれた文字列たち。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "プログラミング言語"
+    },
+    {
+        "kotb": "プログラミング言語",
+        "eigo": "programming language",
+        "kwsk": "プログラムを記述するための言語。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "プログラム"
+    },
+    {
+        "kotb": "メモリ",
+        "eigo": "memory",
+        "kwsk": "デジタルデータを保持する電子部品。記憶装置。",
+        "mnim": "記憶",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コンピューター",
+        "eigo": "computer",
+        "kwsk": "電子計算機。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "パスワード",
+        "eigo": "password",
+        "kwsk": "承認のための文字列。",
+        "mnim": "合言葉",
+        "tigg": "",
+        "krng": "パスフレーズ"
+    },
+    {
+        "kotb": "インターネット",
+        "eigo": "internet",
+        "kwsk": "たくさんのコンピューターをつなぎあったネットワーク。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ネットワーク"
+    },
+    {
+        "kotb": "ネットワーク",
+        "eigo": "network",
+        "kwsk": "複数のコンピューターで相互通信できるようになってる。",
+        "mnim": "網状につくられているもの",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サーバー",
+        "eigo": "server",
+        "kwsk": "サービスを提供するコンピューター。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ウェブ サーバー",
+        "eigo": "Web server",
+        "kwsk": "クライアントからの要求により、HTMLとかを渡すやつ。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "クライアント"
+    },
+    {
+        "kotb": "フォーマット",
+        "eigo": "format",
+        "kwsk": "体裁。型。形式。初期化。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "テスト",
+        "eigo": "test",
+        "kwsk": "試験。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ウェブ サイト",
+        "eigo": "Web site",
+        "kwsk": "ウェブページの集まり。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ウェブページ"
+    },
+    {
+        "kotb": "ウェブ ページ",
+        "eigo": "Web page",
+        "kwsk": "ウェブブラウザで見るページ。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ウェブブラウザ"
+    },
+    {
+        "kotb": "レピュテーション",
+        "eigo": "reputation",
+        "kwsk": "世評。評判。評価。名声。噂。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "アントレプレナー",
+        "eigo": "entrepreneur",
+        "kwsk": "起業家。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ウィズィウィグ",
+        "eigo": "What You See Is What You Get",
+        "kwsk": "画面での表示の見た感じのまま印刷される。WYSIWYG。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コード レビュー",
+        "eigo": "code review",
+        "kwsk": "ソースコードの検査を行う。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ソースコード"
+    },
+    {
+        "kotb": "テックリード",
+        "eigo": "Tech Lead",
+        "kwsk": "エンジニアチームのリーダー。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ストゥーピット",
+        "eigo": "stupid",
+        "kwsk": "愚かな。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
     }
 ]
