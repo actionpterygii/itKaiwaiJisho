@@ -103,8 +103,8 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
             {
                 // kotbのみで探す
                 const item: string = wordItems[0];
-                // 一緒なら
-                if (jisho[key][item] === inputValue)
+                // 入力した内容があるか
+                if (containing(jisho[key][item], inputValue))
                 {
                     // その単語を追加する
                     return jisho[key];
