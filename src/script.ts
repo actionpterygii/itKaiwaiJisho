@@ -56,14 +56,16 @@ function containing(item: string, inputValue: string, exactMatch: boolean)
     item = item.toLowerCase().replace(/\s+/g, '');
     // アルファベットは小文字する
     inputValue = inputValue.toLowerCase();
-
+    // 完全一致検索でしたら
     if (exactMatch)
     {
+        // inputValueの文字がitemと同じならおっけ
         if (item === inputValue)
         {
             return true;
         }
     }
+    // 完全一致検索じゃなかったら
     else
     {
         // inputValueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
@@ -189,6 +191,7 @@ function createHtml(element: {[key: string]: string;})
                         '</dl>';
                     break;
                 case 'krng':
+                        // 関連語アコーディオンの処理のためのランダムな文字列を言葉と今の時間から作る
                         const randomId: string = element['kotb'] + new Date().getTime();
                         html += 
                             '<div class="krng">' +
@@ -215,7 +218,7 @@ function createHtml(element: {[key: string]: string;})
 // 関連語を開くボタンがおされたら呼ばれる関数
 function createKanrengo(krngLabel: HTMLElement)
 {
-    // 押された開くボタンで開く要素
+    // 押された開くボタンで開く要素(それは次の次にある要素)
     const krngContents: Element = krngLabel.nextElementSibling.nextElementSibling;
 
     // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
@@ -223,12 +226,15 @@ function createKanrengo(krngLabel: HTMLElement)
     // の内容を検索して設置
     krngContents.innerHTML = (function()
     {
+        // 最後に返す要素
         let tangosHTML: string = "";
+        // 関連語にある単語の数だけおこなうね
         for (const tangoKey in tangos)
         {
             // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する
             tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true));
         }
+        // かえす
         return tangosHTML;
     }
     )();
