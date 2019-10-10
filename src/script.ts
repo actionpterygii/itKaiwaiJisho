@@ -18,7 +18,7 @@ xhr.onreadystatechange = function()
 {
     if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
     {
-        jisho = JSON.parse(xhr.responseText || "null");
+        jisho = JSON.parse(xhr.responseText || 'null');
     }
 };
 xhr.send();
@@ -52,8 +52,10 @@ function zenToHan(inputValue: string)
 // itemの内容がinputValueのなかにあればtrueるなければfalseる。exactMatchは完全一致検索かどうか
 function containing(item: string, inputValue: string, exactMatch: boolean)
 {
-    // アルファベットは小文字にする、スペースを削除する
-    item = item.toLowerCase().replace(/\s+/g, '');
+    // スペースを削除する
+    item = item.replace(/\s+/g, '');
+    // アルファベットは小文字する
+    item = item.toLowerCase();
     // アルファベットは小文字する
     inputValue = inputValue.toLowerCase();
     // 完全一致検索でしたら
@@ -227,7 +229,7 @@ function createKanrengo(krngLabel: HTMLElement)
     krngContents.innerHTML = (function()
     {
         // 最後に返す要素
-        let tangosHTML: string = "";
+        let tangosHTML: string = '';
         // 関連語にある単語の数だけおこなうね
         for (const tangoKey in tangos)
         {
