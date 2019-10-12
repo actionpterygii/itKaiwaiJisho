@@ -66,6 +66,11 @@ function containing(item: string, input_value: string, exact_match: boolean)
         {
             return true;
         }
+        // ない場合
+        else
+        {
+            return false;
+        }
     }
     // 完全一致検索じゃなかったら
     else
