@@ -94,7 +94,7 @@ function containing(item: string, input_value: string, exact_match: boolean)
 }
 
 // 入力された値を辞書jsonから検索してマッチしたものを返す。exact_matchは完全一致検索かどうか
-function serch(jisho: [{[key: string]: string;}], input_value: string, exact_match: boolean)
+function scarch(jisho: [{[key: string]: string;}], input_value: string, exact_match: boolean)
 {
     // '--all'と入力された場合
     if (input_value === '--all')
@@ -105,27 +105,31 @@ function serch(jisho: [{[key: string]: string;}], input_value: string, exact_mat
     // 何か入力があった場合
     else if (input_value !== '')
     {
-        // 最終的に返すことになる単語要素
-        var required_elements: any = {} as [{[key: string]: string;}];
-        // 最終的に返すことになる単語要素の連番つけるための
-        var i: number = 0;
-        // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
-        for (let key in jisho)
+        // 完全一致検索でしたら
+        if (exact_match)
         {
-            // 完全一致検索でしたら
-            if (exact_match)
+            // kotbのみで探す
+            const item: string = word_items[0];
+            // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
+            for (let key in jisho)
             {
-                // kotbのみで探す
-                const item: string = word_items[0];
                 // 入力した内容があるか(完全一致検索)
                 if (containing(jisho[key][item], input_value, exact_match))
                 {
-                    // その単語を追加する
+                    // その単語返すを
                     return jisho[key];
                 }
             }
-            // 完全一致検索じゃなかったら
-            else
+        }
+        // 完全一致検索じゃなかったら
+        else
+        {
+            // 最終的に返すことになる単語要素
+            var required_elements: any = {} as [{[key: string]: string;}];
+            // 最終的に返すことになる単語要素の連番つけるための
+            var i: number = 0;
+            // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
+            for (let key in jisho)
             {
                 // 一単語に対して、先に定義してあるword_itemsの要素ぶん回す。
                 for (let item_key in word_items)
@@ -145,9 +149,9 @@ function serch(jisho: [{[key: string]: string;}], input_value: string, exact_mat
                     }
                 }
             }
+            // 辞書jsonから必要な部分が選ばれたものを返す
+            return required_elements;
         }
-        // 辞書jsonから必要な部分を返す
-        return required_elements;
     }
 }
 
@@ -233,7 +237,7 @@ function createKanrengo(krng_label: HTMLElement)
         for (const tango_key in tangos)
         {
             // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する
-            tangos_html += createHtml(serch(jisho, tangos[tango_key], true));
+            tangos_html += createHtml(scarch(jisho, tangos[tango_key], true));
         }
         // かえす
         return tangos_html;
@@ -247,7 +251,7 @@ function createResult(jisho: [{[key: string]: string;}], input_value: string)
     // 最後かえす文字列
     let entity: string = '';
     // 必要な要素を選定する
-    const required_elements: [{[key: string]: string;}] = serch(jisho, input_value, false);
+    const required_elements: [{[key: string]: string;}] = scarch(jisho, input_value, false);
     // 選定した要素から一つづついじる
     for (let key in required_elements)
     {
