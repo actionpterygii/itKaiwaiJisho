@@ -282,8 +282,8 @@ input.addEventListener('keyup', function()
             // 無い内容を返す
             return '';
         }
-    })();
-
+    }
+    )();
 });
 
 // 入力押されたら入力
