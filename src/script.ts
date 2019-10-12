@@ -102,8 +102,8 @@ function scarch(jisho: [{[key: string]: string;}], input_value: string, exact_ma
         // 辞書jsonのすべてを返す
         return jisho;
     }
-    // 何か入力があった場合
-    else if (input_value !== '')
+    // 普通の入力の場合
+    else
     {
         // 完全一致検索でしたら
         if (exact_match)
@@ -267,8 +267,23 @@ input.addEventListener('keyup', function()
 {
     // inputにあるvalueを格納
     input_value = input.value;
-    // input_valueから結果を作成して描画
-    result.innerHTML = createResult(jisho, input_value);
+    // resultエリアの内容を変更(描画し直す)
+    result.innerHTML = (function()
+    {
+        // 入力内容があれば
+        if (input_value !== '')
+        {
+            // input_valueから結果を作成して返す
+            return createResult(jisho, input_value);
+        }
+        // 入力内容がなければ
+        else
+        {
+            // 無い内容を返す
+            return '';
+        }
+    })();
+
 });
 
 // 入力押されたら入力
