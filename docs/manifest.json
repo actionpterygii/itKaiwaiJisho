@@ -7,37 +7,37 @@
     "background_color": "#FFFF66",
     "icons": [
         {
-            "src": "images/icon_72_nise.png",
+            "src": "images/hoshixx_72.png",
             "type": "image/png",
             "sizes": "72x72"
         },
         {
-            "src": "images/icon_96_nise.png",
+            "src": "images/hoshixx_96.png",
             "type": "image/png",
             "sizes": "96x96"
         },
         {
-            "src": "images/icon_144_nise.png",
+            "src": "images/hoshixx_144.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "images/icon_152_nise.png",
+            "src": "images/hoshixx_152.png",
             "type": "image/png",
             "sizes": "152x152"
         },
         {
-            "src": "images/icon_192_nise.png",
+            "src": "images/hoshixx_192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "images/icon_384_nise.png",
+            "src": "images/hoshixx_384.png",
             "type": "image/png",
             "sizes": "384x384"
         },
         {
-            "src": "images/icon_512_nise.png",
+            "src": "images/hoshixx_512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
