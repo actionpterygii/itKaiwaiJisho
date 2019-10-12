@@ -230,10 +230,10 @@ function createKanrengo(krng_label: HTMLElement)
         // 最後に返す要素
         let tangos_html: string = '';
         // 関連語にある単語の数だけおこなうね
-        for (const tangoKey in tangos)
+        for (const tango_key in tangos)
         {
             // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する
-            tangos_html += createHtml(serch(jisho, tangos[tangoKey], true));
+            tangos_html += createHtml(serch(jisho, tangos[tango_key], true));
         }
         // かえす
         return tangos_html;
