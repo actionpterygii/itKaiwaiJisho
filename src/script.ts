@@ -1,19 +1,19 @@
 //後で使うHTML要素
 const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
 const result: HTMLDivElement = document.getElementById('result') as HTMLDivElement;
-const nyuryokuBtn: HTMLButtonElement = document.getElementById('nyuryokuBtn') as HTMLButtonElement;
-const guguruBtn: HTMLAnchorElement = document.getElementById('guguruBtn') as HTMLAnchorElement;
+const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
+const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
 
 
-// 入力内容を保存しておく
-let inputValue: string = '';
+// 入力内容を保存しておくためのもの
+let input_value: string = '';
 
 // 辞書情報を辞書jsonから取得する
-const jishoPath: string = 'jisho.json';
+const jisho_path: string = 'jisho.json';
 var jisho: [{[key: string]: string;}];
 const xhr: XMLHttpRequest = new XMLHttpRequest();
 xhr.overrideMimeType("application/json");
-xhr.open('GET', jishoPath, true);
+xhr.open('GET', jisho_path, true);
 xhr.onreadystatechange = function()
 {
     if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
@@ -25,44 +25,44 @@ xhr.send();
 
 
 // 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
-const wordItems: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
+const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 
 // ひらがなをカナカナに変換するための
-function hiraToKata(inputValue: string)
+function hiraToKata(input_value: string)
 {
     // ひらがなをおきかえるよって
-    return inputValue.replace(/[\u3041-\u3096]/g, function(inputValue: string)
+    return input_value.replace(/[\u3041-\u3096]/g, function(input_value: string)
     {
         // 文字コード的にずらしてカタカナにする
-        return String.fromCharCode(inputValue.charCodeAt(0) + 0x60);
+        return String.fromCharCode(input_value.charCodeAt(0) + 0x60);
     });
 }
 
 // 全角英数を半角英数に変換するための
-function zenToHan(inputValue: string)
+function zenToHan(input_value: string)
 {
     //全角英数置き換えるよって
-    return inputValue.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(inputValue: string)
+    return input_value.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(input_value: string)
     {
         //　文字コード的にずらして半角にする
-        return String.fromCharCode(inputValue.charCodeAt(0) - 65248);
+        return String.fromCharCode(input_value.charCodeAt(0) - 65248);
     });
 }
 
-// itemの内容がinputValueのなかにあればtrueるなければfalseる。exactMatchは完全一致検索かどうか
-function containing(item: string, inputValue: string, exactMatch: boolean)
+// itemの内容がinput_valueのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
+function containing(item: string, input_value: string, exact_match: boolean)
 {
     // スペースを削除する
     item = item.replace(/\s+/g, '');
     // アルファベットは小文字する
     item = item.toLowerCase();
     // アルファベットは小文字する
-    inputValue = inputValue.toLowerCase();
+    input_value = input_value.toLowerCase();
     // 完全一致検索でしたら
-    if (exactMatch)
+    if (exact_match)
     {
-        // inputValueの文字がitemと同じならおっけ
-        if (item === inputValue)
+        // input_valueの文字がitemと同じならおっけ
+        if (item === input_value)
         {
             return true;
         }
@@ -70,18 +70,18 @@ function containing(item: string, inputValue: string, exactMatch: boolean)
     // 完全一致検索じゃなかったら
     else
     {
-        // inputValueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
-        if (item.match(inputValue))
+        // input_valueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
+        if (item.match(input_value))
         {
             return true;
         }
         // ひらがなをカタカナにして確認
-        else if (item.match(hiraToKata(inputValue)))
+        else if (item.match(hiraToKata(input_value)))
         {
             return true;
         }
         // 全角英数を半角英数にして確認
-        else if (item.match(zenToHan(inputValue)))
+        else if (item.match(zenToHan(input_value)))
         {
             return true;
         }
@@ -93,32 +93,32 @@ function containing(item: string, inputValue: string, exactMatch: boolean)
     }
 }
 
-// 入力された値を辞書jsonから検索してマッチしたものを返す。exactMatchは完全一致検索かどうか
-function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch: boolean)
+// 入力された値を辞書jsonから検索してマッチしたものを返す。exact_matchは完全一致検索かどうか
+function serch(jisho: [{[key: string]: string;}], input_value: string, exact_match: boolean)
 {
     // '--all'と入力された場合
-    if (inputValue === '--all')
+    if (input_value === '--all')
     {
         // 辞書jsonのすべてを返す
         return jisho;
     }
     // 何か入力があった場合
-    else if (inputValue !== '')
+    else if (input_value !== '')
     {
         // 最終的に返すことになる単語要素
-        var requiredElements: any = {} as [{[key: string]: string;}];
+        var required_elements: any = {} as [{[key: string]: string;}];
         // 最終的に返すことになる単語要素の連番つけるための
         var i: number = 0;
         // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
         for (let key in jisho)
         {
             // 完全一致検索でしたら
-            if (exactMatch)
+            if (exact_match)
             {
                 // kotbのみで探す
-                const item: string = wordItems[0];
+                const item: string = word_items[0];
                 // 入力した内容があるか(完全一致検索)
-                if (containing(jisho[key][item], inputValue, exactMatch))
+                if (containing(jisho[key][item], input_value, exact_match))
                 {
                     // その単語を追加する
                     return jisho[key];
@@ -127,16 +127,16 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
             // 完全一致検索じゃなかったら
             else
             {
-                // 一単語に対して、先に定義してあるwordItemsの要素ぶん回す。
-                for (let itemKey in wordItems)
+                // 一単語に対して、先に定義してあるword_itemsの要素ぶん回す。
+                for (let item_key in word_items)
                 {
                     // 単語の中の一つの項目のキー
-                    const item: string = wordItems[itemKey];
-                    // 入力した内容があるか
-                    if (containing(jisho[key][item], inputValue, exactMatch))
+                    const item: string = word_items[item_key];
+                    // 入力した内容があるか(あてはまるもの全部検索)
+                    if (containing(jisho[key][item], input_value, exact_match))
                     {
                         // 必要な単語ということで追加する
-                        requiredElements[i] = jisho[key];
+                        required_elements[i] = jisho[key];
                         // 単語が追加されたので増やす
                         i++;
                         // 追加したらその単語に用はないのでこのforループを抜ける
@@ -147,12 +147,11 @@ function serch(jisho: [{[key: string]: string;}], inputValue: string, exactMatch
             }
         }
         // 辞書jsonから必要な部分を返す
-        return requiredElements;
+        return required_elements;
     }
 }
 
 // 必要な部分の辞書jsonからHTMLを作成
-// base は 対義語をそのまま1単語検索で表示していたときに無限ループにならないようにです。
 function createHtml(element: {[key: string]: string;})
 {
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
@@ -193,18 +192,18 @@ function createHtml(element: {[key: string]: string;})
                         '</dl>';
                     break;
                 case 'krng':
-                        // 関連語アコーディオンの処理のためのランダムな文字列を言葉と今の時間から作る
-                        const randomId: string = element['kotb'] + new Date().getTime();
-                        html += 
-                            '<div class="krng">' +
-                                '<label class="krng_facade" for="' + randomId + '" value="' + element[key] + '" onClick="createKanrengo(this)">' +
-                                    '<span class="krng_facade_title">関連語</span>' +
-                                    '<span class="krng_facade_mark"></span>' +
-                                '</label>' +
-                                '<input id="' + randomId + '" class="krng_checkbox" type="checkbox">' +
-                                '<div class="krng_contents">' +
-                                '</div>' +
-                            '</div>';
+                    // 関連語アコーディオンの処理のためのランダムな文字列を言葉と今の時間から作る
+                    const random_id: string = element['kotb'] + new Date().getTime();
+                    html += 
+                        '<div class="krng">' +
+                            '<label class="krng_facade" for="' + random_id + '" value="' + element[key] + '" onClick="createKanrengo(this)">' +
+                                '<span class="krng_facade_title">関連語</span>' +
+                                '<span class="krng_facade_mark"></span>' +
+                            '</label>' +
+                            '<input id="' + random_id + '" class="krng_checkbox" type="checkbox">' +
+                            '<div class="krng_contents">' +
+                            '</div>' +
+                        '</div>';
                     break;
                 default:
                     break;
@@ -213,71 +212,71 @@ function createHtml(element: {[key: string]: string;})
     }
     // 最後の綴じdiv
     html += '</div>';
-    // かえせ
+    // かえす
     return html;
 }
 
 // 関連語を開くボタンがおされたら呼ばれる関数
-function createKanrengo(krngLabel: HTMLElement)
+function createKanrengo(krng_label: HTMLElement)
 {
     // 押された開くボタンで開く要素(それは次の次にある要素)
-    const krngContents: Element = krngLabel.nextElementSibling.nextElementSibling;
+    const krng_contents: Element = krng_label.nextElementSibling.nextElementSibling;
 
     // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
-    const tangos: string[] = krngLabel.getAttribute('value').split(',');
+    const tangos: string[] = krng_label.getAttribute('value').split(',');
     // の内容を検索して設置
-    krngContents.innerHTML = (function()
+    krng_contents.innerHTML = (function()
     {
         // 最後に返す要素
-        let tangosHTML: string = '';
+        let tangos_html: string = '';
         // 関連語にある単語の数だけおこなうね
         for (const tangoKey in tangos)
         {
             // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する
-            tangosHTML += createHtml(serch(jisho, tangos[tangoKey], true));
+            tangos_html += createHtml(serch(jisho, tangos[tangoKey], true));
         }
         // かえす
-        return tangosHTML;
+        return tangos_html;
     }
     )();
 }
 
 // 入力から結果を返す
-function createResult(jisho: [{[key: string]: string;}], inputValue: string)
+function createResult(jisho: [{[key: string]: string;}], input_value: string)
 {
     // 最後かえす文字列
     let entity: string = '';
     // 必要な要素を選定する
-    const requiredElements: [{[key: string]: string;}] = serch(jisho, inputValue, false);
+    const required_elements: [{[key: string]: string;}] = serch(jisho, input_value, false);
     // 選定した要素から一つづついじる
-    for (let key in requiredElements)
+    for (let key in required_elements)
     {
         // HTMLを作成して追加していく
-        entity += createHtml(requiredElements[key]);
+        entity += createHtml(required_elements[key]);
     }
     // よくわからんけど出るundefinedを消しつつ返す
     return entity.replace('undefined','');
 }
 
 // 文字が入力されるたんびに
-input.onkeyup = function()
+input.addEventListener('keyup', function()
 {
     // inputにあるvalueを格納
-    inputValue = input.value;
-    // inputValueから結果を作成して描画
-    result.innerHTML = createResult(jisho, inputValue);
-};
+    input_value = input.value;
+    // input_valueから結果を作成して描画
+    result.innerHTML = createResult(jisho, input_value);
+});
 
 // 入力押されたら入力
-nyuryokuBtn.onclick = function()
+nyuryoku_btn.addEventListener('click', function()
 {
     // いんぷっとえりあにフォーカス
     input.focus();
-};
+});
 
 // ぐぐる押されたらぐぐる
-guguruBtn.onclick = function()
+guguru_btn.addEventListener('click', function()
 {
     // ぐぐる
-    window.open('https://www.google.com/search?q=' + inputValue);
-};
+    window.open('https://www.google.com/search?q=' + input_value);
+});
