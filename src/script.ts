@@ -201,8 +201,7 @@ function createHtml(element: {[key: string]: string;})
                         '<div class="krng">' +
                             '<label class="krng_facade" for="' + random_id + '" value="' + element[key] + '" onClick="createKanrengo(this)"></label>' +
                             '<input id="' + random_id + '" class="krng_checkbox" type="checkbox">' +
-                            '<div class="krng_contents">' +
-                            '</div>' +
+                            '<div class="krng_contents"></div>' +
                         '</div>';
                     break;
                 default:
@@ -217,7 +216,7 @@ function createHtml(element: {[key: string]: string;})
 }
 
 // 関連語を開くボタンがおされたら呼ばれる関数
-function createKanrengo(krng_label: HTMLElement)
+function createKanrengo(krng_label: HTMLLabelElement)
 {
     // 押された開くボタンで開く要素(それは次の次にある要素)
     const krng_contents: Element = krng_label.nextElementSibling.nextElementSibling;
