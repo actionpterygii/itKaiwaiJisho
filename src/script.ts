@@ -176,7 +176,7 @@ function createHtml(element: {[key: string]: string;})
             {
                 case 'kotb':
                     html += 
-                        '<h2>' + element[key] + '</h2>';
+                        '<h2 class="kotb">' + element[key] + '</h2>';
                     break;
                 case 'eigo':
                     html +=
@@ -188,27 +188,18 @@ function createHtml(element: {[key: string]: string;})
                     break;
                 case 'mnim':
                     html +=
-                        '<dl class="mnim">' +
-                            '<dt>もとのいみ：</dt>' +
-                            '<dd>' + element[key] + '</dd>' +
-                        '</dl>';
+                        '<p class="mnim">' + element[key] + '</p>';
                     break;
                 case 'tigg':
                     html +=
-                        '<dl class="tigg">' +
-                            '<dt>対義語：</dt>' +
-                            '<dd>' + element[key] + '</dd>' +
-                        '</dl>';
+                        '<p class="tigg">' + element[key] + '</p>';
                     break;
                 case 'krng':
                     // 関連語アコーディオンの処理のためのランダムな文字列を言葉と今の時間から作る
-                    const random_id: string = element['kotb'] + new Date().getTime();
+                    const random_id: string = 'random_id_' + new Date().getTime();
                     html += 
                         '<div class="krng">' +
-                            '<label class="krng_facade" for="' + random_id + '" value="' + element[key] + '" onClick="createKanrengo(this)">' +
-                                '<span class="krng_facade_title">関連語</span>' +
-                                '<span class="krng_facade_mark"></span>' +
-                            '</label>' +
+                            '<label class="krng_facade" for="' + random_id + '" value="' + element[key] + '" onClick="createKanrengo(this)"></label>' +
                             '<input id="' + random_id + '" class="krng_checkbox" type="checkbox">' +
                             '<div class="krng_contents">' +
                             '</div>' +
