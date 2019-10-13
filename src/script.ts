@@ -1,6 +1,6 @@
 //後で使うHTML要素
-const input: HTMLInputElement = document.getElementById('input') as HTMLInputElement;
-const result: HTMLDivElement = document.getElementById('result') as HTMLDivElement;
+const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
+const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
 const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
 
@@ -11,17 +11,17 @@ let input_value: string = '';
 // 辞書情報を辞書jsonから取得する
 const jisho_path: string = 'jisho.json';
 var jisho: [{[key: string]: string;}];
-const xhr: XMLHttpRequest = new XMLHttpRequest();
-xhr.overrideMimeType("application/json");
-xhr.open('GET', jisho_path, true);
-xhr.onreadystatechange = function()
+const my_xhr: XMLHttpRequest = new XMLHttpRequest();
+my_xhr.overrideMimeType("application/json");
+my_xhr.open('GET', jisho_path, true);
+my_xhr.onreadystatechange = function()
 {
-    if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+    if (my_xhr.readyState == XMLHttpRequest.DONE && my_xhr.status == 200)
     {
-        jisho = JSON.parse(xhr.responseText || 'null');
+        jisho = JSON.parse(my_xhr.responseText || 'null');
     }
 };
-xhr.send();
+my_xhr.send();
 
 
 // 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
@@ -259,12 +259,12 @@ function createResult(jisho: [{[key: string]: string;}], input_value: string)
 }
 
 // 文字が入力されるたんびに
-input.addEventListener('keyup', function()
+input_area.addEventListener('keyup', function()
 {
     // inputにあるvalueを格納
-    input_value = input.value;
-    // resultエリアの内容を変更(描画し直す)
-    result.innerHTML = (function()
+    input_value = input_area.value;
+    // result_areaエリアの内容を変更(描画し直す)
+    result_area.innerHTML = (function()
     {
         // 入力内容があれば
         if (input_value !== '')
@@ -286,7 +286,7 @@ input.addEventListener('keyup', function()
 nyuryoku_btn.addEventListener('click', function()
 {
     // いんぷっとえりあにフォーカス
-    input.focus();
+    input_area.focus();
 });
 
 // ぐぐる押されたらぐぐる

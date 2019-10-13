@@ -17,7 +17,7 @@
 - search関数のelse
 - for inのconstに
 - ダクる
-
+- 別名
 
 
 ## してること

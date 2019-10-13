@@ -62,7 +62,7 @@ main {
     }
 }
 
-#inputarea {
+#input_area_wrap {
     width: 400px;
     border-bottom: solid 3px #3cc;
     animation-name: inputarea;
@@ -87,7 +87,7 @@ main {
     }
 }
 
-#input {
+#input_area {
     height: 45px;
     font-size: 35px;
     vertical-align: bottom;
@@ -98,7 +98,7 @@ main {
 
 
 
-#result {
+#result_area {
     margin-top: 40px;
     @include mq(max,sp) {
         width: 80%;
