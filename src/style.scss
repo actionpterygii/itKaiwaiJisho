@@ -138,13 +138,11 @@ main {
     font-size: 18px;
 }
 .mnim {
-    display: inline-block;
     &::before {
         content: 'もとのいみ：';
     }
 }
 .tigg {
-    display: inline-block;
     &::before {
         content: '対義語：';
     }
