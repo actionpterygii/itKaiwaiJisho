@@ -116,7 +116,7 @@ function scarch(jisho: [{[key: string]: string;}], input_value: string, exact_ma
             // kotbのみで探す
             const item: string = word_items[0];
             // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
-            for (let key in jisho)
+            for (const key in jisho)
             {
                 // 入力した内容があるか(完全一致検索)
                 if (containing(jisho[key][item], input_value, exact_match))
@@ -130,14 +130,14 @@ function scarch(jisho: [{[key: string]: string;}], input_value: string, exact_ma
         else
         {
             // 最終的に返すことになる単語要素
-            var required_elements: any = {} as [{[key: string]: string;}];
+            let required_elements: any = {} as [{[key: string]: string;}];
             // 最終的に返すことになる単語要素の連番つけるための
-            var i: number = 0;
+            let i: number = 0;
             // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
-            for (let key in jisho)
+            for (const key in jisho)
             {
                 // 一単語に対して、先に定義してあるword_itemsの要素ぶん回す。
-                for (let item_key in word_items)
+                for (const item_key in word_items)
                 {
                     // 単語の中の一つの項目のキー
                     const item: string = word_items[item_key];
@@ -166,7 +166,7 @@ function createHtml(element: {[key: string]: string;})
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
     let html: string = '<div class="tango">';
     // 単語内の各要素を一つづつみていく
-    for (let key in element)
+    for (const key in element)
     {
         // 内容が空でなかったら
         if (element[key] !== '')
@@ -248,7 +248,7 @@ function createResult(jisho: [{[key: string]: string;}], input_value: string)
     // 必要な要素を選定する
     const required_elements: [{[key: string]: string;}] = scarch(jisho, input_value, false);
     // 選定した要素から一つづついじる
-    for (let key in required_elements)
+    for (const key in required_elements)
     {
         // HTMLを作成して追加していく
         entity += createHtml(required_elements[key]);
