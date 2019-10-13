@@ -289,6 +289,8 @@ function createKanrengo(krng_label: Element)
                 // [0]指定なのは、scarch関数は複数個対応の単語の配列(jisho型)を返すため。
                 // 完全一致検索なため0番目の要素のみある。
                 required_elements[i] = scarch(jisho, tango, true)[0];
+                // 単語が追加されたので増やす
+                i++;
             }
             // かえす
             return required_elements;
