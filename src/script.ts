@@ -1,34 +1,61 @@
+
+// actionpterygii
+// itKaiwaiJisho
+
+
+
+////////////////////
+// 型
+////////////////////
+
+// 辞書の型(単語の配列)
+type jisho = [{[key: string]: string;}];
+// 単語の型
+type tango = {[key: string]: string;};
+
+
+
+////////////////////
+// 定数
+////////////////////
+
 //後で使うHTML要素
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
 const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
 
-
 // 入力内容を保存しておくためのもの
 let input_value: string = '';
-
-// 辞書情報を辞書jsonから取得する
-const jisho_path: string = 'jisho.json';
-var jisho: [{[key: string]: string;}];
-const my_xhr: XMLHttpRequest = new XMLHttpRequest();
-my_xhr.overrideMimeType("application/json");
-my_xhr.open('GET', jisho_path, true);
-my_xhr.onreadystatechange = function()
-{
-    if (my_xhr.readyState == XMLHttpRequest.DONE && my_xhr.status == 200)
-    {
-        jisho = JSON.parse(my_xhr.responseText || 'null');
-    }
-};
-my_xhr.send();
-
 
 // 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
 const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 
+// 辞書情報を辞書jsonから取得する
+var jisho: jisho;
+{
+    const jisho_path: string = 'jisho.json';
+    const my_xhr: XMLHttpRequest = new XMLHttpRequest();
+    my_xhr.overrideMimeType("application/json");
+    my_xhr.open('GET', jisho_path, true);
+    my_xhr.onreadystatechange = function()
+    {
+        if (my_xhr.readyState == XMLHttpRequest.DONE && my_xhr.status == 200)
+        {
+            jisho = JSON.parse(my_xhr.responseText || 'null');
+        }
+    };
+    my_xhr.send();
+}
+
+
+
+////////////////////
+// 関数
+////////////////////
+
 // ひらがなをカナカナに変換するための
-function hiraToKata(input_value: string)
+function hiraToKata(input_value: string): string
 {
     // ひらがなをおきかえるよって
     return input_value.replace(/[\u3041-\u3096]/g, function(input_value: string)
@@ -39,7 +66,7 @@ function hiraToKata(input_value: string)
 }
 
 // 全角英数を半角英数に変換するための
-function zenToHan(input_value: string)
+function zenToHan(input_value: string): string
 {
     //全角英数置き換えるよって
     return input_value.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(input_value: string)
@@ -50,7 +77,7 @@ function zenToHan(input_value: string)
 }
 
 // itemの内容がinput_valueのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
-function containing(item: string, input_value: string, exact_match: boolean)
+function containing(item: string, input_value: string, exact_match: boolean): boolean
 {
     // スペースを削除する
     item = item.replace(/\s+/g, '');
@@ -99,7 +126,7 @@ function containing(item: string, input_value: string, exact_match: boolean)
 }
 
 // 入力された値を辞書jsonから検索してマッチしたものを返す。exact_matchは完全一致検索かどうか
-function scarch(jisho: [{[key: string]: string;}], input_value: string, exact_match: boolean)
+function scarch(jisho: jisho, input_value: string, exact_match: boolean): jisho
 {
     // '--all'と入力された場合
     if (input_value === '--all')
@@ -122,7 +149,7 @@ function scarch(jisho: [{[key: string]: string;}], input_value: string, exact_ma
                 if (containing(jisho[key][item], input_value, exact_match))
                 {
                     // その単語返すを
-                    return jisho[key];
+                    return [jisho[key]];
                 }
             }
         }
@@ -130,7 +157,7 @@ function scarch(jisho: [{[key: string]: string;}], input_value: string, exact_ma
         else
         {
             // 最終的に返すことになる単語要素
-            let required_elements: any = {} as [{[key: string]: string;}];
+            let required_elements: any = {} as jisho;
             // 最終的に返すことになる単語要素の連番つけるための
             let i: number = 0;
             // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
@@ -158,10 +185,11 @@ function scarch(jisho: [{[key: string]: string;}], input_value: string, exact_ma
             return required_elements;
         }
     }
+    return jisho;
 }
 
 // 必要な部分の辞書jsonからHTMLを作成
-function createHtml(element: {[key: string]: string;})
+function createHtml(element: tango): string
 {
     // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
     let html: string = '<div class="tango">';
@@ -195,8 +223,8 @@ function createHtml(element: {[key: string]: string;})
                         '<p class="tigg">' + element[key] + '</p>';
                     break;
                 case 'krng':
-                    // 関連語アコーディオンの処理のためのランダムな文字列を言葉と今の時間から作る
-                    const random_id: string = 'random_id_' + new Date().getTime();
+                    // 関連語アコーディオンの処理のためのランダムな文字列を作る
+                    const random_id: string = 'random_' + Math.random().toString(32).substring(2);
                     html += 
                         '<div class="krng">' +
                             '<label class="krng_facade" for="' + random_id + '" value="' + element[key] + '" onClick="createKanrengo(this)"></label>' +
@@ -215,38 +243,13 @@ function createHtml(element: {[key: string]: string;})
     return html;
 }
 
-// 関連語を開くボタンがおされたら呼ばれる関数
-function createKanrengo(krng_label: Element)
-{
-    // 押された開くボタンで開く要素(それは次の次にある要素)
-    const krng_contents: Element = krng_label!.nextElementSibling!.nextElementSibling!;
-
-    // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
-    const tangos: string[] = krng_label!.getAttribute('value')!.split(',');
-    // の内容を検索して設置
-    krng_contents.innerHTML = (function()
-    {
-        // 最後に返す要素
-        let tangos_html: string = '';
-        // 関連語にある単語の数だけおこなうね
-        for (const tango_key in tangos)
-        {
-            // 対義語のを探して(完全一致検索でひとつだけ)、HTMLを構成する
-            tangos_html += createHtml(scarch(jisho, tangos[tango_key], true));
-        }
-        // かえす
-        return tangos_html;
-    }
-    )();
-}
-
 // 入力から結果を返す
-function createResult(jisho: [{[key: string]: string;}], input_value: string)
+function createResult(jisho: jisho, input_value: string): string
 {
     // 最後かえす文字列
     let entity: string = '';
     // 必要な要素を選定する
-    const required_elements: [{[key: string]: string;}] = scarch(jisho, input_value, false);
+    const required_elements: jisho = scarch(jisho, input_value, false);
     // 選定した要素から一つづついじる
     for (const key in required_elements)
     {
@@ -256,6 +259,60 @@ function createResult(jisho: [{[key: string]: string;}], input_value: string)
     // よくわからんけど出るundefinedを消しつつ返す
     return entity.replace('undefined','');
 }
+
+// 関連語を開くボタンがおされたら呼ばれる関数
+function createKanrengo(krng_label: Element)
+{
+    // 押された開くボタンで開く要素(それは次の次にある要素)
+    const krng_contents: Element = krng_label!.nextElementSibling!.nextElementSibling!;
+
+    // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
+    const tangos: string[] = krng_label!.getAttribute('value')!.split(',');
+    // 関連語とされる単語を検索して設置
+    krng_contents.innerHTML = (function()
+    {
+        // 最後に返す要素
+        let tangos_html: string = '';
+        // 必要になる単語たち
+        const required_elements: jisho = (function()
+        {
+            // 最終的に返すことになる単語要素
+            let required_elements: any = {} as jisho;
+            // 最終的に返すことになる単語要素の連番つけるための
+            let i: number = 0;
+            // 単語ひとつひとつを見ていく
+            for (const key in tangos)
+            {
+                // 一つの単語
+                const tango: string = tangos[key];
+                // その単語を完全一致検索で探し、追加する。
+                // [0]指定なのは、scarch関数は複数個対応の単語の配列(jisho型)を返すため。
+                // 完全一致検索なため0番目の要素のみある。
+                required_elements[i] = scarch(jisho, tango, true)[0];
+            }
+            // かえす
+            return required_elements;
+        }
+        )();
+        // 選定した要素から一つづついじる
+        for (const key in required_elements)
+        {
+            // HTMLを作成して追加していく
+            tangos_html += createHtml(required_elements[key]);
+        }
+        // かえす
+        return tangos_html;
+    }
+    )();
+}
+
+
+
+
+
+////////////////////
+// イベント登録
+////////////////////
 
 // 文字が入力されるたんびに
 input_area.addEventListener('keyup', function()
