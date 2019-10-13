@@ -216,13 +216,13 @@ function createHtml(element: {[key: string]: string;})
 }
 
 // 関連語を開くボタンがおされたら呼ばれる関数
-function createKanrengo(krng_label: HTMLLabelElement)
+function createKanrengo(krng_label: Element)
 {
     // 押された開くボタンで開く要素(それは次の次にある要素)
-    const krng_contents: Element = krng_label.nextElementSibling.nextElementSibling;
+    const krng_contents: Element = krng_label!.nextElementSibling!.nextElementSibling!;
 
     // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
-    const tangos: string[] = krng_label.getAttribute('value').split(',');
+    const tangos: string[] = krng_label!.getAttribute('value')!.split(',');
     // の内容を検索して設置
     krng_contents.innerHTML = (function()
     {
