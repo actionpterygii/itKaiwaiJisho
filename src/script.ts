@@ -322,7 +322,7 @@ input_area.addEventListener('keyup', function()
     )();
 });
 
-result_area.addEventListener('touchstart', function()
+result_area.addEventListener('touchend', function()
 {
     // 選択されている文字を取得
     selected_text = window.getSelection()!.toString();
