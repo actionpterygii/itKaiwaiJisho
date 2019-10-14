@@ -326,6 +326,7 @@ result_area.addEventListener('touchstart', function()
 {
     // 選択されている文字を取得
     selected_text = window.getSelection()!.toString();
+    console.log(selected_text);
 });
 
 // 入力ボタン押されたら入力
