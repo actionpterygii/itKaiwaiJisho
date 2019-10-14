@@ -265,50 +265,27 @@ function createKanrengo(krng_label: Element)
 {
     // 押された開くボタンで開く要素(それは次の次にある要素)
     const krng_contents: Element = krng_label!.nextElementSibling!.nextElementSibling!;
-
     // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
     const tangos: string[] = krng_label!.getAttribute('value')!.split(',');
-    // 関連語とされる単語を検索して設置
+    // 関連語とされる単語を検索して設置(描画(目に見えて)はCSSで行う)
     krng_contents.innerHTML = (function()
     {
         // 最後に返す要素
         let tangos_html: string = '';
-        // 必要になる単語たち
-        const required_elements: jisho = (function()
+        // 単語たちをひとつずつ触っていく
+        for (const key in tangos)
         {
-            // 最終的に返すことになる単語要素
-            let required_elements: any = {} as jisho;
-            // 最終的に返すことになる単語要素の連番つけるための
-            let i: number = 0;
-            // 単語ひとつひとつを見ていく
-            for (const key in tangos)
-            {
-                // 一つの単語
-                const tango: string = tangos[key];
-                // その単語を完全一致検索で探し、追加する。
-                // [0]指定なのは、scarch関数は複数個対応の単語の配列(jisho型)を返すため。
-                // 完全一致検索なため0番目の要素のみある。
-                required_elements[i] = scarch(jisho, tango, true)[0];
-                // 単語が追加されたので増やす
-                i++;
-            }
-            // かえす
-            return required_elements;
-        }
-        )();
-        // 選定した要素から一つづついじる
-        for (const key in required_elements)
-        {
-            // HTMLを作成して追加していく
-            tangos_html += createHtml(required_elements[key]);
+            // scarch関数でその単語を完全一致検索で探してくる
+            // [0]指定なのは、scarch関数は複数個対応の単語の配列(jisho型)を返すため。
+            // 完全一致検索なため0番目の要素のみある。
+            // でそのひと単語の情報からHTMLを作成して追加していく
+            tangos_html += createHtml(scarch(jisho, tangos[key], true)[0]);
         }
         // かえす
         return tangos_html;
     }
     )();
 }
-
-
 
 
 
