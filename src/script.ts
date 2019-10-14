@@ -258,8 +258,8 @@ function createResult(jisho: jisho, input_value: string): HTMLString
         // HTMLを作成して追加していく
         entity += createHtml(required_elements[key]);
     }
-    // よくわからんけど出るundefinedを消しつつ返す
-    return entity.replace('undefined','');
+    // かえす
+    return entity;
 }
 
 // 関連語を開くボタンがおされたら呼ばれる関数
