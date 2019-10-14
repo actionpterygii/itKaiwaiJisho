@@ -327,6 +327,15 @@ result_area.addEventListener('touchend', function()
 {
     // 選択されている文字を取得
     selected_text = window.getSelection()!.toString();
+    // 内容があれば
+    if (selected_text)
+    {
+        guguru_btn.classList.add('guguru_btn__sentaku');
+    }
+    else
+    {
+        guguru_btn.classList.remove('guguru_btn__sentaku');
+    }
 });
 
 // 入力ボタン押されたら入力

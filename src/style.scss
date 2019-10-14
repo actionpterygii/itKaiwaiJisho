@@ -245,15 +245,16 @@ main {
     color: #ff6!important;
     background-color: #3cc!important;
 }
-
 #nyuryoku_btn {
     position: fixed;
     bottom: 10px;
     left: 10px;
 }
-
 #guguru_btn {
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+.guguru_btn__sentaku::before {
+    content: '選択を';
 }
