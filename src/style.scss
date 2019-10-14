@@ -188,34 +188,51 @@ main {
         width: 80%;
         margin: 0 auto;
     }
-}
 
-#readme p {
-    margin-bottom: 6px;
-}
+    #readme p {
+        margin-bottom: 6px;
+    }
 
-#iconwrap {
-    div {
-        display: inline-block;
-        height: 10px;
-        width: 10px;
-        margin-right: 5px;
+    #colorchip {
+        div {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            margin-right: 5px;
+        }
     }
-}
+    .colorchip {
+        &-333 {
+            background-color: #333;
+        }
+        &-3cc {
+            background-color: #3cc;
+        }
+        &-f9f {
+            background-color: #f9f;
+        }
+        &-ff6 {
+            background-color: #ff6;
+        }
+    }
 
-.colorchip {
-    &-333 {
-        background-color: #333;
+    #copyright {
+        margin-top: 20px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            text-align: center;
+        }
+        small {
+            display: block;
+            text-align: center;
+            margin: 10px auto;
+        }
+
     }
-    &-3cc {
-        background-color: #3cc;
-    }
-    &-f9f {
-        background-color: #f9f;
-    }
-    &-ff6 {
-        background-color: #ff6;
-    }
+
 }
 
 .shita_no_button {
