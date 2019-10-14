@@ -292,6 +292,20 @@ function createKanrengo(krng_label: Element)
     )();
 }
 
+function checkSelectedTest()
+{
+    // 選択されている文字を取得
+    selected_text = window.getSelection()!.toString();
+    // 内容があれば
+    if (selected_text)
+    {
+        guguru_btn.classList.add('guguru_btn__sentaku');
+    }
+    else
+    {
+        guguru_btn.classList.remove('guguru_btn__sentaku');
+    }
+}
 
 
 ////////////////////
@@ -323,20 +337,8 @@ input_area.addEventListener('keyup', function()
 });
 
 // タッチ終わりに発火
-result_area.addEventListener('touchend', function()
-{
-    // 選択されている文字を取得
-    selected_text = window.getSelection()!.toString();
-    // 内容があれば
-    if (selected_text)
-    {
-        guguru_btn.classList.add('guguru_btn__sentaku');
-    }
-    else
-    {
-        guguru_btn.classList.remove('guguru_btn__sentaku');
-    }
-});
+result_area.addEventListener('touchend', checkSelectedTest);
+result_area.addEventListener('touchstart', checkSelectedTest);
 
 // 入力ボタン押されたら入力
 nyuryoku_btn.addEventListener('click', function()
