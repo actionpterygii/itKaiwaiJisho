@@ -338,7 +338,7 @@ input_area.addEventListener('keyup', function()
 
 // タッチ終わりに発火
 result_area.addEventListener('touchend', checkSelectedTest);
-result_area.addEventListener('touchstart', checkSelectedTest);
+result_area.addEventListener('touchmove', checkSelectedTest);
 
 // 入力ボタン押されたら入力
 nyuryoku_btn.addEventListener('click', function()
