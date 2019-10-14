@@ -330,10 +330,13 @@ result_area.addEventListener('touchend', function()
     // 内容があれば
     if (selected_text)
     {
+        // ぐぐるボタンを「選択をぐぐる」に
         guguru_btn.classList.add('guguru_btn__sentaku');
     }
+    // 内容がなかれば
     else
     {
+        // ぐぐるボタンを「ぐぐる」に
         guguru_btn.classList.remove('guguru_btn__sentaku');
     }
 });
