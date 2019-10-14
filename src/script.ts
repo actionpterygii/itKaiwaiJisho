@@ -322,6 +322,12 @@ input_area.addEventListener('keyup', function()
     )();
 });
 
+result_area.addEventListener('touchstart', function()
+{
+    // 選択されている文字を取得
+    selected_text = window.getSelection()!.toString();
+});
+
 // 入力ボタン押されたら入力
 nyuryoku_btn.addEventListener('click', function()
 {
@@ -332,8 +338,6 @@ nyuryoku_btn.addEventListener('click', function()
 // ぐぐるボタン押されたらぐぐる
 guguru_btn.addEventListener('click', function()
 {
-    // 選択されている文字を取得
-    selected_text = window.getSelection()!.toString();
     // 選択された文字があれば
     if (selected_text)
     {
