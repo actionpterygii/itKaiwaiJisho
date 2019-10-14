@@ -322,11 +322,10 @@ input_area.addEventListener('keyup', function()
     )();
 });
 
-result_area.addEventListener('touchend', function()
+result_area.addEventListener('touchstart', function()
 {
     // 選択されている文字を取得
     selected_text = window.getSelection()!.toString();
-    console.log(selected_text);
 });
 
 // 入力ボタン押されたら入力
@@ -344,6 +343,7 @@ guguru_btn.addEventListener('click', function()
     {
         // 選択された文字でぐぐる
         window.open('https://www.google.com/search?q=' + selected_text);
+        selected_text = null;
     }
     // 選択された文字がなければ
     else
