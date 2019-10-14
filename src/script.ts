@@ -21,17 +21,11 @@ type HTMLString = string;
 // 定数
 ////////////////////
 
-//後で使うHTML要素
+//HTML要素
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
 const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
-
-// 入力内容を保存しておくためのもの
-let input_value: string = '';
-
-// 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
-const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
 
 // 辞書情報を辞書jsonから取得する
 var jisho: jisho;
@@ -50,6 +44,14 @@ var jisho: jisho;
     my_xhr.send();
 }
 
+// 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
+const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
+
+// 入力内容を保存しておくためのもの
+let input_value: string = '';
+
+// 選択された文字(ぐぐるボタンを押したときに更新)
+let selected_text: string | null = null; 
 
 
 ////////////////////
@@ -320,16 +322,28 @@ input_area.addEventListener('keyup', function()
     )();
 });
 
-// 入力押されたら入力
+// 入力ボタン押されたら入力
 nyuryoku_btn.addEventListener('click', function()
 {
     // いんぷっとえりあにフォーカス
     input_area.focus();
 });
 
-// ぐぐる押されたらぐぐる
+// ぐぐるボタン押されたらぐぐる
 guguru_btn.addEventListener('click', function()
 {
-    // ぐぐる
-    window.open('https://www.google.com/search?q=' + input_value);
+    // 選択されている文字を取得
+    selected_text = window.getSelection()!.toString();
+    // 選択された文字があれば
+    if (selected_text)
+    {
+        // 選択された文字でぐぐる
+        window.open('https://www.google.com/search?q=' + selected_text);
+    }
+    // 選択された文字がなければ
+    else
+    {
+        // 入力されている文字でぐぐる
+        window.open('https://www.google.com/search?q=' + input_value);
+    }
 });
