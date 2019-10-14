@@ -3,6 +3,7 @@
         "kotb": "アーキテクチャ",
         "eigo": "architecture",
         "kwsk": "ある方向に導くための構造、設計。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -11,6 +12,7 @@
         "kotb": "インセンティブ",
         "eigo": "incentive",
         "kwsk": "ある方向に向かわせるための外部からの刺激。誘因。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -19,6 +21,7 @@
         "kotb": "イディオム",
         "eigo": "idiom",
         "kwsk": "熟語。慣習的に意味と用例が固定されてる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -27,6 +30,7 @@
         "kotb": "パラダイム",
         "eigo": "paradigm",
         "kwsk": "見方、考え方を支配する認識の枠組み。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -35,6 +39,7 @@
         "kotb": "スニペット",
         "eigo": "snippet",
         "kwsk": "切れ端。再利用できるもの。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -43,6 +48,7 @@
         "kotb": "リファクタリング",
         "eigo": "refactoring",
         "kwsk": "見た目や振る舞いは変えず内部の処理を改善。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -51,6 +57,7 @@
         "kotb": "アノテーション",
         "eigo": "annotation",
         "kwsk": "メタデータを注釈として付与する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "メタデータ"
@@ -59,14 +66,16 @@
         "kotb": "ユース ケース",
         "eigo": "use case",
         "kwsk": "ユーザー目線でのシステムの振る舞い。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "システム"
     },
     {
         "kotb": "センシティビティ",
         "eigo": "sensitivity",
         "kwsk": "感度。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -74,7 +83,8 @@
     {
         "kotb": "アクセシビリティ",
         "eigo": "accessibility",
-        "kwsk": "アクセスのしやすさ。利用しやすさ。",
+        "kwsk": "接続、訪問、操作、利用のしやすさ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -83,6 +93,7 @@
         "kotb": "アベイラビリティ",
         "eigo": "availability",
         "kwsk": "入手のしやすさ。耐久性。可用性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -91,6 +102,7 @@
         "kotb": "ユーザビリティ",
         "eigo": "usability",
         "kwsk": "使いやすさ。利用性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -99,6 +111,7 @@
         "kotb": "トレーサビリティ",
         "eigo": "traceability",
         "kwsk": "追跡可能性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -107,6 +120,7 @@
         "kotb": "サステナビリティ",
         "eigo": "sustainability",
         "kwsk": "持続可能性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -115,6 +129,7 @@
         "kotb": "イグジスト",
         "eigo": "exist",
         "kwsk": "存在する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ノーン",
         "krng": "ノーン"
@@ -123,6 +138,7 @@
         "kotb": "ノーン",
         "eigo": "none",
         "kwsk": "存在しない。",
+        "btmi": "",
         "mnim": "",
         "tigg": "イグジスト",
         "krng": "イグジスト"
@@ -131,30 +147,34 @@
         "kotb": "サニタイジング",
         "eigo": "sanitizing",
         "kwsk": "\"&\"などのプログラムにとって意味のある文字列を別の表記に置き換える。",
-        "mnim": "無害化。消毒",
+        "btmi": "",
+        "mnim": "無害化",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム"
     },
     {
         "kotb": "ステート フル",
         "eigo": "state ful",
         "kwsk": "状況によって同じリクエストでレスポンスが変わる。",
+        "btmi": "",
         "mnim": "",
-        "tigg": "",
-        "krng": "ステートレス,レスポンス"
+        "tigg": "ステートレス",
+        "krng": "ステートレス,リクエスト,レスポンス"
     },
     {
         "kotb": "ステート レス",
         "eigo": "state less",
         "kwsk": "状況によって同じリクエストでレスポンスが変わらない。",
+        "btmi": "",
         "mnim": "",
-        "tigg": "",
-        "krng": "ステートフル,レスポンス"
+        "tigg": "ステートフル",
+        "krng": "ステートフル,リクエスト,レスポンス"
     },
     {
         "kotb": "エントロピー",
         "eigo": "entropy",
         "kwsk": "乱雑さ。不可逆性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -163,6 +183,7 @@
         "kotb": "アトリビュート",
         "eigo": "attribute",
         "kwsk": "属性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -171,22 +192,25 @@
         "kotb": "ディレクトリ トラバーサル",
         "eigo": "directory traversal",
         "kwsk": "直接指定でディレクトリを横断して勝手に見る。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ディレクトリ"
     },
     {
         "kotb": "SQL インジェクション",
         "eigo": "SQL Injection",
         "kwsk": "SQLを送り外部からデータベースを操作。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "SQL"
+        "krng": "SQL,データベース"
     },
     {
         "kotb": "クロス サイト スクリプティング",
         "eigo": "cross site scripting",
-        "kwsk": "標的サイトの権限でスクリプトを実行させる(利用者のWebブラウザで)。XSS。",
+        "kwsk": "標的サイトの権限でスクリプトを実行させる(利用者のWebブラウザで)。",
+        "btmi": "XSS。",
         "mnim": "",
         "tigg": "",
         "krng": "スクリプト,ウェブブラウザ"
@@ -195,6 +219,7 @@
         "kotb": "トレイリング スラッシュ",
         "eigo": "trailing slash",
         "kwsk": "URL末尾の\"\/\"。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -203,6 +228,7 @@
         "kotb": "リテラル",
         "eigo": "literal",
         "kwsk": "数値や文字列を直接記述した定数。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -211,6 +237,7 @@
         "kotb": "アフォーダンス",
         "eigo": "affordance",
         "kwsk": "人と物の関係性をユーザに伝達すること。",
+        "btmi": "",
         "mnim": "動物と者の間に存在する行為についての関係性そのもの",
         "tigg": "",
         "krng": ""
@@ -219,6 +246,7 @@
         "kotb": "シンタックス",
         "eigo": "syntax",
         "kwsk": "構文規則。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -227,6 +255,7 @@
         "kotb": "セマンティクス",
         "eigo": "semantics",
         "kwsk": "データ(変数)の意味、中身。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -235,6 +264,7 @@
         "kotb": "エンティティ",
         "eigo": "entity",
         "kwsk": "実体として管理したい対象。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -243,6 +273,7 @@
         "kotb": "ダイアグラム",
         "eigo": "diagram",
         "kwsk": "情報を整理し図示したもの(関数のそれはグラフ)。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -251,14 +282,16 @@
         "kotb": "プリプロセッサ",
         "eigo": "preprocessor",
         "kwsk": "中心的な処理を行うプログラムの前処理を行うプログラム。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム"
     },
     {
         "kotb": "バイラル",
         "eigo": "viral",
         "kwsk": "ウィルスのように広まる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -267,6 +300,7 @@
         "kotb": "ノーム",
         "eigo": "nome",
         "kwsk": "基準。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -275,6 +309,7 @@
         "kotb": "キュレーション",
         "eigo": "curation",
         "kwsk": "収集して選別して共有する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -283,6 +318,7 @@
         "kotb": "オーバーヘッド",
         "eigo": "overhead",
         "kwsk": "処理に付加して発生する処理、負荷。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -291,6 +327,7 @@
         "kotb": "オプティマイゼーション",
         "eigo": "optimization",
         "kwsk": "最適な状態に近づける。正規化。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -299,6 +336,7 @@
         "kotb": "アビューズ",
         "eigo": "abuse",
         "kwsk": "迷惑行為を通報する窓口。",
+        "btmi": "",
         "mnim": "不正使用",
         "tigg": "",
         "krng": ""
@@ -307,6 +345,7 @@
         "kotb": "シグネチャ",
         "eigo": "signature",
         "kwsk": "署名。識別するための情報。特徴的なパターン。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -315,6 +354,7 @@
         "kotb": "サンク コスト",
         "eigo": "sunk cost",
         "kwsk": "すでに回収できないコスト。埋没費用。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -323,6 +363,7 @@
         "kotb": "アイソレーション",
         "eigo": "isolation",
         "kwsk": "分離。独立。絶縁。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -331,30 +372,34 @@
         "kotb": "アロケーション",
         "eigo": "allocation",
         "kwsk": "割当て。配分。プログラムの起動時に動作のために必要なメモリ領域をOSが確保すること。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "オペレーティングシステム"
+        "krng": "プログラム,メモリ,オペレーティングシステム"
     },
     {
         "kotb": "バッファ",
         "eigo": "buffer",
         "kwsk": "データを一時保存する場所。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データ"
     },
     {
         "kotb": "イニシャライズ",
         "eigo": "initialize",
         "kwsk": "ハードディスク等をOSが利用可能な状態にすること。初期化。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ハードディスク,オペレーティングシステム"
     },
     {
         "kotb": "デプロイ",
         "eigo": "deploy",
         "kwsk": "ソフトウェアを本番環境に展開すること。",
+        "btmi": "",
         "mnim": "配備",
         "tigg": "",
         "krng": "ソフトウェア"
@@ -363,6 +408,7 @@
         "kotb": "モジュール",
         "eigo": "module",
         "kwsk": "単体でも動くが通常は他のものと組み合わせる部品。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -371,6 +417,7 @@
         "kotb": "ディストリビューション",
         "eigo": "distribution",
         "kwsk": "コンパイル済みで設定済みのソフトウェアの集まり。",
+        "btmi": "",
         "mnim": "流通",
         "tigg": "",
         "krng": "ソフトウェア"
@@ -379,6 +426,7 @@
         "kotb": "レイテンシー",
         "eigo": "latency",
         "kwsk": "潜伏時間。待ち時間。反応時間。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -387,6 +435,7 @@
         "kotb": "サーティフィケート",
         "eigo": "certificate",
         "kwsk": "証明書。鑑定書。免許書。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -395,6 +444,7 @@
         "kotb": "トランスペアレンシー",
         "eigo": "transparency",
         "kwsk": "透明性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -403,6 +453,7 @@
         "kotb": "コンシステンシー",
         "eigo": "consistency",
         "kwsk": "一貫性。整合性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -411,6 +462,7 @@
         "kotb": "エクスペクテーション",
         "eigo": "expectation",
         "kwsk": "期待。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -419,6 +471,7 @@
         "kotb": "TL;DR",
         "eigo": "Too long; didn't read.",
         "kwsk": "要約。",
+        "btmi": "",
         "mnim": "長すぎたから読まなかった",
         "tigg": "",
         "krng": ""
@@ -427,14 +480,16 @@
         "kotb": "パース",
         "eigo": "parse",
         "kwsk": "構文解析(コンパイルとかで)。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "コンパイル"
     },
     {
         "kotb": "オフセット",
         "eigo": "offset",
         "kwsk": "ずれ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -443,6 +498,7 @@
         "kotb": "トートロジー",
         "eigo": "tautology",
         "kwsk": "同じ意味を持つ別の物の無意味な繰り返し。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -451,30 +507,34 @@
         "kotb": "レプリケーション",
         "eigo": "replication",
         "kwsk": "別のデータベースに複製して同期しておく。",
+        "btmi": "",
         "mnim": "複製",
         "tigg": "",
-        "krng": ""
+        "krng": "データベース"
     },
     {
         "kotb": "フェイルオーバー",
         "eigo": "failover",
         "kwsk": "異常が発生した時に自動的に予備に切り替える。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "スイッチオーバー"
     },
     {
         "kotb": "スイッチオーバー",
         "eigo": "switchover",
         "kwsk": "異常が発生した時に手動で予備に切り替える。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "フェイルオーバー"
     },
     {
         "kotb": "イネーブル",
         "eigo": "enable",
         "kwsk": "有効化。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ディセーブル",
         "krng": "ディセーブル"
@@ -483,6 +543,7 @@
         "kotb": "ディセーブル",
         "eigo": "disable",
         "kwsk": "無効化。",
+        "btmi": "",
         "mnim": "",
         "tigg": "イネーブル",
         "krng": "イネーブル"
@@ -491,6 +552,7 @@
         "kotb": "オーバービュー",
         "eigo": "overview",
         "kwsk": "概要。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -499,6 +561,7 @@
         "kotb": "インクルーシブ",
         "eigo": "inclusive",
         "kwsk": "包括しているさま。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -507,6 +570,7 @@
         "kotb": "シナジー",
         "eigo": "synergy",
         "kwsk": "相乗効果。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -515,14 +579,16 @@
         "kotb": "パーミッション",
         "eigo": "permission",
         "kwsk": "許可。アクセス権。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "アクセス"
     },
     {
         "kotb": "ノーティス",
         "eigo": "notice",
         "kwsk": "通知。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -531,6 +597,7 @@
         "kotb": "リクワイア",
         "eigo": "require",
         "kwsk": "必要とする。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -539,6 +606,7 @@
         "kotb": "フィックス",
         "eigo": "fix",
         "kwsk": "決定する。修正する。解決する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -547,6 +615,7 @@
         "kotb": "アド",
         "eigo": "add",
         "kwsk": "追加する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -555,6 +624,7 @@
         "kotb": "リムーブ",
         "eigo": "remove",
         "kwsk": "取り除く。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -563,6 +633,7 @@
         "kotb": "ユーズ",
         "eigo": "use",
         "kwsk": "用いる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -571,6 +642,7 @@
         "kotb": "アップデート",
         "eigo": "update",
         "kwsk": "更新する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -579,6 +651,7 @@
         "kotb": "メイク",
         "eigo": "make",
         "kwsk": "作成する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -587,6 +660,7 @@
         "kotb": "ムーブ",
         "eigo": "move",
         "kwsk": "移動させる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -595,6 +669,7 @@
         "kotb": "アロー",
         "eigo": "allow",
         "kwsk": "許す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -603,6 +678,7 @@
         "kotb": "コンバート",
         "eigo": "convert",
         "kwsk": "変換する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -611,6 +687,7 @@
         "kotb": "リネーム",
         "eigo": "rename",
         "kwsk": "名前を変更する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -619,6 +696,7 @@
         "kotb": "リバート",
         "eigo": "revert",
         "kwsk": "もとに戻す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -627,6 +705,7 @@
         "kotb": "アボイド",
         "eigo": "avoid",
         "kwsk": "避ける。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -635,6 +714,7 @@
         "kotb": "スタブ",
         "eigo": "stub",
         "kwsk": "呼び出される側の代用品。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -643,6 +723,7 @@
         "kotb": "ドライバ",
         "eigo": "driver",
         "kwsk": "パソコンに接続されているハードウェアをOSによって制御可能にするためのソフトウェア。",
+        "btmi": "",
         "mnim": "伝達機構",
         "tigg": "",
         "krng": "ハードウェア,ソフトウェア,オペレーティングシステム"
@@ -651,6 +732,7 @@
         "kotb": "ニュー",
         "eigo": "new",
         "kwsk": "新しい。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -659,6 +741,7 @@
         "kotb": "アンユーズド",
         "eigo": "unused",
         "kwsk": "使用されていない。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -667,6 +750,7 @@
         "kotb": "スタティック",
         "eigo": "static",
         "kwsk": "静的な。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -675,6 +759,7 @@
         "kotb": "エンプティ",
         "eigo": "empty",
         "kwsk": "空の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -683,6 +768,7 @@
         "kotb": "オールド",
         "eigo": "old",
         "kwsk": "古い。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -691,6 +777,7 @@
         "kotb": "イニシャル",
         "eigo": "initial",
         "kwsk": "最初の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -699,6 +786,7 @@
         "kotb": "ローカル",
         "eigo": "local",
         "kwsk": "局所的。",
+        "btmi": "",
         "mnim": "",
         "tigg": "グローバル",
         "krng": "グローバル"
@@ -707,6 +795,7 @@
         "kotb": "ロング",
         "eigo": "wrong",
         "kwsk": "間違った。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -715,6 +804,7 @@
         "kotb": "コモン",
         "eigo": "common",
         "kwsk": "共通の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -723,6 +813,7 @@
         "kotb": "アザー",
         "eigo": "other",
         "kwsk": "他の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -731,6 +822,7 @@
         "kotb": "デッド",
         "eigo": "dead",
         "kwsk": "死んだ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -739,6 +831,7 @@
         "kotb": "デーモン",
         "eigo": "deamon",
         "kwsk": "UNIX系での常駐プログラム。",
+        "btmi": "",
         "mnim": "守護神",
         "tigg": "",
         "krng": ""
@@ -747,6 +840,7 @@
         "kotb": "リドゥ",
         "eigo": "rid",
         "kwsk": "取り除く。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -755,6 +849,7 @@
         "kotb": "ポッシブル",
         "eigo": "possible",
         "kwsk": "可能性のある。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -763,6 +858,7 @@
         "kotb": "セイム",
         "eigo": "same",
         "kwsk": "同じ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -771,6 +867,7 @@
         "kotb": "グローバル",
         "eigo": "global",
         "kwsk": "全体的な。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ローカル",
         "krng": "ローカル"
@@ -779,6 +876,7 @@
         "kotb": "インバリッド",
         "eigo": "invalid",
         "kwsk": "不正な。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -787,6 +885,7 @@
         "kotb": "スペシフィック",
         "eigo": "specific",
         "kwsk": "特定の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -795,6 +894,7 @@
         "kotb": "エクストラ",
         "eigo": "extra",
         "kwsk": "追加の。余分の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -803,6 +903,7 @@
         "kotb": "エラー",
         "eigo": "error",
         "kwsk": "間違い。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -811,6 +912,7 @@
         "kotb": "ストリング",
         "eigo": "string",
         "kwsk": "文字列。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -819,6 +921,7 @@
         "kotb": "インテジャー",
         "eigo": "integer",
         "kwsk": "整数。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -827,6 +930,7 @@
         "kotb": "ヌル",
         "eigo": "null",
         "kwsk": "なにもない。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -835,6 +939,7 @@
         "kotb": "トゥルー",
         "eigo": "true",
         "kwsk": "真。",
+        "btmi": "",
         "mnim": "",
         "tigg": "フォルス",
         "krng": "フォルス"
@@ -843,6 +948,7 @@
         "kotb": "フォルス",
         "eigo": "false",
         "kwsk": "偽。",
+        "btmi": "",
         "mnim": "",
         "tigg": "トゥルー",
         "krng": "トゥルー"
@@ -850,7 +956,8 @@
     {
         "kotb": "タイポグラフィック エラー",
         "eigo": "typographic error",
-        "kwsk": "打ち間違い。タイポ。",
+        "kwsk": "打ち間違い。",
+        "btmi": "タイポ。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -859,6 +966,7 @@
         "kotb": "ドキュメント",
         "eigo": "document",
         "kwsk": "文書。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -867,6 +975,7 @@
         "kotb": "リターン",
         "eigo": "return",
         "kwsk": "戻る。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -875,6 +984,7 @@
         "kotb": "タグ",
         "eigo": "tag",
         "kwsk": "ふだ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -883,6 +993,7 @@
         "kotb": "デフォルト",
         "eigo": "default",
         "kwsk": "初期値。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -891,6 +1002,7 @@
         "kotb": "デバイス",
         "eigo": "device",
         "kwsk": "機器。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -899,6 +1011,7 @@
         "kotb": "ハンドリング",
         "eigo": "handling",
         "kwsk": "処理。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -907,6 +1020,7 @@
         "kotb": "タイプ",
         "eigo": "type",
         "kwsk": "型式。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -915,6 +1029,7 @@
         "kotb": "オート",
         "eigo": "auto",
         "kwsk": "自動。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -923,6 +1038,7 @@
         "kotb": "ネーム",
         "eigo": "name",
         "kwsk": "名前。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -931,6 +1047,7 @@
         "kotb": "ワーニング",
         "eigo": "warning",
         "kwsk": "警告。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -939,6 +1056,7 @@
         "kotb": "スーパーセット",
         "eigo": "superset",
         "kwsk": "上位互換。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -947,6 +1065,7 @@
         "kotb": "サロゲート ペア",
         "eigo": "surrogate pair",
         "kwsk": "2文字文の文字コードを使い1文字を表す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -955,6 +1074,7 @@
         "kotb": "インタラクティブ",
         "eigo": "interactive",
         "kwsk": "対話的。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -963,6 +1083,7 @@
         "kotb": "コンソーシアム",
         "eigo": "consortium",
         "kwsk": "様々な枠を超えて連携する集団。共同事業体。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -971,6 +1092,7 @@
         "kotb": "イミュータブル",
         "eigo": "immutable",
         "kwsk": "不変。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ミュータブル",
         "krng": "ミュータブル"
@@ -979,6 +1101,7 @@
         "kotb": "ミュータブル",
         "eigo": "mutable",
         "kwsk": "可変。",
+        "btmi": "",
         "mnim": "",
         "tigg": "イミュータブル",
         "krng": "イミュータブル"
@@ -986,7 +1109,8 @@
     {
         "kotb": "クロスサイト リクエスト フォージェリ",
         "eigo": "Cross-Site Request Forgeries",
-        "kwsk": "Webアプリケーションの処理を利用者の権限で実行させる。CSRF。",
+        "kwsk": "Webアプリケーションの処理を利用者の権限で実行させる。",
+        "btmi": "CSRF。",
         "mnim": "",
         "tigg": "",
         "krng": "ウェブアプリケーション"
@@ -995,6 +1119,7 @@
         "kotb": "エクステンド",
         "eigo": "extend",
         "kwsk": "拡張。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1002,7 +1127,8 @@
     {
         "kotb": "スケール アップ",
         "eigo": "scale up",
-        "kwsk": "単体の性能を向上させて高める。スケールイン。",
+        "kwsk": "単体の性能を向上させて高める。",
+        "btmi": "スケールイン。scale in。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1011,6 +1137,7 @@
         "kotb": "スケール アウト",
         "eigo": "scale out",
         "kwsk": "数を増やして高める。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1018,7 +1145,8 @@
     {
         "kotb": "トランス コンパイラ",
         "eigo": "trans compiler",
-        "kwsk": "ソースコードを別のプログラミング言語に変換するやつ。トランスパイラ。",
+        "kwsk": "ソースコードを別のプログラミング言語に変換するやつ。",
+        "btmi": "トランスパイラ。transpiler。",
         "mnim": "",
         "tigg": "",
         "krng": "コンパイラ"
@@ -1026,23 +1154,26 @@
     {
         "kotb": "コンパイラ",
         "eigo": "compiler",
-        "kwsk": "ソースコードから、機械語等のより低級の言語に変換するやつ。",
+        "kwsk": "ソースコードから、機械語等のより低級のプログラミング言語に変換するやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ソースコード,機械語,プログラミング言語"
     },
     {
         "kotb": "インタプリタ",
         "eigo": "interpreter",
         "kwsk": "ソースコードを逐次変換しながら実行するやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ソースコード"
     },
     {
         "kotb": "エコ システム",
         "eigo": "eco system",
         "kwsk": "実際の生態系のようにたくさんが関わり合っていろいろなる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1051,6 +1182,7 @@
         "kotb": "ディスラプティブ",
         "eigo": "disruptive",
         "kwsk": "破壊的。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1059,6 +1191,7 @@
         "kotb": "ミセレイニアス",
         "eigo": "miscellaneous",
         "kwsk": "雑多。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1067,6 +1200,7 @@
         "kotb": "セレンディピティ",
         "eigo": "serendipity",
         "kwsk": "偶然に予想外のものと出会うこと。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1075,6 +1209,7 @@
         "kotb": "ウェブフック",
         "eigo": "Webhook",
         "kwsk": "POSTリクエストの送信先を指定するやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1083,14 +1218,16 @@
         "kotb": "ポート ホワーディング",
         "eigo": "port fowarding",
         "kwsk": "特定ポートへの通信を別のポートに自動的に転送する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ポート"
     },
     {
         "kotb": "キープ アライブ",
         "eigo": "keep alive",
         "kwsk": "接続が有効かを確認する定期的な通信。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1099,6 +1236,7 @@
         "kotb": "サジェスト",
         "eigo": "suggest",
         "kwsk": "予測変換。",
+        "btmi": "",
         "mnim": "提案",
         "tigg": "",
         "krng": ""
@@ -1107,38 +1245,43 @@
         "kotb": "プロプライエタリ",
         "eigo": "proprietary",
         "kwsk": "ソースコード等をを公開しない方式。",
+        "btmi": "",
         "mnim": "独占的な、非公開の",
         "tigg": "",
-        "krng": ""
+        "krng": "ソースコード"
     },
     {
-        "kotb": "アーキテクチャ宇宙飛行士",
-        "eigo": "ArchitectureAstronauts",
+        "kotb": "アーキテクチャ 宇宙飛行士",
+        "eigo": "Architecture Astronauts",
         "kwsk": "アーキテクチャを過剰に考えてしまうひと。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ダクトテーププログラマ",
-        "krng": "ダクトテーププログラマ"
+        "krng": "ダクトテーププログラマ,アーキテクチャ"
     },
     {
-        "kotb": "ダクトテーププログラマ",
-        "eigo": "DuctTapeProgrammer",
-        "kwsk": "構造の美しさよりもリリースを優先するプログラマ。",
+        "kotb": "ダクトテープ プログラマ",
+        "eigo": "DuctTape Programmer",
+        "kwsk": "構造の美しさよりもリリースを優先するプログラマー。",
+        "btmi": "",
         "mnim": "",
         "tigg": "アーキテクチャ宇宙飛行士",
-        "krng": "アーキテクチャ宇宙飛行士"
+        "krng": "アーキテクチャ宇宙飛行士,プログラマー"
     },
     {
         "kotb": "ブートストラップ",
         "eigo": "bootstrap",
         "kwsk": "入力によらず実行される。自己開始型。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ブート"
     },
     {
         "kotb": "アブストラクト",
         "eigo": "abstract",
         "kwsk": "文書の要約。",
+        "btmi": "",
         "mnim": "抽象的な",
         "tigg": "",
         "krng": ""
@@ -1146,7 +1289,8 @@
     {
         "kotb": "アプリケーション プログラミング インターフェース",
         "eigo": "Application Programming Interface",
-        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。API。",
+        "kwsk": "プログラムの機能を外部から呼び出すさいの規約。",
+        "btmi": "API。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1155,6 +1299,7 @@
         "kotb": "ナレッジ",
         "eigo": "knowledge",
         "kwsk": "知識。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1163,6 +1308,7 @@
         "kotb": "ハンドル",
         "eigo": "handle",
         "kwsk": "操作対象を指し示すもの。",
+        "btmi": "",
         "mnim": "取っ手",
         "tigg": "",
         "krng": ""
@@ -1170,7 +1316,8 @@
     {
         "kotb": "インフォメーション アーキテクチャ",
         "eigo": "Information Architecture",
-        "kwsk": "情報をわかりやすく伝えるるための技法。情報アーキテクチャ。IA。",
+        "kwsk": "情報をわかりやすく伝えるるための技法。情報アーキテクチャ。",
+        "btmi": "IA。",
         "mnim": "",
         "tigg": "",
         "krng": "アーキテクチャ"
@@ -1179,6 +1326,7 @@
         "kotb": "マシン リーダビリティ",
         "eigo": "machine readability",
         "kwsk": "機械からの読みやすさ。機械可読性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1187,6 +1335,7 @@
         "kotb": "シリアライズ",
         "eigo": "serialize",
         "kwsk": "複数の要素を一列に並べる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1195,6 +1344,7 @@
         "kotb": "セグメント",
         "eigo": "segment",
         "kwsk": "断片。分割されたもの。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1203,6 +1353,7 @@
         "kotb": "セグメンテーション",
         "eigo": "segmentation",
         "kwsk": "セグメントに分割すること。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "セグメント"
@@ -1211,22 +1362,25 @@
         "kotb": "セグメンテーション 違反",
         "eigo": "segmentation fault",
         "kwsk": "アクセスが許可されていないメモリにアクセスしたときにでる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "アクセス,メモリ"
     },
     {
         "kotb": "シンタックス エラー",
         "eigo": "syntax error",
         "kwsk": "プログラムの構文間違いのエラー。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム,シンタックス,エラー"
     },
     {
         "kotb": "コンバージョン",
         "eigo": "conversion",
-        "kwsk": "最終的な成果。CV。",
+        "kwsk": "最終的な成果。",
+        "btmi": "CV。",
         "mnim": "変換",
         "tigg": "",
         "krng": ""
@@ -1235,6 +1389,7 @@
         "kotb": "インプレッション",
         "eigo": "impression",
         "kwsk": "表示された回数。",
+        "btmi": "",
         "mnim": "印象",
         "tigg": "",
         "krng": ""
@@ -1243,6 +1398,7 @@
         "kotb": "エンゲージメント",
         "eigo": "engagement",
         "kwsk": "二者間の関係性。",
+        "btmi": "",
         "mnim": "約束",
         "tigg": "",
         "krng": ""
@@ -1251,6 +1407,7 @@
         "kotb": "バズワード",
         "eigo": "buzzword",
         "kwsk": "新しくて流行りの定義が曖昧な用語。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1259,6 +1416,7 @@
         "kotb": "ラウンド ロビン",
         "eigo": "round robin",
         "kwsk": "総当たり。",
+        "btmi": "",
         "mnim": "リボン",
         "tigg": "",
         "krng": ""
@@ -1267,6 +1425,7 @@
         "kotb": "LGTM",
         "eigo": "Looks Good To Me",
         "kwsk": "わたしはいいとおもいます。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1275,6 +1434,7 @@
         "kotb": "プリミティブ",
         "eigo": "primitive",
         "kwsk": "単純な基本構造。",
+        "btmi": "",
         "mnim": "原始的な",
         "tigg": "",
         "krng": ""
@@ -1282,7 +1442,8 @@
     {
         "kotb": "ユーザー エクスペリエンス",
         "eigo": "User Experience",
-        "kwsk": "モノを使うことでユーザーが得る経験。UX。",
+        "kwsk": "モノを使うことでユーザーが得る経験。",
+        "btmi": "UX。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1291,6 +1452,7 @@
         "kotb": "ブーリアン",
         "eigo": "boolean",
         "kwsk": "TRUE/FALSEとかの二択の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "トゥルー,フォルス"
@@ -1298,7 +1460,8 @@
     {
         "kotb": "サーチ エンジン オプティマイゼーション",
         "eigo": "Search Engine Optimization",
-        "kwsk": "検索エンジンで上位に表示されるよう調整すること。SEO。",
+        "kwsk": "検索エンジンで上位に表示されるよう調整すること。",
+        "btmi": "SEO。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1307,22 +1470,25 @@
         "kotb": "ラッパー",
         "eigo": "wrapper",
         "kwsk": "プログラムの機能を異なる環境でも使えるようにするもの。",
+        "btmi": "",
         "mnim": "覆うもの",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム"
     },
     {
         "kotb": "ユーザー インターフェース",
         "eigo": "User Interface",
-        "kwsk": "コンピュータと人間の間で情報を伝達するもの。UI。",
+        "kwsk": "コンピューターと人間の間で情報を伝達するもの。",
+        "btmi": "UI。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "グラフィカル ユーザー インターフェース",
         "eigo": "Graphical User Interface",
-        "kwsk": "画面にグラフィカルなものがあってマウス等使ってやりとりするようなやつ。GUI。",
+        "kwsk": "画面にグラフィカルなものがあってマウス等使ってやりとりするようなやつ。",
+        "btmi": "GUI。",
         "mnim": "",
         "tigg": "",
         "krng": "ユーザーインターフェース"
@@ -1330,7 +1496,8 @@
     {
         "kotb": "キャラクタ ユーザー インターフェース",
         "eigo": "Character User Interface",
-        "kwsk": "キーの入力でのみやりとりするようなやつ。CUI。",
+        "kwsk": "キーの入力でのみやりとりするようなやつ。",
+        "btmi": "CUI。",
         "mnim": "",
         "tigg": "",
         "krng": "ユーザーインターフェース"
@@ -1339,6 +1506,7 @@
         "kotb": "ノーマライゼーション",
         "eigo": "normalization",
         "kwsk": "違いを吸収し全体を均一化すること。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1346,15 +1514,17 @@
     {
         "kotb": "インターフェース",
         "eigo": "interface",
-        "kwsk": "コンピュータとなにかの接続部分。",
+        "kwsk": "コンピューターとなにかの接続部分。",
+        "btmi": "",
         "mnim": "接触面",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "メタファー",
         "eigo": "metaphor",
         "kwsk": "隠喩。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1363,14 +1533,16 @@
         "kotb": "ブラッシュアップ",
         "eigo": "brush up",
         "kwsk": "磨き上げる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "IO",
-        "eigo": "",
-        "kwsk": "入出力。input/output。",
+        "eigo": "Input Output",
+        "kwsk": "入出力。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1379,6 +1551,7 @@
         "kotb": "パスフレーズ",
         "eigo": "passphrase",
         "kwsk": "長いパスワード。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1387,6 +1560,7 @@
         "kotb": "シェアリング エコノミー",
         "eigo": "sharing economy",
         "kwsk": "個人所有のモノを共有・交換する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1395,6 +1569,7 @@
         "kotb": "スタティック",
         "eigo": "static",
         "kwsk": "静的。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ダイナミック",
         "krng": "ダイナミック"
@@ -1403,14 +1578,16 @@
         "kotb": "ダイナミック",
         "eigo": "dynamic",
         "kwsk": "動的。",
+        "btmi": "",
         "mnim": "",
         "tigg": "スタティック",
         "krng": "スタティック"
     },
     {
         "kotb": "よしなに",
-        "eigo": "yoshinani",
+        "eigo": "yoshina-ni",
         "kwsk": "いいかんじに。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1419,6 +1596,7 @@
         "kotb": "フール プルーフ",
         "eigo": "fool proof",
         "kwsk": "必ず誤った使い方をされることを前提とし、そうであっても危険にならない仕組み。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "フェイルセーフ"
@@ -1427,6 +1605,7 @@
         "kotb": "フェイル セーフ",
         "eigo": "fail safe",
         "kwsk": "必ず障害が発生することを前提とし、そうであっても危険になない仕組み。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "フールプルーフ"
@@ -1435,7 +1614,8 @@
         "kotb": "セマフォ",
         "eigo": "semaphore",
         "kwsk": "並列処理の際に利用可能な残りの数を表す。",
-        "mnim": "リアルの信号",
+        "btmi": "",
+        "mnim": "リアルの信号(道とかにあるやつ)",
         "tigg": "",
         "krng": ""
     },
@@ -1443,14 +1623,16 @@
         "kotb": "ハッシュ",
         "eigo": "hash",
         "kwsk": "データを決まったルールに従って要約したもの。",
+        "btmi": "",
         "mnim": "細切れ",
         "tigg": "",
-        "krng": ""
+        "krng": "データ"
     },
     {
         "kotb": "カラミティ",
         "eigo": "karamity",
         "kwsk": "絡みやすさ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1458,7 +1640,8 @@
     {
         "kotb": "チーフ エグゼクティブ オフィサー",
         "eigo": "Chief Exective Officer",
-        "kwsk": "最高経営責任者。CEO。",
+        "kwsk": "最高経営責任者。",
+        "btmi": "CEO。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1466,7 +1649,8 @@
     {
         "kotb": "チーフ オペレーティング オフィサー",
         "eigo": "Chief Operating Officer",
-        "kwsk": "最高執行責任者。COO。",
+        "kwsk": "最高執行責任者。",
+        "btmi": "COO。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1474,7 +1658,8 @@
     {
         "kotb": "チーフ ファイナンシャル オフィサー",
         "eigo": "Cheif Financial Officer",
-        "kwsk": "最高財務責任者。CFO。",
+        "kwsk": "最高財務責任者。",
+        "btmi": "CFO。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1482,7 +1667,8 @@
     {
         "kotb": "チーフ インフォメーション オフィサー",
         "eigo": "Chief Information Officer",
-        "kwsk": "最高情報責任者。CIO。",
+        "kwsk": "最高情報責任者。",
+        "btmi": "CIO。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1490,7 +1676,8 @@
     {
         "kotb": "チーフ ナレッジ オフィサー",
         "eigo": "Chief Technology Officer",
-        "kwsk": "最高技術責任者。CTO。",
+        "kwsk": "最高技術責任者。",
+        "btmi": "CTO。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1498,7 +1685,8 @@
     {
         "kotb": "チーフ ナレッジ オフィサー",
         "eigo": "Chief Knowledge Officer",
-        "kwsk": "最高知識責任者。CKO。",
+        "kwsk": "最高知識責任者。",
+        "btmi": "CKO。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1507,6 +1695,7 @@
         "kotb": "リレーション",
         "eigo": "relation",
         "kwsk": "関係。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1515,6 +1704,7 @@
         "kotb": "エヴァリュエーション",
         "eigo": "evaluation",
         "kwsk": "評価。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1523,6 +1713,7 @@
         "kotb": "トランケイトゥ",
         "eigo": "truncate",
         "kwsk": "切り捨て。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1531,38 +1722,43 @@
         "kotb": "ウィザード",
         "eigo": "wizard",
         "kwsk": "複雑な作業をわかりやすく行う主に対話型の機能。魔法使いみたいにすごいひと。",
-        "mnim": "魔法使い",
+        "btmi": "",
+        "mnim": "ガチの魔法使い",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "クッキー",
         "eigo": "cookie",
-        "kwsk": "webサイトに必要なデータを使い回すためにユーザ側に保存するしくみ。",
+        "kwsk": "ウェブサイトに必要なデータを使い回すためにユーザ側に保存するしくみ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブサイト,データ"
     },
     {
         "kotb": "アナリティクス",
         "eigo": "analytics",
         "kwsk": "データの関係をみつける。分析論。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データ"
     },
     {
         "kotb": "スクリプト",
         "eigo": "script",
         "kwsk": "簡易的なプログラム。",
+        "btmi": "",
         "mnim": "台本",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム"
     },
     {
         "kotb": "ブート",
         "eigo": "boot",
         "kwsk": "起動。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1571,6 +1767,7 @@
         "kotb": "カーネル",
         "eigo": "kernel",
         "kwsk": "OSの中核。ハードウェアとソフトウェアの仲介をするソフトウェア。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "オペレーティングシステム,ハードウェア,ソフトウェア"
@@ -1579,6 +1776,7 @@
         "kotb": "エスケープ シーケンス",
         "eigo": "escape sequence",
         "kwsk": "\"¥n\"などの、そのまま文字として出力されるのではなく制御を行う特殊な文字列。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1587,6 +1785,7 @@
         "kotb": "コンティニュー",
         "eigo": "continue",
         "kwsk": "続ける。持続する。継続する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1594,7 +1793,8 @@
     {
         "kotb": "ダイナミックリンクライブラリ",
         "eigo": "Dynamic Link Library",
-        "kwsk": "プログラムの実行時に読み込まれる外部ファイル。DLL。",
+        "kwsk": "プログラムの実行時に読み込まれる外部ファイル。",
+        "btmi": "DLL。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1603,6 +1803,7 @@
         "kotb": "コンピューター レイジ",
         "eigo": "computer rage",
         "kwsk": "コンピューターに腹が立つ事によって起こる反応。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1611,6 +1812,7 @@
         "kotb": "バグ",
         "eigo": "bug",
         "kwsk": "プログラムの中の誤り。不具合。",
+        "btmi": "",
         "mnim": "虫",
         "tigg": "",
         "krng": ""
@@ -1619,6 +1821,7 @@
         "kotb": "プロダクティビティ",
         "eigo": "productivity",
         "kwsk": "生産性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1627,6 +1830,7 @@
         "kotb": "トロール",
         "eigo": "troll",
         "kwsk": "荒らし。",
+        "btmi": "",
         "mnim": "流し釣り",
         "tigg": "",
         "krng": ""
@@ -1635,6 +1839,7 @@
         "kotb": "アジェンダ",
         "eigo": "agenda",
         "kwsk": "予定表。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1642,23 +1847,26 @@
     {
         "kotb": "プログラミング",
         "eigo": "programming",
-        "kwsk": "コンピュータープログラムを作成する。",
+        "kwsk": "プログラムを作成する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム"
     },
     {
         "kotb": "コーディング",
         "eigo": "coding",
-        "kwsk": "コンピュータープログラムの処理を記述する。",
+        "kwsk": "プログラムの処理を記述する。",
+        "btmi": "",
         "mnim": "符号化。",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム"
     },
     {
         "kotb": "コモディティ化",
         "eigo": "commoditization",
         "kwsk": "商品の個性がなくなる。汎用品化。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1667,6 +1875,7 @@
         "kotb": "プリンシパル",
         "eigo": "principal",
         "kwsk": "重要な。主要な。主な。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1675,6 +1884,7 @@
         "kotb": "サブジェクティブ",
         "eigo": "subjective",
         "kwsk": "主観的な。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1682,7 +1892,8 @@
     {
         "kotb": "コンペティション",
         "eigo": "competition",
-        "kwsk": "競争。協議会。コンペ。",
+        "kwsk": "競争。協議会。",
+        "btmi": "コンペ。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1690,7 +1901,8 @@
     {
         "kotb": "デスクトップ パブリッシング",
         "eigo": "DeskTop Publishing",
-        "kwsk": "パソコンで印刷物のデータをつくること。DTP。",
+        "kwsk": "パソコンで印刷物のデータをつくること。",
+        "btmi": "DTP。",
         "mnim": "卓上出版",
         "tigg": "",
         "krng": ""
@@ -1699,6 +1911,7 @@
         "kotb": "リライアビリティ",
         "eigo": "reliability",
         "kwsk": "信頼性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1707,6 +1920,7 @@
         "kotb": "グリッチ",
         "eigo": "glitch",
         "kwsk": "誤動作。欠陥。故障。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1715,14 +1929,16 @@
         "kotb": "ダウナーソー",
         "eigo": "downasaur",
         "kwsk": "GoogleChromeでインターネット接続がない状態のときに表示される恐竜。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "オートスケーリング",
+        "kotb": "オート スケーリング",
         "eigo": "auto scaling",
         "kwsk": "自動で拡大縮小する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1731,6 +1947,7 @@
         "kotb": "ロギング",
         "eigo": "logging",
         "kwsk": "履歴を記録し蓄積すること。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1739,6 +1956,7 @@
         "kotb": "ムーアの法則",
         "eigo": "Moore's law",
         "kwsk": "「半導体の集積率は18か月で2倍になる」。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1746,7 +1964,8 @@
     {
         "kotb": "グラフィックス プロセッシング ユニット",
         "eigo": "Graphics Processing Unit",
-        "kwsk": "画像処理に特化した処理装置。コアが多い。CPUのように汎用的な処理もできる。グラフィックボード。ビデオカード。GPU。",
+        "kwsk": "画像処理に特化した処理装置。コアが多い。CPUのように汎用的な処理もできる。",
+        "btmi": "GPU。グラボ。グラフィック ボード。graphic board。ビデオ カード。video card。",
         "mnim": "",
         "tigg": "",
         "krng": "セントラルプロセッシングユニット"
@@ -1754,7 +1973,8 @@
     {
         "kotb": "セントラル プロセッシング ユニット",
         "eigo": "Central Processing Unit",
-        "kwsk": "中央処理装置。CPU。",
+        "kwsk": "中央処理装置。",
+        "btmi": "CPU。",
         "mnim": "",
         "tigg": "",
         "krng": "グラフィックスプロセッシングユニット"
@@ -1762,7 +1982,8 @@
     {
         "kotb": "マザーボード",
         "eigo": "motherboard",
-        "kwsk": "パソコンの主要な基盤。ロジックボード。",
+        "kwsk": "パソコンの主要な基盤。",
+        "btmi": "ロジックボード。logic board",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1771,6 +1992,7 @@
         "kotb": "プロセッサ",
         "eigo": "processor",
         "kwsk": "処理装置。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1778,7 +2000,8 @@
     {
         "kotb": "コンテンツ デリバリ ネットワーク",
         "eigo": "Content Delivery Network",
-        "kwsk": "分散された中で最適なサーバーからデータを取得するやつ。CDN。",
+        "kwsk": "分散された中で最適なサーバーからデータを取得するやつ。",
+        "btmi": "CDN。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1787,6 +2010,7 @@
         "kotb": "ニアショア",
         "eigo": "nearshore",
         "kwsk": "近い場所での外注。地方都市とか。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1795,6 +2019,7 @@
         "kotb": "オフショア",
         "eigo": "Offshore",
         "kwsk": "海外。沖釣り。",
+        "btmi": "",
         "mnim": "陸風",
         "tigg": "オンショア",
         "krng": "オンショア"
@@ -1803,6 +2028,7 @@
         "kotb": "オンショア",
         "eigo": "Onshore",
         "kwsk": "国内。陸っぱり。",
+        "btmi": "",
         "mnim": "海風",
         "tigg": "オフショア",
         "krng": "オフショア"
@@ -1811,6 +2037,7 @@
         "kotb": "メッセージ",
         "eigo": "message",
         "kwsk": "伝言。声明。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1819,6 +2046,7 @@
         "kotb": "マッサージ",
         "eigo": "massage",
         "kwsk": "揉んだり叩いたりすることで血やリンパの循環を改善する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "メッセージ"
@@ -1827,6 +2055,7 @@
         "kotb": "アジャイル",
         "eigo": "agile",
         "kwsk": "短い期間での「計画→実行→完成」を何度も行う。",
+        "btmi": "",
         "mnim": "俊敏な",
         "tigg": "",
         "krng": ""
@@ -1835,15 +2064,8 @@
         "kotb": "ウォーターフォール",
         "eigo": "waterfall",
         "kwsk": "「計画→実行→完成」を普通に順番に一度行う。",
+        "btmi": "",
         "mnim": "滝",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "メテオフォール",
-        "eigo": "meteofall",
-        "kwsk": "堕ちる流星。",
-        "mnim": "",
         "tigg": "",
         "krng": ""
     },
@@ -1851,6 +2073,7 @@
         "kotb": "プロトタイプ",
         "eigo": "prototype",
         "kwsk": "原型。試作品。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1859,14 +2082,16 @@
         "kotb": "プロトタイピング",
         "eigo": "prototyping",
         "kwsk": "とりあえず最初にプロトタイプ作ろって。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プロトタイプ"
     },
     {
         "kotb": "ヒアリング",
         "eigo": "hearing",
         "kwsk": "聞き取り。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1875,6 +2100,7 @@
         "kotb": "インデント",
         "eigo": "indent",
         "kwsk": "字下げ。",
+        "btmi": "",
         "mnim": "凹み",
         "tigg": "",
         "krng": ""
@@ -1883,14 +2109,16 @@
         "kotb": "ハック",
         "eigo": "hack",
         "kwsk": "役立てる。工夫する。小技。システムに不正侵入する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "システム"
     },
     {
         "kotb": "バーンアウト",
         "eigo": "burnout",
         "kwsk": "燃え尽きる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1899,6 +2127,7 @@
         "kotb": "飛ぶ",
         "eigo": "tobu",
         "kwsk": "突然いなくなる、連絡もつかない。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1907,6 +2136,7 @@
         "kotb": "インシデント",
         "eigo": "incident",
         "kwsk": "事件。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1915,14 +2145,16 @@
         "kotb": "デバッグ",
         "eigo": "debug",
         "kwsk": "バグを見つけてなおす。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "バグ"
     },
     {
         "kotb": "ユーティリティ",
         "eigo": "utility",
         "kwsk": "役に立つもの。補助的なソフトウェア。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "ソフトウェア"
@@ -1931,6 +2163,7 @@
         "kotb": "トラスト",
         "eigo": "trust",
         "kwsk": "信頼。信用。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1939,6 +2172,7 @@
         "kotb": "トランスクリプト",
         "eigo": "transcript",
         "kwsk": "文字起こし。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1947,6 +2181,7 @@
         "kotb": "コンスピラシー",
         "eigo": "conspiracy",
         "kwsk": "共謀。陰謀。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1955,6 +2190,7 @@
         "kotb": "ナラティブ",
         "eigo": "narrative",
         "kwsk": "消費する側が選択し、進める物語。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1963,14 +2199,16 @@
         "kotb": "ネット ニュートラリティ",
         "eigo": "network neutrality",
         "kwsk": "インフラや端末等によって差別なくコンテンツにアクセスできる。インターネット中立性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "インフラストラクチャ"
+        "krng": "インフラストラクチャ,コンテンツ,アクセス,インターネット"
     },
     {
         "kotb": "コンフリクト",
         "eigo": "conflict",
         "kwsk": "衝突。競合。対立。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1978,7 +2216,8 @@
     {
         "kotb": "サブスクリプション",
         "eigo": "subscription",
-        "kwsk": "買い取り式ではなく、利用した期間に応じてお金を払う。サブスクライブ。",
+        "kwsk": "買い取り式ではなく、利用した期間に応じてお金を払う。",
+        "btmi": "サブスク。サブスクライブ。subscribe。",
         "mnim": "予約購読",
         "tigg": "",
         "krng": ""
@@ -1987,6 +2226,7 @@
         "kotb": "プラットフォーム",
         "eigo": "platform",
         "kwsk": "基盤となるところ。",
+        "btmi": "",
         "mnim": "壇上",
         "tigg": "",
         "krng": ""
@@ -1995,6 +2235,7 @@
         "kotb": "OS コマンド インジェクション",
         "eigo": "OS Command injection",
         "kwsk": "OSコマンドを送り外部からOSを操作。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "オペレーティングシステム"
@@ -2003,6 +2244,7 @@
         "kotb": "フォーク",
         "eigo": "fork",
         "kwsk": "プロジェクトから分岐して別のプロジェクトがはじまる。",
+        "btmi": "",
         "mnim": "又に分かれているもの",
         "tigg": "",
         "krng": ""
@@ -2011,6 +2253,7 @@
         "kotb": "アーギュメント",
         "eigo": "argument",
         "kwsk": "関数に渡される値。引数。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2019,6 +2262,7 @@
         "kotb": "リターン バリュー",
         "eigo": "return value",
         "kwsk": "関数が渡す値。戻り値。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2027,6 +2271,7 @@
         "kotb": "メソドロジー",
         "eigo": "methodology",
         "kwsk": "方法の分析。方法論。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2035,38 +2280,43 @@
         "kotb": "ファイアウォール",
         "eigo": "Firewall",
         "kwsk": "不正アクセスから守るやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "アクセス"
     },
     {
         "kotb": "マテリアル デザイン",
         "eigo": "material design",
         "kwsk": "ペラペラの物質が重なっているような影もあるやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "デザイン"
     },
     {
         "kotb": "スキューモーフィズム",
         "eigo": "skeuomorphism",
         "kwsk": "立体感や素材感等、実際の物質に似せたデザイン。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "デザイン"
     },
     {
         "kotb": "フラット デザイン",
         "eigo": "flat design",
         "kwsk": "立体感や素材感を出さないシンプルなデザイン。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "デザイン"
     },
     {
         "kotb": "オペレーション",
         "eigo": "operation",
         "kwsk": "機械の操作。作戦。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2075,6 +2325,7 @@
         "kotb": "ヒューリスティック",
         "eigo": "heuristic",
         "kwsk": "経験則の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2083,6 +2334,7 @@
         "kotb": "ブルート フォース",
         "eigo": "brute force",
         "kwsk": "力ずく。強引な。総当たり。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2091,6 +2343,7 @@
         "kotb": "ナイーブ ソリューション",
         "eigo": "naive solution",
         "kwsk": "愚直な解決法。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2099,6 +2352,7 @@
         "kotb": "インバイト",
         "eigo": "invite",
         "kwsk": "招待すること。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2107,6 +2361,7 @@
         "kotb": "モデレーション",
         "eigo": "moderation",
         "kwsk": "ユーザーの投稿に対して管理者がチェックすること。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2115,6 +2370,7 @@
         "kotb": "ドリブン",
         "eigo": "driven",
         "kwsk": "原動力。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2123,6 +2379,7 @@
         "kotb": "エンドポイント",
         "eigo": "endpoint",
         "kwsk": "端末。",
+        "btmi": "",
         "mnim": "終点",
         "tigg": "",
         "krng": ""
@@ -2130,7 +2387,8 @@
     {
         "kotb": "オーアール マッパー",
         "eigo": "O/R Mapper",
-        "kwsk": "リレーショナルデータベースをオブジェクト指向プログラミングで操作するためのもの。Object-Relational mapping tool。",
+        "kwsk": "リレーショナルデータベースをオブジェクト指向プログラミングで操作するためのもの。",
+        "btmi": "オブジェクト-リレーショナル マッピング ツール。Object-Relational mapping tool。",
         "mnim": "",
         "tigg": "",
         "krng": "リレーショナルデータベース,プログラミング"
@@ -2139,6 +2397,7 @@
         "kotb": "アグリゲート",
         "eigo": "aggregate",
         "kwsk": "集約すること。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2147,6 +2406,7 @@
         "kotb": "マイルストーン",
         "eigo": "milestone",
         "kwsk": "進捗管理のための節目。",
+        "btmi": "",
         "mnim": "距離標識",
         "tigg": "",
         "krng": ""
@@ -2155,6 +2415,7 @@
         "kotb": "プリーヴィァス",
         "eigo": "previous",
         "kwsk": "前の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ネクスト",
         "krng": "ネクスト"
@@ -2163,6 +2424,7 @@
         "kotb": "ネクスト",
         "eigo": "next",
         "kwsk": "後の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "プリーヴィァス",
         "krng": "プリーヴィァス"
@@ -2171,6 +2433,7 @@
         "kotb": "カレント",
         "eigo": "current",
         "kwsk": "今の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2178,15 +2441,17 @@
     {
         "kotb": "優しい終身の独裁者",
         "eigo": "Benevolent Dictator For Life",
-        "kwsk": "論争の最終的な仲裁を行う、おもにプロジェクト創設者。BDFL。",
+        "kwsk": "論争の最終的な仲裁を行う、おもにプロジェクト創設者。",
+        "btmi": "BDFL。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プロジェクト"
     },
     {
         "kotb": "コンフィグレーション",
         "eigo": "configuration",
-        "kwsk": "設定。cfg。",
+        "kwsk": "設定。",
+        "btmi": "cfg",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2195,6 +2460,7 @@
         "kotb": "ディスピュート",
         "eigo": "dispute",
         "kwsk": "論争する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2203,6 +2469,7 @@
         "kotb": "エンベッド",
         "eigo": "embed",
         "kwsk": "埋め込むこと。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2211,6 +2478,7 @@
         "kotb": "ディスカバリー",
         "eigo": "discovery",
         "kwsk": "発見。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2219,6 +2487,7 @@
         "kotb": "コンテキスト",
         "eigo": "context",
         "kwsk": "文脈。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2227,22 +2496,25 @@
         "kotb": "SQL",
         "eigo": "",
         "kwsk": "リレーショナルデータベースの操作を行う言語。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "リレーショナルデータベース"
     },
     {
         "kotb": "リレーショナル データベース",
         "eigo": "relational database",
-        "kwsk": "表と表の関係を定義する方式のデータベース。関係データベース。RDB。",
+        "kwsk": "表と表の関係を定義する方式のデータベース。",
+        "btmi": "RDB。関係データベース。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データベース"
     },
     {
         "kotb": "ブルー オーシャン",
         "eigo": "blue ocean",
         "kwsk": "競争がない。未開拓。",
+        "btmi": "",
         "mnim": "",
         "tigg": "レッドオーシャン",
         "krng": "レッドオーシャン"
@@ -2251,6 +2523,7 @@
         "kotb": "レッド オーシャン",
         "eigo": "red ocean",
         "kwsk": "競争が激しい。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ブルーオーシャン",
         "krng": "ブルーオーシャン"
@@ -2259,6 +2532,7 @@
         "kotb": "コンペティター",
         "eigo": "competitor",
         "kwsk": "競争相手。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2267,6 +2541,7 @@
         "kotb": "ロイヤルティ",
         "eigo": "loyalty",
         "kwsk": "消費者からの愛着や信頼性。",
+        "btmi": "",
         "mnim": "忠誠",
         "tigg": "",
         "krng": ""
@@ -2274,7 +2549,8 @@
     {
         "kotb": "クオリティ アシュランス",
         "eigo": "Quality Assurance",
-        "kwsk": "品質保証。QA。",
+        "kwsk": "品質保証。",
+        "btmi": "QA。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2283,6 +2559,7 @@
         "kotb": "デリゲート",
         "eigo": "delegate",
         "kwsk": "代表者。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2291,6 +2568,7 @@
         "kotb": "スタック トレース",
         "eigo": "stack trace",
         "kwsk": "エラーが発生するまでの過程の表示。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2299,6 +2577,7 @@
         "kotb": "エクセプション",
         "eigo": "exception",
         "kwsk": "例外。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2307,6 +2586,7 @@
         "kotb": "オブザーバー",
         "eigo": "observer",
         "kwsk": "傍聴者。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2315,6 +2595,7 @@
         "kotb": "スケーラビリティ",
         "eigo": "scalability",
         "kwsk": "拡張可能性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2323,14 +2604,16 @@
         "kotb": "ライブラリ",
         "eigo": "library",
         "kwsk": "汎用性の高いプログラムをまとめたもの。",
+        "btmi": "",
         "mnim": "図書館",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム"
     },
     {
         "kotb": "フレームワーク",
         "eigo": "framework",
         "kwsk": "骨組み。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2338,7 +2621,8 @@
     {
         "kotb": "ロング ターム サポート",
         "eigo": "Long Term Support",
-        "kwsk": "サポート期間が長いやつ。LTS。",
+        "kwsk": "サポート期間が長いやつ。",
+        "btmi": "LTS。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2347,6 +2631,7 @@
         "kotb": "バンドル",
         "eigo": "bundle",
         "kwsk": "製品に別の製品が付属しているやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2355,22 +2640,25 @@
         "kotb": "オフライン",
         "eigo": "offline",
         "kwsk": "ネットワークに接続されていない状態。",
+        "btmi": "",
         "mnim": "",
         "tigg": "オンライン",
-        "krng": "オンライン"
+        "krng": "オンライン,ネットワーク"
     },
     {
         "kotb": "オンライン",
         "eigo": "online",
         "kwsk": "ネットワークに接続されている状態。",
+        "btmi": "",
         "mnim": "",
         "tigg": "オフライン",
-        "krng": "オフライン"
+        "krng": "オフライン,ネットワーク"
     },
     {
         "kotb": "サンドボックス",
         "eigo": "sandbox",
         "kwsk": "隔離されている環境。",
+        "btmi": "",
         "mnim": "砂場",
         "tigg": "",
         "krng": ""
@@ -2379,6 +2667,7 @@
         "kotb": "モビリティ",
         "eigo": "mobility",
         "kwsk": "流動性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2387,6 +2676,7 @@
         "kotb": "ステーブル",
         "eigo": "stable",
         "kwsk": "安定した。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2395,6 +2685,7 @@
         "kotb": "パブリッシュ",
         "eigo": "publish",
         "kwsk": "発行する。発表する。公表する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2403,6 +2694,7 @@
         "kotb": "オプト イン",
         "eigo": "opt in",
         "kwsk": "広告配信の許可を事前に求める。",
+        "btmi": "",
         "mnim": "",
         "tigg": "オプトアウト",
         "krng": "オプトアウト"
@@ -2411,6 +2703,7 @@
         "kotb": "オプト アウト",
         "eigo": "opt out",
         "kwsk": "広告配信の許可を事前に求めない。",
+        "btmi": "",
         "mnim": "",
         "tigg": "オプトイン",
         "krng": "オプトイン"
@@ -2419,6 +2712,7 @@
         "kotb": "コントラスト",
         "eigo": "contrast",
         "kwsk": "対比。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2427,22 +2721,25 @@
         "kotb": "トンマナ",
         "eigo": "tone and manner",
         "kwsk": "デザインの一貫性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "デザイン"
     },
     {
         "kotb": "レスポンシブ ウェブ デザイン",
         "eigo": "responsive web design",
         "kwsk": "複数のサイズの端末に単一のHTMLで対応する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "HTML,デザイン"
     },
     {
         "kotb": "デリゲート",
         "eigo": "delegate",
         "kwsk": "代表。委譲。委託。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2451,6 +2748,7 @@
         "kotb": "デュプリケーション",
         "eigo": "duplication",
         "kwsk": "複製。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2459,14 +2757,16 @@
         "kotb": "フィンガープリンティング",
         "eigo": "fingerprinting",
         "kwsk": "アクセスの情報からデバイスを識別する。",
+        "btmi": "",
         "mnim": "指紋を取る",
         "tigg": "",
-        "krng": ""
+        "krng": "アクセス,デバイス"
     },
     {
         "kotb": "クリプト マイニング",
         "eigo": "crypto mining",
         "kwsk": "仮想通貨の採掘。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2475,6 +2775,7 @@
         "kotb": "クリプト ジャッキング",
         "eigo": "crypto jacking",
         "kwsk": "仮想通貨の採掘を他人の機器で無断で行わせる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2483,6 +2784,7 @@
         "kotb": "アウテージ",
         "eigo": "outage",
         "kwsk": "事故。故障。停電。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2490,7 +2792,8 @@
     {
         "kotb": "プラグ イン",
         "eigo": "plug in",
-        "kwsk": "ソフトウェアの機能を拡張するプログラム。(アドオン[add on],アドイン[add in])。",
+        "kwsk": "ソフトウェアの機能を拡張するプログラム。",
+        "btmi": "アド オン。add on。アド イン。add in。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2498,7 +2801,8 @@
     {
         "kotb": "インフラストラクチャ",
         "eigo": "infrastructure",
-        "kwsk": "基盤。インフラ。",
+        "kwsk": "基盤。",
+        "btmi": "インフラ。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2507,6 +2811,7 @@
         "kotb": "アド ホック",
         "eigo": "ad hoc",
         "kwsk": "暫定的な。その場限りの。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2515,6 +2820,7 @@
         "kotb": "アホ ドッグ",
         "eigo": "aho dog",
         "kwsk": "アホなイヌ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "アドホック"
@@ -2523,22 +2829,25 @@
         "kotb": "ダウン タイム",
         "eigo": "down time",
         "kwsk": "システムが稼働していない時間。",
+        "btmi": "",
         "mnim": "",
         "tigg": "アップタイム",
-        "krng": "アップタイム"
+        "krng": "アップタイム,システム"
     },
     {
         "kotb": "アップ タイム",
         "eigo": "up time",
         "kwsk": "システムが稼働している時間。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ダウンタイム",
-        "krng": "ダウンタイム"
+        "krng": "ダウンタイム,システム"
     },
     {
         "kotb": "バリアブル",
         "eigo": "variable",
         "kwsk": "変数。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2547,6 +2856,7 @@
         "kotb": "デ ファクト スタンダード",
         "eigo": "de facto standard",
         "kwsk": "機関が定めたものでなく、広まっているため標準になる。事実上の標準。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2555,6 +2865,7 @@
         "kotb": "インスペクタ",
         "eigo": "inspector",
         "kwsk": "状態や内部構造を表示するやつ。",
+        "btmi": "",
         "mnim": "検査官",
         "tigg": "",
         "krng": ""
@@ -2563,6 +2874,7 @@
         "kotb": "サード パーティー",
         "eigo": "third party",
         "kwsk": "第三者。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2571,6 +2883,7 @@
         "kotb": "ウェル ノウン",
         "eigo": "well known",
         "kwsk": "有名な。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2579,6 +2892,7 @@
         "kotb": "デスティネーション",
         "eigo": "destination",
         "kwsk": "変換先。",
+        "btmi": "",
         "mnim": "目的地",
         "tigg": "",
         "krng": ""
@@ -2587,6 +2901,7 @@
         "kotb": "トラッキング",
         "eigo": "tracking",
         "kwsk": "インターネット上のユーザ行動を収集する。",
+        "btmi": "",
         "mnim": "追跡する",
         "tigg": "",
         "krng": ""
@@ -2595,6 +2910,7 @@
         "kotb": "バズ る",
         "eigo": "buzz ru",
         "kwsk": "話題が爆発的に広がり注目を浴びる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2602,23 +2918,26 @@
     {
         "kotb": "サース",
         "eigo": "SaaS",
-        "kwsk": "ソフトウェアを、インターネットを通して提供する。Software as a Service。",
+        "kwsk": "ソフトウェアを、インターネットを通して提供する。",
+        "btmi": "ソフトウェア アズ ア サービス。Software as a Service。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ソフトウェア,サービス"
     },
     {
         "kotb": "パース",
         "eigo": "PaaS",
-        "kwsk": "プラットフォームを、インターネットを通して提供する。Platform as a Service。",
+        "kwsk": "プラットフォームを、インターネットを通して提供する。",
+        "btmi": "プラットフォーム アズ ア サービス。Platform as a Service。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プラットフォーム,サービス"
     },
     {
         "kotb": "イァース",
         "eigo": "IaaS",
-        "kwsk": "インフラストラクチャを、インターネットを通して提供する。Infrastructure as a Service。",
+        "kwsk": "インフラストラクチャを、インターネットを通して提供する。",
+        "btmi": "インフラストラクチャ アズ ア サービス。Infrastructure as a Service。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2627,6 +2946,7 @@
         "kotb": "ステート",
         "eigo": "state",
         "kwsk": "状態。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2635,6 +2955,7 @@
         "kotb": "トークン",
         "eigo": "token",
         "kwsk": "証拠。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2643,6 +2964,7 @@
         "kotb": "ドメイン",
         "eigo": "domain",
         "kwsk": "領域。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2650,39 +2972,44 @@
     {
         "kotb": "ドメイン ネーム システム",
         "eigo": "Domain Name System",
-        "kwsk": "ドメイン名をIPアドレスに変換する。DNS。",
+        "kwsk": "ドメイン名をIPアドレスに変換する。",
+        "btmi": "DNS。",
         "mnim": "",
         "tigg": "",
-        "krng": "インターネットプロトコルアドレス"
+        "krng": "アイピーアドレス"
     },
     {
-        "kotb": "インターネット プロトコル アドレス",
-        "eigo": "Internet Protocol address",
-        "kwsk": "ネットワーク上の機器を識別する番号。IPアドレス。",
+        "kotb": "アイピー アドレス",
+        "eigo": "IP address",
+        "kwsk": "ネットワーク上の機器を識別する番号。",
+        "btmi": "インターネット プロトコル アドレス。Internet Protocol address。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ネットワーク"
     },
-        {
-        "kotb": "メディア アクセス コントロール アドレス",
-        "eigo": "Media Access Control address",
-        "kwsk": "ネットワーク機器に一意に割り当てられている番号。MAC(マック)アドレス。",
+    {
+        "kotb": "マック アドレス",
+        "eigo": "MAC address",
+        "kwsk": "ネットワーク機器に一意に割り当てられている番号。",
+        "btmi": "メディア アクセス コントロール アドレス。Media Access Control address。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ネットワーク"
     },
     {
         "kotb": "ビルド",
         "eigo": "build",
         "kwsk": "ソースコード等から実行可能なモノを作成する。",
+        "btmi": "",
         "mnim": "組み立てる",
         "tigg": "",
-        "krng": ""
+        "krng": "ソースコード"
     },
     {
         "kotb": "コンパチブル",
         "eigo": "compatible",
         "kwsk": "互換性がある。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2691,6 +3018,7 @@
         "kotb": "コンパチビリティ",
         "eigo": "compatibility",
         "kwsk": "適合性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2699,22 +3027,25 @@
         "kotb": "クラウド",
         "eigo": "cloud",
         "kwsk": "インターネットを通じてサービスを提供する。",
+        "btmi": "",
         "mnim": "雲",
         "tigg": "",
-        "krng": ""
+        "krng": "インターネット,サービス"
     },
     {
         "kotb": "RFC",
         "eigo": "",
         "kwsk": "インターネットで用いられる技術仕様文書。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "インターネット"
     },
     {
         "kotb": "オブソリート",
         "eigo": "obsolete",
         "kwsk": "廃れた。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2723,6 +3054,7 @@
         "kotb": "リファレンス",
         "eigo": "reference",
         "kwsk": "参照。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2731,6 +3063,7 @@
         "kotb": "リファレンス マニュアル",
         "eigo": "reference manual",
         "kwsk": "説明書。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2739,6 +3072,7 @@
         "kotb": "クライアント",
         "eigo": "client",
         "kwsk": "取引先。お客さん。依頼人。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2747,6 +3081,7 @@
         "kotb": "ステークホルダー",
         "eigo": "stakeholder",
         "kwsk": "利害関係者。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2755,14 +3090,16 @@
         "kotb": "バックボーン",
         "eigo": "backbone",
         "kwsk": "ネットワークの基幹。",
+        "btmi": "",
         "mnim": "背骨",
         "tigg": "",
-        "krng": ""
+        "krng": "ネットワーク"
     },
     {
         "kotb": "バインディング",
         "eigo": "binding",
         "kwsk": "束ねる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2771,6 +3108,7 @@
         "kotb": "ハレーション",
         "eigo": "halation",
         "kwsk": "周囲に悪影響を与える。",
+        "btmi": "",
         "mnim": "光が当たりすぎて写真が白くぼやける",
         "tigg": "",
         "krng": ""
@@ -2779,22 +3117,25 @@
         "kotb": "ハッカー",
         "eigo": "hacker",
         "kwsk": "コンピューターに精通してるひと。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "クラッカー",
         "eigo": "cracker",
         "kwsk": "コンピューターに対して不正侵入・破壊・改ざんをするひと。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "パーパス",
         "eigo": "purpose",
         "kwsk": "存在意義。",
+        "btmi": "",
         "mnim": "目的",
         "tigg": "",
         "krng": ""
@@ -2803,6 +3144,7 @@
         "kotb": "リビジョン",
         "eigo": "revision",
         "kwsk": "修正。補正。改訂。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2811,6 +3153,7 @@
         "kotb": "プロダクション",
         "eigo": "production",
         "kwsk": "本番。",
+        "btmi": "",
         "mnim": "生産",
         "tigg": "",
         "krng": ""
@@ -2819,6 +3162,7 @@
         "kotb": "プレ",
         "eigo": "pre",
         "kwsk": "前の。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2827,6 +3171,7 @@
         "kotb": "アドミニストレーター",
         "eigo": "administrator",
         "kwsk": "管理者。",
+        "btmi": "アドミン。admin。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2835,6 +3180,7 @@
         "kotb": "なるはや",
         "eigo": "naruhaya",
         "kwsk": "なるべくはやく。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2843,6 +3189,7 @@
         "kotb": "アイデンティファー",
         "eigo": "identifier",
         "kwsk": "識別子。識別名。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2851,14 +3198,16 @@
         "kotb": "クレデンシャル",
         "eigo": "credential",
         "kwsk": "ユーザー認証に使うやつ。IDとかパスワードとか。",
+        "btmi": "",
         "mnim": "資格",
         "tigg": "",
-        "krng": ""
+        "krng": "アイディー,パスワード"
     },
     {
         "kotb": "リソース",
         "eigo": "resource",
         "kwsk": "資源。資産。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2867,6 +3216,7 @@
         "kotb": "レスポンス",
         "eigo": "response",
         "kwsk": "反応。応答。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2875,6 +3225,7 @@
         "kotb": "コンセンサス",
         "eigo": "consensus",
         "kwsk": "合意。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2883,6 +3234,7 @@
         "kotb": "リリース",
         "eigo": "release",
         "kwsk": "公開。開放。頒布。発売。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2891,14 +3243,16 @@
         "kotb": "ハンドシェイク",
         "eigo": "handshake",
         "kwsk": "調整などデータのやりとり以外に行う通信。",
+        "btmi": "",
         "mnim": "握手",
         "tigg": "",
-        "krng": ""
+        "krng": "データ"
     },
     {
         "kotb": "パラメーター",
         "eigo": "parameter",
         "kwsk": "引数がない場合に使用される値。仮引数。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2907,6 +3261,7 @@
         "kotb": "ネゴシエーション",
         "eigo": "negotiation",
         "kwsk": "交渉。取引。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2915,6 +3270,7 @@
         "kotb": "ストリーム",
         "eigo": "stream",
         "kwsk": "連続した処理。",
+        "btmi": "",
         "mnim": "流れ",
         "tigg": "",
         "krng": ""
@@ -2923,14 +3279,16 @@
         "kotb": "ストリーミング",
         "eigo": "streaming",
         "kwsk": "ダウンロードしながら再生する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ダウンロード"
     },
     {
         "kotb": "デベロッパー",
         "eigo": "developer",
         "kwsk": "開発をしている人や会社。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2939,6 +3297,7 @@
         "kotb": "ポータル",
         "eigo": "portal",
         "kwsk": "出入口。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2947,6 +3306,7 @@
         "kotb": "コミット",
         "eigo": "commit",
         "kwsk": "反映する。関係を持つ。責任を負う。約束する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2955,6 +3315,7 @@
         "kotb": "スタッシュ",
         "eigo": "stash",
         "kwsk": "隠す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2963,6 +3324,7 @@
         "kotb": "フェッチ",
         "eigo": "fetch",
         "kwsk": "取り出す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2971,22 +3333,25 @@
         "kotb": "プッシュ",
         "eigo": "push",
         "kwsk": "押す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プル"
     },
     {
         "kotb": "プル",
         "eigo": "pull",
         "kwsk": "引く。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プッシュ"
     },
     {
         "kotb": "リジェクト",
         "eigo": "reject",
         "kwsk": "却下。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -2995,6 +3360,7 @@
         "kotb": "リワード",
         "eigo": "reward",
         "kwsk": "報酬。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3003,6 +3369,7 @@
         "kotb": "アクワイア",
         "eigo": "acuire",
         "kwsk": "入手する。得る。学ぶ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3011,6 +3378,7 @@
         "kotb": "サマリー",
         "eigo": "summary",
         "kwsk": "概要。要約。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3019,6 +3387,7 @@
         "kotb": "スポイラー",
         "eigo": "spoiler",
         "kwsk": "害する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3027,6 +3396,7 @@
         "kotb": "アノマリー",
         "eigo": "anomaly",
         "kwsk": "異常。説明できないやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3035,6 +3405,7 @@
         "kotb": "リボーク",
         "eigo": "revoke",
         "kwsk": "取り消す。無効にする。廃止する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3043,6 +3414,7 @@
         "kotb": "サブミット",
         "eigo": "submit",
         "kwsk": "送信する。投稿する。提出する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3051,16 +3423,18 @@
     {
         "kotb": "シングル サイン オン",
         "eigo": "Single Sign-On",
-        "kwsk": "一つのアカウントで複数のサービスを使えるようなやつ。SSO。",
+        "kwsk": "一つのアカウントで複数のサービスを使えるようなやつ。",
+        "btmi": "SSO。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "アカウント,サービス"
     },
 
     {
         "kotb": "カタリスト",
         "eigo": "catalyst",
         "kwsk": "要因になるもの。",
+        "btmi": "",
         "mnim": "触媒",
         "tigg": "",
         "krng": ""
@@ -3069,6 +3443,7 @@
         "kotb": "コネクティビティ",
         "eigo": "connectivity",
         "kwsk": "接続のしやすさ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3077,6 +3452,7 @@
         "kotb": "コントリビューター",
         "eigo": "contributor",
         "kwsk": "貢献者。寄付者。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3085,6 +3461,7 @@
         "kotb": "ディクララティブ",
         "eigo": "declarative",
         "kwsk": "宣言的。目的だけをいう。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3093,6 +3470,7 @@
         "kotb": "インベラティブ",
         "eigo": "imperative",
         "kwsk": "命令的。指示的。実現方法の細かいとこからいう。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3101,6 +3479,7 @@
         "kotb": "ホーリーグレイル",
         "eigo": "holygrail",
         "kwsk": "探し求められているもの。",
+        "btmi": "",
         "mnim": "聖杯",
         "tigg": "",
         "krng": ""
@@ -3109,6 +3488,7 @@
         "kotb": "アーリー アダプター",
         "eigo": "early adopter",
         "kwsk": "新たな商品やサービス等を早期から受け入れるひと。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3117,6 +3497,7 @@
         "kotb": "デュプレックス",
         "eigo": "duplex",
         "kwsk": "二重。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3125,6 +3506,7 @@
         "kotb": "センシティブ",
         "eigo": "sensitive",
         "kwsk": "神経質。鋭敏。傷つきやすい。感受性が高い。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3133,14 +3515,16 @@
         "kotb": "トラフィック",
         "eigo": "traffic",
         "kwsk": "ネットワーク上の情報(量)。",
+        "btmi": "",
         "mnim": "交通",
         "tigg": "",
-        "krng": ""
+        "krng": "ネットワーク"
     },
     {
         "kotb": "ティップス",
         "eigo": "Tips",
         "kwsk": "テクニック。小技。",
+        "btmi": "",
         "mnim": "助言",
         "tigg": "",
         "krng": ""
@@ -3149,6 +3533,7 @@
         "kotb": "アクチュエーター",
         "eigo": "actuator",
         "kwsk": "エネルギーや信号から物理的な運動に変換するやつ。",
+        "btmi": "",
         "mnim": "動作させるもの",
         "tigg": "",
         "krng": ""
@@ -3157,6 +3542,7 @@
         "kotb": "バイパス",
         "eigo": "bypass",
         "kwsk": "渋滞の迂回のための経路。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3165,14 +3551,16 @@
         "kotb": "ペリフェラル",
         "eigo": "peripheral",
         "kwsk": "コンピューターの周辺装置。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "スペシフィケーション",
         "eigo": "specification",
         "kwsk": "仕様。性能。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3181,6 +3569,7 @@
         "kotb": "ライセンス",
         "eigo": "license",
         "kwsk": "許可。免許。認可。許諾。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3189,6 +3578,7 @@
         "kotb": "フレキシブル",
         "eigo": "flexible",
         "kwsk": "柔軟。しなやか。融通が利く。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3197,6 +3587,7 @@
         "kotb": "ベネフィット",
         "eigo": "benefit",
         "kwsk": "利益。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3205,6 +3596,7 @@
         "kotb": "オーセンティック",
         "eigo": "authentic",
         "kwsk": "信頼できる。本格的。正統。正しい。",
+        "btmi": "",
         "mnim": "本物",
         "tigg": "",
         "krng": ""
@@ -3213,6 +3605,7 @@
         "kotb": "トランケート",
         "eigo": "truncate",
         "kwsk": "切り詰める。切り捨てる。切り縮める。中断する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3220,7 +3613,8 @@
     {
         "kotb": "トゥー マッチ インフォメーション",
         "eigo": "too much information",
-        "kwsk": "これ以上はいらない。もう十分。いらんいらん。TMI。",
+        "kwsk": "これ以上はいらない。もう十分。いらんいらん。",
+        "btmi": "TMI。",
         "mnim": "過剰な情報",
         "tigg": "",
         "krng": ""
@@ -3229,6 +3623,7 @@
         "kotb": "ソリューション",
         "eigo": "solution",
         "kwsk": "解決手段。解決策。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3237,6 +3632,7 @@
         "kotb": "コンサルティング",
         "eigo": "consulting",
         "kwsk": "企業の課題解決を助ける。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3245,6 +3641,7 @@
         "kotb": "オポチュニティー",
         "eigo": "opportunity",
         "kwsk": "機会。好機。チャンス。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3253,6 +3650,7 @@
         "kotb": "アクティビティ",
         "eigo": "activity",
         "kwsk": "活動。活気。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3261,30 +3659,34 @@
         "kotb": "ポッドキャスト",
         "eigo": "podcast",
         "kwsk": "音声データをWebサーバーにアップロードしてRSSを通して公開。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "RSS"
     },
     {
         "kotb": "RSS",
         "eigo": "",
         "kwsk": "ウェブサイトの更新を配信するための文書フォーマット。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブサイト,フォーマット"
     },
     {
         "kotb": "ワールド ワイド ウェブ",
         "eigo": "World Wide Web",
-        "kwsk": "インターネットでハイパーテキストを提供するやつ。WWW。W3。Web。",
+        "kwsk": "インターネットでハイパーテキストを提供するやつ。",
+        "btmi": "WWW。W3。ウェブ。Web。",
         "mnim": "",
         "tigg": "",
-        "krng": "ハイパーテキスト"
+        "krng": "インターネット,ハイパーテキスト"
     },
     {
         "kotb": "ハイパー テキスト",
         "eigo": "hyper text",
         "kwsk": "文書中に別の文書への参照がある。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3293,6 +3695,7 @@
         "kotb": "コンピュート",
         "eigo": "compute",
         "kwsk": "計算する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3301,6 +3704,7 @@
         "kotb": "トランスレーター",
         "eigo": "translator",
         "kwsk": "翻訳者。通訳。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3309,6 +3713,7 @@
         "kotb": "スケプティカル",
         "eigo": "skeptical",
         "kwsk": "疑い深い。懐疑的。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3317,6 +3722,7 @@
         "kotb": "デグレード",
         "eigo": "degrade",
         "kwsk": "悪化。退化。低下。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3325,6 +3731,7 @@
         "kotb": "モデレート",
         "eigo": "moderate",
         "kwsk": "適度。普通。並。中間。穏健。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3333,6 +3740,7 @@
         "kotb": "ノーテーション",
         "eigo": "notation",
         "kwsk": "表記。表示。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3341,14 +3749,16 @@
         "kotb": "トラックバック",
         "eigo": "trackback",
         "kwsk": "リンクを張ったことを通知するやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "リンク"
     },
     {
         "kotb": "イテレート",
         "eigo": "iterate",
         "kwsk": "繰り返す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3357,6 +3767,7 @@
         "kotb": "リカーシブ",
         "eigo": "recursive",
         "kwsk": "再帰。入れ子。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3365,6 +3776,7 @@
         "kotb": "ファウンダー",
         "eigo": "founder",
         "kwsk": "創業者。創立者。設立者。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3373,6 +3785,7 @@
         "kotb": "リンガ フランカ",
         "eigo": "Lingua franca",
         "kwsk": "共通語。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3380,7 +3793,8 @@
     {
         "kotb": "ラバー ダッキング",
         "eigo": "rubber ducking",
-        "kwsk": "問題を物に話しかけ、物事を整理することで問題解決。",
+        "kwsk": "問題を物(ゴム製アヒル等)に話しかけ、物事を整理することで問題解決。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3388,7 +3802,8 @@
     {
         "kotb": "リーストゥ リースントゥリィ ユーズド",
         "eigo": "Least Recently Used",
-        "kwsk": "最後に参照してから最も時間が経っているやつ。RU。",
+        "kwsk": "最後に参照してから最も時間が経っているやつ。",
+        "btmi": "LRU。",
         "mnim": "",
         "tigg": "",
         "krng": "リーストゥフリークウェントゥリィユーズド"
@@ -3396,7 +3811,8 @@
     {
         "kotb": "リーストゥ フリークウェントゥリィ ユーズド",
         "eigo": "Least Frequently Used",
-        "kwsk": "参照頻度が最も少ないやつ。LFU。",
+        "kwsk": "参照頻度が最も少ないやつ。",
+        "btmi": "LFU。",
         "mnim": "",
         "tigg": "",
         "krng": "リーストゥリースントゥリィユーズド"
@@ -3405,6 +3821,7 @@
         "kotb": "アサート",
         "eigo": "assert",
         "kwsk": "断言。力説。表明。主張。表明。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3413,6 +3830,7 @@
         "kotb": "カバレッジ",
         "eigo": "coverage",
         "kwsk": "カバー率。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3421,6 +3839,7 @@
         "kotb": "ディフ",
         "eigo": "diff",
         "kwsk": "比較して差異があるかをみるやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3429,30 +3848,34 @@
         "kotb": "スタック",
         "eigo": "stack",
         "kwsk": "溜まったデータを取り出すときは後に追加されたものから。",
+        "btmi": "",
         "mnim": "干し草の山",
-        "tigg": "",
-        "krng": "キュー"
+        "tigg": "キュー",
+        "krng": "キュー,データ"
     },
     {
         "kotb": "キュー",
         "eigo": "queue",
         "kwsk": "溜まったデータを取り出すときは先に追加されたものから。",
+        "btmi": "",
         "mnim": "待ち列",
-        "tigg": "",
-        "krng": "スタック"
+        "tigg": "スタック",
+        "krng": "スタック,データ"
     },
     {
         "kotb": "ベンダー",
         "eigo": "vendor",
         "kwsk": "製造元。販売元。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "BYOD",
+        "kotb": "ブリング ユア オウン デバイス",
         "eigo": "Bring Your Own Device",
         "kwsk": "個人所有の情報機器を業務で使うこと。",
+        "btmi": "BYOD",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3461,22 +3884,25 @@
         "kotb": "レジューム",
         "eigo": "resume",
         "kwsk": "コンピューターを停止させるときにその状態を保存し、次つけたときに復元する。",
+        "btmi": "",
         "mnim": "再開",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "タイポスクワッティング",
         "eigo": "typosquatting",
-        "kwsk": "正規のサイトににたURLを所有し、入力ミス等を利用して訪問させるやつ。URLハイジャッキング。",
+        "kwsk": "正規のサイトににたURLを所有し、入力ミス等を利用して訪問させるやつ。",
+        "btmi": "URLハイジャッキング。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブサイト"
     },
     {
         "kotb": "スティッキー",
         "eigo": "sticky",
         "kwsk": "引きつける。興味をひく。中毒性のある。ややこしい。",
+        "btmi": "",
         "mnim": "べたべたする",
         "tigg": "",
         "krng": ""
@@ -3485,6 +3911,7 @@
         "kotb": "プロポーザル",
         "eigo": "proposal",
         "kwsk": "企画。提案。提案。申し込み。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3493,6 +3920,7 @@
         "kotb": "ソーシャル エンジニアリング",
         "eigo": "social engineering",
         "kwsk": "機密情報を入手する際に、情報技術ではなく心理的なものを利用する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3501,6 +3929,7 @@
         "kotb": "アンチ パターン",
         "eigo": "anti pattern",
         "kwsk": "あかんやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3509,6 +3938,7 @@
         "kotb": "レイオフ",
         "eigo": "layoff",
         "kwsk": "一時解雇。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3517,6 +3947,7 @@
         "kotb": "リーク",
         "eigo": "leak",
         "kwsk": "流出。漏れる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3524,15 +3955,17 @@
     {
         "kotb": "スタック オーバーフロー",
         "eigo": "stack overflow",
-        "kwsk": "格納できるできる以上の情報が来てあふれてしまう。プログラミング系の質問したりするサイト。",
+        "kwsk": "格納できるできる以上の情報が来てあふれてしまう。プログラミング系の質問したりするウェブサイト。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "プログラミング"
+        "krng": "プログラミング,ウェブサイト"
     },
     {
         "kotb": "シャドーイング",
         "eigo": "shadowing",
         "kwsk": "物の陰影を描画する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3541,6 +3974,7 @@
         "kotb": "トランザクション",
         "eigo": "transaction",
         "kwsk": "分割できない複数の処理をまとめたもの。",
+        "btmi": "",
         "mnim": "取引",
         "tigg": "",
         "krng": ""
@@ -3549,6 +3983,7 @@
         "kotb": "ポーリング",
         "eigo": "polling",
         "kwsk": "一定間隔で要求を確認する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3557,6 +3992,7 @@
         "kotb": "ヴァルネラビリティ",
         "eigo": "vulnerability",
         "kwsk": "攻撃されやすさ。攻撃誘発性。脆弱性。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3564,7 +4000,8 @@
     {
         "kotb": "コンティニュアス インテグレーション",
         "eigo": "continuous integration",
-        "kwsk": "継続的にビルドやテストを行う。CI。",
+        "kwsk": "継続的にビルドやテストを行う。",
+        "btmi": "CI。",
         "mnim": "",
         "tigg": "",
         "krng": "ビルド"
@@ -3573,6 +4010,7 @@
         "kotb": "スイート",
         "eigo": "suite",
         "kwsk": "一式。一組。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3581,6 +4019,7 @@
         "kotb": "マニュファクチュア",
         "eigo": "manufacture",
         "kwsk": "人の手で分業。",
+        "btmi": "",
         "mnim": "工場制手工業。",
         "tigg": "",
         "krng": ""
@@ -3589,6 +4028,7 @@
         "kotb": "コンプレイン",
         "eigo": "complain",
         "kwsk": "苦情。不満。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3597,6 +4037,7 @@
         "kotb": "オープン エンド",
         "eigo": "open end",
         "kwsk": "終わりが決められていない。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3605,6 +4046,7 @@
         "kotb": "リタリエーション",
         "eigo": "retaliation",
         "kwsk": "報復。仕返し。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3613,6 +4055,7 @@
         "kotb": "クラッシュ",
         "eigo": "crash",
         "kwsk": "故障。衝突。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3621,6 +4064,7 @@
         "kotb": "パーセプション",
         "eigo": "perception",
         "kwsk": "認知。認識。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3629,6 +4073,7 @@
         "kotb": "レジストリ",
         "eigo": "registry",
         "kwsk": "ソフトウェアの設定が記載されている。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "ソフトウェア"
@@ -3637,6 +4082,7 @@
         "kotb": "パブリシティ",
         "eigo": "publicity",
         "kwsk": "対価を払って宣伝してもらうのではなく取り上げられて宣伝となる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3645,14 +4091,16 @@
         "kotb": "オープン ソース",
         "eigo": "open source",
         "kwsk": "ソースコードが公開されている。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ソースコード"
     },
     {
         "kotb": "セントラライズ",
         "eigo": "centralize",
         "kwsk": "中央集権化。集中方式。中央に集まる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3661,6 +4109,7 @@
         "kotb": "アクセプタブル",
         "eigo": "acceptable",
         "kwsk": "受入可能。受諾可能。受理可能。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3669,6 +4118,7 @@
         "kotb": "プロフィット",
         "eigo": "profit",
         "kwsk": "利益。利潤。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3677,6 +4127,7 @@
         "kotb": "ガバナンス",
         "eigo": "governance",
         "kwsk": "統治。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3685,6 +4136,7 @@
         "kotb": "フィンテック",
         "eigo": "FinTech",
         "kwsk": "金融と情報技術を組み合わせた革新的ないろいろ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3693,6 +4145,7 @@
         "kotb": "イジェクト",
         "eigo": "eject",
         "kwsk": "取り出す。押し出す。追い出す。排出する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3701,14 +4154,16 @@
         "kotb": "エッジ コンピューティング",
         "eigo": "edge computing",
         "kwsk": "端末もしくはそこに近いところでデータを処理する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データ"
     },
     {
         "kotb": "プライオリティ",
         "eigo": "priority",
         "kwsk": "優先順位。優先権。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3717,6 +4172,7 @@
         "kotb": "スレッド",
         "eigo": "thread",
         "kwsk": "並行処理の実行単位。",
+        "btmi": "",
         "mnim": "より糸の中の一本。",
         "tigg": "",
         "krng": ""
@@ -3725,6 +4181,7 @@
         "kotb": "ネーム スペース",
         "eigo": "name space",
         "kwsk": "同じ命名になってかぶらないためそれぞれに付けられる名前。それによって参照しやすくもなる。名前空間。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3733,6 +4190,7 @@
         "kotb": "オリジン",
         "eigo": "origin",
         "kwsk": "原点。起源。発端。根源。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3741,6 +4199,7 @@
         "kotb": "ディスミス",
         "eigo": "dismiss",
         "kwsk": "解雇する。解散させる。追放する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3749,6 +4208,7 @@
         "kotb": "アンドゥ",
         "eigo": "undo",
         "kwsk": "取り消し。もとに戻す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3757,6 +4217,7 @@
         "kotb": "リドゥ",
         "eigo": "redo",
         "kwsk": "取り消した処理を再び実行する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3765,6 +4226,7 @@
         "kotb": "ノーティフィケーション",
         "eigo": "notification",
         "kwsk": "通知。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3773,6 +4235,7 @@
         "kotb": "ピッカー",
         "eigo": "picker",
         "kwsk": "選ぶやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3781,6 +4244,7 @@
         "kotb": "エレメント",
         "eigo": "element",
         "kwsk": "要素。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3789,6 +4253,7 @@
         "kotb": "アーティクル",
         "eigo": "article",
         "kwsk": "品物。記事。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3797,6 +4262,7 @@
         "kotb": "インテント",
         "eigo": "intent",
         "kwsk": "意図。目的。真意。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3805,6 +4271,7 @@
         "kotb": "エナジャイザー",
         "eigo": "energizer",
         "kwsk": "活力を与えるやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3813,6 +4280,7 @@
         "kotb": "カーネル パニック",
         "eigo": "kernel panic",
         "kwsk": "カーネルがあかんくなってる。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "カーネル"
@@ -3821,6 +4289,7 @@
         "kotb": "イシュー",
         "eigo": "issue",
         "kwsk": "問題。課題。論点。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3829,6 +4298,7 @@
         "kotb": "ロールバック",
         "eigo": "rollback",
         "kwsk": "巻き戻し。障害が起こった際にその前の大丈夫なときに戻す。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3837,6 +4307,7 @@
         "kotb": "プラクティス",
         "eigo": "practice",
         "kwsk": "練習。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3845,6 +4316,7 @@
         "kotb": "コンプライアンス",
         "eigo": "compliance",
         "kwsk": "法令遵守。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3852,15 +4324,17 @@
     {
         "kotb": "インターネット オブ シングス",
         "eigo": "Internet of Things",
-        "kwsk": "様々なモノがインターネットに接続されていろいろする。IoT。",
+        "kwsk": "様々なモノがインターネットに接続されていろいろする。",
+        "btmi": "IoT。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "インターネット"
     },
     {
         "kotb": "スコープ",
         "eigo": "scope",
         "kwsk": "範囲。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3869,6 +4343,7 @@
         "kotb": "パースペクティブ",
         "eigo": "perspective",
         "kwsk": "展望。見取り図。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3877,6 +4352,7 @@
         "kotb": "クリーピー",
         "eigo": "creepy",
         "kwsk": "身の毛がよだつような気持ち悪さ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3884,7 +4360,8 @@
     {
         "kotb": "マニュピレート",
         "eigo": "manipulate",
-        "kwsk": "操る。操縦する。操作する。コントロールする。",
+        "kwsk": "操る。操縦する。操作する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3893,6 +4370,7 @@
         "kotb": "ディスクリプション",
         "eigo": "description",
         "kwsk": "説明。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3901,14 +4379,16 @@
         "kotb": "ブルー スクリーン",
         "eigo": "blue screen",
         "kwsk": "WindowsでOSの異常でなる青い画面。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "オペレーティングシステム"
     },
     {
         "kotb": "コンフォータブル",
         "eigo": "comfortable",
         "kwsk": "心地良い。気楽。快適。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3917,14 +4397,16 @@
         "kotb": "ヒア ドキュメント",
         "eigo": "here document",
         "kwsk": "改行や空白が保持される文字列を扱うやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ドキュメント"
     },
     {
         "kotb": "インターナショナライゼーション",
         "eigo": "internationalization",
-        "kwsk": "多言語対応する。国際化。i18n。",
+        "kwsk": "多言語対応する。国際化。",
+        "btmi": "i18n。",
         "mnim": "",
         "tigg": "",
         "krng": "ローカライゼーション,マルチリンガライゼーション"
@@ -3932,7 +4414,8 @@
     {
         "kotb": "ローカライゼーション",
         "eigo": "localization",
-        "kwsk": "特定の地域(国)に適した形に変える。地域化。l10n。",
+        "kwsk": "特定の地域(国)に適した形に変える。地域化。",
+        "btmi": "l10n。",
         "mnim": "",
         "tigg": "",
         "krng": "インターナショナライゼーション,マルチリンガライゼーション"
@@ -3940,7 +4423,8 @@
     {
         "kotb": "マルチリンガライゼーション",
         "eigo": "multilingualization",
-        "kwsk": "複数の言語を同時に利用できるようにする。多言語化。m17n。",
+        "kwsk": "複数の言語を同時に利用できるようにする。多言語化。",
+        "btmi": "m17n。",
         "mnim": "",
         "tigg": "",
         "krng": "インターナショナライゼーション,ローカライゼーション"
@@ -3949,6 +4433,7 @@
         "kotb": "フォールバック",
         "eigo": "fallback",
         "kwsk": "正常に機能しなくなったときに制限をかけて動かす。縮退運用。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3957,14 +4442,16 @@
         "kotb": "踏み台サーバー",
         "eigo": "",
         "kwsk": "二段階でサーバーに接続するための一段回目のほう。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "サーバー"
     },
     {
         "kotb": "タクソノミー",
         "eigo": "taxonomy",
         "kwsk": "分類。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3973,6 +4460,7 @@
         "kotb": "スラッグ",
         "eigo": "slug",
         "kwsk": "見出し。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3981,6 +4469,7 @@
         "kotb": "アキュラシー",
         "eigo": "accuracy",
         "kwsk": "正確さ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3989,6 +4478,7 @@
         "kotb": "オペランド",
         "eigo": "operand",
         "kwsk": "被演算子。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -3997,6 +4487,7 @@
         "kotb": "スナップショット",
         "eigo": "snapshot",
         "kwsk": "ある瞬間での状態を保存したやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4005,6 +4496,7 @@
         "kotb": "デブオプス",
         "eigo": "DevOps",
         "kwsk": "開発と運用の人らが協力していい感じにする。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4013,6 +4505,7 @@
         "kotb": "プロビジョニング",
         "eigo": "provisioning",
         "kwsk": "必要になることを見越して準備しておく。",
+        "btmi": "",
         "mnim": "準備",
         "tigg": "",
         "krng": ""
@@ -4021,14 +4514,16 @@
         "kotb": "ステートメント",
         "eigo": "statement",
         "kwsk": "プログラムの一文(\";\"まで的な)。",
+        "btmi": "",
         "mnim": "声名",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム"
     },
     {
         "kotb": "デリミタ",
         "eigo": "delimiter",
         "kwsk": "区切り文字。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4036,87 +4531,98 @@
     {
         "kotb": "プログレッシブ ウェブ アプリ",
         "eigo": "Progressive Web Apps",
-        "kwsk": "Webサイトをネイティブアプリのように使えるようになる仕組み。PWA。",
+        "kwsk": "Webサイトをネイティブアプリのように使えるようになる仕組み。",
+        "btmi": "PWA。",
         "mnim": "",
         "tigg": "",
-        "krng": "ネイティブアプリケーション"
+        "krng": "ウェブサイト,ネイティブアプリケーション"
     },
     {
         "kotb": "アクセラレーティッド モバイル ページ",
         "eigo": "Accelerated Mobile Pages",
-        "kwsk": "モバイルのWebサイトを高速に閲覧できるようになるやつ。AMP。アンプ。",
+        "kwsk": "モバイルのWebサイトを高速に閲覧できるようになるやつ。",
+        "btmi": "アンプ。AMP。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "モバイル,ウェブサイト"
     },
     {
         "kotb": "ネイティブ アプリケーション",
         "eigo": "native application",
         "kwsk": "端末上にインストールし使用するアプリケーション。ウェブアプリじゃないやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "ウェブアプリケーション"
+        "krng": "端末,インストール,アプリケーションソフトウェア,ウェブアプリケーション"
     },
     {
         "kotb": "ウェブ アプリケーション",
         "eigo": "web application",
         "kwsk": "インターネット上からWebブラウザを通して使用するアプリケーション。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "ネイティブアプリケーション"
+        "krng": "インターネット,ウェブブラウザ,アプリケーションソフトウェア,ネイティブアプリケーション"
     },
     {
         "kotb": "ウェブ ブラウザ",
         "eigo": "web browser",
         "kwsk": "インターネット上にあるWebページを閲覧するソフトウェア。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "インターネット,ウェブページ,ソフトウェア"
     },
     {
         "kotb": "ソフトウェア",
         "eigo": "software",
         "kwsk": "コンピューターにデータとしてある部分のプログラムなど。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ハードウェア",
-        "krng": "ハードウェア,アプリケーションソフトウェア,オペレーティングシステム"
+        "krng": "ハードウェア,コンピューター,データ,プログラム"
     },
     {
         "kotb": "ハードウェア",
         "eigo": "hardware",
         "kwsk": "コンピューターの物理的な部分。",
+        "btmi": "",
         "mnim": "",
         "tigg": "ソフトウェア",
-        "krng": "ソフトウェア"
+        "krng": "ソフトウェア,コンピューター"
     },
     {
         "kotb": "ミドルウェア",
         "eigo": "middleware",
         "kwsk": "OSとアプリケーションの間に入るソフトウェア。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "ソフトウェア"
+        "krng": "オペレーティングシステム,アプリケーションソフトウェア,ソフトウェア"
     },
     {
         "kotb": "アプリケーションソフトウェア",
         "eigo": "application software",
-        "kwsk": "コンピューターの計算機能を応用した作業のために作られたソフトウェア。アプリ。",
+        "kwsk": "コンピューターの計算機能を応用した作業のために作られたソフトウェア。",
+        "btmi": "アプリ。App。",
         "mnim": "",
         "tigg": "",
-        "krng": "ソフトウェア"
+        "krng": "コンピューター,ソフトウェア"
     },
     {
         "kotb": "オペレーティングシステム",
         "eigo": "Operating System",
-        "kwsk": "コンピューターの基盤となるソフトウェア。OS。",
+        "kwsk": "コンピューターの基盤となるソフトウェア。",
+        "btmi": "OS。",
         "mnim": "",
         "tigg": "",
-        "krng": "ソフトウェア"
+        "krng": "コンピューター,ソフトウェア"
     },
     {
         "kotb": "カーニング",
         "eigo": "kerning",
         "kwsk": "文字間を調整する。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4125,14 +4631,16 @@
         "kotb": "フォント",
         "eigo": "font",
         "kwsk": "コンピューターでつかう書体のデータ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター,データ"
     },
     {
         "kotb": "コンパイル",
         "eigo": "compile",
-        "kwsk": "ソースコードから、機械語等のより低級の言語に変換すること。",
+        "kwsk": "ソースコードから、機械語等のより低級のプログラミング言語に変換すること。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "ソースコード,機械語,コンパイラ"
@@ -4140,7 +4648,8 @@
     {
         "kotb": "機械語",
         "eigo": "machine language",
-        "kwsk": "コンピューターのプロセッサが直接理解できる言語。0と1。",
+        "kwsk": "コンピューターのプロセッサが直接理解できるプログラミング言語。0と1。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "コンピューター,プロセッサ,プログラミング言語"
@@ -4149,22 +4658,25 @@
         "kotb": "プログラム",
         "eigo": "program",
         "kwsk": "コンピューターに動かさせるための命令たち。",
+        "btmi": "",
         "mnim": "予定",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "データベース",
         "eigo": "database",
         "kwsk": "データをいいかんじに置いといたり探しやすくなってるやつ。DB。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データ"
     },
     {
         "kotb": "リクエスト",
         "eigo": "request",
         "kwsk": "依頼。要求。要望。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4173,6 +4685,7 @@
         "kotb": "ソースコード",
         "eigo": "source code",
         "kwsk": "プログラミング言語で書かれた文字列たち。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "プログラミング言語"
@@ -4181,6 +4694,7 @@
         "kotb": "プログラミング言語",
         "eigo": "programming language",
         "kwsk": "プログラムを記述するための言語。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "プログラム"
@@ -4189,14 +4703,16 @@
         "kotb": "メモリ",
         "eigo": "memory",
         "kwsk": "デジタルデータを保持する電子部品。記憶装置。",
+        "btmi": "",
         "mnim": "記憶",
         "tigg": "",
-        "krng": ""
+        "krng": "データ"
     },
     {
         "kotb": "コンピューター",
         "eigo": "computer",
         "kwsk": "電子計算機。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4205,6 +4721,7 @@
         "kotb": "パスワード",
         "eigo": "password",
         "kwsk": "承認のための文字列。",
+        "btmi": "",
         "mnim": "合言葉",
         "tigg": "",
         "krng": "パスフレーズ"
@@ -4213,38 +4730,43 @@
         "kotb": "インターネット",
         "eigo": "internet",
         "kwsk": "たくさんのコンピューターをつなぎあったネットワーク。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "ネットワーク"
+        "krng": "コンピューター,ネットワーク"
     },
     {
         "kotb": "ネットワーク",
         "eigo": "network",
         "kwsk": "複数のコンピューターで相互通信できるようになってる。",
+        "btmi": "",
         "mnim": "網状につくられているもの",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "サーバー",
         "eigo": "server",
         "kwsk": "サービスを提供するコンピューター。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "コンピューター"
     },
     {
         "kotb": "ウェブ サーバー",
         "eigo": "Web server",
         "kwsk": "クライアントからの要求により、HTMLとかを渡すやつ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "クライアント"
+        "krng": "クライアント,HTML"
     },
     {
         "kotb": "フォーマット",
         "eigo": "format",
         "kwsk": "体裁。型。形式。初期化。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4253,6 +4775,7 @@
         "kotb": "テスト",
         "eigo": "test",
         "kwsk": "試験。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4261,6 +4784,7 @@
         "kotb": "ウェブ サイト",
         "eigo": "Web site",
         "kwsk": "ウェブページの集まり。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "ウェブページ"
@@ -4269,6 +4793,7 @@
         "kotb": "ウェブ ページ",
         "eigo": "Web page",
         "kwsk": "ウェブブラウザで見るページ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "ウェブブラウザ"
@@ -4277,6 +4802,7 @@
         "kotb": "レピュテーション",
         "eigo": "reputation",
         "kwsk": "世評。評判。評価。名声。噂。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4285,6 +4811,7 @@
         "kotb": "アントレプレナー",
         "eigo": "entrepreneur",
         "kwsk": "起業家。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4292,7 +4819,8 @@
     {
         "kotb": "ウィズィウィグ",
         "eigo": "What You See Is What You Get",
-        "kwsk": "画面での表示の見た感じのまま印刷される。WYSIWYG。",
+        "kwsk": "画面での表示の見た感じのまま印刷される。",
+        "btmi": "WYSIWYG。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -4301,6 +4829,7 @@
         "kotb": "コード レビュー",
         "eigo": "code review",
         "kwsk": "ソースコードの検査を行う。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": "ソースコード"
@@ -4309,14 +4838,16 @@
         "kotb": "テックリード",
         "eigo": "Tech Lead",
         "kwsk": "エンジニアチームのリーダー。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "エンジニア"
     },
     {
         "kotb": "ストゥーピット",
         "eigo": "stupid",
         "kwsk": "愚かな。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""

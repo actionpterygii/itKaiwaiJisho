@@ -2,6 +2,7 @@
     "kotb": "",
     "eigo": "",
     "kwsk": "",
+    "btmi": "",
     "mnim": "",
     "tigg": "",
     "krng": ""

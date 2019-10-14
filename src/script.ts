@@ -45,7 +45,7 @@ var jisho: jisho;
 }
 
 // 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
-const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'mnim'];
+const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
 
 // 入力内容を保存しておくためのもの
 let input_value: string = '';
@@ -217,6 +217,10 @@ function createHtml(element: tango): HTMLString
                 case 'kwsk':
                     html +=
                         '<p class="kwsk">' + element[key] + '</p>';
+                    break;
+                case 'btmi':
+                    html +=
+                        '<p class="btmi">' + element[key] + '</p>';
                     break;
                 case 'mnim':
                     html +=
