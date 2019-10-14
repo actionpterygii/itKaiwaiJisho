@@ -12,6 +12,8 @@
 type jisho = [{[key: string]: string;}];
 // 単語の型
 type tango = {[key: string]: string;};
+// HTMLとしての文字列
+type HTMLString = string;
 
 
 
@@ -188,11 +190,11 @@ function scarch(jisho: jisho, input_value: string, exact_match: boolean): jisho
     return jisho;
 }
 
-// 必要な部分の辞書jsonからHTMLを作成
-function createHtml(element: tango): string
+// 1単語の情報からHTMLを作成
+function createHtml(element: tango): HTMLString
 {
-    // 一単語をつつむおおいなるa要素(これに追加していって最後返す)
-    let html: string = '<div class="tango">';
+    // 一単語をつつむおおいなるdiv要素(これに追加していって最後返す)
+    let html: HTMLString = '<div class="tango">';
     // 単語内の各要素を一つづつみていく
     for (const key in element)
     {
@@ -243,11 +245,11 @@ function createHtml(element: tango): string
     return html;
 }
 
-// 入力から結果を返す
-function createResult(jisho: jisho, input_value: string): string
+// 入力から結果(HTML)を返す
+function createResult(jisho: jisho, input_value: string): HTMLString
 {
     // 最後かえす文字列
-    let entity: string = '';
+    let entity: HTMLString = '';
     // 必要な要素を選定する
     const required_elements: jisho = scarch(jisho, input_value, false);
     // 選定した要素から一つづついじる
@@ -271,18 +273,19 @@ function createKanrengo(krng_label: Element)
     krng_contents.innerHTML = (function()
     {
         // 最後に返す要素
-        let tangos_html: string = '';
+        let entity: HTMLString = '';
         // 単語たちをひとつずつ触っていく
         for (const key in tangos)
         {
             // scarch関数でその単語を完全一致検索で探してくる
             // [0]指定なのは、scarch関数は複数個対応の単語の配列(jisho型)を返すため。
             // 完全一致検索なため0番目の要素のみある。
+            const required_element: tango = scarch(jisho, tangos[key], true)[0];
             // でそのひと単語の情報からHTMLを作成して追加していく
-            tangos_html += createHtml(scarch(jisho, tangos[key], true)[0]);
+            entity += createHtml(required_element);
         }
         // かえす
-        return tangos_html;
+        return entity;
     }
     )();
 }
