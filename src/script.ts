@@ -292,20 +292,6 @@ function createKanrengo(krng_label: Element)
     )();
 }
 
-function checkSelectedTest()
-{
-    // 選択されている文字を取得
-    selected_text = window.getSelection()!.toString();
-    // 内容があれば
-    if (selected_text)
-    {
-        guguru_btn.classList.add('guguru_btn__sentaku');
-    }
-    else
-    {
-        guguru_btn.classList.remove('guguru_btn__sentaku');
-    }
-}
 
 
 ////////////////////
@@ -337,8 +323,20 @@ input_area.addEventListener('keyup', function()
 });
 
 // タッチ終わりに発火
-result_area.addEventListener('touchend', checkSelectedTest);
-result_area.addEventListener('touchmove', checkSelectedTest);
+result_area.addEventListener('touchend', function()
+{
+    // 選択されている文字を取得
+    selected_text = window.getSelection()!.toString();
+    // 内容があれば
+    if (selected_text)
+    {
+        guguru_btn.classList.add('guguru_btn__sentaku');
+    }
+    else
+    {
+        guguru_btn.classList.remove('guguru_btn__sentaku');
+    }
+});
 
 // 入力ボタン押されたら入力
 nyuryoku_btn.addEventListener('click', function()
@@ -355,8 +353,10 @@ guguru_btn.addEventListener('click', function()
     {
         // 選択された文字でぐぐる
         window.open('https://www.google.com/search?q=' + selected_text);
-        // 選択文字は空とする。
+        // 選択文字は空とする
         selected_text = null;
+        // 選択ないのでボタンはもどす
+        guguru_btn.classList.remove('guguru_btn__sentaku');
     }
     // 選択された文字がなければ
     else
