@@ -47,11 +47,15 @@ var jisho: jisho;
 // 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
 const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
 
+// ぐぐりにつかうURL
+const guguru_url: string = 'https://www.google.com/search?q=';
+
 // 入力内容を保存しておくためのもの
 let input_text: string = '';
 
 // 選択された文字(ぐぐるボタンを押したときに更新)
-let selected_text: string | null = null; 
+let selected_text: string | null = null;
+
 
 
 ////////////////////
@@ -351,7 +355,7 @@ guguru_btn.addEventListener('click', function()
     if (selected_text)
     {
         // 選択された文字でぐぐる
-        window.open('https://www.google.com/search?q=' + selected_text);
+        window.open(guguru_url + selected_text);
         // 選択文字は空とする
         selected_text = null;
         // 選択ないのでボタンはもどす
@@ -361,6 +365,6 @@ guguru_btn.addEventListener('click', function()
     else
     {
         // 入力されている文字でぐぐる
-        window.open('https://www.google.com/search?q=' + input_text);
+        window.open(guguru_url + input_text);
     }
 });
