@@ -204,37 +204,29 @@ function createHtml(element: tango): HTMLString
         if (element[key] !== '')
         {
             // 単語内の各要素の種類に応じて内容を含めたHTML要素をつくる
+            // そのkeyはclassになんねん
             switch (key)
             {
+                // 言葉はh2要素
                 case 'kotb':
                     html += 
-                        '<h2 class="kotb">' + element[key] + '</h2>';
+                        '<h2 class="' + key + '">' + element[key] + '</h2>';
                     break;
+                // だいたいp要素
                 case 'eigo':
-                    html +=
-                        '<p class="eigo">' + element[key] + '</p>';
-                    break;
                 case 'kwsk':
-                    html +=
-                        '<p class="kwsk">' + element[key] + '</p>';
-                    break;
                 case 'btmi':
-                    html +=
-                        '<p class="btmi">' + element[key] + '</p>';
-                    break;
                 case 'mnim':
-                    html +=
-                        '<p class="mnim">' + element[key] + '</p>';
-                    break;
                 case 'tigg':
                     html +=
-                        '<p class="tigg">' + element[key] + '</p>';
+                        '<p class="' + key + '">' + element[key] + '</p>';
                     break;
+                // 関連語はアコーディオンに
                 case 'krng':
                     // 関連語アコーディオンの処理のためのランダムな文字列を作る
                     const random_id: string = 'random_' + Math.random().toString(32).substring(2);
                     html += 
-                        '<div class="krng">' +
+                        '<div class="' + key + '">' +
                             '<label class="krng_facade" for="' + random_id + '" value="' + element[key] + '" onClick="createKanrengo(this)"></label>' +
                             '<input id="' + random_id + '" class="krng_checkbox" type="checkbox">' +
                             '<div class="krng_contents"></div>' +
@@ -272,11 +264,11 @@ function createResult(jisho: jisho, input_text: string): HTMLString
 function createKanrengo(krng_label: Element)
 {
     // 押された開くボタンで開く要素(それは次の次にある要素)
-    const krng_contents: Element = krng_label!.nextElementSibling!.nextElementSibling!;
+    const krng_facade: Element = krng_label!.nextElementSibling!.nextElementSibling!;
     // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
     const tangos: string[] = krng_label!.getAttribute('value')!.split(',');
     // 関連語とされる単語を検索して設置(描画(目に見えて)はCSSで行う)
-    krng_contents.innerHTML = (function()
+    krng_facade.innerHTML = (function()
     {
         // 最後に返す要素
         let entity: HTMLString = '';
