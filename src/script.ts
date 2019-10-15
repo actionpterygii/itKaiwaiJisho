@@ -48,7 +48,7 @@ var jisho: jisho;
 const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
 
 // 入力内容を保存しておくためのもの
-let input_value: string = '';
+let input_text: string = '';
 
 // 選択された文字(ぐぐるボタンを押したときに更新)
 let selected_text: string | null = null; 
@@ -59,41 +59,41 @@ let selected_text: string | null = null;
 ////////////////////
 
 // ひらがなをカナカナに変換するための
-function hiraToKata(input_value: string): string
+function hiraToKata(input_text: string): string
 {
     // ひらがなをおきかえるよって
-    return input_value.replace(/[\u3041-\u3096]/g, function(input_value: string)
+    return input_text.replace(/[\u3041-\u3096]/g, function(input_text: string)
     {
         // 文字コード的にずらしてカタカナにする
-        return String.fromCharCode(input_value.charCodeAt(0) + 0x60);
+        return String.fromCharCode(input_text.charCodeAt(0) + 0x60);
     });
 }
 
 // 全角英数を半角英数に変換するための
-function zenToHan(input_value: string): string
+function zenToHan(input_text: string): string
 {
     //全角英数置き換えるよって
-    return input_value.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(input_value: string)
+    return input_text.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(input_text: string)
     {
         //　文字コード的にずらして半角にする
-        return String.fromCharCode(input_value.charCodeAt(0) - 65248);
+        return String.fromCharCode(input_text.charCodeAt(0) - 65248);
     });
 }
 
-// itemの内容がinput_valueのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
-function containing(item: string, input_value: string, exact_match: boolean): boolean
+// itemの内容がinput_textのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
+function containing(item: string, input_text: string, exact_match: boolean): boolean
 {
     // スペースを削除する
     item = item.replace(/\s+/g, '');
     // アルファベットは小文字する
     item = item.toLowerCase();
     // アルファベットは小文字する
-    input_value = input_value.toLowerCase();
+    input_text = input_text.toLowerCase();
     // 完全一致検索でしたら
     if (exact_match)
     {
-        // input_valueの文字がitemと同じならおっけ
-        if (item === input_value)
+        // input_textの文字がitemと同じならおっけ
+        if (item === input_text)
         {
             return true;
         }
@@ -106,18 +106,18 @@ function containing(item: string, input_value: string, exact_match: boolean): bo
     // 完全一致検索じゃなかったら
     else
     {
-        // input_valueの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
-        if (item.match(input_value))
+        // input_textの文字がitem内にあるか(じつはひらがな→ひらがな検索のためだけにある気)
+        if (item.match(input_text))
         {
             return true;
         }
         // ひらがなをカタカナにして確認
-        else if (item.match(hiraToKata(input_value)))
+        else if (item.match(hiraToKata(input_text)))
         {
             return true;
         }
         // 全角英数を半角英数にして確認
-        else if (item.match(zenToHan(input_value)))
+        else if (item.match(zenToHan(input_text)))
         {
             return true;
         }
@@ -130,10 +130,10 @@ function containing(item: string, input_value: string, exact_match: boolean): bo
 }
 
 // 入力された値を辞書jsonから検索してマッチしたものを返す。exact_matchは完全一致検索かどうか
-function scarch(jisho: jisho, input_value: string, exact_match: boolean): jisho
+function scarch(jisho: jisho, input_text: string, exact_match: boolean): jisho
 {
     // '--all'と入力された場合
-    if (input_value === '--all')
+    if (input_text === '--all')
     {
         // 辞書jsonのすべてを返す
         return jisho;
@@ -150,7 +150,7 @@ function scarch(jisho: jisho, input_value: string, exact_match: boolean): jisho
             for (const key in jisho)
             {
                 // 入力した内容があるか(完全一致検索)
-                if (containing(jisho[key][item], input_value, exact_match))
+                if (containing(jisho[key][item], input_text, exact_match))
                 {
                     // その単語返すを
                     return [jisho[key]];
@@ -173,7 +173,7 @@ function scarch(jisho: jisho, input_value: string, exact_match: boolean): jisho
                     // 単語の中の一つの項目のキー
                     const item: string = word_items[item_key];
                     // 入力した内容があるか(あてはまるもの全部検索)
-                    if (containing(jisho[key][item], input_value, exact_match))
+                    if (containing(jisho[key][item], input_text, exact_match))
                     {
                         // 必要な単語ということで追加する
                         required_elements[i] = jisho[key];
@@ -252,12 +252,12 @@ function createHtml(element: tango): HTMLString
 }
 
 // 入力から結果(HTML)を返す
-function createResult(jisho: jisho, input_value: string): HTMLString
+function createResult(jisho: jisho, input_text: string): HTMLString
 {
     // 最後かえす文字列
     let entity: HTMLString = '';
     // 必要な要素を選定する
-    const required_elements: jisho = scarch(jisho, input_value, false);
+    const required_elements: jisho = scarch(jisho, input_text, false);
     // 選定した要素から一つづついじる
     for (const key in required_elements)
     {
@@ -306,15 +306,15 @@ function createKanrengo(krng_label: Element)
 input_area.addEventListener('keyup', function()
 {
     // inputにあるvalueを格納
-    input_value = input_area.value;
+    input_text = input_area.value;
     // result_areaエリアの内容を変更(描画し直す)
     result_area.innerHTML = (function()
     {
         // 入力内容があれば
-        if (input_value !== '')
+        if (input_text !== '')
         {
-            // input_valueから結果を作成して返す
-            return createResult(jisho, input_value);
+            // input_textから結果を作成して返す
+            return createResult(jisho, input_text);
         }
         // 入力内容がなければ
         else
@@ -369,6 +369,6 @@ guguru_btn.addEventListener('click', function()
     else
     {
         // 入力されている文字でぐぐる
-        window.open('https://www.google.com/search?q=' + input_value);
+        window.open('https://www.google.com/search?q=' + input_text);
     }
 });
