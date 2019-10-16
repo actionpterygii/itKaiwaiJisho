@@ -22,6 +22,7 @@ type HTMLString = string;
 ////////////////////
 
 //HTML要素
+const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
@@ -193,7 +194,7 @@ function scarch(jisho: jisho, input_text: string, exact_match: boolean): jisho
             return required_elements;
         }
     }
-    return jisho;
+    return [{"":""}];
 }
 
 // 1単語の情報からHTMLを作成
@@ -254,11 +255,19 @@ function createResult(jisho: jisho, input_text: string): HTMLString
     let entity: HTMLString = '';
     // 必要な要素を選定する
     const required_elements: jisho = scarch(jisho, input_text, false);
-    // 選定した要素から一つづついじる
-    for (const key in required_elements)
+    // 返すべき結果があれば
+    if (Object.keys(required_elements).length)
     {
-        // HTMLを作成して追加していく
-        entity += createHtml(required_elements[key]);
+        // 選定した要素から一つづついじる
+        for (const key in required_elements)
+        {
+            // HTMLを作成して追加していく
+            entity += createHtml(required_elements[key]);
+        }
+    }
+    else
+    {
+        entity += '<h2 class="nothing">nothing</h2>';
     }
     // かえす
     return entity;
@@ -323,7 +332,7 @@ input_area.addEventListener('keyup', function()
 });
 
 // タッチ終わりに発火
-result_area.addEventListener('touchend', function()
+all_area.addEventListener('touchend', function()
 {
     // 選択されている文字を取得
     selected_text = window.getSelection()!.toString();
