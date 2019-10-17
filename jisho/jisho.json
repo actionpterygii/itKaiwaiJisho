@@ -4863,7 +4863,7 @@
     },
     {
         "kotb": "エクスクルーシブ",
-        "eigo": "",
+        "eigo": "排他的な。気品の高い。閉鎖的な。独占的な。",
         "kwsk": "",
         "btmi": "",
         "mnim": "",
@@ -4871,18 +4871,18 @@
         "krng": ""
     },
     {
-        "kotb": "スキーム",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kotb": "スキーマ",
+        "eigo": "schema",
+        "kwsk": "構造。",
+        "btmi": "スキーム。scheme。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "ロケーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "location",
+        "kwsk": "現場。場所。位置。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4890,8 +4890,8 @@
     },
     {
         "kotb": "ディテクション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "detection",
+        "kwsk": "検出。検知。発見。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4899,8 +4899,8 @@
     },
     {
         "kotb": "バインド",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "bind",
+        "kwsk": "関連付ける。紐付ける。拘束する。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5088,6 +5088,177 @@
     },
     {
         "kotb": "アダプティブデザイン",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ドキュメントビルダー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ウェット コード",
+        "eigo": "wet code",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リストラクチャード テキスト",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インジェクト",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "イニット",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "オンライン トランザクション プロセッシング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "OLTP。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "オンライン アナリティカル プロセッシング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "データウェアハウス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ミッションクリティカル",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "レリパンシー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "スケーリング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "アルゴリズム",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "キックアウト",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "キックオフ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "オーケストレーション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コンポーネント",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "タスク",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "レコメンド",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リポジトリ",
         "eigo": "",
         "kwsk": "",
         "btmi": "",
