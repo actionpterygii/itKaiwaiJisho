@@ -1,3 +1,7 @@
+![TypeScript-v3.6.3](https://img.shields.io/badge/TypeScript-v3.6.3-blue)
+![Python-v3.7.0](https://img.shields.io/badge/Python-v3.7.0-blue)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0aba3d0d85d23bb4b37b/maintainability)](https://codeclimate.com/github/actionpterygii/itKaiwaiJisho/maintainability)
+
 # 辞典
 [ググれば幸せになれるこの時代に、私は、辞書を作りたいのです](https://actionpterygii.github.io/itKaiwaiJisho/)  
 
@@ -9,6 +13,7 @@
 
 ## TODO
 - php的語追加
+  - プログラミング言語、のフレームワークとか、サービス、企業(微妙)、、、
 - ダクる
 - 選択解除タップで選択状態にならないような(イベント)処理(むずそう)
 
@@ -53,7 +58,7 @@
 - PWA対応
   - Googleのやつみて
   - `setServiceWorker.js`の`urlsToCache`の`'/'`がいらんかった(?)それがあると`Uncaught (in promise) TypeError: Request failed`
-  - iPhoneのSafariからホーム画面に追加するときのアイコン対応が必要でGoogleさんのpwacompat使用。
+  - iPhoneのSafariからホーム画面に追加するときのアイコン対応が必要でGoogleさんの[pwacompat](https://github.com/GoogleChromeLabs/pwacompat)使用。
   - https://gist.github.com/kenmori/6386569551cfad900bc7385b72339626
     - やってるけどよくわからん
   - 確認の為に逐一GitHubに上げなあかんので草が濃くなってしまうため他が相対的に下がったりとかあるんやね
@@ -93,6 +98,15 @@
 - `アイピーアドレス`なんぞのアルファベット日本語読みはあんまいややけど場合によっては(その方が使われている場合)いれる。
   - 別名追加はそういう思想的でもある。
 - `Rebuild.fm`きいてると一気に語が増える。。。多い会は本当にIT関連(?)な知らない英語が多くてはかどってしまう。。。
+- バッジつけてみたい
+  - 完全に自分の好きなようにの作れるようやけどそれはなんかちゃうくない？
+    - なんとなく情報が書いてないもののバージョン出したいけど(https://shields.io/)にあるやつとかぶったりなんとか
+- コードが臭えか見てくれる[CODE CLIMATE](https://codeclimate.com/)を無駄に設置
+  - ひまになっらみる
+  - AからFらしい[●](https://docs.codeclimate.com/docs/maintainability)
+- テスト的なことしたい
+  - Travisしたい()
+- ライセンスつけようというこころみ
 
 ### TypeScript
 - 型が確定していないのに文字列オブジェクト用のメソッド使っちゃうこともあったけど、わたしはげんきです(今はTypeScriptを使っているため)
@@ -114,6 +128,7 @@
 - `null`でないと自信があるので`!`(エクスクラメーション/感嘆符/びっくりマーク)を使ってしまいました。
   - `null`可能性を否定するので厳密にはよくなさそう
   - https://code-examples.net/ja/q/267b123
+
 
 ## きもち
 この業界は何かしらの解説に専門用語やら英語が多すぎるので  
