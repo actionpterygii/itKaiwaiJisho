@@ -100,7 +100,7 @@
 - `Rebuild.fm`きいてると一気に語が増える。。。多い会は本当にIT関連(?)な知らない英語が多くてはかどってしまう。。。
 - バッジつけてみたい
   - 完全に自分の好きなようにの作れるようやけどそれはなんかちゃうくない？
-    - なんとなく情報が書いてないもののバージョン出したいけど(https://shields.io/)にあるやつとかぶったりなんとか
+    - なんとなく情報が書いてないもののバージョン出したいけど[Sheils IO](https://shields.io/)にあるやつとかぶったりなんとか
 - コードが臭えか見てくれる[CODE CLIMATE](https://codeclimate.com/)を無駄に設置
   - ひまになっらみる
   - AからFらしい[●](https://docs.codeclimate.com/docs/maintainability)
