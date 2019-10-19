@@ -4907,17 +4907,8 @@
         "krng": ""
     },
     {
-        "kotb": "シングルトン",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "システム",
-        "eigo": "",
+        "eigo": "system",
         "kwsk": "",
         "btmi": "",
         "mnim": "",
@@ -5073,15 +5064,6 @@
         "eigo": "",
         "kwsk": "",
         "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ハイパーテキスト マークアップ ランゲージ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "HTML。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -5262,6 +5244,78 @@
         "eigo": "",
         "kwsk": "",
         "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ランタイム",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ロードバランサー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "プロファイル",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "プロファイラ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エラスティック サーチ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ディテール",
+        "eigo": "detail",
+        "kwsk": "細部。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エンベデッド マルチ メディア カード",
+        "eigo": "Embedded Multi Media Card",
+        "kwsk": "",
+        "btmi": "eMMC。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },    
+    {
+        "kotb": "ハイパーテキスト マークアップ ランゲージ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "HTML。",
         "mnim": "",
         "tigg": "",
         "krng": ""
