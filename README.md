@@ -1,3 +1,4 @@
+[![License-Apache2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 ![TypeScript-v3.6.3](https://img.shields.io/badge/TypeScript-v3.6.3-blue)
 ![Python-v3.7.0](https://img.shields.io/badge/Python-v3.7.0-blue)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0aba3d0d85d23bb4b37b/maintainability)](https://codeclimate.com/github/actionpterygii/itKaiwaiJisho/maintainability)
