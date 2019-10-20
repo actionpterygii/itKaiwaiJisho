@@ -3,7 +3,7 @@
 ![Python-v3.7.0](https://img.shields.io/badge/Python-v3.7.0-blue)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0aba3d0d85d23bb4b37b/maintainability)](https://codeclimate.com/github/actionpterygii/itKaiwaiJisho/maintainability)
 
-# 辞典
+# 辞典(IT Kaiwai Jisho)
 [ググれば幸せになれるこの時代に、私は、辞書を作りたいのです](https://actionpterygii.github.io/itKaiwaiJisho/)  
 
 ## 仕様
