@@ -4863,8 +4863,8 @@
     },
     {
         "kotb": "エクスクルーシブ",
-        "eigo": "排他的な。気品の高い。閉鎖的な。独占的な。",
-        "kwsk": "",
+        "eigo": "exclusive",
+        "kwsk": "排他的な。気品の高い。閉鎖的な。独占的な。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4909,7 +4909,7 @@
     {
         "kotb": "システム",
         "eigo": "system",
-        "kwsk": "",
+        "kwsk": "目的を遂行するための体系、組織。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4917,27 +4917,63 @@
     },
     {
         "kotb": "データ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "data",
+        "kwsk": "情報。資料。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "ハードディスクドライブ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kotb": "ハード ディスク ドライブ",
+        "eigo": "Hard Disk Drive",
+        "kwsk": "磁気ディスクを回転させて情報を読み書きするやつ。SSDより安い。",
+        "btmi": "HDD。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "磁気ディスク,ソリッドステートドライブ"
     },
     {
         "kotb": "ソリッド ステート ドライブ",
+        "eigo": "Solid State Drive",
+        "kwsk": "半導体メモリを用いて情報を読み書きするやつ。HDDより値段以外はだいたい良い。",
+        "btmi": "SSD。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "半導体,メモリ,ハードディスクドライブ"
+    },
+    {
+        "kotb": "ディスク",
         "eigo": "",
         "kwsk": "",
-        "btmi": "SSD。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "磁気ディスク",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "光学ディスク",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "半導体",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
