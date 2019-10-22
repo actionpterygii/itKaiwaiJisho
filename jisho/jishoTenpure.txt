@@ -1,9 +1,9 @@
-{
-    "kotb": "",
-    "eigo": "",
-    "kwsk": "",
-    "btmi": "",
-    "mnim": "",
-    "tigg": "",
-    "krng": ""
-},
+    {
+        "kotb": "",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
