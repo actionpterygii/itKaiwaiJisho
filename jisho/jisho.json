@@ -4943,24 +4943,6 @@
         "krng": "半導体,メモリ,ハードディスクドライブ"
     },
     {
-        "kotb": "磁気ディスク",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "光学ディスク",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "半導体",
         "eigo": "",
         "kwsk": "",
@@ -5754,6 +5736,348 @@
     },
     {
         "kotb": "プロセス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インプレスト",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "フラグメント",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "プロダクトライン",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インディペンデント デベロッパー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インハウス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "プリ インストール",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "スクラップ アンド ビルド",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エンプロイアビリティ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "プリ キャッシュ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "アポート",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ステータス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ブリリアント ジャーク",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コンピテーショナル",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コンピテーショナル フォトグラフィー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "パージ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "カニバリゼーション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ダイバーシティ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ディス クロージャー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エティックス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "トランスクリプション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "技術基準適合証明",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "イグジフ",
+        "eigo": "exif",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "オーバーレイ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コンプレッション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "フィルター",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "カンバセーション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "フリーミアム",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リピール",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エコチェンバー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "スクレイピング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コレクト",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ディープ インスペクション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インターネット サービス プロバイダ",
+        "eigo": "Internet Services Provider",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "イノベーション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コンピュテーション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "パーソナル コンピューティング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "デナード スケーリング",
+        "eigo": "",
+        "kwsk": "「回路の集積度が上がるほど消費電力が下がる」",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "クロック",
         "eigo": "",
         "kwsk": "",
         "btmi": "",

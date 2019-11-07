@@ -370,6 +370,24 @@
         "krng": ""
     },
     {
+        "kotb": "磁気ディスク",
+        "eigo": "",
+        "kwsk": "磁気でデータを記録できる円盤のやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "光学ディスク",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
         "kotb": "",
         "eigo": "uwp",
         "kwsk": "",
@@ -383,6 +401,63 @@
         "eigo": "",
         "kwsk": "",
         "btmi": "apfs",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "NACK",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+
+    {
+        "kotb": "",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "npm",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+
+    {
+        "kotb": "",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "wsl",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+
+    {
+        "kotb": "",
+        "eigo": "linux",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "グーグル パブリック ディーエヌエス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "",
+        "eigo": "hadoop",
+        "kwsk": "",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
