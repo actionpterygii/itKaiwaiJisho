@@ -4953,7 +4953,7 @@
     },
     {
         "kotb": "ポート",
-        "eigo": "",
+        "eigo": "port",
         "kwsk": "外部との通信のためにつかうとこ。ケーブル等の差込口。",
         "btmi": "",
         "mnim": "港",
@@ -6384,6 +6384,105 @@
     },
     {
         "kotb": "パーマ リンク",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サーバー ベース コンピューティング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "シングル ボード コンピューター",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ラズベリー パイ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エルゴノミクス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "フォームファクター",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サーマル スロットリング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "フット プリント",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "デジタル ライツ マネジメント",
+        "eigo": "Digital Rights Management",
+        "kwsk": "",
+        "btmi": "デジタル著作権管理",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "",
+        "eigo": "High-bandwidth Digital Content Protection",
+        "kwsk": "",
+        "btmi": "HDCP",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "デクリプト",
+        "eigo": "decrypt",
+        "kwsk": "解読する。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インプリメント",
         "eigo": "",
         "kwsk": "",
         "btmi": "",
