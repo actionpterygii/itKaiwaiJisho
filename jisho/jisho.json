@@ -4962,8 +4962,8 @@
     },
     {
         "kotb": "プログラマー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "programmer",
+        "kwsk": "プログラムをつくるひと。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4971,8 +4971,8 @@
     },
     {
         "kotb": "コンテンツ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "content",
+        "kwsk": "中身。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4980,7 +4980,7 @@
     },
     {
         "kotb": "デザイン",
-        "eigo": "",
+        "eigo": "design",
         "kwsk": "",
         "btmi": "",
         "mnim": "",
@@ -6486,6 +6486,15 @@
         "eigo": "",
         "kwsk": "",
         "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "クロス オリジン リソース シェアリング",
+        "eigo": "Cross-Origin Resource Sharing",
+        "kwsk": "",
+        "btmi": "CORS",
         "mnim": "",
         "tigg": "",
         "krng": ""
