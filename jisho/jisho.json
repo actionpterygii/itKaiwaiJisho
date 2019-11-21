@@ -4981,7 +4981,7 @@
     {
         "kotb": "デザイン",
         "eigo": "design",
-        "kwsk": "",
+        "kwsk": "設計とか。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4989,8 +4989,8 @@
     },
     {
         "kotb": "プロジェクト",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "project",
+        "kwsk": "計画。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6498,5 +6498,59 @@
         "mnim": "",
         "tigg": "",
         "krng": ""
-    }
+    },
+    {
+        "kotb": "ディファード シェーディング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ボイス オーバー インターネット プロトコル",
+        "eigo": "Voice over Internet Protocol",
+        "kwsk": "",
+        "btmi": "VoIP",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コード モーフィング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "シングル インストラクション マルチプル データ",
+        "eigo": "single instruction multiple data",
+        "kwsk": "",
+        "btmi": "シムド。SIMD。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "アーム アーキテクチャ",
+        "eigo": "ARM architecture",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "オートマトン",
+        "eigo": "automaton",
+        "kwsk": "",
+        "btmi": "オートマタ(複数形)。automata。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    }   
 ]
