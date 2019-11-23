@@ -4981,7 +4981,7 @@
     {
         "kotb": "デザイン",
         "eigo": "design",
-        "kwsk": "設計とか。",
+        "kwsk": "設計。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4997,26 +4997,8 @@
         "krng": ""
     },
     {
-        "kotb": "サービス",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "アイディー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "ダウンロード",
-        "eigo": "",
+        "eigo": "download",
         "kwsk": "",
         "btmi": "",
         "mnim": "",
