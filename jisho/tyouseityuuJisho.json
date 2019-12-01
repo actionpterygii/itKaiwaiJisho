@@ -379,6 +379,15 @@
         "krng": ""
     },
     {
+        "kotb": "データ ウェアハウス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
         "kotb": "",
         "eigo": "",
         "kwsk": "",
@@ -410,6 +419,15 @@
         "eigo": "",
         "kwsk": "",
         "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ターミナル",
+        "eigo": "terminal",
+        "kwsk": "",
+        "btmi": "端末。",
         "mnim": "",
         "tigg": "",
         "krng": ""
