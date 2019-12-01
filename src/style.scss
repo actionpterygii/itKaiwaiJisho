@@ -83,6 +83,7 @@ main {
     height: 45px;
     font-size: 35px;
     vertical-align: bottom;
+    cursor: text;
 }
 
 
@@ -173,9 +174,19 @@ main {
 #extra {
     width: 80%;
     margin: 0 auto;
-
-    #readme p {
+    #readme {
+        p {
         margin-bottom: 6px;
+        }
+        a {
+            display: inline-block;
+            height: 15px;
+            line-height: 15px;
+            border-radius: 3px;
+            color: #ff6;
+            background-color: #3cc;
+            cursor: pointer;
+        }
     }
 
     #colorchip {
