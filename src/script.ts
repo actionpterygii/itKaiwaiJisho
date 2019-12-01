@@ -208,6 +208,7 @@ function scarch(jisho: jisho, input_text: string, exact_match: boolean): jisho
             return required_elements;
         }
     }
+    // 中身が空のjisho要素を返します。関数的にそうでないとおかしいっていわれます。
     return [{"":""}];
 }
 
