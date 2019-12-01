@@ -1,14 +1,14 @@
-$breakpoints:(
-    se: 320px,
-    sp: 480px,
-    pc: 1000px
-);
+// $breakpoints:(
+//     se: 320px,
+//     sp: 480px,
+//     pc: 1000px
+// );
 
-@mixin mq($range, $breakpoint) {
-    @media (#{$range}-width:#{map-get($breakpoints,$breakpoint)}) {
-        @content;
-    }
-}
+// @mixin mq($range, $breakpoint) {
+//     @media (#{$range}-width:#{map-get($breakpoints,$breakpoint)}) {
+//         @content;
+//     }
+// }
 
 body,
 header,main,section,
@@ -40,30 +40,24 @@ html,body {
 
 main {
     margin: 0 auto;
-    // height: 1000px;
 }
 
 
 #control {
-    background-color: #fff;
-    width: 100%;
     position: sticky;
     top: 0px;
-    margin-top: 40px;
-    margin-left: 50px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 12%;
+    padding-right: 12%;
     padding-top: 15px;
     padding-bottom: 15px;
+    background-color: #fff;
     box-shadow:rgba(33, 33, 33, 0.3) 0px 0px 6px 1px;
-    // @include mq(max,sp) {
-        width: 100%;
-        padding-left: 12%;
-        padding-right: 12%;
-        margin: 0 auto;
-    // }
 }
 
 #input_area_wrap {
-    width: 400px;
+    width: 100%;
     border-bottom: solid 3px #3cc;
     animation-name: inputarea;
     animation-duration: 0.5s;
@@ -73,9 +67,6 @@ main {
     animation-direction: alternate;
     animation-fill-mode: none;
     animation-play-state: running;
-    // @include mq(max,sp) {
-        width: 100%;
-    // }
 }
 
 @keyframes inputarea {
@@ -88,39 +79,28 @@ main {
 }
 
 #input_area {
+    width: 100%;
     height: 45px;
     font-size: 35px;
     vertical-align: bottom;
-    // @include mq(max,sp) {
-        width: 100%;
-    // }
 }
 
 
 
 #result_area {
+    width: 80%;
+    margin: 0 auto;
     margin-top: 40px;
-    // @include mq(max,sp) {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 40px;
-    // }
 }
 
 .tango {
     display: block;
     text-decoration: none;
-    width: 400px;
-    margin-left: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    width: 100%;
+    margin: 0 auto;
     border: solid 1px #f9f;
     border-radius: 5px;
     padding: 5px;
-    @include mq(max,sp) {
-        width: 100%;
-        margin: 0 auto;
-    }
 }
 
 .kotb {
@@ -191,10 +171,8 @@ main {
 
 
 #extra {
-    // @include mq(max,sp) {
-        width: 80%;
-        margin: 0 auto;
-    // }
+    width: 80%;
+    margin: 0 auto;
 
     #readme p {
         margin-bottom: 6px;

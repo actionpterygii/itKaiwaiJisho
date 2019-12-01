@@ -395,14 +395,14 @@ guguru_btn.addEventListener('click', function()
 // それはランダムの表示ボタンが押されることにより達成されます
 random_btn.addEventListener('click', function()
 {
-    // 単語の数
+    // 単語の数取得
     const tango_quantity: number = Object.keys(jisho).length;
     // 単語の数内でランダムにただひとつの番号を得ました
     const random_num: number = Math.floor(Math.random() * tango_quantity);
-    //
+    // ランダム番号からいち単語取得
     const random_tango: tango = jisho[random_num];
     // ただひとつの単語の描画が開催されます
     result_area.innerHTML = createHtml(random_tango);
-    // 
+    // 単語を入力エリアに入れる
     input_area.value = random_tango['kotb'];
 });
