@@ -54,12 +54,12 @@ main {
     padding-top: 15px;
     padding-bottom: 15px;
     box-shadow:rgba(33, 33, 33, 0.3) 0px 0px 6px 1px;
-    @include mq(max,sp) {
+    // @include mq(max,sp) {
         width: 100%;
         padding-left: 12%;
         padding-right: 12%;
         margin: 0 auto;
-    }
+    // }
 }
 
 #input_area_wrap {
@@ -73,9 +73,9 @@ main {
     animation-direction: alternate;
     animation-fill-mode: none;
     animation-play-state: running;
-    @include mq(max,sp) {
+    // @include mq(max,sp) {
         width: 100%;
-    }
+    // }
 }
 
 @keyframes inputarea {
@@ -91,20 +91,20 @@ main {
     height: 45px;
     font-size: 35px;
     vertical-align: bottom;
-    @include mq(max,sp) {
+    // @include mq(max,sp) {
         width: 100%;
-    }
+    // }
 }
 
 
 
 #result_area {
     margin-top: 40px;
-    @include mq(max,sp) {
+    // @include mq(max,sp) {
         width: 80%;
         margin: 0 auto;
         margin-top: 40px;
-    }
+    // }
 }
 
 .tango {
@@ -191,10 +191,10 @@ main {
 
 
 #extra {
-    @include mq(max,sp) {
+    // @include mq(max,sp) {
         width: 80%;
         margin: 0 auto;
-    }
+    // }
 
     #readme p {
         margin-bottom: 6px;
@@ -244,6 +244,8 @@ main {
 }
 
 .shita_no_button {
+    position: fixed;
+    height: 30px;
     border-radius: 3px;
     cursor: pointer;
     box-shadow:rgba(33, 33, 33, 0.3) 0px 0px 6px 1px;
@@ -253,12 +255,15 @@ main {
     background-color: #3cc!important;
 }
 #nyuryoku_btn {
-    position: fixed;
     bottom: 10px;
     left: 10px;
 }
+#random_btn {
+    width: 80px;
+    bottom: 10px;
+    left:calc(50% - 80px/2);
+}
 #guguru_btn {
-    position: fixed;
     bottom: 10px;
     right: 10px;
 }

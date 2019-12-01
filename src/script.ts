@@ -58,8 +58,6 @@ var jisho: jisho;
 }
 
 
-// 単語の数
-// const tango_quantity: number = Object.keys(jisho).length;
 
 // 一単語にある項目の中で調べるべきもの(対義語と関連語以外ね)
 const word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
@@ -397,10 +395,14 @@ guguru_btn.addEventListener('click', function()
 // それはランダムの表示ボタンが押されることにより達成されます
 random_btn.addEventListener('click', function()
 {
-    console.log(jisho.length);
-    console.log('aaa');
+    // 単語の数
+    const tango_quantity: number = Object.keys(jisho).length;
     // 単語の数内でランダムにただひとつの番号を得ました
-    // const random_num: number = Math.floor(Math.random() * tango_quantity);
+    const random_num: number = Math.floor(Math.random() * tango_quantity);
+    //
+    const random_tango: tango = jisho[random_num];
     // ただひとつの単語の描画が開催されます
-    // result_area.innerHTML = createHtml(jisho[random_num]);
+    result_area.innerHTML = createHtml(random_tango);
+    // 
+    input_area.value = random_tango['kotb'];
 });
