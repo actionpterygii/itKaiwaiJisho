@@ -367,13 +367,13 @@ all_area.addEventListener('touchend', function()
 });
 
 // クイックサーチのためのもの
-for (const key in quickSearch_btns)
-{
-    quickSearch_btns[key].addEventListener('click', function()
-    {
-        input_text = quickSearch_btns[key].getAttribute('value')!;
-    });
-}
+// for (const key in quickSearch_btns)
+// {
+//     quickSearch_btns[key].addEventListener('click', function()
+//     {
+//         input_text = quickSearch_btns[key].getAttribute('value')!;
+//     });
+// }
 
 // 入力ボタン押されたら入力
 nyuryoku_btn.addEventListener('click', function()
