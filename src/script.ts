@@ -36,9 +36,10 @@ type HTMLString = string;
 const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
+const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
-const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
 const random_btn: HTMLButtonElement = document.getElementById('random_btn') as HTMLButtonElement;
+const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
 
 // 辞書情報を辞書jsonから取得する
 var jisho: jisho;
@@ -149,7 +150,7 @@ function containing(item: string, input_text: string, exact_match: boolean): boo
 }
 
 // 入力された値を辞書jsonから検索してマッチしたものを返す。exact_matchは完全一致検索かどうか
-function scarch(jisho: jisho, input_text: string, exact_match: boolean): jisho
+function search(jisho: jisho, input_text: string, exact_match: boolean): jisho
 {
     // '--all'と入力された場合
     if (input_text === '--all')
@@ -269,7 +270,7 @@ function createResult(jisho: jisho, input_text: string): HTMLString
     // 最後かえす文字列
     let entity: HTMLString = '';
     // 必要な要素を選定する
-    const required_elements: jisho = scarch(jisho, input_text, false);
+    const required_elements: jisho = search(jisho, input_text, false);
     // 返すべき結果があれば
     if (Object.keys(required_elements).length)
     {
@@ -303,10 +304,10 @@ function createKanrengo(krng_label: Element)
         // 単語たちをひとつずつ触っていく
         for (const key in tangos)
         {
-            // scarch関数でその単語を完全一致検索で探してくる
-            // [0]指定なのは、scarch関数は複数個対応の単語の配列(jisho型)を返すため。
+            // search関数でその単語を完全一致検索で探してくる
+            // [0]指定なのは、search関数は複数個対応の単語の配列(jisho型)を返すため。
             // 完全一致検索なため0番目の要素のみある。
-            const required_element: tango = scarch(jisho, tangos[key], true)[0];
+            const required_element: tango = search(jisho, tangos[key], true)[0];
             // でそのひと単語の情報からHTMLを作成して追加していく
             entity += createHtml(required_element);
         }
@@ -365,11 +366,35 @@ all_area.addEventListener('touchend', function()
     }
 });
 
+// クイックサーチのためのもの
+for (const key in quickSearch_btns)
+{
+    quickSearch_btns[key].addEventListener('click', function()
+    {
+        input_text = quickSearch_btns[key].getAttribute('value')!;
+    });
+}
+
 // 入力ボタン押されたら入力
 nyuryoku_btn.addEventListener('click', function()
 {
     // いんぷっとえりあにフォーカス
     input_area.focus();
+});
+
+// それはランダムの表示ボタンが押されることにより達成されます
+random_btn.addEventListener('click', function()
+{
+    // 単語の数取得
+    const tango_quantity: number = Object.keys(jisho).length;
+    // 単語の数内でランダムにただひとつの番号を得ました
+    const random_num: number = Math.floor(Math.random() * tango_quantity);
+    // ランダム番号からいち単語取得
+    const random_tango: tango = jisho[random_num];
+    // ただひとつの単語の描画が開催されます
+    result_area.innerHTML = createHtml(random_tango);
+    // 単語を入力エリアに入れる
+    input_area.value = random_tango['kotb'];
 });
 
 // ぐぐるボタン押されたらぐぐる
@@ -391,19 +416,4 @@ guguru_btn.addEventListener('click', function()
         // 入力されている文字でぐぐる
         window.open(guguru_url + input_text);
     }
-});
-
-// それはランダムの表示ボタンが押されることにより達成されます
-random_btn.addEventListener('click', function()
-{
-    // 単語の数取得
-    const tango_quantity: number = Object.keys(jisho).length;
-    // 単語の数内でランダムにただひとつの番号を得ました
-    const random_num: number = Math.floor(Math.random() * tango_quantity);
-    // ランダム番号からいち単語取得
-    const random_tango: tango = jisho[random_num];
-    // ただひとつの単語の描画が開催されます
-    result_area.innerHTML = createHtml(random_tango);
-    // 単語を入力エリアに入れる
-    input_area.value = random_tango['kotb'];
 });

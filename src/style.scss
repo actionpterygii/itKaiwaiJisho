@@ -177,12 +177,16 @@ main {
     margin: 0 auto;
     #readme {
         p {
-        margin-bottom: 6px;
+            margin-bottom: 6px;
+        }
+        button {
+            color: #ff6;
+            background-color: #3cc;
+            border-radius: 3px;
+            cursor: pointer;
         }
         a {
             display: inline-block;
-            height: 15px;
-            line-height: 15px;
             border-radius: 3px;
             color: #ff6;
             background-color: #3cc;
@@ -190,15 +194,14 @@ main {
         }
     }
 
-    #colorchip {
+    .colorchip {
+        margin-top: 10px;
         div {
             display: inline-block;
             height: 10px;
             width: 10px;
             margin-right: 5px;
         }
-    }
-    .colorchip {
         &-333 {
             background-color: #333;
         }
