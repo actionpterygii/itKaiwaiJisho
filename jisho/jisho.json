@@ -5260,7 +5260,7 @@
     {
         "kotb": "ロード バランサー",
         "eigo": "load balancer",
-        "kwsk": "",
+        "kwsk": "負荷分散装置。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5349,8 +5349,8 @@
     },
     {
         "kotb": "フィーチャー ディテクション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "feature detection",
+        "kwsk": "特徴検出。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5358,8 +5358,8 @@
     },
     {
         "kotb": "オールウェイズ オン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "Always On",
+        "kwsk": "停止しているときをなくす感じ(できるだけ)。長期的な感じでやるマーケティング。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5368,25 +5368,7 @@
     {
         "kotb": "スティル",
         "eigo": "still",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ディム",
-        "eigo": "dim",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ウェイク",
-        "eigo": "wake",
-        "kwsk": "",
+        "kwsk": "まだ。静止。穏やか。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5394,17 +5376,8 @@
     },
     {
         "kotb": "アチーブメント",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "インテンション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "achievement",
+        "kwsk": "達成。達成するともらえるもの。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5412,26 +5385,8 @@
     },
     {
         "kotb": "ビジョナリー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "アキューズ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "アポロジー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "visionary",
+        "kwsk": "先見の明のあるひと。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5439,44 +5394,44 @@
     },
     {
         "kotb": "コピーライト トロール",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "copyright troll",
+        "kwsk": "カネのために著作権使うやつ。",
+        "btmi": "著作権トロール。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "パテント トロール",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "patent troll",
+        "kwsk": "カネのために特許権使うやつ。",
+        "btmi": "特許トロール。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "スケール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "scale",
+        "kwsk": "規模。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "スケールする"
+    },
+    {
+        "kotb": "スケール する",
+        "eigo": "scale suru",
+        "kwsk": "スケールを変える。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "スケール,スケールイン,スケールアウト,スケールアップ,スケールダウン"
     },
     {
         "kotb": "ディベート",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "テイクダウン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "debate",
+        "kwsk": "討論。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5484,8 +5439,17 @@
     },
     {
         "kotb": "スプレマシー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "supremacy",
+        "kwsk": "優位性がある。最高位。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ハイ スタンダード",
+        "eigo": "high standard",
+        "kwsk": "高水準。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5493,8 +5457,8 @@
     },
     {
         "kotb": "コントラクト",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "contract",
+        "kwsk": "契約。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5502,8 +5466,8 @@
     },
     {
         "kotb": "ユニオン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "union",
+        "kwsk": "結合。同盟。労働組合。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5511,8 +5475,8 @@
     },
     {
         "kotb": "エンフォースメント",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "enforcement",
+        "kwsk": "執行。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5520,17 +5484,8 @@
     },
     {
         "kotb": "リーガル",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ネット ネガティブ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "legal",
+        "kwsk": "合法。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5538,8 +5493,8 @@
     },
     {
         "kotb": "アドバタイズメント",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "advertisement",
+        "kwsk": "広告。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5547,8 +5502,8 @@
     },
     {
         "kotb": "パーソナライズ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "personalize",
+        "kwsk": "ひとりひとりに合ったやつを提供する。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5556,8 +5511,8 @@
     },
     {
         "kotb": "ペイ ウォール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "pay wall",
+        "kwsk": "一部コンテンツが有料のやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5565,8 +5520,8 @@
     },
     {
         "kotb": "アナロジー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "analogy",
+        "kwsk": "類推。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5574,35 +5529,26 @@
     },
     {
         "kotb": "コピーライト",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "copyright",
+        "kwsk": "著作権。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "コピーレフト",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "ガベージ コレクション",
+        "eigo": "garbage collection",
+        "kwsk": "不要になったメモリ領域を開放する。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ガベージコレクション",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "krng": "メモリ"
     },
     {
         "kotb": "エイシンクロナス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "Asynchronous",
+        "kwsk": "非同期。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5610,10 +5556,10 @@
     },
     {
         "kotb": "リテラシー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "literacy",
+        "kwsk": "何かに対する知識、理解力、教養、活用力。",
         "btmi": "",
-        "mnim": "",
+        "mnim": "読解記述力",
         "tigg": "",
         "krng": ""
     },
@@ -6879,6 +6825,24 @@
     },
     {
         "kotb": "コミッション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インターナル",
+        "eigo": "internal",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "コンピテンシー",
         "eigo": "",
         "kwsk": "",
         "btmi": "",
