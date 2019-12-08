@@ -264,6 +264,8 @@ function createHtml(element: tango): HTMLString
     return html;
 }
 
+
+
 // 入力から結果(HTML)を返す
 function createResult(jisho: jisho, input_text: string): HTMLString
 {
@@ -289,6 +291,19 @@ function createResult(jisho: jisho, input_text: string): HTMLString
     return entity;
 }
 
+// 入力から完全一致の結果(HTML)を返す
+// 今の所、これは検索対象が絶対ある前提でやります
+// なぜならそういう使い方しか今はしていないからです
+function createExactResult(jisho: jisho, input_text: string): HTMLString
+{
+    // search関数でその単語を完全一致検索で探してきてそれでHTMLつくる
+    // [0]指定なのは、search関数は複数個対応の単語の配列(jisho型)を返すため。
+    // 完全一致検索なため0番目の要素のみある。
+    return createHtml(search(jisho, input_text, true)[0]);
+}
+
+
+
 // 関連語を開くボタンがおされたら呼ばれる関数
 function createKanrengo(krng_facade: HTMLLabelElement)
 {
@@ -304,12 +319,8 @@ function createKanrengo(krng_facade: HTMLLabelElement)
         // 単語たちをひとつずつ触っていく
         for (const key in tangos)
         {
-            // search関数でその単語を完全一致検索で探してくる
-            // [0]指定なのは、search関数は複数個対応の単語の配列(jisho型)を返すため。
-            // 完全一致検索なため0番目の要素のみある。
-            const required_element: tango = search(jisho, tangos[key], true)[0];
             // でそのひと単語の情報からHTMLを作成して追加していく
-            entity += createHtml(required_element);
+            entity += createExactResult(jisho, tangos[key]);
         }
         // かえす
         return entity;
@@ -366,12 +377,18 @@ all_area.addEventListener('touchend', function()
     }
 });
 
-// クイックサーチのためのもの
+// クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
 // for (const key in quickSearch_btns)
 // {
+//     // ひとつのボタンのための処理
 //     quickSearch_btns[key].addEventListener('click', function()
 //     {
+//         // その単語が入力されているものとする
 //         input_text = quickSearch_btns[key].getAttribute('value')!;
+//         // 単語を入力エリアに入れる
+//         input_area.value = input_text;
+
+//         result_area.innerHTML = 
 //     });
 // }
 
@@ -393,8 +410,10 @@ random_btn.addEventListener('click', function()
     const random_tango: tango = jisho[random_num];
     // ただひとつの単語の描画が開催されます
     result_area.innerHTML = createHtml(random_tango);
+    // その単語が入力されているものとする
+    input_text = random_tango['kotb'];
     // 単語を入力エリアに入れる
-    input_area.value = random_tango['kotb'];
+    input_area.value = input_text;
 });
 
 // ぐぐるボタン押されたらぐぐる
