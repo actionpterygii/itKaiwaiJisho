@@ -5565,8 +5565,8 @@
     },
     {
         "kotb": "ディスカッション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "discussion",
+        "kwsk": "議論。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5574,35 +5574,35 @@
     },
     {
         "kotb": "トランジション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "transition",
+        "kwsk": "変化。移り変わり。切り替え。移行。過渡期。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "デスマーチ",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "デス マーチ",
+        "eigo": "death march",
+        "kwsk": "プロジェクトがうまく進まず負担が多くなり過重労働とかになってる。",
         "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "プロジェクト"
+    },
+    {
+        "kotb": "フェア ユース",
+        "eigo": "fair use",
+        "kwsk": "著作権で保護されたやつでも、教育/研究/報道とかで正しく使うなら著作権の侵害にはならんのちゃうかってやつ。",
+        "btmi": "公正利用。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "フェアユース",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "プリオーダー",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "プリ オーダー",
+        "eigo": "pre order",
+        "kwsk": "予約。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5610,8 +5610,8 @@
     },
     {
         "kotb": "インテグレート",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "integrate",
+        "kwsk": "統合。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5619,7 +5619,7 @@
     },
     {
         "kotb": "プリセット",
-        "eigo": "",
+        "eigo": "preset",
         "kwsk": "",
         "btmi": "",
         "mnim": "",
