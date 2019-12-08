@@ -5800,7 +5800,7 @@
     {
         "kotb": "コンピテーショナル",
         "eigo": "computational",
-        "kwsk": "コンピューターをつかってるかんじ",
+        "kwsk": "コンピューターをつかってるかんじ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5818,7 +5818,7 @@
     {
         "kotb": "カニバリゼーション",
         "eigo": "cannibalization",
-        "kwsk": "自社製品が別の自社製品と競合しちゃう",
+        "kwsk": "自社製品が別の自社製品と競合しちゃう。",
         "btmi": "",
         "mnim": "共食い",
         "tigg": "",
@@ -5835,26 +5835,8 @@
     },
     {
         "kotb": "ディス クロージャー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "クロージャー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "エティックス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "dis closure",
+        "kwsk": "情報公開。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5862,17 +5844,8 @@
     },
     {
         "kotb": "トランスクリプション",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "技術基準適合証明",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "transcription",
+        "kwsk": "音声を文章にする。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5880,12 +5853,12 @@
     },
     {
         "kotb": "イグジフ",
-        "eigo": "exif",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "Exif",
+        "kwsk": "画像データに付与る日時とか撮影設定とか位置情報とかのフォーマット。",
+        "btmi": "Exchangeable image file format。エクスチェンジャブル イメージ ファイル フォーマット。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データ,フォーマット"
     },
     {
         "kotb": "オーバーレイ",
