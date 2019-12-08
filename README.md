@@ -145,6 +145,8 @@
 - `null`でないと自信があるので`!`(エクスクラメーション/感嘆符/びっくりマーク)を使ってしまいました。
   - `null`可能性を否定するので厳密にはよくなさそう
   - https://code-examples.net/ja/q/267b123
+- classからの複数イベントリスナー付与は`DOMContentLoaded`でHTMLパース後にしないと、それの処理は通るが他ボタン(入力ランダムぐぐる)が発火しなくなった(なんで)
+  - コンソールに`Uncaught TypeError: quickSearch_btns[t].addEventListener is not a function at t (script.js:1) at HTMLDocument.<anonymous> (script.js:1)`と出るのですがそれはずっとでてる
 
 
 ## きもち
