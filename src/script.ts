@@ -378,19 +378,34 @@ all_area.addEventListener('touchend', function()
 });
 
 // クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
-// for (const key in quickSearch_btns)
-// {
-//     // ひとつのボタンのための処理
-//     quickSearch_btns[key].addEventListener('click', function()
-//     {
-//         // その単語が入力されているものとする
-//         input_text = quickSearch_btns[key].getAttribute('value')!;
-//         // 単語を入力エリアに入れる
-//         input_area.value = input_text;
-
-//         result_area.innerHTML = 
-//     });
-// }
+for (const key in quickSearch_btns)
+{
+    // ひとつのボタンのための処理
+    quickSearch_btns[key].addEventListener('click', function()
+    {
+        // その単語が入力されているものとする
+        input_text = quickSearch_btns[key].getAttribute('value')!;
+        // 単語を入力エリアに入れる
+        input_area.value = input_text;
+        // 出力
+        result_area.innerHTML = (function()
+        {
+            // 前方に`--`の付いてる特殊なやつなら
+            if (input_text.indexOf('--') === 0)
+            {
+                // 基本複数あるのでふつう検索
+                return createResult(jisho, input_text);
+            }
+            // ふつうのやつなら
+            else
+            {
+                // 完全一致検索
+                return createExactResult(jisho, input_text);
+            }
+        }
+        )();
+    });
+}
 
 // 入力ボタン押されたら入力
 nyuryoku_btn.addEventListener('click', function()
