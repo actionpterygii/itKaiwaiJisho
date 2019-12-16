@@ -460,6 +460,15 @@
         "krng": ""
     },
     {
+        "kotb": "ディープ インスペクション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
         "kotb": "クロージャー",
         "eigo": "closure",
         "kwsk": "",
@@ -471,6 +480,33 @@
     {
         "kotb": "コンピテーショナル フォトグラフィー",
         "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "パーソナル コンピューティング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "クロック 周波数",
+        "eigo": "clock frequency",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ダークシリコン",
+        "eigo": "dark silicon",
         "kwsk": "",
         "btmi": "",
         "mnim": "",

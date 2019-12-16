@@ -5507,7 +5507,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "エコーチェンバー"
     },
     {
         "kotb": "ペイ ウォール",
@@ -5798,7 +5798,7 @@
         "krng": ""
     },
     {
-        "kotb": "コンピテーショナル",
+        "kotb": "コンピュテーショナル",
         "eigo": "computational",
         "kwsk": "コンピューターをつかってるかんじ。",
         "btmi": "",
@@ -5862,8 +5862,8 @@
     },
     {
         "kotb": "オーバーレイ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "overlay",
+        "kwsk": "覆う。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5871,8 +5871,8 @@
     },
     {
         "kotb": "コンプレッション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "compression",
+        "kwsk": "圧縮。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5880,17 +5880,17 @@
     },
     {
         "kotb": "フィルター",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "filter",
+        "kwsk": "入力から条件により何かして出力するやつ。",
         "btmi": "",
-        "mnim": "",
+        "mnim": "濾過器",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "カンバセーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "conversation",
+        "kwsk": "会談。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5898,8 +5898,8 @@
     },
     {
         "kotb": "フリーミアム",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "freemium",
+        "kwsk": "基本無料で、課金でもっといいことできるやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5907,44 +5907,35 @@
     },
     {
         "kotb": "リピール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "repeal",
+        "kwsk": "廃止。無効。撤回。破棄。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "エコチェンバー",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "エコー チェンバー",
+        "eigo": "echo chamber",
+        "kwsk": "同じ意見が多いところにいてそれが多数派だと思う。",
         "btmi": "",
-        "mnim": "",
+        "mnim": "共鳴室",
         "tigg": "",
-        "krng": ""
+        "krng": "パーソナライズ"
     },
     {
         "kotb": "スクレイピング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "scraping",
+        "kwsk": "プログラミングとかして、ウェブサイトから欲しいとこのデータを取ってくる。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラミング,ウェブサイト,データ"
     },
     {
         "kotb": "コレクト",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ディープ インスペクション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "collect",
+        "kwsk": "収集。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5953,7 +5944,7 @@
     {
         "kotb": "インターネット サービス プロバイダ",
         "eigo": "Internet Services Provider",
-        "kwsk": "",
+        "kwsk": "インターネット接続を提供する組織。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5961,26 +5952,8 @@
     },
     {
         "kotb": "イノベーション",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "コンピュテーション",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "パーソナル コンピューティング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "innovation",
+        "kwsk": "革新。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -5996,27 +5969,9 @@
         "krng": ""
     },
     {
-        "kotb": "クロック",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "アライアンス",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ダークシリコン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "alliance",
+        "kwsk": "同盟。提携。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6927,6 +6882,15 @@
         "eigo": "",
         "kwsk": "",
         "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "RPA",
         "mnim": "",
         "tigg": "",
         "krng": ""
