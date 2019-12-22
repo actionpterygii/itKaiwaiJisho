@@ -5979,35 +5979,35 @@
     },
     {
         "kotb": "ブラック ボックス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "black box",
+        "kwsk": "中でどうなってるかはしらんけど、処理ある。",
         "btmi": "",
         "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "tigg": "ホワイト ボックス",
+        "krng": "ホワイトボックス"
     },
     {
         "kotb": "ホワイト ボックス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "white box",
+        "kwsk": "中がどうなるかわかってるし、処理ある。",
         "btmi": "",
         "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "tigg": "ブラック ボックス",
+        "krng": "ブラックボックス"
     },
     {
         "kotb": "オープン スタンダード",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "open standard",
+        "kwsk": "公開されてて、自由に使えるかんじ。",
+        "btmi": "公開標準。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プロプライエタリ"
     },
     {
         "kotb": "ツール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "tool",
+        "kwsk": "道具。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6015,53 +6015,44 @@
     },
     {
         "kotb": "ロー エンド",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "low end",
+        "kwsk": "低性能。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ミドルレンジ,ハイエンド"
     },
     {
         "kotb": "ミドル レンジ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "middle range",
+        "kwsk": "中性能。",
         "btmi": "ミドル エンド",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ローエンド,ハイエンド"
     },
     {
         "kotb": "ハイ エンド",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "high end",
+        "kwsk": "高性能。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ローエンド,ミドルレンジ"
     },
     {
-        "kotb": "コンテニュアス デリバリー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kotb": "ペア プログラミング",
+        "eigo": "pair programming",
+        "kwsk": "ふたりでいっしょにプログラミング。",
+        "btmi": "ペアプロ。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ペアプロ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "krng": "プログラミング"
     },
     {
         "kotb": "ウェル ビーイング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "well being",
+        "kwsk": "身体的、精神的、社会的によい状態。幸福。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6069,8 +6060,8 @@
     },
     {
         "kotb": "エンド ユーザー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "end user",
+        "kwsk": "最終的に商品を使うひと。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6078,8 +6069,8 @@
     },
     {
         "kotb": "ディペンデンシー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "dependency",
+        "kwsk": "依存。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6087,62 +6078,62 @@
     },
     {
         "kotb": "アーティフィシャル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "artificial",
+        "kwsk": "人為的。人工的。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "メジャー バージョン",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "メジャー バージョン アップ",
+        "eigo": "major version up",
+        "kwsk": "でかい修正をしたやつ。",
         "btmi": "",
         "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "tigg": "マイナーバージョンアップ",
+        "krng": "マイナーバージョンアップ"
     },
     {
-        "kotb": "マイナー バージョン",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "マイナー バージョン アップ",
+        "eigo": "minor version up",
+        "kwsk": "ちっちゃい修正をしたやつ。",
         "btmi": "",
         "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "tigg": "メジャーバージョンアップ",
+        "krng": "メジャーバージョンアップ"
     },
     {
         "kotb": "アップ ストリーム",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "up stream",
+        "kwsk": "上に向かうやつ。クライアント側からサーバー側に向かうデータ。",
         "btmi": "",
         "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "tigg": "ダウンストリーム",
+        "krng": "ダウンストリーム,クライアント,サーバー,データ"
     },
     {
         "kotb": "ダウン ストリーム",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "down stream",
+        "kwsk": "下に向かうやつ。サーバー側からクライアント側に向かうデータ。",
         "btmi": "",
         "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "tigg": "アップストリーム",
+        "krng": "アップストリーム,サーバー,クライアント,データ"
     },
     {
         "kotb": "ウェブ アセンブリ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "web assembly",
+        "kwsk": "JavaScriptみたいにクライアントサイドのウェブブラウザで動かすプログラミング言語。はやい。",
+        "btmi": "wasm。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ジャバスクリプト,クライアント,ウェブブラウザ,プログラミング言語"
     },
     {
         "kotb": "ロング テール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "long tail",
+        "kwsk": "あんま売れへんやつも含めてたくさんの種類売っといたら全体的にも売れるかんじ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6150,8 +6141,8 @@
     },
     {
         "kotb": "バッチ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "batch",
+        "kwsk": "~~処理あらかじめ登録しておい~~",
         "btmi": "",
         "mnim": "",
         "tigg": "",
