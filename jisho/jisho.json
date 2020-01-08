@@ -6176,18 +6176,9 @@
         "krng": ""
     },
     {
-        "kotb": "2038年問題",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "ジョブ セキュリティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "job security",
+        "kwsk": "じぶんの雇用を守る。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6195,17 +6186,17 @@
     },
     {
         "kotb": "ストレージ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "storage",
+        "kwsk": "データを保存するやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データ"
     },
     {
         "kotb": "レガシー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "legacy",
+        "kwsk": "過去の遺産(良いのも悪いのも)。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6213,17 +6204,17 @@
     },
     {
         "kotb": "リダクション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "reduction",
+        "kwsk": "削減。縮小。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "ディストラプト",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "ディスラプト",
+        "eigo": "disrupt",
+        "kwsk": "崩壊。崩壊からの変革。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6231,21 +6222,21 @@
     },
     {
         "kotb": "ディスクレーマー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "disclaimer",
+        "kwsk": "放棄する何らかについての文書。",
+        "btmi": "免責事項。警告。お断り。注意書き。利用条件。予めご了承ください。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "パーマ リンク",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kotb": "パーマネント リンク",
+        "eigo": "Permanent Link",
+        "kwsk": "Webサイトでのずっと同じ内容を示すURL。",
+        "btmi": "パーマリンク。permalink。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブサイト"
     },
     {
         "kotb": "サーバー ベース コンピューティング",
