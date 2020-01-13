@@ -4189,7 +4189,16 @@
     {
         "kotb": "オリジン",
         "eigo": "origin",
-        "kwsk": "原点。起源。発端。根源。",
+        "kwsk": "スキーム,ホスト,ポートの組み合わせ。原点。起源。発端。根源。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "スキーム,ホスト,ポート"
+    },
+    {
+        "kotb": "ホスト",
+        "eigo": "host",
+        "kwsk": "'www.exsample.com'のぶぶん。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -4873,7 +4882,7 @@
     {
         "kotb": "スキーマ",
         "eigo": "schema",
-        "kwsk": "構造。",
+        "kwsk": "構造。'http://'の部分。",
         "btmi": "スキーム。scheme。",
         "mnim": "",
         "tigg": "",
@@ -4954,7 +4963,7 @@
     {
         "kotb": "ポート",
         "eigo": "port",
-        "kwsk": "外部との通信のためにつかうとこ。ケーブル等の差込口。",
+        "kwsk": "外部との通信のためにつかうとこ。ケーブル等の差込口。':8080'とかのぶぶん。",
         "btmi": "",
         "mnim": "港",
         "tigg": "",
@@ -6239,45 +6248,36 @@
         "krng": "ウェブサイト"
     },
     {
-        "kotb": "サーバー ベース コンピューティング",
-        "eigo": "Server Based Computing",
-        "kwsk": "",
-        "btmi": "SBC",
+        "kotb": "シンクライアント",
+        "eigo": "thin client",
+        "kwsk": "端末では操作と通信をして、他(アプリケーションの実行とか)はサーバー上でやるかんじ。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "端末,アプリケーション,サーバー"
     },
     {
         "kotb": "シングル ボード コンピューター",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "single board computer",
+        "kwsk": "一枚基盤にUSBとか無線機能付いたちっちゃいコンピューター。IoTの感じのときによーでる。ラズベリーパイ(Raspberry Pi)とか。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ラズベリー パイ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "krng": "ユニバーサルシリアルバス,コンピューター,インターネットオブシングス"
     },
     {
         "kotb": "エルゴノミクス",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "ergonomics",
+        "kwsk": "ひとがいい感じにつかえるように設計する。",
+        "btmi": "人間工学。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "フォームファクター",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "フォーム ファクター",
+        "eigo": "form factor",
+        "kwsk": "それの形を決めるいろいろ。どういうパーツとか形とか。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6285,36 +6285,36 @@
     },
     {
         "kotb": "サーマル スロットリング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "thermal throttling",
+        "kwsk": "CPUとかが熱くなると、自動的に熱くならんようにするやつ(熱いのはよくないため)。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "セントラルプロセッシングユニット"
     },
     {
         "kotb": "フット プリント",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "foot print",
+        "kwsk": "占有面積。プログラムがどんだけメモリとかの領域を使うか。",
         "btmi": "",
-        "mnim": "",
+        "mnim": "足跡",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラム,メモリ"
     },
     {
         "kotb": "デジタル ライツ マネジメント",
         "eigo": "Digital Rights Management",
-        "kwsk": "",
-        "btmi": "デジタル著作権管理",
+        "kwsk": "著作権的に困るので、コピーとかさせないようにするやつ。",
+        "btmi": "DRM。デジタル著作権管理。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
-        "eigo": "High-bandwidth Digital Content Protection",
-        "kwsk": "",
-        "btmi": "HDCP",
+        "kotb": "エイチディーシーピー",
+        "eigo": "HDCP",
+        "kwsk": "著作権的に困るので、最終的に出力するケーブルとかでパクられへんようにする。",
+        "btmi": "High-bandwidth Digital Content Protection。エッチデーセーペー。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -6330,8 +6330,8 @@
     },
     {
         "kotb": "インプリメント",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "implement",
+        "kwsk": "実行する。実現する。実装する。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6340,16 +6340,16 @@
     {
         "kotb": "クロス オリジン リソース シェアリング",
         "eigo": "Cross-Origin Resource Sharing",
-        "kwsk": "",
+        "kwsk": "異なるオリジン間でデータをやりとりするのやつ。",
         "btmi": "CORS",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "オリジン。"
     },
     {
-        "kotb": "ディファード シェーディング",
+        "kotb": "2038年問題",
         "eigo": "",
-        "kwsk": "",
+        "kwsk": "UNIXの時間の考え方的に何も先かったらそんとき時間おかしなるでってやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6358,17 +6358,8 @@
     {
         "kotb": "ボイス オーバー インターネット プロトコル",
         "eigo": "Voice over Internet Protocol",
-        "kwsk": "",
+        "kwsk": "インターネットで音声通話する技術。",
         "btmi": "VoIP",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "コード モーフィング",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -6376,7 +6367,7 @@
     {
         "kotb": "シングル インストラクション マルチプル データ",
         "eigo": "single instruction multiple data",
-        "kwsk": "",
+        "kwsk": "並列処理の仕様的な。",
         "btmi": "シムド。SIMD。",
         "mnim": "",
         "tigg": "",
@@ -6385,20 +6376,11 @@
     {
         "kotb": "アーム アーキテクチャ",
         "eigo": "ARM architecture",
-        "kwsk": "",
+        "kwsk": "低電力でやっていきたいやつでのプロセッサのやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "オートマトン",
-        "eigo": "automaton",
-        "kwsk": "",
-        "btmi": "オートマタ(複数形)。automata。",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "krng": "プロセッサ"
     },
     {
         "kotb": "ボイラー プレート",
