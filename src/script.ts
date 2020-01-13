@@ -337,8 +337,8 @@ function createKanrengo(krng_facade: HTMLLabelElement)
 // 文字が入力されるたんびに
 input_area.addEventListener('keyup', function()
 {
-    // inputにあるvalueを格納
-    input_text = input_area.value;
+    // inputにあるvalueを格納(スペースを消して)
+    input_text = input_area.value.replace(/\s+/g, '');
     // result_areaエリアの内容を変更(描画し直す)
     result_area.innerHTML = (function()
     {
