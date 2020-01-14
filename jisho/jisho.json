@@ -6383,81 +6383,63 @@
         "krng": "プロセッサ"
     },
     {
-        "kotb": "ボイラー プレート",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kotb": "テンプレート",
+        "eigo": "template",
+        "kwsk": "それを見本にしてたくさん作れるのやつ。",
+        "btmi": "ボイラープレート,boilerplate,雛形",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "ネットブック",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "netbook",
+        "kwsk": "前に流行ってたインターネットすることが主のちっちゃいパソコン。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "インターネット,パーソナルコンピューター"
+    },
+    {
+        "kotb": "パーソナル コンピューター",
+        "eigo": "personal computer",
+        "kwsk": "個人用のコンピューター",
+        "btmi": "パソコン,PC",
+        "mnim": "",
+        "tigg": "",
+        "krng": "コンピューター"
     },
     {
         "kotb": "プルーフ オブ コンセプト",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "サイドチャネル 攻撃",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "バス",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "NACL",
+        "eigo": "Proof of Concept",
+        "kwsk": "プロトタイプを作る前の検証。",
+        "btmi": "PoC,概念実証",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "アラインメント",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "alignment",
+        "kwsk": "比較。調整。整列。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "ベリファイ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kotb": "ベリフィケーション",
+        "eigo": "verification",
+        "kwsk": "確認。検証。実証。",
+        "btmi": "ベリファイ。verify。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "マスク",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "mask",
+        "kwsk": "全部とか一部とかを覆う感じ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6465,8 +6447,8 @@
     },
     {
         "kotb": "ハング アップ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "hang up",
+        "kwsk": "止まっちゃってどうしようもなくなってる感じ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -7050,6 +7032,15 @@
     },
     {
         "kotb": "プログレッシブ エンハンスメント",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "バジェット",
         "eigo": "",
         "kwsk": "",
         "btmi": "",

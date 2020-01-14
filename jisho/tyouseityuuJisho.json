@@ -550,6 +550,33 @@
         "krng": ""
     },
     {
+        "kotb": "バス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ネイティブ クライアント",
+        "eigo": "Native Client",
+        "kwsk": "Googleのやつ。",
+        "btmi": "NACL",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サイド チャネル 攻撃",
+        "eigo": "side channel attack",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
         "kotb": "ディファード シェーディング",
         "eigo": "Deferred Shading",
         "kwsk": "",
