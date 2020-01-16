@@ -36,9 +36,14 @@ type HTMLString = string;
 const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
+
 const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
+
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
+// const kisekae_btn: HTMLButtonElement = document.getElementById('kisekae_btn') as HTMLButtonElement;
+
 const random_btn: HTMLButtonElement = document.getElementById('random_btn') as HTMLButtonElement;
+
 const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
 
 // 辞書情報を辞書jsonから取得する
@@ -417,6 +422,12 @@ nyuryoku_btn.addEventListener('click', function()
     // いんぷっとえりあにフォーカス
     input_area.focus();
 });
+
+// // きせかえボタンが押されたら
+// kisekae_btn.addEventListener('click', function()
+// {
+//     // カラーのメニュー表示
+// });
 
 // それはランダムの表示ボタンが押されることにより達成されます
 random_btn.addEventListener('click', function()
