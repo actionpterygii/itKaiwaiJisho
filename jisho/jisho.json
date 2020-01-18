@@ -6456,143 +6456,62 @@
     },
     {
         "kotb": "セキュリティー ホール",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "security hole",
+        "kwsk": "セキュリティーがちゃんとなってなくて守れてないところ。脆弱性。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "セキュリティー"
     },
     {
         "kotb": "セキュリティー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "security",
+        "kwsk": "脅かすもの(不正にアクセスされて悪いことされるとか)からまもる。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "デモート",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "メモリ モデル デモート",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "",
+        "kotb": "アイデンポテント",
         "eigo": "idenpotent",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "マイクロ カーネル",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "LLVM",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ラウドネス",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kwsk": "冪等。",
+        "btmi": "それを何回しても結果が同じ感じ。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "シンタックス シュガー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "syntax sugar",
+        "kwsk": "プログラミング言語で、構文を単純な別の書き方で書けるようにしているやつ。",
+        "btmi": "糖衣構文。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "プログラミング言語"
     },
     {
-        "kotb": "プリ コンパイルド モジュール",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "バック フォワード コンパチビリティ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kotb": "バックワード コンパチビリティ",
+        "eigo": "backward compatibility",
+        "kwsk": "新しいバージョンのやつでも、古いバージョンのやつと同じことができる。",
+        "btmi": "後方互換。",
         "mnim": "",
         "tigg": "アッパーコンパチビリティ",
         "krng": "アッパーコンパチビリティ,コンパチビリティ"
     },
     {
-        "kotb": "ページング",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "マップ リデュース",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "データ センター",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "data center",
+        "kwsk": "サーバーとかめっちゃ置いてるとこ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "CTF",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "krng": "ウェブサーバー"
     },
     {
         "kotb": "リバース エンジニアリング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "reverse engineering",
+        "kwsk": "出来上がってるものを解析して知る。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
