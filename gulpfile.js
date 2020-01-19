@@ -75,7 +75,7 @@ gulp.task('ts', function()
 
 gulp.task('watchTs', function()
 {
-    return gulp.watch(src + '*.ts', gulp.task('js'));
+    return gulp.watch(src + '*.ts', gulp.task('ts'));
 });
 
 
