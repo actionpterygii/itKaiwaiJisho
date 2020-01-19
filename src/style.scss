@@ -175,6 +175,7 @@ main {
 #extra {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 60px;
     #readme {
         p {
             margin-bottom: 6px;
@@ -191,6 +192,13 @@ main {
             color: #ff6;
             background-color: #3cc;
             cursor: pointer;
+        }
+        img.qrcode {
+            width: 100%;
+            display: none;
+            &__open {
+                display: block;
+            }
         }
     }
 

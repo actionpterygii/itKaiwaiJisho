@@ -38,6 +38,7 @@ const input_area: HTMLInputElement = document.getElementById('input_area') as HT
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 
 const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
+const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as HTMLButtonElement;
 
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
 // const kisekae_btn: HTMLButtonElement = document.getElementById('kisekae_btn') as HTMLButtonElement;
@@ -414,6 +415,14 @@ document.addEventListener("DOMContentLoaded", function()
             )();
         });
     }
+});
+
+// qrコードボタンが押されたら
+qrcode_btn.addEventListener('click', function()
+{
+    const qrcode_img: Element = qrcode_btn!.nextElementSibling!;
+    console.log(qrcode_img);
+    qrcode_img.classList.toggle('qrcode__open');
 });
 
 // 入力ボタン押されたら入力
