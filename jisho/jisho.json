@@ -6519,30 +6519,66 @@
     },
     {
         "kotb": "エクスプロイト",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "exploit",
+        "kwsk": "セキュリティーホールを突いて悪いことさせるプログラム。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "セキュリティーホール,プログラム"
     },
     {
         "kotb": "コンベンション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "convention",
+        "kwsk": "会議。大会。集会。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "カンファレンス"
+    },
+    {
+        "kotb": "カンファレンス",
+        "eigo": "conference",
+        "kwsk": "会議。大会。集会。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "コンベンション"
+    },
+    {
+        "kotb": "コア コンピタンス",
+        "eigo": "core competence",
+        "kwsk": "競合に勝ってるすごいところ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "オムニ チャネル",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "マルチ チャネル",
+        "eigo": "multi channel",
+        "kwsk": "いろんなとこで売る。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "クロスチャネル,オムニチャネル"
+    },
+    {
+        "kotb": "クロス チャネル",
+        "eigo": "cross channel",
+        "kwsk": "いろんなとこで売って情報も共有する。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "マルチチャネル,オムニチャネル"
+    },
+    {
+        "kotb": "オムニ チャネル",
+        "eigo": "omni channel",
+        "kwsk": "いろんなとこで売って情報も共有してどこでも同じ感じで使えるようにする。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "マルチチャネル,クロスチャネル"
     },
     {
         "kotb": "プロポーシャル",
