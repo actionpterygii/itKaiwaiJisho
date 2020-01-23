@@ -1108,7 +1108,7 @@
     },
     {
         "kotb": "クロスサイト リクエスト フォージェリ",
-        "eigo": "Cross-Site Request Forgeries",
+        "eigo": "Cross Site Request Forgeries",
         "kwsk": "Webアプリケーションの処理を利用者の権限で実行させる。",
         "btmi": "CSRF。",
         "mnim": "",
@@ -1584,8 +1584,8 @@
         "krng": "スタティック"
     },
     {
-        "kotb": "よしなに",
-        "eigo": "yoshina-ni",
+        "kotb": "よしな に",
+        "eigo": "yoshina ni",
         "kwsk": "いいかんじに。",
         "btmi": "",
         "mnim": "",
@@ -2388,7 +2388,7 @@
         "kotb": "オーアール マッパー",
         "eigo": "O/R Mapper",
         "kwsk": "リレーショナルデータベースをオブジェクト指向プログラミングで操作するためのもの。",
-        "btmi": "オブジェクト-リレーショナル マッピング ツール。Object-Relational mapping tool。",
+        "btmi": "オブジェクト リレーショナル マッピング ツール。Object Relational mapping tool。",
         "mnim": "",
         "tigg": "",
         "krng": "リレーショナルデータベース,プログラミング"
@@ -3422,7 +3422,7 @@
 
     {
         "kotb": "シングル サイン オン",
-        "eigo": "Single Sign-On",
+        "eigo": "Single Sign On",
         "kwsk": "一つのアカウントで複数のサービスを使えるようなやつ。",
         "btmi": "SSO。",
         "mnim": "",
@@ -5043,7 +5043,7 @@
     },
     {
         "kotb": "イン アップ パーチェス",
-        "eigo": "In-App Purchase",
+        "eigo": "In App Purchase",
         "kwsk": "アプリ内課金。",
         "btmi": "",
         "mnim": "",
@@ -5305,7 +5305,7 @@
     {
         "kotb": "エンベデッド マルチ メディア カード",
         "eigo": "Embedded Multi Media Card",
-        "kwsk": "半導体メモリを用いて情報を読み書きするやつ。SSDより弱くて組み込む感じ。",
+        "kwsk": "半導体メモリを用いて情報を読み書きするやつ。SSDより弱くてはんだ付けされる感じ。",
         "btmi": "eMMC。",
         "mnim": "",
         "tigg": "",
@@ -6125,7 +6125,7 @@
         "kotb": "ウェブ アセンブリ",
         "eigo": "web assembly",
         "kwsk": "JavaScriptみたいにクライアントサイドのウェブブラウザで動かすプログラミング言語。はやい。",
-        "btmi": "wasm。",
+        "btmi": "wasm。ワスム。",
         "mnim": "",
         "tigg": "",
         "krng": "ジャバスクリプト,クライアント,ウェブブラウザ,プログラミング言語"
@@ -6305,7 +6305,7 @@
         "kotb": "エイチディーシーピー",
         "eigo": "HDCP",
         "kwsk": "著作権的に困るので、最終的に出力するケーブルとかでパクられへんようにする。",
-        "btmi": "High-bandwidth Digital Content Protection。エッチデーセーペー。",
+        "btmi": "High bandwidth Digital Content Protection。エッチデーセーペー。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -6330,7 +6330,7 @@
     },
     {
         "kotb": "クロス オリジン リソース シェアリング",
-        "eigo": "Cross-Origin Resource Sharing",
+        "eigo": "Cross Origin Resource Sharing",
         "kwsk": "異なるオリジン間でデータをやりとりするのやつ。",
         "btmi": "CORS",
         "mnim": "",
@@ -6466,8 +6466,8 @@
     {
         "kotb": "アイデンポテント",
         "eigo": "idenpotent",
-        "kwsk": "冪等。",
-        "btmi": "それを何回しても結果が同じ感じ。",
+        "kwsk": "それを何回しても結果が同じ感じ。",
+        "btmi": "冪等。",
         "mnim": "",
         "tigg": "",
         "krng": ""
