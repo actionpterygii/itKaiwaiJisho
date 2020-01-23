@@ -6574,7 +6574,7 @@
     {
         "kotb": "プロポーザル",
         "eigo": "proposal",
-        "kwsk": "",
+        "kwsk": "企画。提案。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6582,8 +6582,8 @@
     },
     {
         "kotb": "コンポジット",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "composite",
+        "kwsk": "いろいろが合わさってる感じ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6591,21 +6591,48 @@
     },
     {
         "kotb": "エンジン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "engine",
+        "kwsk": "何らかの処理をするためのやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "マークアップ言語",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "マークアップ 言語",
+        "eigo": "markup language",
+        "kwsk": "それによって決められたルールの文字列で文字列を囲ってその文字列に対する情報をつけてるやつ。HTMLとか。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ハイパーテキストマークアップランゲージ,エクステンシブルマークアップランゲージ"
+    },
+    {
+        "kotb": "サーバー サイド レンダリング",
+        "eigo": "Server Side Rendering",
+        "kwsk": "SPAでAjaxでクライアントのHTMLを変更するときに、クライアント側のJSで変更させるのではなくHTMLになってるものをサーバーからもらう。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "シングルページアプリケーション,エイジャックス,クライアント,ハイパーテキストマークアップランゲージ,ジャバスクリプト,サーバー"
+    },
+    {
+        "kotb": "シングル ページ アプリケーション",
+        "eigo": "Single Page Application",
+        "kwsk": "全部読み込み直しのページ遷移なしでやってるウェブページ。",
+        "btmi": "SPA。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ウェブページ"
+    },
+    {
+        "kotb": "エイジャックス",
+        "eigo": "Ajax",
+        "kwsk": "JSで、全部読み込み直しのページ遷移せずにサーバーと通信するやつ。",
+        "btmi": "アジャックス。Asynchronous JavaScript XML。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ジャバスクリプト,サーバー"
     },
     {
         "kotb": "メトリクス",
@@ -7132,6 +7159,60 @@
     {
         "kotb": "プロシージャル",
         "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "マイクロ サービス",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "セッション ハイジャック",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ハイパー テキスト マークアップ ランゲージ",
+        "eigo": "Hyper Text Markup Language",
+        "kwsk": "ウェブページをつくるために使われるマークアップ言語。",
+        "btmi": "HTML。ハイパテキストマーク付け言語。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "マークアップ言語,ウェブページ"
+    },
+    {
+        "kotb": "EXtensible Markup Language",
+        "eigo": "エクステンシブル マークアップ ランゲージ",
+        "kwsk": "データをまとめるために使われるマークアップ言語。",
+        "btmi": "XML。拡張可能なマーク付け言語。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "マークアップ言語,データ"
+    },
+    {
+        "kotb": "Cascading Style Sheets",
+        "eigo": "カスケーディング スタイル シート",
+        "kwsk": "HTMLとかの文書の装飾を定義するやつ。",
+        "btmi": "CSS。段階スタイルシート。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ハイパーテキストマークアップランゲージ"
+    },
+    {
+        "kotb": "JavaScript",
+        "eigo": "ジャバスクリプト",
         "kwsk": "",
         "btmi": "",
         "mnim": "",
