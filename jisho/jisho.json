@@ -7231,15 +7231,15 @@
     {
         "kotb": "ハイパー テキスト マークアップ ランゲージ",
         "eigo": "Hyper Text Markup Language",
-        "kwsk": "ウェブページをつくるために使われるマークアップ言語。",
+        "kwsk": "ウェブページの構造をつくるために使われるマークアップ言語。",
         "btmi": "HTML。ハイパテキストマーク付け言語。",
         "mnim": "",
         "tigg": "",
         "krng": "マークアップ言語,ウェブページ"
     },
     {
-        "kotb": "EXtensible Markup Language",
-        "eigo": "エクステンシブル マークアップ ランゲージ",
+        "kotb": "エクステンシブル マークアップ ランゲージ",
+        "eigo": "EXtensible Markup Language",
         "kwsk": "データをまとめるために使われるマークアップ言語。",
         "btmi": "XML。拡張可能なマーク付け言語。",
         "mnim": "",
@@ -7247,21 +7247,21 @@
         "krng": "マークアップ言語,データ"
     },
     {
-        "kotb": "Cascading Style Sheets",
-        "eigo": "カスケーディング スタイル シート",
-        "kwsk": "HTMLとかの文書の装飾を定義するやつ。",
+        "kotb": "カスケーディング スタイル シート",
+        "eigo": "Cascading Style Sheets",
+        "kwsk": "HTMLとかの文書の装飾を定義するやつ。Webページの見た目を整える。",
         "btmi": "CSS。段階スタイルシート。",
         "mnim": "",
         "tigg": "",
-        "krng": "ハイパーテキストマークアップランゲージ"
+        "krng": "ハイパーテキストマークアップランゲージ,ウェブページ"
     },
     {
-        "kotb": "JavaScript",
-        "eigo": "ジャバスクリプト",
-        "kwsk": "",
+        "kotb": "ジャバスクリプト",
+        "eigo": "JavaScript",
+        "kwsk": "Webブラウザによって実行されるプログラミング言語。Webページに動きをつけられる。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブブラウザ,プログラミング言語,ウェブページ"
     }
 ]
