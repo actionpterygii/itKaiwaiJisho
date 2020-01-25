@@ -1863,10 +1863,10 @@
         "krng": "プログラム"
     },
     {
-        "kotb": "コモディティ化",
+        "kotb": "コモディティゼーション",
         "eigo": "commoditization",
         "kwsk": "商品の個性がなくなる。汎用品化。",
-        "btmi": "",
+        "btmi": "コモディティ化。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1964,11 +1964,11 @@
     {
         "kotb": "グラフィックス プロセッシング ユニット",
         "eigo": "Graphics Processing Unit",
-        "kwsk": "画像処理に特化した処理装置。コアが多い。CPUのように汎用的な処理もできる。",
+        "kwsk": "画像処理に特化した処理装置。コアが多がち。",
         "btmi": "GPU。グラボ。グラフィック ボード。graphic board。ビデオ カード。video card。",
         "mnim": "",
         "tigg": "",
-        "krng": "セントラルプロセッシングユニット"
+        "krng": "セントラルプロセッシングユニット,ジェネラルパーパスコンピューティングオングラフィックスプロセッシングユニッツ"
     },
     {
         "kotb": "セントラル プロセッシング ユニット",
@@ -3012,7 +3012,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "コンパチビリティ"
     },
     {
         "kotb": "コンパチビリティ",
@@ -3021,7 +3021,52 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "バックフォワードコンパチビリティ,アッパーコンパチビリティ"
+        "krng": "コンパチブル"
+    },
+    {
+        "kotb": "フォワード コンパチブル",
+        "eigo": "forward compatible",
+        "kwsk": "新しいバージョンのやつでも、古いバージョンのやつと同じことができる。",
+        "btmi": "前方互換。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "バックワード コンパチブル",
+        "eigo": "backward compatible",
+        "kwsk": "古いバージョンのやつでも、新しいバージョンのやつと同じことができる。",
+        "btmi": "後方互換。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "アップワード コンパチブル",
+        "eigo": "upward compatible",
+        "kwsk": "あるものと同じ性能を発揮できるうえでさらにプラスの能力がある。",
+        "btmi": "上位互換。upper compatible。アッパー コンパチブル。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ダウンワード コンパチブル",
+        "eigo": "upward compatible",
+        "kwsk": "あるものの一部の能力しか持っていないもの。",
+        "btmi": "下位互換。lower compatible。ローワー コンパチブル。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "相互互換",
+        "eigo": "sougogokan",
+        "kwsk": "ほぼ同じ働きができる。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
     },
     {
         "kotb": "クラウド",
@@ -4643,7 +4688,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "コンピューター,データ"
+        "krng": "コンピューター,データ,豆腐"
     },
     {
         "kotb": "コンパイル",
@@ -6482,15 +6527,6 @@
         "krng": "プログラミング言語"
     },
     {
-        "kotb": "バックワード コンパチビリティ",
-        "eigo": "backward compatibility",
-        "kwsk": "新しいバージョンのやつでも、古いバージョンのやつと同じことができる。",
-        "btmi": "後方互換。",
-        "mnim": "",
-        "tigg": "アッパーコンパチビリティ",
-        "krng": "アッパーコンパチビリティ,コンパチビリティ"
-    },
-    {
         "kotb": "データ センター",
         "eigo": "data center",
         "kwsk": "サーバーとかめっちゃ置いてるとこ。",
@@ -6635,36 +6671,18 @@
         "krng": "ジャバスクリプト,サーバー"
     },
     {
-        "kotb": "メトリクス",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "サーマル スロットリング",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "ウェブ アールティーシー",
         "eigo": "Web RTC",
-        "kwsk": "",
-        "btmi": "",
+        "kwsk": "音声や映像とかの大容量データを高速にやりとるやつ。IP電話とかWeb会議とかインターネットテレビ電話のね。",
+        "btmi": "Web Real Time Communication。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データ,インターネット"
     },
     {
         "kotb": "バルク",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "bulk",
+        "kwsk": "容量。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6672,8 +6690,8 @@
     },
     {
         "kotb": "コミッション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "commission",
+        "kwsk": "委任。委任手数料。報酬金。報奨金。賄賂。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6682,16 +6700,7 @@
     {
         "kotb": "インターナル",
         "eigo": "internal",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "コンピテンシー",
-        "eigo": "",
-        "kwsk": "",
+        "kwsk": "内部の。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6699,8 +6708,8 @@
     },
     {
         "kotb": "サムネイル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "thumbnail",
+        "kwsk": "ざっくりと把握するためのちっさい画像。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6708,35 +6717,35 @@
     },
     {
         "kotb": "エン コード",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "en code",
+        "kwsk": "データを変換する(その先の何かによって使える形式に)。",
         "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "mnim": "符号化",
+        "tigg": "デコード",
+        "krng": "デコード,データ"
     },
     {
         "kotb": "デ コード",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "de code",
+        "kwsk": "エンコードしたやつを戻す。",
         "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
+        "mnim": "復号",
+        "tigg": "エンコード",
+        "krng": "エンコード"
     },
     {
         "kotb": "ダンピング",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "dumping",
+        "kwsk": "普通じゃない低い対価で提供しちゃう。",
+        "btmi": "不当廉売",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "プレースホルダー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "placeholder",
+        "kwsk": "入力フォームにだいたい薄く表示されてる入力のヒントや例。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6744,17 +6753,17 @@
     },
     {
         "kotb": "ピクチャー イン ピクチャー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "picture in picture",
+        "kwsk": "動画とかを、画面の隅でちっちゃく再生し続けて置いとくやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "ワーク イン プログレス",
+        "eigo": "Work In Progress",
+        "kwsk": "つくってるとちゅうのやつ。",
         "btmi": "WIP。",
         "mnim": "",
         "tigg": "",
@@ -6762,8 +6771,8 @@
     },
     {
         "kotb": "インテンション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "intention",
+        "kwsk": "意志。意向。意図。目的。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6771,44 +6780,53 @@
     },
     {
         "kotb": "ライフ タイム バリュー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "Life Time Value",
+        "kwsk": "顧客が終わるまでに得られる利益。",
+        "btmi": "LTV。顧客生涯価値。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "タブ ナビング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "tabnabbing",
+        "kwsk": "Webブラウザで新しいリンクをタブで開くとき、開かれたWebページによる制御で開かれ元のページの内容を書き換えることができることを利用した攻撃。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブブラウザ,ハイパーリンク,タブ,ウェブページ"
+    },
+    {
+        "kotb": "タブ",
+        "eigo": "tab",
+        "kwsk": "複数の画面がある際にページの概要とかを小さく表示していてそれを選択したら切り替えれられるGUI。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "グラフィカルユーザーインターフェース"
     },
     {
         "kotb": "リファラ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "referer",
+        "kwsk": "そのWebページに至るひとつまえのWebページ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブページ"
     },
     {
-        "kotb": "",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "RPA",
+        "kotb": "ロボティック プロセス オートメーション",
+        "eigo": "Robotic Process Automation",
+        "kwsk": "主に定型作業をソフトウェアにやらせるやつ。",
+        "btmi": "RPA。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ソフトウェア"
     },
     {
         "kotb": "ペンディング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "pending",
+        "kwsk": "保留。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6816,17 +6834,26 @@
     },
     {
         "kotb": "デジタル トランスフォーメーション",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "Digital transformation",
+        "kwsk": "ITの感じが発展してくと生活とかいろいろ変わってくんちゃうかってやつ。",
+        "btmi": "DX。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "IT。"
+    },
+    {
+        "kotb": "インフォメーション テクノロジー",
+        "eigo": "Information Technology",
+        "kwsk": "情報をいろいろする技術。コンピューターとかでな。",
+        "btmi": "IT。情報技術。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "ジャスト アイデア",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "Just an idea",
+        "kwsk": "思いつき。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6834,35 +6861,44 @@
     },
     {
         "kotb": "クラムシェル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "clamshell",
+        "kwsk": "折りたたみのやつ。",
+        "btmi": "",
+        "mnim": "貝殻",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ワークアラウンド",
+        "eigo": "workaround",
+        "kwsk": "迂回処置。迂回ルート。応急処置。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "コモディティゼーション",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "アイスブレイク",
+        "eigo": "icebreak",
+        "kwsk": "緊張をほぐすためのやつ。",
         "btmi": "",
+        "mnim": "氷壊し",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "メンタシンタクティック バリアブル",
+        "eigo": "metasyntactic variable",
+        "kwsk": "意味がないという意味があるやつ。hoge,fuga,foo,barとか。",
+        "btmi": "メタ構文変数",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "ワーク アラウンド",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "アイスレイク",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "メタ",
+        "eigo": "meta",
+        "kwsk": "高次な。何らかを説明するため在るそれについて説明している何らか。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6870,8 +6906,8 @@
     },
     {
         "kotb": "コンファーム",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "confirm",
+        "kwsk": "確認する。追認する。裏付ける。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6879,8 +6915,8 @@
     },
     {
         "kotb": "コンジェスチョン",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "congestion",
+        "kwsk": "過密。密集。混雑。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6888,26 +6924,8 @@
     },
     {
         "kotb": "トリアージ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "アッパー コンパチビリティ",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "バックフォワードコンパチビリティ",
-        "krng": "バックフォワードコンパチビリティ,コンパチビリティ"
-    },
-    {
-        "kotb": "ジッター",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "triage",
+        "kwsk": "資源が限られている際、どういう優先順位で使わせるかを決める。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6915,62 +6933,62 @@
     },
     {
         "kotb": "フロップス",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "FLOPS",
+        "kwsk": "コンピューターの演算性能を表すやつ。",
+        "btmi": "floating point operations per second",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "リーチャブル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "reachable",
+        "kwsk": "到達可能。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "nfc",
+        "kotb": "ニア フィールド コミュニケーション",
+        "eigo": "Near Field Communication",
+        "kwsk": "機器同士をかざすぐらいの感じでやる近距離無線通信規格。",
+        "btmi": "NFC。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "ロー ハンギング フルーツ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "Low Hanging Fruit",
+        "kwsk": "労力をかけずに得れるもの。",
         "btmi": "",
-        "mnim": "",
+        "mnim": "低い所にぶら下がっている果物",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "ジーピージーピーユー",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kotb": "ジェネラル パーパス コンピューティング オン グラフィックス プロセッシング ユニッツ",
+        "eigo": "General Purpose computing on Graphics Processing Units",
+        "kwsk": "GPUで画像処理以外もするのをささえる技術。",
+        "btmi": "GPGPU。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "グラフィックスプロセッシングユニット"
     },
     {
         "kotb": "インストラクション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "instruction",
+        "kwsk": "指図。指示。教示。教育。命令。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "トランス コード",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "トランスコード",
+        "eigo": "transcode",
+        "kwsk": "データの形式を変更すること。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6978,17 +6996,26 @@
     },
     {
         "kotb": "ニーモニック",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "mnemonic",
+        "kwsk": "機械語の命令に対応させる人間にわかる語。それでアセンブリ言語。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "機械語,アセンブリ言語"
+    },
+    {
+        "kotb": "アセンブリ 言語",
+        "eigo": "assembly language",
+        "kwsk": "機械語と対応してる言語。機械語よりは人が見てわかる。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "機械語,ニーモニック"
     },
     {
         "kotb": "トランスミッター",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "transmitter",
+        "kwsk": "信号を送るやつ。送信機。送信者。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -6996,8 +7023,8 @@
     },
     {
         "kotb": "マイクロ インタラクション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "micro interaction",
+        "kwsk": "行動に対して逐一起こるフィードバック。ボタン押せてる感じのエフェクトとか、読込中のバーとか。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -7005,8 +7032,8 @@
     },
     {
         "kotb": "プログレッシブ エンハンスメント",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "progressive enhancement",
+        "kwsk": "基本的に同じ状況を提供するが、技術的にしたいことをさせてくれる環境のひとにはもっといいいことしてあげる。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -7014,8 +7041,8 @@
     },
     {
         "kotb": "バジェット",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "budget",
+        "kwsk": "予算。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -7023,35 +7050,17 @@
     },
     {
         "kotb": "アービトレーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "arbitration",
+        "kwsk": "対象が複数ある場合にどっちかってきめるかんじ。",
         "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "オプト アウト",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "オプト イン",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
+        "mnim": "仲裁",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "アット ウィル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "at will",
+        "kwsk": "自分勝手に。思うままに。好きなように。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -7059,35 +7068,35 @@
     },
     {
         "kotb": "ターミネート",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "terminate",
+        "kwsk": "終わらせる。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
-        "eigo": "noto font",
-        "kwsk": "",
+        "kotb": "豆腐",
+        "eigo": "tofu",
+        "kwsk": "対応したフォントがないと出る小さめの四角\"□\"。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "フォント"
     },
     {
-        "kotb": "",
-        "eigo": "first world problems",
-        "kwsk": "",
+        "kotb": "ファースト ワールド プロブレム",
+        "eigo": "first world problem",
+        "kwsk": "贅沢な悩み。",
         "btmi": "",
-        "mnim": "",
+        "mnim": "先進国の問題",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "見える化",
         "eigo": "",
-        "kwsk": "",
+        "kwsk": "見えるようにすること。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -7096,25 +7105,25 @@
     {
         "kotb": "自分ごと化",
         "eigo": "",
-        "kwsk": "",
+        "kwsk": "それは自分のことやと考える。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "コモン ゲートウェイ インタフェース",
+        "eigo": "Common Gateway Interface",
+        "kwsk": "ウェブサーバー上でプログラムを実行させて色々させるやつ。",
         "btmi": "CGI。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブサーバー,プログラム"
     },
     {
         "kotb": "テスト ヘッド",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "test bed",
+        "kwsk": "新しい実装を実際の環境に反映させた感じでさせられる環境。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -7122,64 +7131,100 @@
     },
     {
         "kotb": "ドッグフーディング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "dogfooding",
+        "kwsk": "自分の会社の製品をよく使うこと。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "SDK。",
+        "kotb": "フィードバック",
+        "eigo": "feedback",
+        "kwsk": "製品をつかった顧客がかえす意見とか。結果を得てその原因を調整すること。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ソフトウェア デベロップメント キット",
+        "eigo": "Software Development Kit",
+        "kwsk": "ソフトウェアを開発するためのキット。",
+        "btmi": "SDK。ソフトウェア開発キット。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "コンファメーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "confirmation",
+        "kwsk": "確認。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
+        "kotb": "C10K問題",
         "eigo": "",
-        "kwsk": "",
-        "btmi": "C10K。",
+        "kwsk": "Apache HTTP Serverで、クライアントが1万台やとあかんくなる問題。",
+        "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "プロシージャル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "procedural",
+        "kwsk": "手続き的。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "マイクロ サービス",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "マイクロ サービス アーキテクチャ",
+        "eigo": "micro services architecture",
+        "kwsk": "ひとつの大きなのでやるんやなくて、小さいのに分割してやる。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "アーキテクチャ"
     },
     {
         "kotb": "セッション ハイジャック",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "session hijacking",
+        "kwsk": "セッションIDを入手できたら、その人になりすませちゃう。",
         "btmi": "",
         "mnim": "",
+        "tigg": "",
+        "krng": "セッションID"
+    },
+    {
+        "kotb": "セッション ID",
+        "eigo": "session id",
+        "kwsk": "セッションを判別するためにサービスが提供する一意のID。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "セッション"
+    },
+    {
+        "kotb": "セッション",
+        "eigo": "session",
+        "kwsk": "同じひとの一連の行動。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ディスパッチ",
+        "eigo": "dispatch",
+        "kwsk": "迅速に処理する。複数の処理をどうしていくかを決める。",
+        "btmi": "",
+        "mnim": "発送する",
         "tigg": "",
         "krng": ""
     },
