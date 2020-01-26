@@ -102,13 +102,22 @@ main {
 .tango .krng,
 .tango .krng .krng_facade,
 .qrcode {
+    animation-name: syutsugen;
     animation-duration: 0.5s;
-    animation-timing-function: cubic-bezier(0.000, 0.215, 0.950, -0.320);
+    animation-timing-function: cubic-bezier(0.000, 0.620, 1.000, -0.300);
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-play-state: running;
+}
+@keyframes syutsugen {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .tango {
@@ -119,89 +128,32 @@ main {
     border: solid 1px #f9f;
     border-radius: 5px;
     padding: 5px;
-    animation-name: tango;
-}
-@keyframes tango {
-    0% {
-        border: solid 1px #fff;
-    }
-    100% {
-        border: solid 1px #f9f;
-    }
 }
 
 .kotb {
     font-size: 25px;
     background-color: #ff6;
     border-radius: 5px 5px 0px 0px;
-    animation-name: kotb;
-}
-@keyframes kotb {
-    0% {
-        color: #fff;
-        background-color: #fff;
-    }
-    100% {
-        color: #333;
-        background-color: #ff6;
-    }
 }
 
 .eigo {
     font-size: 25px;
     background-color: #ff6;
     border-radius: 0px 0px 5px 5px;
-    animation-name: eigo;
-}
-@keyframes eigo {
-    0% {
-        color: #fff;
-        background-color: #fff;
-    }
-    100% {
-        color: #333;
-        background-color: #ff6;
-    }
 }
 
 .kwsk {
     margin-top: 15px;
     font-size: 18px;
-    animation-name: kwsk;
-}
-@keyframes kwsk {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: #333;
-    }
 }
 
 .btmi {
-    animation-name: btmi;
-}
-@keyframes btmi {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: #333;
-    }
+    color: #333;
 }
 
 .mnim {
     &::before {
         content: 'もとのいみ：';
-    }
-    animation-name: mnim;
-}
-@keyframes mnim {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: #333;
     }
 }
 
@@ -209,49 +161,21 @@ main {
     &::before {
         content: '対義語：';
     }
-    animation-name: tigg;
-}
-@keyframes tigg {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: #333;
-    }
 }
 .krng {
     border: solid 1px #3cc;
     border-radius: 5px;
-    animation-name: krng;
-}
-@keyframes krng {
-    0% {
-        border: solid 1px #fff;
-    }
-    100% {
-        border: solid 1px #3cc;
-    }
 }
 
 .krng_facade {
     display: block;
     border-radius: 3px 3px 3px 3px;
     color: #ff6;
+    background-color: #3cc;
     &::before {
         content: '関連語';
         margin-left: 2px;
         font-size: 15px;
-    }
-    animation-name: krng_f;
-}
-@keyframes krng_f {
-    0% {
-        color: #fff;
-        background-color: #fff;
-    }
-    100% {
-        color: #ff6;
-        background-color: #3cc;
     }
 }
 .krng input {
