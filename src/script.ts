@@ -41,10 +41,7 @@ const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickS
 const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as HTMLButtonElement;
 
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
-// const kisekae_btn: HTMLButtonElement = document.getElementById('kisekae_btn') as HTMLButtonElement;
-
 const random_btn: HTMLButtonElement = document.getElementById('random_btn') as HTMLButtonElement;
-
 const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
 
 // 辞書情報を辞書jsonから取得する
@@ -215,7 +212,7 @@ function search(jisho: jisho, input_text: string, exact_match: boolean): jisho
             return required_elements;
         }
     }
-    // 中身が空のjisho要素を返します。関数的にそうでないとおかしいっていわれます。
+    // 中身が空のjisho要素を返します。関数的にそうでないとおかしいっていわれます。が、ここに来ることは普通ないでしょう？？()
     return [{"":""}];
 }
 
@@ -417,11 +414,12 @@ document.addEventListener("DOMContentLoaded", function()
     }
 });
 
-// qrコードボタンが押されたら
+// QRコードボタンが押されたら
 qrcode_btn.addEventListener('click', function()
 {
+    // 次の要素(QRコード画像)取得
     const qrcode_img: Element = qrcode_btn!.nextElementSibling!;
-    console.log(qrcode_img);
+    // 現れている状態のQRコード画像スタイルを、なかったらつけて、あったら消す。
     qrcode_img.classList.toggle('qrcode__open');
 });
 
@@ -431,12 +429,6 @@ nyuryoku_btn.addEventListener('click', function()
     // いんぷっとえりあにフォーカス
     input_area.focus();
 });
-
-// // きせかえボタンが押されたら
-// kisekae_btn.addEventListener('click', function()
-// {
-//     // カラーのメニュー表示
-// });
 
 // それはランダムの表示ボタンが押されることにより達成されます
 random_btn.addEventListener('click', function()
