@@ -54,24 +54,25 @@ main {
     padding-bottom: 15px;
     background-color: #fff;
     box-shadow:rgba(33, 33, 33, 0.3) 0px 0px 6px 1px;
+    z-index: 100;
 }
 
 #input_area_wrap {
-    width: 100%;
+    width: 0px;
     border-bottom: solid 3px #3cc;
     animation-name: inputarea;
     animation-duration: 0.5s;
     animation-timing-function: cubic-bezier(0.265, 0.260, 0.995, -0.385);
-    animation-delay: 0s;
+    animation-delay: 1s;
     animation-iteration-count: 1;
     animation-direction: alternate;
-    animation-fill-mode: none;
+    animation-fill-mode: forwards;
     animation-play-state: running;
 }
 
 @keyframes inputarea {
     0% {
-        width: 10px;
+        width: 0px;
     }
     100% {
         width: 100%;
@@ -95,6 +96,21 @@ main {
     margin-bottom: 20px;
 }
 
+.tango,
+.tango h2,
+.tango p,
+.tango .krng,
+.tango .krng .krng_facade,
+.qrcode {
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.000, 0.215, 0.950, -0.320);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
 .tango {
     display: block;
     text-decoration: none;
@@ -103,45 +119,139 @@ main {
     border: solid 1px #f9f;
     border-radius: 5px;
     padding: 5px;
+    animation-name: tango;
+}
+@keyframes tango {
+    0% {
+        border: solid 1px #fff;
+    }
+    100% {
+        border: solid 1px #f9f;
+    }
 }
 
 .kotb {
     font-size: 25px;
     background-color: #ff6;
     border-radius: 5px 5px 0px 0px;
+    animation-name: kotb;
 }
+@keyframes kotb {
+    0% {
+        color: #fff;
+        background-color: #fff;
+    }
+    100% {
+        color: #333;
+        background-color: #ff6;
+    }
+}
+
 .eigo {
     font-size: 25px;
     background-color: #ff6;
     border-radius: 0px 0px 5px 5px;
+    animation-name: eigo;
 }
+@keyframes eigo {
+    0% {
+        color: #fff;
+        background-color: #fff;
+    }
+    100% {
+        color: #333;
+        background-color: #ff6;
+    }
+}
+
 .kwsk {
     margin-top: 15px;
     font-size: 18px;
+    animation-name: kwsk;
 }
+@keyframes kwsk {
+    0% {
+        color: #fff;
+    }
+    100% {
+        color: #333;
+    }
+}
+
+.btmi {
+    animation-name: btmi;
+}
+@keyframes btmi {
+    0% {
+        color: #fff;
+    }
+    100% {
+        color: #333;
+    }
+}
+
 .mnim {
     &::before {
         content: 'もとのいみ：';
     }
+    animation-name: mnim;
 }
+@keyframes mnim {
+    0% {
+        color: #fff;
+    }
+    100% {
+        color: #333;
+    }
+}
+
 .tigg {
     &::before {
         content: '対義語：';
+    }
+    animation-name: tigg;
+}
+@keyframes tigg {
+    0% {
+        color: #fff;
+    }
+    100% {
+        color: #333;
     }
 }
 .krng {
     border: solid 1px #3cc;
     border-radius: 5px;
+    animation-name: krng;
 }
+@keyframes krng {
+    0% {
+        border: solid 1px #fff;
+    }
+    100% {
+        border: solid 1px #3cc;
+    }
+}
+
 .krng_facade {
     display: block;
-    background-color: #3cc;
     border-radius: 3px 3px 3px 3px;
     color: #ff6;
     &::before {
         content: '関連語';
         margin-left: 2px;
         font-size: 15px;
+    }
+    animation-name: krng_f;
+}
+@keyframes krng_f {
+    0% {
+        color: #fff;
+        background-color: #fff;
+    }
+    100% {
+        color: #ff6;
+        background-color: #3cc;
     }
 }
 .krng input {
@@ -198,6 +308,15 @@ main {
             display: none;
             &__open {
                 display: block;
+                animation-name: qrcode;
+            }
+            @keyframes qrcode {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
             }
         }
     }

@@ -318,12 +318,17 @@ function createKanrengo(krng_facade: HTMLLabelElement)
     krng_contents.innerHTML = (function()
     {
         // 最後に返す要素
+        // 関連語の内容がなければ空を返させるので
         let entity: HTMLString = '';
-        // 単語たちをひとつずつ触っていく
-        for (const key in tangos)
+        // 関連語の内容がなければ
+        if (!krng_contents.innerHTML)
         {
-            // でそのひと単語の情報からHTMLを作成して追加していく
-            entity += createExactResult(jisho, tangos[key]);
+            // 単語たちをひとつずつ触っていく
+            for (const key in tangos)
+            {
+                // でそのひと単語の情報からHTMLを作成して追加していく
+                entity += createExactResult(jisho, tangos[key]);
+            }
         }
         // かえす
         return entity;
@@ -433,6 +438,8 @@ nyuryoku_btn.addEventListener('click', function()
 // それはランダムの表示ボタンが押されることにより達成されます
 random_btn.addEventListener('click', function()
 {
+    // 一番上にスムーススクロール
+    window.scrollTo({top: 0, behavior: "smooth"});
     // 単語の数取得
     const tango_quantity: number = Object.keys(jisho).length;
     // 単語の数内でランダムにただひとつの番号を得ました
