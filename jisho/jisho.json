@@ -236,7 +236,7 @@
     {
         "kotb": "アフォーダンス",
         "eigo": "affordance",
-        "kwsk": "人と物の関係性をユーザに伝達すること。",
+        "kwsk": "人と物の関係性をユーザーに伝達すること。",
         "btmi": "",
         "mnim": "動物と者の間に存在する行為についての関係性そのもの",
         "tigg": "",
@@ -393,7 +393,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "ハードディスク,オペレーティングシステム"
+        "krng": "ハードディスクドライブ,オペレーティングシステム"
     },
     {
         "kotb": "デプロイ",
@@ -1730,7 +1730,7 @@
     {
         "kotb": "クッキー",
         "eigo": "cookie",
-        "kwsk": "ウェブサイトに必要なデータを使い回すためにユーザ側に保存するしくみ。",
+        "kwsk": "ウェブサイトに必要なデータを使い回すためにユーザー側に保存するしくみ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -1962,22 +1962,22 @@
         "krng": ""
     },
     {
-        "kotb": "グラフィックス プロセッシング ユニット",
-        "eigo": "Graphics Processing Unit",
+        "kotb": "GPU",
+        "eigo": "",
         "kwsk": "画像処理に特化した処理装置。コアが多がち。",
-        "btmi": "GPU。グラボ。グラフィック ボード。graphic board。ビデオ カード。video card。",
+        "btmi": "Graphics Processing Unit。グラフィックス プロセッシング ユニット。グラボ。グラフィック ボード。graphic board。ビデオ カード。video card。",
         "mnim": "",
         "tigg": "",
-        "krng": "セントラルプロセッシングユニット,ジェネラルパーパスコンピューティングオングラフィックスプロセッシングユニッツ"
+        "krng": "CPU,GPGPU"
     },
     {
-        "kotb": "セントラル プロセッシング ユニット",
-        "eigo": "Central Processing Unit",
+        "kotb": "CPU",
+        "eigo": "",
         "kwsk": "中央処理装置。",
-        "btmi": "CPU。",
+        "btmi": "Central Processing Unit。セントラル プロセッシング ユニット。",
         "mnim": "",
         "tigg": "",
-        "krng": "グラフィックスプロセッシングユニット"
+        "krng": "GPU"
     },
     {
         "kotb": "マザーボード",
@@ -2900,7 +2900,7 @@
     {
         "kotb": "トラッキング",
         "eigo": "tracking",
-        "kwsk": "インターネット上のユーザ行動を収集する。",
+        "kwsk": "インターネット上のユーザー行動を収集する。",
         "btmi": "",
         "mnim": "追跡する",
         "tigg": "",
@@ -4009,11 +4009,11 @@
     {
         "kotb": "スタック オーバーフロー",
         "eigo": "stack overflow",
-        "kwsk": "格納できるできる以上の情報が来てあふれてしまう。プログラミング系の質問したりするウェブサイト。",
+        "kwsk": "格納できるできる以上の情報が来てあふれてしまう。プログラミング系の質問したりするウェブサイトの名前。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "プログラミング,ウェブサイト"
+        "krng": "スタック,プログラミング,ウェブサイト"
     },
     {
         "kotb": "シャドーイング",
@@ -6335,7 +6335,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "セントラルプロセッシングユニット"
+        "krng": "CPU"
     },
     {
         "kotb": "フット プリント",
@@ -6977,13 +6977,13 @@
         "krng": ""
     },
     {
-        "kotb": "ジェネラル パーパス コンピューティング オン グラフィックス プロセッシング ユニッツ",
-        "eigo": "General Purpose computing on Graphics Processing Units",
+        "kotb": "GPGPU",
+        "eigo": "",
         "kwsk": "GPUで画像処理以外もするのをささえる技術。",
-        "btmi": "GPGPU。",
+        "btmi": "General Purpose computing on Graphics Processing Units。ジェネラル パーパス コンピューティング オン グラフィックス プロセッシング ユニッツ。",
         "mnim": "",
         "tigg": "",
-        "krng": "グラフィックスプロセッシングユニット"
+        "krng": "GPU"
     },
     {
         "kotb": "インストラクション",
@@ -7272,5 +7272,185 @@
         "mnim": "",
         "tigg": "",
         "krng": "ウェブブラウザ,プログラミング言語,ウェブページ"
+    },
+    {
+        "kotb": "デプレケーテッド",
+        "eigo": "deprecated",
+        "kwsk": "廃止予定。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "オブソリート",
+        "eigo": "obsolete",
+        "kwsk": "時代遅れ。廃れている。使えない。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ベンチマーク",
+        "eigo": "benchmark",
+        "kwsk": "性能の指標。経営の目標。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ベスト プラクティス",
+        "eigo": "best practice",
+        "kwsk": "一番いい方法。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サンクス ページ",
+        "eigo": "thanks page",
+        "kwsk": "何らかが完了したときに出すページ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リ ターゲティング",
+        "eigo": "re targeting",
+        "kwsk": "行動を追跡して、見たやつをもっかい見せるやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "イベント",
+        "eigo": "event",
+        "kwsk": "何らかの動きに応じて動く何らか。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "発火"
+    },
+    {
+        "kotb": "プロモーション",
+        "eigo": "promotion",
+        "kwsk": "認知させる活動。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ポップ アップ",
+        "eigo": "pop up",
+        "kwsk": "画面にポンってでてくるやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "モーダル",
+        "eigo": "modal",
+        "kwsk": "画面の全面に出てきてそれを閉じるまでは元の画面が触れない感じのやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ランディング ページ",
+        "eigo": "Landing Page",
+        "kwsk": "Webサイトでユーザーが最初に訪問したページ。商品を伝えるための主に縦長の専用ページ。",
+        "btmi": "LP。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ウェブサイト"
+    },
+    {
+        "kotb": "ペライチ",
+        "eigo": "",
+        "kwsk": "もうそれだけの独立した感じのウェブページ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ウェブページ"
+    },
+    {
+        "kotb": "AB テスト",
+        "eigo": "AB test",
+        "kwsk": "同じウェブページに訪問された際に複数パターンを用意して成果とかを比べる。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ウェブページ"
+    },
+    {
+        "kotb": "発火",
+        "eigo": "",
+        "kwsk": "何らかの条件で動くようになってるやつを動かすやつが動くこと。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "イベント"
+    },
+    {
+        "kotb": "ハード コーディング",
+        "eigo": "hard coding",
+        "kwsk": "本来はもっと良い実装にするべきなのが明白な記述を何らかの原因で直接的に書く。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "コーディング,プログラミング,ソースコード"
+    },
+    {
+        "kotb": "フォーム",
+        "eigo": "form",
+        "kwsk": "何らかを入力するために形式ばってるやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "WBS",
+        "eigo": "",
+        "kwsk": "作業を分割してどうコストかけるかとかを考えるやつ。",
+        "btmi": "Work Breakdown Structure。ワーク ブレイクダウン ストラクチャー。作業分解構成図。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ギャザリング",
+        "eigo": "gathering",
+        "kwsk": "集まってる感じ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "PHP",
+        "eigo": "",
+        "kwsk": "サーバーサイドでウェブページ(HTML)を生成するためによく使われるプログラミング言語。",
+        "btmi": "PHP: Hypertext Preprocessor。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "サーバー,ウェブページ,HTML,プログラミング言語"
+    },
+    {
+        "kotb": "ページ ビュー",
+        "eigo": "Page Views",
+        "kwsk": "Webページが表示された回数。",
+        "btmi": "PV。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ウェブページ"
     }
 ]
