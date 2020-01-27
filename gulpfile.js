@@ -19,6 +19,18 @@ const srcImages = './images/';
 const dist = './docs/';
 const distImages = dist + 'images/';
 
+// const tsProject = function()
+// {
+//     return tysc.createProject('tsconfig.json', function() {
+//         typescript: require('typescript')
+//     });
+// };
+
+// const tsProject = tysc.createProject('tsconfig.json');
+// const tsProject = tysc.createProject('tsconfig.json', function() {
+//     typescript: require('typescript')
+// });
+
 
 gulp.task('html', function()
 {
@@ -65,7 +77,15 @@ gulp.task('watchJs', function()
 
 gulp.task('ts', function()
 {
-    return gulp.src(src + '*.ts')
+    // return gulp.src(src + '*.ts')
+    //     .pipe(changed(dist))
+    //     // .pipe(tysc({ target: "ES5", removeComments: true}))
+    //     .pipe(tysc(tsProject))
+    //     .pipe(babel({"presets": ["@babel/preset-env"]}))
+    //     .pipe(jsmin())
+    //     .pipe(gulp.dest(dist));
+
+        return gulp.src(src + '*.ts')
         .pipe(changed(dist))
         .pipe(tysc({ target: "ES5", removeComments: true}))
         .pipe(babel({"presets": ["@babel/preset-env"]}))

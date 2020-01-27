@@ -81,6 +81,18 @@ let selected_text: string | null = null;
 // 関数
 ////////////////////
 
+// 時間を止めるためのもの
+// function sleep(time: number)
+// {
+//     return new Promise(function(resolve, reject)
+//     {
+//         setTimeout(function()
+//         {
+//             resolve("");
+//         },time);
+//     });
+// }
+
 // ひらがなをカナカナに変換するための
 function hiraToKata(input_text: string): string
 {
@@ -330,6 +342,13 @@ function createKanrengo(krng_facade: HTMLLabelElement)
                 entity += createExactResult(jisho, tangos[key]);
             }
         }
+        else
+        {
+            // (async function()
+            // {
+            //     await sleep(1000);
+            // })();
+        }
         // かえす
         return entity;
     }
@@ -394,6 +413,8 @@ document.addEventListener("DOMContentLoaded", function()
         // ひとつのボタンのための処理
         quickSearch_btns[key].addEventListener('click', function()
         {
+            // 一番上にスムーススクロール
+            window.scrollTo({top: 0, behavior: "smooth"});
             // その単語が入力されているものとする
             input_text = quickSearch_btns[key].getAttribute('value')!;
             // 単語を入力エリアに入れる
