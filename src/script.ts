@@ -81,18 +81,6 @@ let selected_text: string | null = null;
 // 関数
 ////////////////////
 
-// 時間を止めるためのもの
-// function sleep(time: number)
-// {
-//     return new Promise(function(resolve, reject)
-//     {
-//         setTimeout(function()
-//         {
-//             resolve("");
-//         },time);
-//     });
-// }
-
 // ひらがなをカナカナに変換するための
 function hiraToKata(input_text: string): string
 {
@@ -341,13 +329,6 @@ function createKanrengo(krng_facade: HTMLLabelElement)
                 // でそのひと単語の情報からHTMLを作成して追加していく
                 entity += createExactResult(jisho, tangos[key]);
             }
-        }
-        else
-        {
-            // (async function()
-            // {
-            //     await sleep(1000);
-            // })();
         }
         // かえす
         return entity;
