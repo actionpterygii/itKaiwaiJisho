@@ -658,6 +658,24 @@
         "krng": "オープンソース,フォント"
     },
     {
+        "kotb": "ホスト",
+        "eigo": "host",
+        "kwsk": "'www.exsample.com'のぶぶん。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サイト リライアビリティ エンジニアリング",
+        "eigo": "Site Reliability Engineering",
+        "kwsk": "",
+        "btmi": "SRE。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
         "kotb": "アイスレイク",
         "eigo": "",
         "kwsk": "",
