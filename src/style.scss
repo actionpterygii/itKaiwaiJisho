@@ -10,6 +10,11 @@
 //     }
 // }
 
+// :root {
+//     --text: #333;
+//     --background: #fff;
+// }
+
 body,
 header,main,section,
 div,section,
@@ -240,6 +245,51 @@ main {
                 }
                 100% {
                     opacity: 1;
+                }
+            }
+        }
+
+        .toggle_btn {
+            appearance: none;
+            -webkit-appearance: none;
+            display: inline-block;
+            width: 25px;
+            height: 9px;
+            border: 0px solid rgba(0,0,0,0.0);
+            border-radius: 50px;
+            background-color: #dddddd;
+            transition: background-color .4s ease;
+            cursor: pointer;
+            & + label {
+                position: relative;
+                display: inline-block;
+                top: 3px;
+                left: -30px;
+                width: 15px;
+                height: 15px;
+                border: 0px solid rgba(0,0,0,0.0);
+                border-radius: 50%;
+                background-color: #3CC;
+                box-shadow: 0 0 4px rgba(33, 33, 33, 0.3);
+                transition: left .4s ease, background-color .4s ease;
+                cursor: pointer;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:checked {
+                background-color: #bbbbbb;
+                & + label {
+                    position: relative;
+                    display: inline-block;
+                    top: 3px;
+                    left: -17px;
+                    width: 15px;
+                    height: 15px;
+                    border: 0px solid rgba(0,0,0,0.0);
+                    border-radius: 50%;
+                    background-color: #ff6;
+                    box-shadow: 0 0 4px rgba(33, 33, 33, 0.3);
                 }
             }
         }
