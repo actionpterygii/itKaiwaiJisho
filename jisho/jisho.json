@@ -1287,10 +1287,10 @@
         "krng": ""
     },
     {
-        "kotb": "アプリケーション プログラミング インターフェース",
-        "eigo": "Application Programming Interface",
+        "kotb": "API",
+        "eigo": "",
         "kwsk": "プログラムの機能を外部から呼び出すさいの規約。",
-        "btmi": "API。",
+        "btmi": "Application Programming Interface。アプリケーション プログラミング インターフェース。",
         "mnim": "",
         "tigg": "",
         "krng": ""
@@ -1638,58 +1638,58 @@
         "krng": ""
     },
     {
-        "kotb": "チーフ エグゼクティブ オフィサー",
-        "eigo": "Chief Exective Officer",
+        "kotb": "CEO",
+        "eigo": "",
         "kwsk": "最高経営責任者。",
-        "btmi": "CEO。",
+        "btmi": "Chief Exective Officer。チーフ エグゼクティブ オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "COO,CFO,CIO,CTO,CKO"
     },
     {
-        "kotb": "チーフ オペレーティング オフィサー",
-        "eigo": "Chief Operating Officer",
+        "kotb": "COO",
+        "eigo": "",
         "kwsk": "最高執行責任者。",
-        "btmi": "COO。",
+        "btmi": "Chief Operating Officer。チーフ オペレーティング オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "CEO,CFO,CIO,CTO,CKO"
     },
     {
-        "kotb": "チーフ ファイナンシャル オフィサー",
-        "eigo": "Cheif Financial Officer",
+        "kotb": "CFO",
+        "eigo": "",
         "kwsk": "最高財務責任者。",
-        "btmi": "CFO。",
+        "btmi": "Cheif Financial Officer。チーフ ファイナンシャル オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "CEO,COO,CIO,CTO,CKO"
     },
     {
-        "kotb": "チーフ インフォメーション オフィサー",
-        "eigo": "Chief Information Officer",
+        "kotb": "CIO",
+        "eigo": "",
         "kwsk": "最高情報責任者。",
-        "btmi": "CIO。",
+        "btmi": "Chief Information Officer。チーフ インフォメーション オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "CEO,COO,CFO,CTO,CKO"
     },
     {
-        "kotb": "チーフ テクノロジー オフィサー",
-        "eigo": "Chief Technology Officer",
+        "kotb": "CTO",
+        "eigo": "",
         "kwsk": "最高技術責任者。",
-        "btmi": "CTO。",
+        "btmi": "Chief Technology Officer。チーフ テクノロジー オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "CEO,COO,CFO,CIO,CKO"
     },
     {
-        "kotb": "チーフ ナレッジ オフィサー",
-        "eigo": "Chief Knowledge Officer",
+        "kotb": "CKO",
+        "eigo": "",
         "kwsk": "最高知識責任者。",
-        "btmi": "CKO。",
+        "btmi": "Chief Knowledge Officer。チーフ ナレッジ オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "CEO,COO,CFO,CIO,CTO"
     },
     {
         "kotb": "リレーション",
@@ -5267,10 +5267,10 @@
         "krng": ""
     },
     {
-        "kotb": "コンテンツ マネジメント システム",
-        "eigo": "content management system",
+        "kotb": "CMS",
+        "eigo": "",
         "kwsk": "ウェブサイト等を管理するやつ。",
-        "btmi": "CMS。",
+        "btmi": "content management system。コンテンツ マネジメント システム。",
         "mnim": "",
         "tigg": "",
         "krng": "ウェブサイト"
@@ -6290,7 +6290,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "端末,アプリケーション,サーバー"
+        "krng": "アプリケーションソフトウェア,サーバー"
     },
     {
         "kotb": "シングル ボード コンピューター",
@@ -7168,7 +7168,7 @@
     {
         "kotb": "C10K問題",
         "eigo": "",
-        "kwsk": "Apache HTTP Serverで、クライアントが1万台やとあかんくなる問題。",
+        "kwsk": "Apache HTTP Serverで、クライアントが1万台こえるとあかんくなる問題。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -7259,7 +7259,7 @@
         "kotb": "ジャバスクリプト",
         "eigo": "JavaScript",
         "kwsk": "Webブラウザによって実行されるプログラミング言語。Webページに動きをつけられる。",
-        "btmi": "",
+        "btmi": "JS。",
         "mnim": "",
         "tigg": "",
         "krng": "ウェブブラウザ,プログラミング言語,ウェブページ"
@@ -7524,5 +7524,59 @@
         "mnim": "",
         "tigg": "",
         "krng": ""
+    },
+    {
+        "kotb": "ダーク モード",
+        "eigo": "dark mode",
+        "kwsk": "暗い色のモード。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ハイブリット アプリケーション",
+        "eigo": "hybrid application",
+        "kwsk": "ネイティブアプリの上でHTML,CSS,JSといったWebアプリ要素で主に動かすやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ネイティブアプリケーション,ウェブアプリケーション,HTML,CSS,ジャバスクリプト"
+    },
+    {
+        "kotb": "ワードプレス",
+        "eigo": "WordPress",
+        "kwsk": "PHPでできているCMS。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "PHP,CMS"
+    },
+    {
+        "kotb": "ローカル ストレージ",
+        "eigo": "local strage",
+        "kwsk": "ユーザーが操作する端末上に保存するやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "端末",
+        "eigo": "",
+        "kwsk": "そこに何かが表示されるまでにはいろいろあるけど、実際ユーザーが操作するパソコンとかスマホとかのこと。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サーバー ベース コンピューティング",
+        "eigo": "Server Based Computing",
+        "kwsk": "端末では操作と通信をして、他(アプリケーションの実行とか)はサーバー上でやるかんじ。",
+        "btmi": "SBC。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "端末,アプリケーションソフトウェア,サーバー"
     }
 ]
