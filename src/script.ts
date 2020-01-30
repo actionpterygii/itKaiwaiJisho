@@ -37,6 +37,7 @@ const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivEleme
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 
+const darkMode_btn: HTMLButtonElement = document.getElementById('darkMode_btn') as HTMLButtonElement;
 const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
 const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as HTMLButtonElement;
 
@@ -385,11 +386,31 @@ all_area.addEventListener('touchend', function()
     }
 });
 
+let flg = false;
+// ダークモード
+darkMode_btn.addEventListener('click', function()
+{
+    if(flg)
+    {
+
+        document.documentElement.style.setProperty('--text', '#333');
+        document.documentElement.style.setProperty('--background', '#FFF');
+        flg = false;
+    }
+    else
+    {
+        document.documentElement.style.setProperty('--text', '#FFF');
+        document.documentElement.style.setProperty('--background', '#333');
+    flg = true;
+    }
+});
+
 // HTMLパースが終わってから発火
-document.addEventListener("DOMContentLoaded", function()
+document.addEventListener('DOMContentLoaded', function()
 {
     // クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
-    for (const key in quickSearch_btns)
+    // classからとったオブジェクトに適応するための形です。
+    for (let key = 0; key < quickSearch_btns['length']; key++)
     {
         // ひとつのボタンのための処理
         quickSearch_btns[key].addEventListener('click', function()
