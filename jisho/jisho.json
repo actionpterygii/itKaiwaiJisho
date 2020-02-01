@@ -389,11 +389,11 @@
     {
         "kotb": "イニシャライズ",
         "eigo": "initialize",
-        "kwsk": "ハードディスク等をOSが利用可能な状態にすること。初期化。",
+        "kwsk": "HDD等をOSが利用可能な状態にすること。初期化。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "ハードディスクドライブ,オペレーティングシステム"
+        "krng": "HDD,オペレーティングシステム"
     },
     {
         "kotb": "デプロイ",
@@ -4970,22 +4970,22 @@
         "krng": ""
     },
     {
-        "kotb": "ハード ディスク ドライブ",
-        "eigo": "Hard Disk Drive",
+        "kotb": "HDD",
+        "eigo": "",
         "kwsk": "磁気ディスクを回転させて情報を読み書きするやつ。SSDより安い。",
-        "btmi": "HDD。",
+        "btmi": "Hard Disk Drive。ハード ディスク ドライブ。",
         "mnim": "",
         "tigg": "",
-        "krng": "磁気ディスク,ソリッドステートドライブ"
+        "krng": "磁気ディスク,SSD"
     },
     {
-        "kotb": "ソリッド ステート ドライブ",
-        "eigo": "Solid State Drive",
+        "kotb": "SSD",
+        "eigo": "",
         "kwsk": "半導体メモリを用いて情報を読み書きするやつ。HDDより値段以外はだいたい良い。",
-        "btmi": "SSD。",
+        "btmi": "Solid State Drive。ソリッド ステート ドライブ。",
         "mnim": "",
         "tigg": "",
-        "krng": "半導体,メモリ,ハードディスクドライブ"
+        "krng": "半導体,メモリ,HDD,eMMC"
     },
     {
         "kotb": "半導体",
@@ -5075,7 +5075,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "ダウンロード,プリインストール"
+        "krng": "ソフトウェア,ダウンロード,プリインストール"
     },
     {
         "kotb": "イン アップ パーチェス",
@@ -5084,7 +5084,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "アプリケーションソフトウェア"
     },
     {
         "kotb": "アダプティブ デザイン",
@@ -5348,13 +5348,13 @@
         "krng": ""
     },
     {
-        "kotb": "エンベデッド マルチ メディア カード",
-        "eigo": "Embedded Multi Media Card",
+        "kotb": "eMMC",
+        "eigo": "",
         "kwsk": "半導体メモリを用いて情報を読み書きするやつ。SSDより弱くてはんだ付けされる感じ。",
-        "btmi": "eMMC。",
+        "btmi": "Embedded Multi Media Card。エンベデッド マルチ メディア カード。",
         "mnim": "",
         "tigg": "",
-        "krng": "ソリッドステートドライブ"
+        "krng": "SSD"
     },
     {
         "kotb": "パブリック ドメイン",
