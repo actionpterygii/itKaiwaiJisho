@@ -397,14 +397,14 @@ darkMode_btn.addEventListener('click', function()
     if(flg)
     {
 
-        document.documentElement.style.setProperty('--text', '#333');
+        document.documentElement.style.setProperty('--text', '#555');
         document.documentElement.style.setProperty('--background', '#FFF');
         flg = false;
     }
     else
     {
         document.documentElement.style.setProperty('--text', '#FFF');
-        document.documentElement.style.setProperty('--background', '#333');
+        document.documentElement.style.setProperty('--background', '#555');
     flg = true;
     }
 });
