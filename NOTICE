@@ -1,6 +1,10 @@
 IT Kaiwai Jisho
-Copyright 2019 actionpterygii
+Copyright 2020 actionpterygii
 
 This software contains code derived from the pwacompat by Google.
-(https://github.com/GoogleChromeLabs/pwacompat).
+(https://github.com/GoogleChromeLabs/pwacompat/blob/master/LICENSE).
 Licensed under Apache-2.0
+
+Copyright (c) 2013 Dustan Kasten
+(https://github.com/iamdustan/smoothscroll/blob/master/LICENSE).
+Released under the MIT license
