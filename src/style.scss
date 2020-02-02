@@ -262,8 +262,7 @@ main {
             height: 9px;
             border: 0px solid rgba(0,0,0,0.0);
             border-radius: 50px;
-            background-color: #dddddd;
-            transition: background-color .4s ease;
+            background-color: #F9F;
             cursor: pointer;
             & + label {
                 position: relative;
@@ -283,7 +282,6 @@ main {
                 outline: none;
             }
             &:checked {
-                background-color: #bbbbbb;
                 & + label {
                     position: relative;
                     display: inline-block;

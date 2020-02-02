@@ -25,14 +25,15 @@ type jisho = [{[key: string]: string;}];
 type tango = {[key: string]: string;};
 // HTMLとしての文字列
 type HTMLString = string;
-
+// なんかこれやらんとつかえんのですわ
+interface HTMLButtonElement {checked: boolean};
 
 
 ////////////////////
 // 定数
 ////////////////////
 
-//HTML要素
+// HTML要素
 const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
@@ -44,6 +45,9 @@ const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as H
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
 const random_btn: HTMLButtonElement = document.getElementById('random_btn') as HTMLButtonElement;
 const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
+
+// CSS要素
+const style_sheet: CSSStyleDeclaration = document.documentElement.style;
 
 // 辞書情報を辞書jsonから取得する
 var jisho: jisho;
@@ -75,6 +79,10 @@ let input_text: string = '';
 
 // 選択された文字(ぐぐるボタンを押したときに更新)
 let selected_text: string | null = null;
+
+// ダークモードか否かのやつ
+let darkMode_flg: boolean = false;
+
 
 
 
@@ -310,8 +318,6 @@ function createExactResult(jisho: jisho, input_text: string): HTMLString
     return createHtml(search(jisho, input_text, true)[0]);
 }
 
-
-
 // 関連語を開くボタンがおされたら呼ばれる関数
 function createKanrengo(krng_facade: HTMLLabelElement)
 {
@@ -339,6 +345,34 @@ function createKanrengo(krng_facade: HTMLLabelElement)
         return entity;
     }
     )();
+}
+
+// 今のダークモード状態によってダークモード状態を変えて状態を記憶させる処理もします
+function changeDarkMode(private_darkMode_flg: boolean)
+{
+    // ダークモードになっていたら
+    if(private_darkMode_flg)
+    {
+        // ダークモードじゃなくすように書き換える
+        // cssの`:root`にある記述を書き換える系
+        style_sheet.setProperty('--text', '#555');
+        style_sheet.setProperty('--background', '#FFF');
+        // フラグはかきかえましょうね
+        darkMode_flg = false;
+        // ローカルストレージのダークモード情報を削除
+        localStorage.removeItem('darkMode');
+    }
+    // ダークモードになっていないときは
+    else
+    {
+        // ダークモードになるように書き換える
+        style_sheet.setProperty('--text', '#FFF');
+        style_sheet.setProperty('--background', '#555');
+        // フラグはかきかえましょうね
+        darkMode_flg = true;
+        // ローカルストレージに状態を保存
+        localStorage.setItem('darkMode', 'true');
+    }
 }
 
 
@@ -390,28 +424,27 @@ all_area.addEventListener('touchend', function()
     }
 });
 
-let flg = false;
-// ダークモード
-darkMode_btn.addEventListener('click', function()
+// ダークモードトグルボタンが変わったら
+darkMode_btn.addEventListener('change', function()
 {
-    if(flg)
-    {
-
-        document.documentElement.style.setProperty('--text', '#555');
-        document.documentElement.style.setProperty('--background', '#FFF');
-        flg = false;
-    }
-    else
-    {
-        document.documentElement.style.setProperty('--text', '#FFF');
-        document.documentElement.style.setProperty('--background', '#555');
-    flg = true;
-    }
+    // ダークモード状態を変えるのです
+    changeDarkMode(darkMode_flg);
 });
 
 // HTMLパースが終わってから発火
 document.addEventListener('DOMContentLoaded', function()
 {
+    // ダークモードに関する処理
+    // ローカルストレージがダークモードだと言っているののあら
+    if (localStorage.getItem('darkMode') === 'true')
+    {
+        // ダークモードにさせる各種処理
+        changeDarkMode(false);
+        // ダークモードトグルボタンをチェックした状態にしちゃいましょう
+        darkMode_btn.checked = true;
+    }
+
+    // クイックサーチボタン(readme的なとこに書いてあるJISHOで間作するためのリンク)に関する処理
     // クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
     // classからとったオブジェクトに適応するための形です。
     for (let key = 0; key < quickSearch_btns['length']; key++)
