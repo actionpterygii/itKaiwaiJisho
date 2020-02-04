@@ -7433,7 +7433,7 @@
         "btmi": "PHP: Hypertext Preprocessor。",
         "mnim": "",
         "tigg": "",
-        "krng": "プログラミング言語,サーバー,ウェブページ,HTML"
+        "krng": "プログラミング言語,サーバー,ウェブページ,HTML,ララベル"
     },
     {
         "kotb": "ジャバ",
@@ -7596,5 +7596,95 @@
         "mnim": "",
         "tigg": "",
         "krng": "ソフトウェア,ソースコード"
+    },
+    {
+        "kotb": "プレフィックス",
+        "eigo": "prefix",
+        "kwsk": "前につけるやつ。接頭辞。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ベンダー プレフィックス",
+        "eigo": "vendor prefix",
+        "kwsk": "まだちゃんと決まってないCSSの機能を使うためにWebブラウザごとに付けるプレフィックス",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "CSS,ウェブブラウザ,プレフィックス"
+    },
+    {
+        "kotb": "プロパティ",
+        "eigo": "property",
+        "kwsk": "属性。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "マジック ナンバー",
+        "eigo": "magic number",
+        "kwsk": "なんの意味かわからん感じで書かれてる数字。意味はあるので困る。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ハードコーディング"
+    },
+    {
+        "kotb": "破壊的",
+        "eigo": "",
+        "kwsk": "壊しちゃう感じ。もとのものがなくなってあたらしいものになるかんじ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "もくもく",
+        "eigo": "",
+        "kwsk": "黙々。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ムーバブルタイプ",
+        "eigo": "Movable Type",
+        "kwsk": "そういうCMS。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "CMS"
+    },
+    {
+        "kotb": "ルビー",
+        "eigo": "Ruby",
+        "kwsk": "そういうプログラミング言語。サーバーサイドでウェブページ(HTML)を生成するために使われるたりする。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "プログラミング言語,サーバー,ウェブページ,HTML,ルビーオンレイルズ"
+    },
+    {
+        "kotb": "ルビー オン レイルズ",
+        "eigo": "Ruby on Rails",
+        "kwsk": "Rubyのそういうフレームワーク。",
+        "btmi": "RoR。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ルビー,フレームワーク"
+    },
+    {
+        "kotb": "ララベル",
+        "eigo": "Laravel",
+        "kwsk": "PHPのそういうフレームワーク。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "PHP,フレームワーク"
     }
 ]
