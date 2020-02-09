@@ -1476,31 +1476,31 @@
         "krng": "プログラム"
     },
     {
-        "kotb": "ユーザー インターフェース",
-        "eigo": "User Interface",
+        "kotb": "UI",
+        "eigo": "",
         "kwsk": "コンピューターと人間の間で情報を伝達するもの。",
-        "btmi": "UI。",
+        "btmi": "User Interface。ユーザー インターフェース",
         "mnim": "",
         "tigg": "",
-        "krng": "コンピューター"
+        "krng": "コンピューター,CUI,GUI,インターフェース"
     },
     {
-        "kotb": "グラフィカル ユーザー インターフェース",
-        "eigo": "Graphical User Interface",
+        "kotb": "GUI",
+        "eigo": "",
         "kwsk": "画面にグラフィカルなものがあってマウス等使ってやりとりするようなやつ。",
-        "btmi": "GUI。",
+        "btmi": "Graphical User Interface。グラフィカル ユーザー インターフェース。",
         "mnim": "",
         "tigg": "",
-        "krng": "ユーザーインターフェース"
+        "krng": "UI,CUI"
     },
     {
-        "kotb": "キャラクタ ユーザー インターフェース",
-        "eigo": "Character User Interface",
+        "kotb": "CUI",
+        "eigo": "",
         "kwsk": "キーの入力でのみやりとりするようなやつ。",
-        "btmi": "CUI。",
+        "btmi": "Character User Interface。キャラクタ ユーザー インターフェース。",
         "mnim": "",
         "tigg": "",
-        "krng": "ユーザーインターフェース"
+        "krng": "UI,GUI"
     },
     {
         "kotb": "ノーマライゼーション",
@@ -6380,7 +6380,7 @@
         "btmi": "CORS",
         "mnim": "",
         "tigg": "",
-        "krng": "オリジン。"
+        "krng": "オリジン"
     },
     {
         "kotb": "2038年問題",
@@ -6803,7 +6803,7 @@
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "グラフィカルユーザーインターフェース"
+        "krng": "GUI"
     },
     {
         "kotb": "リファラ",
@@ -7430,7 +7430,7 @@
         "kotb": "PHP",
         "eigo": "",
         "kwsk": "そういうプログラミング言語。サーバーサイドでウェブページ(HTML)を生成するために使われるたりする。",
-        "btmi": "PHP: Hypertext Preprocessor。",
+        "btmi": "PHP: Hypertext Preprocessor。ぞうさん。",
         "mnim": "",
         "tigg": "",
         "krng": "プログラミング言語,サーバー,ウェブページ,HTML,ララベル"
@@ -7653,7 +7653,7 @@
     },
     {
         "kotb": "ムーバブルタイプ",
-        "eigo": "Movable Type",
+        "eigo": "MovableType",
         "kwsk": "そういうCMS。",
         "btmi": "",
         "mnim": "",
@@ -7686,5 +7686,176 @@
         "mnim": "",
         "tigg": "",
         "krng": "PHP,フレームワーク"
+    },
+    {
+        "kotb": "エレベーター ピッチ",
+        "eigo": "elevator pitch",
+        "kwsk": "エレベーターに乗って移動するぐらいの時間でやるプレゼンとか。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リード",
+        "eigo": "lead",
+        "kwsk": "先導。指揮。見込み客。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ハッカソン",
+        "eigo": "hackathon",
+        "kwsk": "だいたい決められたテーマ時間に何人かでプログラミングとかして開発して発表し合うやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "アイデアソン"
+    },
+    {
+        "kotb": "アイデアソン",
+        "eigo": "ideathon",
+        "kwsk": "だいたい決められたテーマ時間に何人かでアイデアを出し合って発表し合うやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ハッカソン"
+    },
+    {
+        "kotb": "スクラッチ",
+        "eigo": "Scratch",
+        "kwsk": "GUIでプログラミングを学べるやつ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "GUI,プログラミング"
+    },
+    {
+        "kotb": "ドッカー",
+        "eigo": "Docker",
+        "kwsk": "",
+        "btmi": "くじらさん。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "マイグレーション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "マース",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エムバース",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リジューム",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "モディファイア",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インサイト",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リクエスト",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "マーケティング オートメーション",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "スーパー バイザー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ケイクピーエイチピー",
+        "eigo": "CakePHP",
+        "kwsk": "PHPのそういうフレームワーク。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "PHP,フレームワーク"
+    },
+    {
+        "kotb": "ジェイクエリー",
+        "eigo": "jQuery",
+        "kwsk": "JSのそういうライブラリ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ジャバスクリプト,ライブラリ"
+    },
+    {
+        "kotb": "リアクト",
+        "eigo": "React",
+        "kwsk": "JSのそういうライブラリ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ジャバスクリプト,ライブラリ"
+    },
+    {
+        "kotb": "ビュージェイエス",
+        "eigo": "Vue.js",
+        "kwsk": "JSのそういうフレームワーク。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "ジャバスクリプト,フレームワーク"
     }
 ]
