@@ -361,7 +361,7 @@ function changeDarkMode(private_darkMode_flg: boolean)
         // フラグはかきかえましょうね
         darkMode_flg = false;
         // ローカルストレージのダークモード情報を削除
-        localStorage.removeItem('darkMode');
+        localStorage.setItem('darkMode', 'false');
     }
     // ダークモードになっていないときは
     else
@@ -436,6 +436,12 @@ darkMode_btn.addEventListener('change', function()
 document.addEventListener('DOMContentLoaded', function()
 {
     // ダークモードに関する処理
+    // ダークモード情報なければ
+    if (localStorage.getItem('darkMode'))
+    {
+        // ダークモードだよっておぼえさせるの
+        localStorage.setItem('darkMode', 'true');
+    }
     // ローカルストレージがダークモードだと言っているののあら
     if (localStorage.getItem('darkMode') === 'true')
     {
