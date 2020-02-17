@@ -182,6 +182,8 @@
   - https://code-examples.net/ja/q/267b123
 - classからの複数イベントリスナー付与は`DOMContentLoaded`でHTMLパース後にしないと、それの処理は通るが他ボタン(入力ランダムぐぐる)が発火しなくなった(なんで)
   - コンソールに`Uncaught TypeError: quickSearch_btns[t].addEventListener is not a function at t (script.js:1) at HTMLDocument.<anonymous> (script.js:1)`と出るのですがそれはずっとでてる
+    - わかったんだこれの原因。これでclass名からとったそのオブジェクトにはその要素だけが入っているのではなく`length`とかそういう要素も入ってるからね
+      - そこまでは回さないようにそのれんぐすをつかってやるのよね
 - テンプレートリテラルつかおうとしたけど、HTMLのみやすさ的に入る改行とスペースがいらないのと、なくてもJSのみやすさ的にはそんなに変わらないのでつかいませんでした。
 
 
