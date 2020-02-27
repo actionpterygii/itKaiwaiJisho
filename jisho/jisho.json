@@ -1073,7 +1073,7 @@
     {
         "kotb": "インタラクティブ",
         "eigo": "interactive",
-        "kwsk": "対話的。",
+        "kwsk": "双方向。相互作用。対話的。やりとりするかんじ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -1149,7 +1149,7 @@
         "btmi": "トランスパイラ。transpiler。",
         "mnim": "",
         "tigg": "",
-        "krng": "コンパイラ"
+        "krng": "ソースコード,プログラミング言語,コンパイラ"
     },
     {
         "kotb": "コンパイラ",
@@ -3116,7 +3116,7 @@
     {
         "kotb": "クライアント",
         "eigo": "client",
-        "kwsk": "取引先。お客さん。依頼人。ものを使う方。",
+        "kwsk": "取引先。お客さん。依頼人。ものを使う方。端末がわ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -3377,11 +3377,11 @@
     {
         "kotb": "プッシュ",
         "eigo": "push",
-        "kwsk": "押す。",
+        "kwsk": "押す。サーバー側からクライアント側に送信してすぐ伝わるやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": "プル"
+        "krng": "プル,サーバー,クライアント"
     },
     {
         "kotb": "プル",
@@ -7979,6 +7979,69 @@
         "kotb": "アップ トゥ デート",
         "eigo": "up to date",
         "kwsk": "最新の。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "フューチャー プルーフ",
+        "eigo": "future proof",
+        "kwsk": "将来性がある。今後も使える感じ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "トレード オフ",
+        "eigo": "trade off",
+        "kwsk": "何かを得るけど何かを失う感じ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "KGI",
+        "eigo": "",
+        "kwsk": "何したらゴールなんかっていう指標。",
+        "btmi": "キー ゴール インジケーター。Key Goal Indicator。経営目標達成指標。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "KPI"
+    },
+    {
+        "kotb": "KPI",
+        "eigo": "",
+        "kwsk": "ゴールまでに通るべき指標。",
+        "btmi": "キー パフォーマンス インジケーター。Key Performance Indicator。重要業績評価指標。",
+        "mnim": "",
+        "tigg": "",
+        "krng": "KGI"
+    },
+    {
+        "kotb": "ワン サイズ フィッツ オール",
+        "eigo": "one size fits all",
+        "kwsk": "特に調整とかせずいろんな状況に対応できる感じ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "アンプラグド",
+        "eigo": "unplugged",
+        "kwsk": "電気をつかわないかんじ。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "キャズム",
+        "eigo": "chasm",
+        "kwsk": "溝。ぶつかるところやけど成功するためには超えなあかん。",
         "btmi": "",
         "mnim": "",
         "tigg": "",

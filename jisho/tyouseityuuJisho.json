@@ -338,6 +338,33 @@
         "tigg": ""
     },
     {
+        "kotb": "DSL",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "GUID",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "グローバリー ユニーク アイデンティファー。Globally Unique Identifier。グローバル一意識別子。",
+        "tigg": "",
+        "krng": "グローバル,ユニーク,アイデンティファー"
+    },
+    {
+        "kotb": "ポモドーロ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
         "kotb": "グラフィカル",
         "eigo": "graphical",
         "kwsk": "",
