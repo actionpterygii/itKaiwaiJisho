@@ -20,10 +20,10 @@
 // 型
 ////////////////////
 
-// 辞書の型(単語の配列)
-type jisho = [{[key: string]: string;}];
 // 単語の型
 type tango = {[key: string]: string;};
+// 辞書の型(単語の配列)
+type jisho = [tango];
 // HTMLとしての文字列
 type HTMLString = string;
 // なんかこれやらんとつかえんのですわ
