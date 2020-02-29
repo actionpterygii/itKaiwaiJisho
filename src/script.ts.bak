@@ -495,7 +495,7 @@ qrcode_btn.addEventListener('click', function()
     qrcode_img.classList.toggle('qrcode__open');
 });
 
-// 入力ボタン押されたら入力
+// 入力ボタン押されたら
 nyuryoku_btn.addEventListener('click', function()
 {
     // いんぷっとえりあにフォーカス
