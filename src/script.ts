@@ -126,5 +126,33 @@ function zenToHan(input_text: string): string
     });
 }
 
+// 今のダークモード状態によってダークモード状態を変えて状態を記憶させる処理もします
+function changeDarkMode(private_darkMode_flg: boolean)
+{
+    // ダークモードになっていたら
+    if(private_darkMode_flg)
+    {
+        // ダークモードじゃなくすように書き換える
+        // cssの`:root`にある記述を書き換える系
+        style_sheet.setProperty('--text', '#555');
+        style_sheet.setProperty('--background', '#FFF');
+        // フラグはかきかえましょうね
+        darkMode_flg = false;
+        // ローカルストレージのダークモード情報を削除
+        localStorage.setItem('darkMode', 'false');
+    }
+    // ダークモードになっていないときは
+    else
+    {
+        // ダークモードになるように書き換える
+        style_sheet.setProperty('--text', '#FFF');
+        style_sheet.setProperty('--background', '#555');
+        // フラグはかきかえましょうね
+        darkMode_flg = true;
+        // ローカルストレージに状態を保存
+        localStorage.setItem('darkMode', 'true');
+    }
+}
+
 
 
