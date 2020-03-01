@@ -226,13 +226,11 @@ class Jisho
                 // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
                 for (const key in this.jisho_data)
                 {
-                    // 数値でないとだめなため
-                    const key_num: number = parseInt(key);
                     // 入力した内容があるか(完全一致検索)
-                    if (this.containing(this.jisho_data[key_num][item], input_text, exact_match))
+                    if (this.containing(this.jisho_data[key][item], input_text, exact_match))
                     {
                         // その単語返す
-                        return [this.jisho_data[key_num]];
+                        return [this.jisho_data[key]];
                     }
                 }
             }
@@ -246,18 +244,16 @@ class Jisho
                 // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
                 for (const key in this.jisho_data)
                 {
-                    // 数値でないとだめなため
-                    const key_num: number = parseInt(key);
                     // 一単語に対して、先に定義してあるword_itemsの要素ぶん回す。
                     for (const item_key in this.word_items)
                     {
                         // 単語の中の一つの項目のキー
                         const item: string = this.word_items[item_key];
                         // 入力した内容があるか(あてはまるもの全部検索)
-                        if (this.containing(this.jisho_data[key_num][item], input_text, exact_match))
+                        if (this.containing(this.jisho_data[key][item], input_text, exact_match))
                         {
                             // 必要な単語ということで追加する
-                            required_elements[i] = this.jisho_data[key_num];
+                            required_elements[i] = this.jisho_data[key];
                             // 単語が追加されたので増やす
                             i++;
                             // 追加したらその単語に用はないのでこのforループを抜ける
