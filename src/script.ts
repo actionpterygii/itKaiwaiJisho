@@ -107,9 +107,9 @@ class State
 class Jisho
 {
     // 辞書のデータ
-    private readonly jisho_data!: JishoData;
+    private jisho_data!: JishoData;
     // 辞書のデータにある単語の数
-    private readonly tango_quantity: number;
+    private tango_quantity!: number;
     // 一単語にある項目の中で調べるときにみにいくべきもの(対義語と関連語以外ね)
     private readonly word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
     // ランダムのときに最後に出した言葉
@@ -122,13 +122,16 @@ class Jisho
         const my_xhr: XMLHttpRequest = new XMLHttpRequest();
         my_xhr.overrideMimeType("application/json");
         my_xhr.open('GET', jisho_data_path, true);
-        if (my_xhr.readyState == XMLHttpRequest.DONE && my_xhr.status == 200)
+        my_xhr.onreadystatechange = function()
         {
-            this.jisho_data = JSON.parse(my_xhr.responseText || 'null');
-        }
+            if (my_xhr.readyState == XMLHttpRequest.DONE && my_xhr.status == 200)
+            {
+                jisho.jisho_data = JSON.parse(my_xhr.responseText || 'null');
+                jisho.tango_quantity = Object.keys(jisho.jisho_data).length;
+            }
+        };
         my_xhr.send();
         // 単語数せっと
-        this.tango_quantity = Object.keys(this.jisho_data).length;
     }
 
     // ひらがなをカナカナに変換するための
