@@ -224,14 +224,14 @@ class Jisho
                 // kotbのみで探す
                 const item: string = this.word_items[0];
                 // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
-                for (const key in jisho)
+                for (const key in this.jisho_data)
                 {
                     // 数値でないとだめなため
                     const key_num: number = parseInt(key);
                     // 入力した内容があるか(完全一致検索)
                     if (this.containing(this.jisho_data[key_num][item], input_text, exact_match))
                     {
-                        // その単語返すを
+                        // その単語返す
                         return [this.jisho_data[key_num]];
                     }
                 }
