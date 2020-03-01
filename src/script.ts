@@ -437,6 +437,44 @@ const jisho: Jisho = new Jisho('jisho.json');
 // イベント登録
 ////////////////////
 
+// HTMLパースが終わってから発火
+document.addEventListener('DOMContentLoaded', function()
+{
+    // クイックサーチボタン(readme的なとこに書いてあるJISHOで間作するためのリンク)に関する処理
+    // クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
+    // classからとったオブジェクトに適応するための形です。
+    for (let key = 0; key < quickSearch_btns['length']; key++)
+    {
+        // ひとつのボタンのための処理
+        quickSearch_btns[key].addEventListener('click', function()
+        {
+            // 一番上にスムーススクロール
+            window.scrollTo({top: 0, behavior: "smooth"});
+            // その単語が入力されているものとする
+            state.input_text = quickSearch_btns[key].getAttribute('value')!;
+            // 単語を入力エリアに入れる
+            input_area.value = state.input_text;
+            // 出力
+            result_area.innerHTML = (function()
+            {
+                // 前方に`--`の付いてる特殊なやつなら
+                if (state.input_text.indexOf('--') === 0)
+                {
+                    // 基本複数あるのでふつう検索
+                    return jisho.createResult(state.input_text);
+                }
+                // ふつうのやつなら
+                else
+                {
+                    // 完全一致検索
+                    return jisho.createExactResult(state.input_text);
+                }
+            }
+            )();
+        });
+    }
+});
+
 // 文字が入力されるたんびに
 input_area.addEventListener('keyup', function()
 {
@@ -485,44 +523,6 @@ darkMode_btn.addEventListener('change', function()
 {
     // ダークモード状態を変えるのです
     state.changeDarkMode();
-});
-
-// HTMLパースが終わってから発火
-document.addEventListener('DOMContentLoaded', function()
-{
-    // クイックサーチボタン(readme的なとこに書いてあるJISHOで間作するためのリンク)に関する処理
-    // クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
-    // classからとったオブジェクトに適応するための形です。
-    for (let key = 0; key < quickSearch_btns['length']; key++)
-    {
-        // ひとつのボタンのための処理
-        quickSearch_btns[key].addEventListener('click', function()
-        {
-            // 一番上にスムーススクロール
-            window.scrollTo({top: 0, behavior: "smooth"});
-            // その単語が入力されているものとする
-            state.input_text = quickSearch_btns[key].getAttribute('value')!;
-            // 単語を入力エリアに入れる
-            input_area.value = state.input_text;
-            // 出力
-            result_area.innerHTML = (function()
-            {
-                // 前方に`--`の付いてる特殊なやつなら
-                if (state.input_text.indexOf('--') === 0)
-                {
-                    // 基本複数あるのでふつう検索
-                    return jisho.createResult(state.input_text);
-                }
-                // ふつうのやつなら
-                else
-                {
-                    // 完全一致検索
-                    return jisho.createExactResult(state.input_text);
-                }
-            }
-            )();
-        });
-    }
 });
 
 // QRコードボタンが押されたら
