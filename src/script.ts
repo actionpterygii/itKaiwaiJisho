@@ -126,12 +126,13 @@ class Jisho
         {
             if (my_xhr.readyState == XMLHttpRequest.DONE && my_xhr.status == 200)
             {
+                // 辞書せっと
                 jisho.jisho_data = JSON.parse(my_xhr.responseText || 'null');
+                // 単語数せっと
                 jisho.tango_quantity = Object.keys(jisho.jisho_data).length;
             }
         };
         my_xhr.send();
-        // 単語数せっと
     }
 
     // ひらがなをカナカナに変換するための
