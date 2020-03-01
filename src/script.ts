@@ -240,11 +240,11 @@ class Jisho
             else
             {
                 // 最終的に返すことになる単語要素
-                let required_elements!: JishoData;
+                let required_elements: JishoData = {} as JishoData;
                 // 最終的に返すことになる単語要素の連番つけるための
                 let i: number = 0;
                 // 辞書jsonを最初から見ていく。keyには辞書jsonで何遍目の単語かがはいる
-                for (const key in jisho)
+                for (const key in this.jisho_data)
                 {
                     // 数値でないとだめなため
                     const key_num: number = parseInt(key);
@@ -372,8 +372,8 @@ class Jisho
         const random_num: number = Math.floor(Math.random() * this.tango_quantity);
         // ランダム番号からいち単語取得
         const random_tango: Tango = this.jisho_data[random_num];
-        // 単語のタイトル(?)を格納(別のとこで使うため)
-        this.last_random_word = random_tango['kotb'];
+        // 単語のタイトル(?)'kotb'を格納(別のとこで使うため)
+        this.last_random_word = random_tango[this.word_items[0]];
         // HTMLにして返す
         return this.createHtml(random_tango);
     }
