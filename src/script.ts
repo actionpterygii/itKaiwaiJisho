@@ -27,13 +27,8 @@ type JishoData = [Tango];
 // HTMLとしての文字列
 type HTMLString = string;
 // なんかこれやらんとつかえんのですわ
+// これはここでは認識にないため
 interface HTMLButtonElement {checked: boolean};
-
-interface Jisho {name: string};
-// interface Window {name: string};
-// interface Function {name: string};
-
-
 
 
 
@@ -121,8 +116,6 @@ class Jisho
     // ランダムのときに最後に出した言葉
     public last_random_word: string = '';
 
-    private instance_name!: string | undefined;
-
     // newされたときにする
     constructor(jisho_data_path: string)
     {
@@ -142,73 +135,7 @@ class Jisho
             }
         };
         my_xhr.send();
-
-        // for (var name in window) {
-        //     const a: any = window[name];
-        //     if (a === this) {
-        //         console.log(a);
-                
-        //         this.instance_name = name;
-        //     }
-        // }
-        // console.log(this.instance_name);
-        
-        // console.log(this.name);
-
-        //     if (!this.name && this._cacheName === undefined) {
-        //         var parent = this.parent;
-        //         var keys = Object.keys(parent);
-        //         var len = keys.length;
-        //         while (--len) {
-        //             if (parent[keys[len]] === this) {
-        //                 this._cacheName = keys[len];
-        //                 break;
-        //             }
-        //         }
-        //     }
-        //     return this.name || this._cacheName;
-        
-        // this.instance_name = this.getInstanceName();
-        // console.log(this.getInstanceName());
-            // for (const key in window){
-            //     // const instance = window[key];
-            //     if (typeof(window[key]) === 'function')
-            //     {
-            //         console.log(window[key].name);
-            //     }
-            //     else
-            //     {
-            //         console.log(window[key].constructor.name);
-            //     }
-                
-            //     // const _this = new Window(this);
-            //     // if (window[instance].constructor.name === this.constructor.name){
-            //     //     this.instance_name = String(window[instance]);
-            //     // }
-            // }
     }
-
-    // private aaa()
-    // {            for (const key in window){
-    //     // const instance = window[key];
-    //     if (typeof(window[key]) === 'function')
-    //     {
-    //         console.log(window[key].name);
-    //     }
-    //     else
-    //     {
-    //         console.log(window[key].constructor.name);
-    //     }
-        
-        // const _this = new Window(this);
-        // if (window[instance].constructor.name === this.constructor.name){
-        //     this.instance_name = String(window[instance]);
-        // }
-    // }
-
-    // }
-
-    
 
     // ひらがなをカナカナに変換するための
     private static hiraToKata(text: string): string
@@ -617,7 +544,6 @@ nyuryoku_btn.addEventListener('click', function()
 {
     // いんぷっとえりあにフォーカス
     input_area.focus();
-    jisho.name;
 });
 
 // それはランダムの表示ボタンが押されることにより達成されます
