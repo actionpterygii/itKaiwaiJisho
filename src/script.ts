@@ -29,6 +29,12 @@ type HTMLString = string;
 // なんかこれやらんとつかえんのですわ
 interface HTMLButtonElement {checked: boolean};
 
+interface Jisho {name: string};
+// interface Window {name: string};
+// interface Function {name: string};
+
+
+
 
 
 ////////////////////
@@ -115,6 +121,8 @@ class Jisho
     // ランダムのときに最後に出した言葉
     public last_random_word: string = '';
 
+    private instance_name!: string | undefined;
+
     // newされたときにする
     constructor(jisho_data_path: string)
     {
@@ -122,18 +130,85 @@ class Jisho
         const my_xhr: XMLHttpRequest = new XMLHttpRequest();
         my_xhr.overrideMimeType("application/json");
         my_xhr.open('GET', jisho_data_path, true);
+        const _this: Jisho = this;
         my_xhr.onreadystatechange = function()
         {
             if (my_xhr.readyState == XMLHttpRequest.DONE && my_xhr.status == 200)
             {
                 // 辞書せっと
-                jisho.jisho_data = JSON.parse(my_xhr.responseText || 'null');
+                _this.jisho_data = JSON.parse(my_xhr.responseText || 'null');
                 // 単語数せっと
-                jisho.tango_quantity = Object.keys(jisho.jisho_data).length;
+                _this.tango_quantity = Object.keys(_this.jisho_data).length;
             }
         };
         my_xhr.send();
+
+        // for (var name in window) {
+        //     const a: any = window[name];
+        //     if (a === this) {
+        //         console.log(a);
+                
+        //         this.instance_name = name;
+        //     }
+        // }
+        // console.log(this.instance_name);
+        
+        // console.log(this.name);
+
+        //     if (!this.name && this._cacheName === undefined) {
+        //         var parent = this.parent;
+        //         var keys = Object.keys(parent);
+        //         var len = keys.length;
+        //         while (--len) {
+        //             if (parent[keys[len]] === this) {
+        //                 this._cacheName = keys[len];
+        //                 break;
+        //             }
+        //         }
+        //     }
+        //     return this.name || this._cacheName;
+        
+        // this.instance_name = this.getInstanceName();
+        // console.log(this.getInstanceName());
+            // for (const key in window){
+            //     // const instance = window[key];
+            //     if (typeof(window[key]) === 'function')
+            //     {
+            //         console.log(window[key].name);
+            //     }
+            //     else
+            //     {
+            //         console.log(window[key].constructor.name);
+            //     }
+                
+            //     // const _this = new Window(this);
+            //     // if (window[instance].constructor.name === this.constructor.name){
+            //     //     this.instance_name = String(window[instance]);
+            //     // }
+            // }
     }
+
+    // private aaa()
+    // {            for (const key in window){
+    //     // const instance = window[key];
+    //     if (typeof(window[key]) === 'function')
+    //     {
+    //         console.log(window[key].name);
+    //     }
+    //     else
+    //     {
+    //         console.log(window[key].constructor.name);
+    //     }
+        
+        // const _this = new Window(this);
+        // if (window[instance].constructor.name === this.constructor.name){
+        //     this.instance_name = String(window[instance]);
+        // }
+    // }
+
+    // }
+
+    
 
     // ひらがなをカナカナに変換するための
     private static hiraToKata(text: string): string
@@ -271,7 +346,7 @@ class Jisho
     }
 
     // 1単語の情報からHTMLを作成
-    private createHtml(element: Tango): HTMLString
+    private generateHTML(element: Tango): HTMLString
     {
         // 一単語をつつむおおいなるdiv要素(これに追加していって最後返す)
         let html: HTMLString = '<div class="tango">';
@@ -339,7 +414,7 @@ class Jisho
             for (const key in required_elements)
             {
                 // HTMLを作成して追加していく
-                entity += this.createHtml(required_elements[key]);
+                entity += this.generateHTML(required_elements[key]);
             }
         }
         else
@@ -358,7 +433,7 @@ class Jisho
         // search関数でその単語を完全一致検索で探してきてそれでHTMLつくる
         // [0]指定なのは、search関数は複数個対応の単語の配列(jisho型)を返すため。
         // 完全一致検索なため0番目の要素のみある。
-        return this.createHtml(this.search(input_text, true)[0]);
+        return this.generateHTML(this.search(input_text, true)[0]);
     }
 
     // ランダムに一単語を取得した結果(HTML)を返す
@@ -371,7 +446,7 @@ class Jisho
         // 単語のタイトル(?)'kotb'を格納(別のとこで使うため)
         this.last_random_word = random_tango[this.word_items[0]];
         // HTMLにして返す
-        return this.createHtml(random_tango);
+        return this.generateHTML(random_tango);
     }
 
     // 関連語を開くボタンがおされたら呼ばれる関数
@@ -381,28 +456,31 @@ class Jisho
         const krng_contents: Element = krng_facade!.nextElementSibling!.nextElementSibling!;
         // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
         const tangos: string[] = krng_facade!.getAttribute('value')!.split(',');
-        // 関連語とされる単語を検索して設置(描画(目に見えて)はCSSで行う)
-        krng_contents.innerHTML = (function()
+        // 関連語の内容がなければ空を返させるので
+        let entity: HTMLString = '';
+        // 関連語の内容がなければ
+        if (!krng_contents.innerHTML)
         {
-            // 最後に返す要素
-            // 関連語の内容がなければ空を返させるので
-            let entity: HTMLString = '';
-            // 関連語の内容がなければ
-            if (!krng_contents.innerHTML)
+            // 単語たちをひとつずつ触っていく
+            for (const key in tangos)
             {
-                // 単語たちをひとつずつ触っていく
-                for (const key in tangos)
-                {
-                    // でそのひと単語の情報からHTMLを作成して追加していく
-                    entity += jisho.createExactResult(tangos[key]);
-                }
+                // でそのひと単語の情報からHTMLを作成して追加していく
+                entity += this.createExactResult(tangos[key]);
             }
-            // かえす
-            return entity;
         }
-        )();
+        // 関連語とされる単語を検索して設置(描画(目に見えて)はCSSで行う)
+        krng_contents.innerHTML = entity;
     }
 }
+
+
+// Jisho.prototype.getInstanceName = function(){
+//     for (var instance in window){
+//         if (window[instance] == this){
+//             return instance;
+//         }
+//     }
+// };
 
 
 
@@ -539,6 +617,7 @@ nyuryoku_btn.addEventListener('click', function()
 {
     // いんぷっとえりあにフォーカス
     input_area.focus();
+    jisho.name;
 });
 
 // それはランダムの表示ボタンが押されることにより達成されます
