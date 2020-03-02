@@ -311,6 +311,7 @@ class Jisho
                         const random_id: string = 'random_' + Math.random().toString(32).substring(2);
                         html += 
                             '<div class="' + key + '">' +
+                            // ここだめ、はやくしゅうしゅうせいしよう
                                 '<label class="krng_facade" for="' + random_id + '" value="' + element[key] + '" onClick="jisho.createKanrengo(this)"></label>' +
                                 '<input id="' + random_id + '" class="krng_checkbox" type="checkbox">' +
                                 '<div class="krng_contents"></div>' +
@@ -383,9 +384,10 @@ class Jisho
         const krng_contents: Element = krng_facade!.nextElementSibling!.nextElementSibling!;
         // 押されたボタンで必要なの単語を取り出し1つずつ配列に入れる
         const tangos: string[] = krng_facade!.getAttribute('value')!.split(',');
-        // 関連語の内容がなければ空を返させるので
+        // 関連語の内容(HTML)がすでに一回ここで生成されていれば空を返させるので
+        // (関連語HTML自体のありなしもここでしているということ！)
         let entity: HTMLString = '';
-        // 関連語の内容がなければ
+        // 関連語の内容(HTML)がなければ
         if (!krng_contents.innerHTML)
         {
             // 単語たちをひとつずつ触っていく
@@ -395,19 +397,11 @@ class Jisho
                 entity += this.createExactResult(tangos[key]);
             }
         }
-        // 関連語とされる単語を検索して設置(描画(目に見えて)はCSSで行う)
+        // 設置
+        // (描画(目に見えて)はCSSで行う)
         krng_contents.innerHTML = entity;
     }
 }
-
-
-// Jisho.prototype.getInstanceName = function(){
-//     for (var instance in window){
-//         if (window[instance] == this){
-//             return instance;
-//         }
-//     }
-// };
 
 
 
