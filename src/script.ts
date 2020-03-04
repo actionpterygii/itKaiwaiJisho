@@ -290,12 +290,14 @@ class Jisho
                     // 言葉はh2要素。絶対ある前提
                     case 'kotb':
                         html += 
-                            '<div class="tango_head"><h2 class="' + key + '">' + element[key] + '</h2>';
+                            '<div class="tango_head">' +
+                                '<h2 class="' + key + '">' + element[key] + '</h2>';
                         break;
                     // 絶対ある前提
                     case 'kwsk':
                         html +=
-                            '</div><p class="' + key + '">' + element[key] + '</p>';
+                            '</div>' +
+                            '<p class="' + key + '">' + element[key] + '</p>';
                     break;
                     // だいたいp要素
                     case 'eigo':
