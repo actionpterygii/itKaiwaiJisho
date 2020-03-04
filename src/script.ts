@@ -107,16 +107,16 @@ class State
 // 辞書という
 class Jisho
 {
+    // 一単語にある項目の中で調べるときにみにいくべきもの(対義語と関連語以外ね)
+    private readonly word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
     // 辞書のデータ
     private jisho_data!: JishoData;
     // 辞書のデータにある単語の数
     private tango_quantity!: number;
-    // 一単語にある項目の中で調べるときにみにいくべきもの(対義語と関連語以外ね)
-    private readonly word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
-    // ランダムのときに最後に出した言葉
-    public last_random_word: string = '';
     // 関連語を開く時に呼ぶJishoインスタンスの名前
     private krngJisho_instance_name!: string;
+    // ランダムのときに最後に出した言葉
+    public last_random_word: string = '';
 
     // newされたときにする
     constructor(jisho_data_path: string, krngJisho_instance_name: string)
@@ -144,7 +144,6 @@ class Jisho
         // このインスタンスの名前を取るのはかんたんにはいかないようで
         // もうこうしたほうがよいなと
         this.krngJisho_instance_name = krngJisho_instance_name;
-
     }
 
     // ひらがなをカナカナに変換するための
@@ -336,7 +335,7 @@ class Jisho
             }
         }
         // 最後の綴じdiv
-        html += `</div>`;
+        html += `</div>` ;
         // かえす
         return html;
     }
@@ -378,7 +377,7 @@ class Jisho
     }
 
     // ランダムに一単語を取得した結果(HTML)を返す
-    public createRandomOneWordResult(): HTMLString
+    public createRandomOneTangoResult(): HTMLString
     {
         // 単語の数内でランダムにただひとつの番号を得ました
         const random_num: number = Math.floor(Math.random() * this.tango_quantity);
@@ -559,7 +558,7 @@ random_btn.addEventListener('click', function()
     // 一番上にスムーススクロール
     window.scrollTo({top: 0, behavior: "smooth"});
     // ランダム一単語を表示させる
-    result_area.innerHTML = jisho.createRandomOneWordResult();
+    result_area.innerHTML = jisho.createRandomOneTangoResult();
     // その単語が入力されているものとする
     state.inputOverwrite(jisho.last_random_word);
 });
