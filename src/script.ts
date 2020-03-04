@@ -79,7 +79,7 @@ class State
     public changeDarkMode(private_darkMode_flg: boolean = this.darkMode_flg)
     {
         // ダークモードになっていたら
-        if(private_darkMode_flg)
+        if (private_darkMode_flg)
         {
             // ダークモードじゃなくすように書き換える
             // cssの`:root`にある記述を書き換える系
