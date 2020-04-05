@@ -1644,7 +1644,7 @@
         "btmi": "Chief Exective Officer。チーフ エグゼクティブ オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": "COO,CFO,CIO,CTO,CKO"
+        "krng": "COO,CFO,CIO,CTO,CKO,CSO"
     },
     {
         "kotb": "COO",
@@ -1653,7 +1653,7 @@
         "btmi": "Chief Operating Officer。チーフ オペレーティング オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": "CEO,CFO,CIO,CTO,CKO"
+        "krng": "CEO,CFO,CIO,CTO,CKO,CSO"
     },
     {
         "kotb": "CFO",
@@ -1662,7 +1662,7 @@
         "btmi": "Cheif Financial Officer。チーフ ファイナンシャル オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": "CEO,COO,CIO,CTO,CKO"
+        "krng": "CEO,COO,CIO,CTO,CKO,CSO"
     },
     {
         "kotb": "CIO",
@@ -1671,7 +1671,7 @@
         "btmi": "Chief Information Officer。チーフ インフォメーション オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": "CEO,COO,CFO,CTO,CKO"
+        "krng": "CEO,COO,CFO,CTO,CKO,CSO"
     },
     {
         "kotb": "CTO",
@@ -1680,7 +1680,7 @@
         "btmi": "Chief Technology Officer。チーフ テクノロジー オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": "CEO,COO,CFO,CIO,CKO"
+        "krng": "CEO,COO,CFO,CIO,CKO,CSO"
     },
     {
         "kotb": "CKO",
@@ -1689,7 +1689,7 @@
         "btmi": "Chief Knowledge Officer。チーフ ナレッジ オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": "CEO,COO,CFO,CIO,CTO"
+        "krng": "CEO,COO,CFO,CIO,CTO,CSO"
     },
     {
         "kotb": "リレーション",
@@ -8095,16 +8095,16 @@
     {
         "kotb": "CSO",
         "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "kwsk": "最高戦略責任者。",
+        "btmi": "Chief Strategy Officer。チーフ ストラテジー オフィサー。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "CEO,COO,CFO,CIO,CTO,CKO"
     },
     {
         "kotb": "ケイパビリティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "capability",
+        "kwsk": "性能。能力。才能。素質。可能性。将来性。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8112,8 +8112,8 @@
     },
     {
         "kotb": "スワップ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "swap",
+        "kwsk": "交換。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8121,18 +8121,27 @@
     },
     {
         "kotb": "エンクリプト",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "encrypt",
+        "kwsk": "暗号化。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
+        "kotb": "スニフ",
         "eigo": "sniff",
-        "kwsk": "",
+        "kwsk": "通信を盗み見る感じ。",
         "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "LTS",
+        "eigo": "",
+        "kwsk": "長期安定版。そうでないバージョンよりサポート期間が長め。",
+        "btmi": "Long Term Support。ロング ターム サポート。",
         "mnim": "",
         "tigg": "",
         "krng": ""
