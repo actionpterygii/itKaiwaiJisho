@@ -1,2 +1,3 @@
 g:
-	gulp ; cd chromeExtension/ ; gulp ; cd ../
+	gulp
+	cd chromeExtension/ ; gulp
