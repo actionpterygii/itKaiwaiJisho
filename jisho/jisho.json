@@ -8149,7 +8149,7 @@
     {
         "kotb": "セキュア",
         "eigo": "secure",
-        "kwsk": "",
+        "kwsk": "安全な感じ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8805,6 +8805,42 @@
     },
     {
         "kotb": "インプリメンツ",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "目grep",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "オンボーディング",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ディープ コピー",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "シャロー コピー",
         "eigo": "",
         "kwsk": "",
         "btmi": "",
