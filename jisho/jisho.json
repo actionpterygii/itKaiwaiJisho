@@ -8156,27 +8156,27 @@
         "krng": ""
     },
     {
-        "kotb": "二段階認証",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "単一障害点",
+        "eigo": "single point of failure",
+        "kwsk": "その1つが動かないと全部で障害が起こるところ。",
+        "btmi": "SPOF。シングル ポイント オブ フェイラー。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "シビック テック",
+        "eigo": "Civic Tech",
+        "kwsk": "行政に対してって感じでの『市民』がテクノロジーを活用して課題を解決する。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "単一障害点",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "SPOF",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "シビックテック",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "テクノロジー",
+        "eigo": "technology",
+        "kwsk": "科学とか工業とかの感じの技術。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8184,7 +8184,7 @@
     },
     {
         "kotb": "エクストリーム プログラミング",
-        "eigo": "",
+        "eigo": "extreme programming",
         "kwsk": "",
         "btmi": "",
         "mnim": "",
