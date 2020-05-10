@@ -1710,15 +1710,6 @@
         "krng": ""
     },
     {
-        "kotb": "トランケイトゥ",
-        "eigo": "truncate",
-        "kwsk": "切り捨て。",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "ウィザード",
         "eigo": "wizard",
         "kwsk": "複雑な作業をわかりやすく行う主に対話型の機能。魔法使いみたいにすごいひと。",
@@ -8183,36 +8174,28 @@
         "krng": ""
     },
     {
-        "kotb": "エクストリーム プログラミング",
-        "eigo": "extreme programming",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
         "kotb": "ボトルネック",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "bottleneck",
+        "kwsk": "制約になっているぶぶん。そこをどうかしないとどうにもならながち。",
         "btmi": "",
-        "mnim": "",
+        "mnim": "瓶の首",
         "tigg": "",
         "krng": ""
     },
+
     {
         "kotb": "ユビキタス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "ubiquitous",
+        "kwsk": "どこでもインターネットに繋がっていろいろできるかんじ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "インターネット。"
     },
     {
         "kotb": "フェイシャル レコグニション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "facial recognition",
+        "kwsk": "顔認識。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8221,16 +8204,16 @@
     {
         "kotb": "バン",
         "eigo": "BAN",
-        "kwsk": "",
+        "kwsk": "追放。排除。禁止。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
+        "kotb": "サーヴェイランス",
         "eigo": "survellance",
-        "kwsk": "",
+        "kwsk": "監視。偵察。調査。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8238,35 +8221,17 @@
     },
     {
         "kotb": "フィルタリング",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "filtering",
+        "kwsk": "インターネットのウェブページの閲覧を何らかの基準で制限させるやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "インターネット,ウェブページ"
     },
     {
         "kotb": "スクリーニング",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ハード リミット",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ソフト リミット",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "screening",
+        "kwsk": "審査。選考。選別。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8274,17 +8239,17 @@
     },
     {
         "kotb": "サスペンド",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "suspend",
+        "kwsk": "いちじていし。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "メイクセンス",
-        "eigo": "",
-        "kwsk": "",
+        "kotb": "メイク センス",
+        "eigo": "make sense",
+        "kwsk": "理解できる。理にかなっている。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8292,30 +8257,30 @@
     },
     {
         "kotb": "エクスポネンシャル",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "exponential",
+        "kwsk": "指数関数的な。1,2,4,8,16,32,64,128って感じで増えてくやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": "",
+        "kotb": "ディーバース",
         "eigo": "DBaaS",
-        "kwsk": "",
-        "btmi": "",
+        "kwsk": "データベースを、インターネットを通して提供する。",
+        "btmi": "データベース アズ ア サービス。Database as a Service。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "データベース,サービス,インターネット"
     },
     {
-        "kotb": "パンくずリスト",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
-        "mnim": "",
+        "kotb": "パンくず リスト",
+        "eigo": "breadcrumb list",
+        "kwsk": "Webサイトとかで、今どの位置にいるかとそのリンクを順に並べたもの。",
+        "btmi": "ブレッドクラム リスト。",
+        "mnim": "ヘングレが森ん中歩くときに通った道がわかるようにパンをすこしずつちぎって道標になるように置いってったやつ",
         "tigg": "",
-        "krng": ""
+        "krng": "ウェブサイト"
     },
     {
         "kotb": "モンキー テスト",
