@@ -8284,17 +8284,17 @@
     },
     {
         "kotb": "モンキー テスト",
-        "eigo": "",
-        "kwsk": "",
-        "btmi": "",
+        "eigo": "monkey test",
+        "kwsk": "特になにも定めずに思いつきで操作するテスト。",
+        "btmi": "アドホック テスト。ad hoc test。ゲリラ テスト。guerrilla test。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "インテグリティ",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "integrity",
+        "kwsk": "誠実。正直。真摯。正確。完全性。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8302,17 +8302,26 @@
     },
     {
         "kotb": "インテグレーション",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "integration",
+        "kwsk": "統合。統一。一体化。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
+        "kotb": "エスアイアー",
+        "eigo": "SIer",
+        "kwsk": "情報システムで問題を解決するやつをつくるものたち。",
+        "btmi": "システム インテグレーター。System Integrator。",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
         "kotb": "プライマリー",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "primary",
+        "kwsk": "最初の。基本的な。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8815,6 +8824,15 @@
     },
     {
         "kotb": "プール",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ジェネリック",
         "eigo": "",
         "kwsk": "",
         "btmi": "",
