@@ -322,25 +322,11 @@ main {
 
     #copyright {
         margin-top: 15px;
-        div {
-            animation: horizontal 4s ease-in-out infinite alternate;
-            div {
-                animation: horizontal 2.2s ease-in-out infinite alternate;
-                img {
-                    width: 120px;
-                    display: block;
-                    margin: 0 auto;
-                    animation: vertical 1.8s ease-in-out infinite alternate;
-                }
-            }
-        }
-        @keyframes horizontal {
-            0% { transform:translateX( -2px); }
-          100% { transform:translateX(  2px); }
-        }
-        @keyframes vertical {
-            0% { transform:translateY(-1px); }
-          100% { transform:translateY( 1px); }
+        img {
+            width: 120px;
+            display: block;
+            margin: 0 auto;
+            animation: vertical 1.8s ease-in-out infinite alternate;
         }
         p {
             font-size: 16px;
