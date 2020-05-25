@@ -11,6 +11,7 @@ const imgminp = require('imagemin-pngquant');
 const imgminj = require('imagemin-mozjpeg');
 const prcs = require('child_process').exec;
 const webserver = require('gulp-webserver');
+const rename = require('gulp-rename');
 
 
 const src = './src/';
@@ -18,6 +19,8 @@ const srcImages = './images/';
 
 const dist = './docs/';
 const distImages = dist + 'images/';
+
+const oki = './oki/';
 
 // const tsProject = function()
 // {
@@ -85,7 +88,7 @@ gulp.task('ts', function()
     //     .pipe(jsmin())
     //     .pipe(gulp.dest(dist));
 
-        return gulp.src(src + '*.ts')
+    return gulp.src(src + '*.ts')
         .pipe(changed(dist))
         .pipe(tysc({ target: "ES5", removeComments: true}))
         .pipe(babel({"presets": ["@babel/preset-env"]}))
@@ -96,6 +99,34 @@ gulp.task('ts', function()
 gulp.task('watchTs', function()
 {
     return gulp.watch(src + '*.ts', gulp.task('ts'));
+});
+
+
+gulp.task('oki5Ts', function()
+{
+    return gulp.src(src + '*.ts')
+        .pipe(tysc({ target: "ES5", removeComments: false}))
+        .pipe(rename('scriptES5.js'))
+        .pipe(gulp.dest(oki));
+});
+
+gulp.task('watchOki5Ts', function()
+{
+    return gulp.watch(src + '*.ts', gulp.task('oki5Ts'));
+});
+
+
+gulp.task('oki6Ts', function()
+{
+    return gulp.src(src + '*.ts')
+        .pipe(tysc({ target: "ES6", removeComments: false}))
+        .pipe(rename('scriptES6.js'))
+        .pipe(gulp.dest(oki));
+});
+
+gulp.task('watchOki6Ts', function()
+{
+    return gulp.watch(src + '*.ts', gulp.task('oki6Ts'));
 });
 
 
@@ -167,6 +198,6 @@ gulp.task('webserver', function()
 });
 
 
-gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchTs', 'watchImg', 'watchIco', 'watchJson', 'watchJishoJson'));
+gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchTs', 'watchOki5Ts', 'watchOki6Ts', 'watchImg', 'watchIco', 'watchJson', 'watchJishoJson'));
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'ts', 'img', 'ico', 'json', 'jishoJson'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'ts', 'oki5Ts', 'oki6Ts', 'img', 'ico', 'json', 'jishoJson'));
