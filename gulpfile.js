@@ -20,6 +20,7 @@ const srcImages = './images/';
 const dist = './docs/';
 const distImages = dist + 'images/';
 
+const lib = './lib/';
 const oki = './oki/';
 
 // const tsProject = function()
@@ -75,6 +76,19 @@ gulp.task('js', function()
 gulp.task('watchJs', function()
 {
     return gulp.watch(src + '*.js', gulp.task('js'));
+});
+
+
+gulp.task('libJs', function()
+{
+    return gulp.src(lib + '*.js')
+        .pipe(changed(dist))
+        .pipe(gulp.dest(dist));
+});
+
+gulp.task('watchLibJs', function()
+{
+    return gulp.watch(src + '*.js', gulp.task('libJs'));
 });
 
 
@@ -198,6 +212,6 @@ gulp.task('webserver', function()
 });
 
 
-gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchTs', 'watchOki5Ts', 'watchOki6Ts', 'watchImg', 'watchIco', 'watchJson', 'watchJishoJson'));
+gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchLibJs', 'watchTs', 'watchOki5Ts', 'watchOki6Ts', 'watchImg', 'watchIco', 'watchJson', 'watchJishoJson'));
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'ts', 'oki5Ts', 'oki6Ts', 'img', 'ico', 'json', 'jishoJson'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'libJs', 'ts', 'oki5Ts', 'oki6Ts', 'img', 'ico', 'json', 'jishoJson'));
