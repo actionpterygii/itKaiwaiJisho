@@ -120,7 +120,7 @@ gulp.task('oki5Ts', function()
 {
     return gulp.src(src + '*.ts')
         .pipe(tysc({ target: "ES5", removeComments: false}))
-        .pipe(rename('scriptES5.js'))
+        .pipe(rename('scriptES5.txt'))
         .pipe(gulp.dest(oki));
 });
 
@@ -134,7 +134,7 @@ gulp.task('oki6Ts', function()
 {
     return gulp.src(src + '*.ts')
         .pipe(tysc({ target: "ES6", removeComments: false}))
-        .pipe(rename('scriptES6.js'))
+        .pipe(rename('scriptES6.txt'))
         .pipe(gulp.dest(oki));
 });
 
