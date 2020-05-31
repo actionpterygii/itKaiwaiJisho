@@ -41,8 +41,8 @@ var State = /** @class */ (function () {
         if (private_darkMode_flg) {
             // ダークモードじゃなくすように書き換える
             // cssの`:root`にある記述を書き換える系
-            style_sheet.setProperty('--text', '#555');
-            style_sheet.setProperty('--background', '#FFF');
+            style_sheet.setProperty('--text', black);
+            style_sheet.setProperty('--background', white);
             // フラグはかきかえましょうね
             this.darkMode_flg = false;
             // ローカルストレージのダークモード情報を削除
@@ -51,8 +51,8 @@ var State = /** @class */ (function () {
         // ダークモードになっていないときは
         else {
             // ダークモードになるように書き換える
-            style_sheet.setProperty('--text', '#FFF');
-            style_sheet.setProperty('--background', '#555');
+            style_sheet.setProperty('--text', white);
+            style_sheet.setProperty('--background', black);
             // フラグはかきかえましょうね
             this.darkMode_flg = true;
             // ローカルストレージに状態を保存
@@ -334,6 +334,15 @@ var guguru_btn = document.getElementById('guguru_btn');
 var style_sheet = document.documentElement.style;
 // ぐぐりにつかうURL
 var guguru_url = 'https://www.google.com/search?q=';
+// 色達
+var black = '#555';
+var white = '#FFF';
+var blue = '#3CC';
+var yello = '#FF6';
+var pink = '#F9F';
+var green = '#9F6';
+var orange = '#F93';
+var purple = '#96F';
 // これからの状態をもつもの
 var state = new State();
 // 辞書というモノはいまはこのひとつ

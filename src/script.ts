@@ -83,8 +83,8 @@ class State
         {
             // ダークモードじゃなくすように書き換える
             // cssの`:root`にある記述を書き換える系
-            style_sheet.setProperty('--text', '#555');
-            style_sheet.setProperty('--background', '#FFF');
+            style_sheet.setProperty('--text', black);
+            style_sheet.setProperty('--background', white);
             // フラグはかきかえましょうね
             this.darkMode_flg = false;
             // ローカルストレージのダークモード情報を削除
@@ -94,8 +94,8 @@ class State
         else
         {
             // ダークモードになるように書き換える
-            style_sheet.setProperty('--text', '#FFF');
-            style_sheet.setProperty('--background', '#555');
+            style_sheet.setProperty('--text', white);
+            style_sheet.setProperty('--background', black);
             // フラグはかきかえましょうね
             this.darkMode_flg = true;
             // ローカルストレージに状態を保存
@@ -436,6 +436,16 @@ const style_sheet: CSSStyleDeclaration = document.documentElement.style;
 
 // ぐぐりにつかうURL
 const guguru_url: string = 'https://www.google.com/search?q=';
+
+// 色達
+const black: string = '#555';
+const white: string = '#FFF';
+const blue: string = '#3CC';
+const yello: string = '#FF6';
+const pink: string = '#F9F';
+const green: string = '#9F6';
+const orange: string = '#F93';
+const purple: string = '#96F';
 
 // これからの状態をもつもの
 const state: State = new State();
