@@ -156,7 +156,7 @@ gulp.task('img', function()
         .pipe(gulp.dest(distImages));
 });
 
-gulp.task('watchImg', function ()
+gulp.task('watchImg', function()
 {
     return gulp.watch(srcImages + '*.{png,jpg,gif,svg}', gulp.task('img'));
 });
@@ -169,7 +169,7 @@ gulp.task('ico', function()
         .pipe(gulp.dest(distImages));
 });
 
-gulp.task('watchIco', function ()
+gulp.task('watchIco', function()
 {
     return gulp.watch(srcImages + '*.{ico}', gulp.task('ico'));
 });
