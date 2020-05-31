@@ -313,6 +313,9 @@ class Jisho {
         krng_contents.innerHTML = entity;
     }
 }
+// お星様
+class Hoshi {
+}
 ////////////////////
 // 定数
 ////////////////////
