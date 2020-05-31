@@ -44,7 +44,7 @@ class State
     // 選択されている文字
     public selected_text: string | null = null;
     // ダークモードかどうか
-    private darkMode_flg: boolean = false;
+    public darkMode_flg: boolean = false;
 
     // newされたときにする
     constructor()
@@ -108,13 +108,13 @@ class State
 class Jisho
 {
     // 一単語にある項目の中で調べるときにみにいくべきもの(対義語と関連語以外ね)
-    private readonly word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
+    public readonly word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
     // 辞書のデータ
-    private jisho_data!: JishoData;
+    public jisho_data!: JishoData;
     // 辞書のデータにある単語の数
-    private tango_quantity!: number;
+    public tango_quantity!: number;
     // 関連語を開く時に呼ぶJishoインスタンスの名前
-    private krngJisho_instance_name!: string;
+    public krngJisho_instance_name!: string;
     // ランダムのときに最後に出した言葉
     public last_random_word: string = '';
 
@@ -147,7 +147,7 @@ class Jisho
     }
 
     // ひらがなをカナカナに変換するための
-    private static hiraToKata(text: string): string
+    public static hiraToKata(text: string): string
     {
         // ひらがなをおきかえるよって
         return text.replace(/[\u3041-\u3096]/g, function(text: string)
@@ -158,7 +158,7 @@ class Jisho
     }
 
     // 全角英数を半角英数に変換するための
-    private static zenToHan(text: string): string
+    public static zenToHan(text: string): string
     {
         //全角英数置き換えるよって
         return text.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(text: string)
@@ -169,7 +169,7 @@ class Jisho
     }
 
     // itemの内容がinput_textのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
-    private containing(item: string, input_text: string, exact_match: boolean): boolean
+    public containing(item: string, input_text: string, exact_match: boolean): boolean
     {
         // スペースを削除する
         item = item.replace(/\s+/g, '');
@@ -218,7 +218,7 @@ class Jisho
     }
 
     // 入力された値を辞書jsonから検索してマッチしたものを返す。exact_matchは完全一致検索かどうか
-    private search(input_text: string, exact_match: boolean): JishoData
+    public search(input_text: string, exact_match: boolean): JishoData
     {
         // '--all'と入力された場合
         if (input_text === '--all')
@@ -283,7 +283,7 @@ class Jisho
     }
 
     // 1単語の情報からHTMLを作成
-    private generateHTML(element: Tango): HTMLString
+    public generateHTML(element: Tango): HTMLString
     {
         // 一単語をつつむおおいなるdiv要素(これに追加していって最後返す)
         let html: HTMLString = `<div class="tango">` ;
