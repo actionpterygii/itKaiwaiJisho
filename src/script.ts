@@ -287,7 +287,7 @@ class Jisho
     public generateHTML(element: Tango): HTMLString
     {
         // 一単語をつつむおおいなるdiv要素(これに追加していって最後返す)
-        let html: HTMLString = `<div class="tango">` ;
+        let html: HTMLString = `<div class="tango">`;
         // 単語内の各要素を一つづつみていく
         for (const key in element)
         {
@@ -300,15 +300,15 @@ class Jisho
                 {
                     // 言葉はh2要素。絶対ある前提
                     case 'kotb':
-                        html += 
+                        html +=
                             `<div class="tango_head">` +
-                                `<h2 class="${key}">${element[key]}</h2>` ;
+                                `<h2 class="${key}">${element[key]}</h2>`;
                         break;
                     // 絶対ある前提
                     case 'kwsk':
                         html +=
                             `</div>` +
-                            `<p class="${key}">${element[key]}</p>` ;
+                            `<p class="${key}">${element[key]}</p>`;
                     break;
                     // だいたいp要素
                     case 'eigo':
@@ -316,19 +316,19 @@ class Jisho
                     case 'mnim':
                     case 'tigg':
                         html +=
-                            `<p class="${key}">${element[key]}</p>` ;
+                            `<p class="${key}">${element[key]}</p>`;
                         break;
                     // 関連語はアコーディオンに
                     case 'krng':
                         // 関連語アコーディオンの処理のためのランダムな文字列を作る
                         const random_id: string = 'random_' + Math.random().toString(32).substring(2);
-                        html += 
+                        html +=
                             `<div class="${key}">` +
                             // ここだめ、はやくしゅうしゅうせいしよう
                                 `<label class="krng_facade" for="${random_id}" value="${element[key]}" onClick="${this.krngJisho_instance_name}.createKanrengo(this)"></label>` +
                                 `<input id="${random_id}" class="krng_checkbox" type="checkbox">` +
                                 `<div class="krng_contents"></div>` +
-                            `</div>` ;
+                            `</div>`;
                         break;
                     default:
                         break;
@@ -336,7 +336,7 @@ class Jisho
             }
         }
         // 最後の綴じdiv
-        html += `</div>` ;
+        html += `</div>`;
         // かえす
         return html;
     }
@@ -360,7 +360,7 @@ class Jisho
         }
         else
         {
-            entity += `<h2 class="nothing">nothing</h2>` ;
+            entity += `<h2 class="nothing">nothing</h2>`;
         }
         // かえす
         return entity;
