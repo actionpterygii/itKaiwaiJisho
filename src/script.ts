@@ -51,7 +51,7 @@ class State
     {
         // ダークモードに関する処理
         // ダークモード情報なければ
-        if (localStorage.getItem('darkMode'))
+        if (localStorage.getItem('darkMode') === null)
         {
             // ダークモードだよっておぼえさせるの
             // 最初からダークモードにしちゃうの

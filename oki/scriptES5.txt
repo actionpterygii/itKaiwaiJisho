@@ -15,7 +15,7 @@ var State = /** @class */ (function () {
         this.darkMode_flg = false;
         // ダークモードに関する処理
         // ダークモード情報なければ
-        if (localStorage.getItem('darkMode')) {
+        if (localStorage.getItem('darkMode') === null) {
             // ダークモードだよっておぼえさせるの
             // 最初からダークモードにしちゃうの
             localStorage.setItem('darkMode', 'true');
