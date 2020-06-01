@@ -17,12 +17,13 @@ var State = /** @class */ (function () {
         // ダークモード情報なければ
         if (localStorage.getItem('darkMode')) {
             // ダークモードだよっておぼえさせるの
+            // 最初からダークモードにしちゃうの
             localStorage.setItem('darkMode', 'true');
         }
         // ローカルストレージがダークモードだと言っているののあら
         if (localStorage.getItem('darkMode') === 'true') {
             // ダークモードにさせる各種処理
-            this.changeDarkMode(false);
+            this.changeDarkMode();
             // ダークモードトグルボタンをチェックした状態にしちゃいましょう
             darkMode_btn.checked = true;
         }
@@ -35,17 +36,16 @@ var State = /** @class */ (function () {
         this.input_text = text;
     };
     // 今のダークモード状態によってダークモード状態を変えて状態を記憶させる処理もします
-    State.prototype.changeDarkMode = function (private_darkMode_flg) {
-        if (private_darkMode_flg === void 0) { private_darkMode_flg = this.darkMode_flg; }
-        // ダークモードになっていたら
-        if (private_darkMode_flg) {
+    State.prototype.changeDarkMode = function () {
+        // ダークモードになっていたらtrueなので
+        if (this.darkMode_flg) {
             // ダークモードじゃなくすように書き換える
             // cssの`:root`にある記述を書き換える系
             style_sheet.setProperty('--text', black);
             style_sheet.setProperty('--background', white);
             // フラグはかきかえましょうね
             this.darkMode_flg = false;
-            // ローカルストレージのダークモード情報を削除
+            // ローカルストレージにダークモードじゃないよって保存
             localStorage.setItem('darkMode', 'false');
         }
         // ダークモードになっていないときは
@@ -55,7 +55,7 @@ var State = /** @class */ (function () {
             style_sheet.setProperty('--background', black);
             // フラグはかきかえましょうね
             this.darkMode_flg = true;
-            // ローカルストレージに状態を保存
+            // ローカルストレージにダークモードだよって保存
             localStorage.setItem('darkMode', 'true');
         }
     };
