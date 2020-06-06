@@ -713,11 +713,11 @@
     {
         "kotb": "スタブ",
         "eigo": "stub",
-        "kwsk": "テストするときにつかう呼び出される側の代用品。",
+        "kwsk": "テストするときに必要な素材をだすやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "モック"
     },
     {
         "kotb": "ドライバ",
@@ -8491,8 +8491,8 @@
     },
     {
         "kotb": "インデックス",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "index",
+        "kwsk": "索引。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8500,24 +8500,33 @@
     },
     {
         "kotb": "モック",
-        "eigo": "",
-        "kwsk": "",
+        "eigo": "mock",
+        "kwsk": "出力を知りたいテストをするときその出力を受け取るやつ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "スタブ"
     },
     {
         "kotb": "ドネーション",
-        "eigo": "",
+        "eigo": "doantion",
         "kwsk": "",
         "btmi": "",
-        "mnim": "",
+        "mnim": "寄付",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "サチる",
+        "eigo": "",
+        "kwsk": "",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "シズル感",
         "eigo": "",
         "kwsk": "",
         "btmi": "",
