@@ -8,17 +8,17 @@ var urlsToCache = [
     'pwacompat.min.js',
     'smoothscroll.min.js',
     'jisho.json',
-    '/images/favicon.ico',
-    '/images/hoshixxx_72.png',
-    '/images/hoshixxx_96.png',
-    '/images/hoshixxx_128.png',
-    '/images/hoshixxx_144.png',
-    '/images/hoshixxx_152.png',
-    '/images/hoshixxx_192.png',
-    '/images/hoshixxx_384.png',
-    '/images/hoshixxx_512.png',
-    '/images/hoshixxx.svg',
-    '/images/qrcode_1025.png'
+    'images/favicon.ico',
+    'images/hoshixxx_72.png',
+    'images/hoshixxx_96.png',
+    'images/hoshixxx_128.png',
+    'images/hoshixxx_144.png',
+    'images/hoshixxx_152.png',
+    'images/hoshixxx_192.png',
+    'images/hoshixxx_384.png',
+    'images/hoshixxx_512.png',
+    'images/hoshixxx.svg',
+    'images/qrcode_1025.png'
 ];
 
 // インストール処理
