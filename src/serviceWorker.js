@@ -6,6 +6,7 @@ var urlsToCache = [
     'script.js',
     'setServiceWorker.js',
     'pwacompat.min.js',
+    'smoothscroll.min.js',
     'jisho.json',
     '/images/favicon.ico',
     '/images/hoshixxx_72.png',
