@@ -16,6 +16,7 @@ var urlsToCache = [
     '/images/hoshixxx_192.png',
     '/images/hoshixxx_384.png',
     '/images/hoshixxx_512.png',
+    '/images/hoshixxx.svg',
     '/images/qrcode_1025.png'
 ];
 
