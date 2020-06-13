@@ -419,7 +419,46 @@ class Jisho
 // お星様
 class Hoshi
 {
+    public static readonly hoshi_normal: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx.svg');
+    public static readonly hoshi_rare: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx_a1.svg');
+    public static readonly hoshi_superRare1: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx_a2.svg');
+    public static readonly hoshi_superRare2: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx_a3.svg');
+    public static readonly hoshi_superRare3: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx_a4.svg');
 
+    public static createHoshiElement(image_path: string): HTMLImageElement
+    {
+        const hoshi_element: HTMLImageElement = document.createElement('img');
+
+        hoshi_element.setAttribute("src", image_path);
+
+        return hoshi_element;
+    }
+
+    public getHoshiElement(): HTMLImageElement
+    {
+        const random_num: number = Math.floor(Math.random() * 100);
+
+        if (random_num === 99)
+        {
+            return Hoshi.hoshi_superRare1;
+        }
+        else if (random_num === 98)
+        {
+            return Hoshi.hoshi_superRare2;
+        }
+        else if (random_num === 97)
+        {
+            return Hoshi.hoshi_superRare3;
+        }
+        else if (random_num <= 80)
+        {
+            return Hoshi.hoshi_rare;
+        }
+        else
+        {
+            return Hoshi.hoshi_normal;
+        }
+    }
 }
 
 
