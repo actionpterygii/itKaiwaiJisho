@@ -1,5 +1,5 @@
 // キャッシュファイルの指定
-var CACHE_NAME = 'itKaiwaiJishoCaches';
+var CACHE_NAME = 'superSimpleCache';
 var urlsToCache = [
     'index.html',
     'style.css',
