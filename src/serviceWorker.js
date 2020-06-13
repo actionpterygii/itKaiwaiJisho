@@ -1,5 +1,5 @@
 // キャッシュファイルの指定
-var CACHE_NAME = 'superSimpleCache';
+var CACHE_NAME = 'rareStar';
 var urlsToCache = [
     'index.html',
     'style.css',
@@ -18,7 +18,10 @@ var urlsToCache = [
     'images/hoshixxx_192.png',
     'images/hoshixxx_384.png',
     'images/hoshixxx_512.png',
-    'images/hoshixxx.svg',
+    'images/hoshixxx_a1.svg',
+    'images/hoshixxx_a2.svg',
+    'images/hoshixxx_a3.svg',
+    'images/hoshixxx_a4.svg',
     'images/qrcode_1025.png'
 ];
 
