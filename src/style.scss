@@ -362,7 +362,7 @@ main {
 #random_btn {
     width: 90px;
     bottom: 10px;
-    left:calc(50% - 80px/2);
+    left:calc(50% - 90px / 2);
 }
 #guguru_btn {
     width: 70px;
@@ -373,4 +373,15 @@ main {
 }
 .guguru_btn__sentaku::before {
     content: '選択を';
+}
+
+
+.hoshi {
+    z-index: 50;
+    position: fixed;
+    bottom: 50px;
+    left:calc(50% - 50px / 2);
+    display: inline-block;
+    width: 50px;
+    opacity: 0.2;
 }

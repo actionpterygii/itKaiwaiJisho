@@ -320,7 +320,53 @@ var Jisho = /** @class */ (function () {
 // お星様
 var Hoshi = /** @class */ (function () {
     function Hoshi() {
+        // 0~99のランダム数字生成
+        var random_num = Math.floor(Math.random() * 100);
+        // 数字によって星イメージ生成しをインスタンスに設定
+        // 各星エレメントを予め生成して保持せずここでしているのは参照渡しになると個々に動かせず困るため
+        this.element = Hoshi.createImageElement((function () {
+            if (random_num === 99) {
+                return Hoshi.hoshiPath_superRare1;
+            }
+            else if (random_num === 98) {
+                return Hoshi.hoshiPath_superRare2;
+            }
+            else if (random_num === 97) {
+                return Hoshi.hoshiPath_superRare3;
+            }
+            else if (random_num >= 70) {
+                return Hoshi.hoshiPath_rare;
+            }
+            else {
+                return Hoshi.hoshiPath_normal;
+            }
+        })());
     }
+    // 受け取ったパスの画像によるimg要素をつくる
+    Hoshi.createImageElement = function (image_path) {
+        // img要素を生成
+        var imageElement = document.createElement('img');
+        // class指定
+        imageElement.classList.add("hoshi");
+        // 画像のパスを指定
+        imageElement.setAttribute("src", image_path);
+        // かえす
+        return imageElement;
+    };
+    Object.defineProperty(Hoshi.prototype, "_element", {
+        // privateであるelementプロパティをgetするメソッドですがget修飾子をつけてアクセサとすることでプロパティのように呼べるのです
+        get: function () {
+            return this.element;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    // スターエレメントパス
+    Hoshi.hoshiPath_normal = 'images/hoshixxx.svg';
+    Hoshi.hoshiPath_rare = 'images/hoshixxx_a1.svg';
+    Hoshi.hoshiPath_superRare1 = 'images/hoshixxx_a2.svg';
+    Hoshi.hoshiPath_superRare2 = 'images/hoshixxx_a3.svg';
+    Hoshi.hoshiPath_superRare3 = 'images/hoshixxx_a4.svg';
     return Hoshi;
 }());
 ////////////////////
@@ -441,6 +487,11 @@ nyuryoku_btn.addEventListener('click', function () {
 });
 // それはランダムの表示ボタンが押されることにより達成されます
 random_btn.addEventListener('click', function () {
+    // お星さまジェネレート
+    var hoshi = new Hoshi();
+    // お星さまエレメントを取得
+    var hoshiElement = hoshi._element;
+    all_area.appendChild(hoshiElement);
     // 一番上にスムーススクロール
     window.scrollTo({ top: 0, behavior: "smooth" });
     // ランダム一単語を表示させる

@@ -419,45 +419,64 @@ class Jisho
 // お星様
 class Hoshi
 {
-    public static readonly hoshi_normal: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx.svg');
-    public static readonly hoshi_rare: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx_a1.svg');
-    public static readonly hoshi_superRare1: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx_a2.svg');
-    public static readonly hoshi_superRare2: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx_a3.svg');
-    public static readonly hoshi_superRare3: HTMLImageElement = Hoshi.createHoshiElement('images/hoshixxx_a4.svg');
-
-    public static createHoshiElement(image_path: string): HTMLImageElement
+    constructor()
     {
-        const hoshi_element: HTMLImageElement = document.createElement('img');
-
-        hoshi_element.setAttribute("src", image_path);
-
-        return hoshi_element;
+        // 0~99のランダム数字生成
+        const random_num: number = Math.floor(Math.random() * 100);
+        // 数字によって星イメージ生成しをインスタンスに設定
+        // 各星エレメントを予め生成して保持せずここでしているのは参照渡しになると個々に動かせず困るため
+        this.element = Hoshi.createImageElement((function()
+        {
+            if (random_num === 99)
+            {
+                return Hoshi.hoshiPath_superRare1;
+            }
+            else if (random_num === 98)
+            {
+                return Hoshi.hoshiPath_superRare2;
+            }
+            else if (random_num === 97)
+            {
+                return Hoshi.hoshiPath_superRare3;
+            }
+            else if (random_num >= 70)
+            {
+                return Hoshi.hoshiPath_rare;
+            }
+            else
+            {
+                return Hoshi.hoshiPath_normal;
+            }
+        })());
     }
 
-    public getHoshiElement(): HTMLImageElement
-    {
-        const random_num: number = Math.floor(Math.random() * 100);
+    // スターエレメントパス
+    public static readonly hoshiPath_normal: string = 'images/hoshixxx.svg';
+    public static readonly hoshiPath_rare: string = 'images/hoshixxx_a1.svg';
+    public static readonly hoshiPath_superRare1: string = 'images/hoshixxx_a2.svg';
+    public static readonly hoshiPath_superRare2: string = 'images/hoshixxx_a3.svg';
+    public static readonly hoshiPath_superRare3: string = 'images/hoshixxx_a4.svg';
 
-        if (random_num === 99)
-        {
-            return Hoshi.hoshi_superRare1;
-        }
-        else if (random_num === 98)
-        {
-            return Hoshi.hoshi_superRare2;
-        }
-        else if (random_num === 97)
-        {
-            return Hoshi.hoshi_superRare3;
-        }
-        else if (random_num <= 80)
-        {
-            return Hoshi.hoshi_rare;
-        }
-        else
-        {
-            return Hoshi.hoshi_normal;
-        }
+    // インスタンスのスターエレメント
+    private element!: HTMLImageElement;
+
+    // 受け取ったパスの画像によるimg要素をつくる
+    public static createImageElement(image_path: string): HTMLImageElement
+    {
+        // img要素を生成
+        const imageElement: HTMLImageElement = document.createElement('img');
+        // class指定
+        imageElement.classList.add("hoshi");
+        // 画像のパスを指定
+        imageElement.setAttribute("src", image_path);
+        // かえす
+        return imageElement;
+    }
+
+    // privateであるelementプロパティをgetするメソッドですがget修飾子をつけてアクセサとすることでプロパティのように呼べるのです
+    public get _element(): HTMLImageElement
+    {
+        return this.element;
     }
 }
 
@@ -610,6 +629,14 @@ nyuryoku_btn.addEventListener('click', function()
 // それはランダムの表示ボタンが押されることにより達成されます
 random_btn.addEventListener('click', function()
 {
+    // お星さまジェネレート
+    const hoshi: Hoshi = new Hoshi();
+    // お星さまエレメント
+    const hoshiElement: HTMLImageElement = hoshi._element;
+    // お星さまアクティベート
+    all_area.appendChild(hoshiElement); 
+    // できればめそっどでアニメーションさせるのさ
+    // code...
     // 一番上にスムーススクロール
     window.scrollTo({top: 0, behavior: "smooth"});
     // ランダム一単語を表示させる
