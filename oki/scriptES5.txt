@@ -65,7 +65,7 @@ var State = /** @class */ (function () {
 }());
 // 辞書という
 var Jisho = /** @class */ (function () {
-    // newされたときにする
+    // newされたときに(辞書データへのパス,関連語で開く際の辞書インスタンス名)を受け取って
     function Jisho(jisho_data_path, krngJisho_instance_name) {
         // 一単語にある項目の中で調べるときにみにいくべきもの(対義語と関連語以外ね)
         this.word_items = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
@@ -393,8 +393,6 @@ var qrcode_btn = document.getElementById('qrcode_btn');
 var nyuryoku_btn = document.getElementById('nyuryoku_btn');
 var random_btn = document.getElementById('random_btn');
 var guguru_btn = document.getElementById('guguru_btn');
-// CSS要素
-var style_sheet = document.documentElement.style;
 // ぐぐりにつかうURL
 var guguru_url = 'https://www.google.com/search?q=';
 // 色達

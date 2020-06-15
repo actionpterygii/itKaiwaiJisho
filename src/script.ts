@@ -134,7 +134,7 @@ class Jisho
         });
     }
 
-    // newされたときにする
+    // newされたときに(辞書データへのパス,関連語で開く際の辞書インスタンス名)を受け取って
     constructor(jisho_data_path: string, krngJisho_instance_name: string)
     {
         // this保持のため
@@ -505,8 +505,6 @@ const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as H
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
 const random_btn: HTMLButtonElement = document.getElementById('random_btn') as HTMLButtonElement;
 const guguru_btn: HTMLAnchorElement = document.getElementById('guguru_btn') as HTMLAnchorElement;
-// CSS要素
-const style_sheet: CSSStyleDeclaration = document.documentElement.style;
 
 // ぐぐりにつかうURL
 const guguru_url: string = 'https://www.google.com/search?q=';
