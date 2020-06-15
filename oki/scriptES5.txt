@@ -13,9 +13,9 @@ var State = /** @class */ (function () {
         this.selected_text = null;
         // ダークモードかどうか
         this.darkMode_flg = false;
-        // スタイルシートげっちゅー
-        this.style_sheet = style_sheet;
+        // 各要素を私が受け持つことにします
         this.darkMode_btn = darkMode_btn;
+        this.style_sheet = style_sheet;
         // ダークモードに関する処理
         // ダークモード情報なければ
         if (localStorage.getItem('darkMode') === null) {
@@ -395,7 +395,6 @@ var Hoshi = /** @class */ (function () {
 var all_area = document.getElementById('wrap');
 var input_area = document.getElementById('input_area');
 var result_area = document.getElementById('result_area');
-// const darkMode_btn: HTMLButtonElement = document.getElementById('darkMode_btn') as HTMLButtonElement;
 var quickSearch_btns = document.getElementsByClassName('quickSearch_btn');
 var qrcode_btn = document.getElementById('qrcode_btn');
 var nyuryoku_btn = document.getElementById('nyuryoku_btn');
@@ -413,6 +412,7 @@ var green = '#9F6';
 var orange = '#F93';
 var purple = '#96F';
 // これからの状態をもつもの
+// こうも一旦どこかにおさめずにStateに渡しているのはそこ以外から触ってほしくないからですよそれを
 var state = new State(document.getElementById('darkMode_btn'), document.documentElement.style);
 // 辞書というモノはいまはこのひとつ
 var jisho = new Jisho('jisho.json', 'jisho');

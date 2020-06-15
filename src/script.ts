@@ -42,9 +42,9 @@ class State
     // newされたときにする
     constructor(darkMode_btn: HTMLButtonElement, style_sheet: CSSStyleDeclaration)
     {
-        // スタイルシートげっちゅー
-        this.style_sheet = style_sheet;
+        // 各要素を私が受け持つことにします
         this.darkMode_btn = darkMode_btn;
+        this.style_sheet = style_sheet;
         // ダークモードに関する処理
         // ダークモード情報なければ
         if (localStorage.getItem('darkMode') === null)
@@ -506,7 +506,6 @@ class Hoshi
 const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
-// const darkMode_btn: HTMLButtonElement = document.getElementById('darkMode_btn') as HTMLButtonElement;
 const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
 const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as HTMLButtonElement;
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
@@ -527,6 +526,7 @@ const orange: string = '#F93';
 const purple: string = '#96F';
 
 // これからの状態をもつもの
+// こうも一旦どこかにおさめずにStateに渡しているのはそこ以外から触ってほしくないからですよそれを
 const state: State = new State(document.getElementById('darkMode_btn') as HTMLButtonElement, document.documentElement.style);
 // 辞書というモノはいまはこのひとつ
 const jisho: Jisho = new Jisho('jisho.json', 'jisho');
