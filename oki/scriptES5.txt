@@ -419,9 +419,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // 一番上にスムーススクロール
             window.scrollTo({ top: 0, behavior: "smooth" });
             // その単語が入力されているものとする
-            state.input_text = quickSearch_btns[key].getAttribute('value');
-            // 単語を入力エリアに入れる
-            input_area.value = state.input_text;
+            state.inputOverwrite(input_area, quickSearch_btns[key].getAttribute('value'));
             // 出力
             result_area.innerHTML = (function () {
                 // 前方に`--`の付いてる特殊なやつなら
