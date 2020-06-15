@@ -5,7 +5,7 @@
 ////////////////////
 // 状態という
 var State = /** @class */ (function () {
-    // newされたときにする
+    // newされたときに(ダークモードボタンの参照,スタイルシート)を受け取って
     function State(darkMode_btn, style_sheet) {
         // 入力されている文字
         this.input_text = '';

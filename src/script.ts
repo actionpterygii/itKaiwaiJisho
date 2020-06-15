@@ -39,7 +39,7 @@ interface HTMLButtonElement {checked: boolean};
 // 状態という
 class State
 {
-    // newされたときにする
+    // newされたときに(ダークモードボタンの参照,スタイルシート)を受け取って
     constructor(darkMode_btn: HTMLButtonElement, style_sheet: CSSStyleDeclaration)
     {
         // 各要素を私が受け持つことにします
