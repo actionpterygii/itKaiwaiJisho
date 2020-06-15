@@ -40,10 +40,11 @@ interface HTMLButtonElement {checked: boolean};
 class State
 {
     // newされたときにする
-    constructor(style_sheet: CSSStyleDeclaration)
+    constructor(darkMode_btn: HTMLButtonElement, style_sheet: CSSStyleDeclaration)
     {
         // スタイルシートげっちゅー
         this.style_sheet = style_sheet;
+        this.darkMode_btn = darkMode_btn;
         // ダークモードに関する処理
         // ダークモード情報なければ
         if (localStorage.getItem('darkMode') === null)
@@ -58,7 +59,7 @@ class State
             // ダークモードにさせる各種処理
             this.changeDarkMode();
             // ダークモードトグルボタンをチェックした状態にしちゃいましょう
-            darkMode_btn.checked = true;
+            this.darkMode_btn.checked = true;
         }
     }
 
@@ -68,6 +69,12 @@ class State
     public selected_text: string | null = null;
     // ダークモードかどうか
     protected darkMode_flg: boolean = false;
+    // 触るダークモードボタン
+    protected darkMode_btn!: HTMLButtonElement;
+    public get _darkMode_btn(): HTMLButtonElement
+    {
+        return this.darkMode_btn;
+    }
     // 触るスタイルシート
     protected style_sheet!: CSSStyleDeclaration;
 
@@ -499,7 +506,7 @@ class Hoshi
 const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
 const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
-const darkMode_btn: HTMLButtonElement = document.getElementById('darkMode_btn') as HTMLButtonElement;
+// const darkMode_btn: HTMLButtonElement = document.getElementById('darkMode_btn') as HTMLButtonElement;
 const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
 const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as HTMLButtonElement;
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
@@ -520,7 +527,7 @@ const orange: string = '#F93';
 const purple: string = '#96F';
 
 // これからの状態をもつもの
-const state: State = new State(document.documentElement.style);
+const state: State = new State(document.getElementById('darkMode_btn') as HTMLButtonElement, document.documentElement.style);
 // 辞書というモノはいまはこのひとつ
 const jisho: Jisho = new Jisho('jisho.json', 'jisho');
 
@@ -612,7 +619,7 @@ all_area.addEventListener('touchend', function()
 });
 
 // ダークモードトグルボタンが変わったら
-darkMode_btn.addEventListener('change', function()
+state._darkMode_btn.addEventListener('change', function()
 {
     // ダークモード状態を変えるのです
     state.changeDarkMode();
@@ -642,7 +649,7 @@ random_btn.addEventListener('click', function()
     // お星さまエレメント
     const hoshiElement: HTMLImageElement = hoshi._element;
     // お星さまアクティベート
-    all_area.appendChild(hoshiElement); 
+    all_area.appendChild(hoshiElement);
     // できればめそっどでアニメーションさせるのさ
     // code...
     // 一番上にスムーススクロール

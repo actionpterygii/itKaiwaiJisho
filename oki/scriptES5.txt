@@ -6,7 +6,7 @@
 // 状態という
 var State = /** @class */ (function () {
     // newされたときにする
-    function State(style_sheet) {
+    function State(darkMode_btn, style_sheet) {
         // 入力されている文字
         this.input_text = '';
         // 選択されている文字
@@ -15,6 +15,7 @@ var State = /** @class */ (function () {
         this.darkMode_flg = false;
         // スタイルシートげっちゅー
         this.style_sheet = style_sheet;
+        this.darkMode_btn = darkMode_btn;
         // ダークモードに関する処理
         // ダークモード情報なければ
         if (localStorage.getItem('darkMode') === null) {
@@ -27,9 +28,16 @@ var State = /** @class */ (function () {
             // ダークモードにさせる各種処理
             this.changeDarkMode();
             // ダークモードトグルボタンをチェックした状態にしちゃいましょう
-            darkMode_btn.checked = true;
+            this.darkMode_btn.checked = true;
         }
     }
+    Object.defineProperty(State.prototype, "_darkMode_btn", {
+        get: function () {
+            return this.darkMode_btn;
+        },
+        enumerable: true,
+        configurable: true
+    });
     // 入力されていることにする
     State.prototype.inputOverwrite = function (input_area, text) {
         // 実際の表示に反映
@@ -387,7 +395,7 @@ var Hoshi = /** @class */ (function () {
 var all_area = document.getElementById('wrap');
 var input_area = document.getElementById('input_area');
 var result_area = document.getElementById('result_area');
-var darkMode_btn = document.getElementById('darkMode_btn');
+// const darkMode_btn: HTMLButtonElement = document.getElementById('darkMode_btn') as HTMLButtonElement;
 var quickSearch_btns = document.getElementsByClassName('quickSearch_btn');
 var qrcode_btn = document.getElementById('qrcode_btn');
 var nyuryoku_btn = document.getElementById('nyuryoku_btn');
@@ -405,7 +413,7 @@ var green = '#9F6';
 var orange = '#F93';
 var purple = '#96F';
 // これからの状態をもつもの
-var state = new State(document.documentElement.style);
+var state = new State(document.getElementById('darkMode_btn'), document.documentElement.style);
 // 辞書というモノはいまはこのひとつ
 var jisho = new Jisho('jisho.json', 'jisho');
 ////////////////////
@@ -478,7 +486,7 @@ all_area.addEventListener('touchend', function () {
     }
 });
 // ダークモードトグルボタンが変わったら
-darkMode_btn.addEventListener('change', function () {
+state._darkMode_btn.addEventListener('change', function () {
     // ダークモード状態を変えるのです
     state.changeDarkMode();
 });
