@@ -39,13 +39,6 @@ interface HTMLButtonElement {checked: boolean};
 // 状態という
 class State
 {
-    // 入力されている文字
-    public input_text: string = '';
-    // 選択されている文字
-    public selected_text: string | null = null;
-    // ダークモードかどうか
-    public darkMode_flg: boolean = false;
-
     // newされたときにする
     constructor()
     {
@@ -66,6 +59,13 @@ class State
             darkMode_btn.checked = true;
         }
     }
+
+    // 入力されている文字
+    public input_text: string = '';
+    // 選択されている文字
+    public selected_text: string | null = null;
+    // ダークモードかどうか
+    protected darkMode_flg: boolean = false;
 
     // 入力されていることにする
     public inputOverwrite(text: string)
@@ -108,16 +108,27 @@ class State
 // 辞書という
 class Jisho
 {
-    // 一単語にある項目の中で調べるときにみにいくべきもの(対義語と関連語以外ね)
-    public readonly word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
-    // 辞書のデータ
-    public jisho_data!: JishoData;
-    // 辞書のデータにある単語の数
-    public tango_quantity!: number;
-    // 関連語を開く時に呼ぶJishoインスタンスの名前
-    public krngJisho_instance_name!: string;
-    // ランダムのときに最後に出した言葉
-    public last_random_word: string = '';
+    // ひらがなをカナカナに変換するための
+    protected static hiraToKata(text: string): string
+    {
+        // ひらがなをおきかえるよって
+        return text.replace(/[\u3041-\u3096]/g, function(text: string)
+        {
+            // 文字コード的にずらしてカタカナにする
+            return String.fromCharCode(text.charCodeAt(0) + 0x60);
+        });
+    }
+
+    // 全角英数を半角英数に変換するための
+    protected static zenToHan(text: string): string
+    {
+        //全角英数置き換えるよって
+        return text.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(text: string)
+        {
+            //　文字コード的にずらして半角にする
+            return String.fromCharCode(text.charCodeAt(0) - 65248);
+        });
+    }
 
     // newされたときにする
     constructor(jisho_data_path: string, krngJisho_instance_name: string)
@@ -147,30 +158,23 @@ class Jisho
         this.krngJisho_instance_name = krngJisho_instance_name;
     }
 
-    // ひらがなをカナカナに変換するための
-    public static hiraToKata(text: string): string
+    // 一単語にある項目の中で調べるときにみにいくべきもの(対義語と関連語以外ね)
+    protected readonly word_items: string[] = ['kotb', 'eigo', 'kwsk', 'btmi', 'mnim'];
+    // 辞書のデータ
+    protected jisho_data!: JishoData;
+    // 辞書のデータにある単語の数
+    protected tango_quantity!: number;
+    // 関連語を開く時に呼ぶJishoインスタンスの名前
+    protected krngJisho_instance_name!: string;
+    // ランダムのときに最後に出した言葉
+    protected last_random_word: string = '';
+    public get _last_random_word(): string
     {
-        // ひらがなをおきかえるよって
-        return text.replace(/[\u3041-\u3096]/g, function(text: string)
-        {
-            // 文字コード的にずらしてカタカナにする
-            return String.fromCharCode(text.charCodeAt(0) + 0x60);
-        });
-    }
-
-    // 全角英数を半角英数に変換するための
-    public static zenToHan(text: string): string
-    {
-        //全角英数置き換えるよって
-        return text.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(text: string)
-        {
-            //　文字コード的にずらして半角にする
-            return String.fromCharCode(text.charCodeAt(0) - 65248);
-        });
+        return this.last_random_word;
     }
 
     // itemの内容がinput_textのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
-    public containing(item: string, input_text: string, exact_match: boolean): boolean
+    protected containing(item: string, input_text: string, exact_match: boolean): boolean
     {
         // スペースを削除する
         item = item.replace(/\s+/g, '');
@@ -219,7 +223,7 @@ class Jisho
     }
 
     // 入力された値を辞書jsonから検索してマッチしたものを返す。exact_matchは完全一致検索かどうか
-    public search(input_text: string, exact_match: boolean): JishoData
+    protected search(input_text: string, exact_match: boolean): JishoData
     {
         // '--all'と入力された場合
         if (input_text === '--all')
@@ -284,7 +288,7 @@ class Jisho
     }
 
     // 1単語の情報からHTMLを作成
-    public generateHTML(element: Tango): HTMLString
+    protected generateHTML(element: Tango): HTMLString
     {
         // 一単語をつつむおおいなるdiv要素(これに追加していって最後返す)
         let html: HTMLString = `<div class="tango">`;
@@ -358,8 +362,10 @@ class Jisho
                 entity += this.generateHTML(required_elements[key]);
             }
         }
+        // なければ
         else
         {
+            // ないって情報を用意
             entity += `<h2 class="nothing">nothing</h2>`;
         }
         // かえす
@@ -419,6 +425,27 @@ class Jisho
 // お星様
 class Hoshi
 {
+    // スターエレメントパス
+    protected static readonly hoshiPath_normal: string = 'images/hoshixxx.svg';
+    protected static readonly hoshiPath_rare: string = 'images/hoshixxx_a1.svg';
+    protected static readonly hoshiPath_superRare1: string = 'images/hoshixxx_a2.svg';
+    protected static readonly hoshiPath_superRare2: string = 'images/hoshixxx_a3.svg';
+    protected static readonly hoshiPath_superRare3: string = 'images/hoshixxx_a4.svg';
+
+    // 受け取ったパスの画像によるimg要素をつくる
+    public static createImageElement(image_path: string): HTMLImageElement
+    {
+        // img要素を生成
+        const imageElement: HTMLImageElement = document.createElement('img');
+        // class指定
+        imageElement.classList.add('hoshi');
+        // 画像のパスを指定
+        imageElement.setAttribute('src', image_path);
+        // かえす
+        return imageElement;
+    }
+
+    // newされたときにする
     constructor()
     {
         // 0~99のランダム数字生成
@@ -450,35 +477,14 @@ class Hoshi
         })());
     }
 
-    // スターエレメントパス
-    public static readonly hoshiPath_normal: string = 'images/hoshixxx.svg';
-    public static readonly hoshiPath_rare: string = 'images/hoshixxx_a1.svg';
-    public static readonly hoshiPath_superRare1: string = 'images/hoshixxx_a2.svg';
-    public static readonly hoshiPath_superRare2: string = 'images/hoshixxx_a3.svg';
-    public static readonly hoshiPath_superRare3: string = 'images/hoshixxx_a4.svg';
-
     // インスタンスのスターエレメント
-    private element!: HTMLImageElement;
-
-    // 受け取ったパスの画像によるimg要素をつくる
-    public static createImageElement(image_path: string): HTMLImageElement
-    {
-        // img要素を生成
-        const imageElement: HTMLImageElement = document.createElement('img');
-        // class指定
-        imageElement.classList.add("hoshi");
-        // 画像のパスを指定
-        imageElement.setAttribute("src", image_path);
-        // かえす
-        return imageElement;
-    }
-
-    // privateであるelementプロパティをgetするメソッドですがget修飾子をつけてアクセサとすることでプロパティのように呼べるのです
+    protected element!: HTMLImageElement;
     public get _element(): HTMLImageElement
     {
         return this.element;
     }
 }
+
 
 
 ////////////////////
@@ -642,7 +648,7 @@ random_btn.addEventListener('click', function()
     // ランダム一単語を表示させる
     result_area.innerHTML = jisho.createRandomOneTangoResult();
     // その単語が入力されているものとする
-    state.inputOverwrite(jisho.last_random_word);
+    state.inputOverwrite(jisho._last_random_word);
 });
 
 // ぐぐるボタン押されたらぐぐる

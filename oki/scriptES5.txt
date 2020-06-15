@@ -107,6 +107,13 @@ var Jisho = /** @class */ (function () {
             return String.fromCharCode(text.charCodeAt(0) - 65248);
         });
     };
+    Object.defineProperty(Jisho.prototype, "_last_random_word", {
+        get: function () {
+            return this.last_random_word;
+        },
+        enumerable: true,
+        configurable: true
+    });
     // itemの内容がinput_textのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
     Jisho.prototype.containing = function (item, input_text, exact_match) {
         // スペースを削除する
@@ -268,7 +275,9 @@ var Jisho = /** @class */ (function () {
                 entity += this.generateHTML(required_elements[key]);
             }
         }
+        // なければ
         else {
+            // ないって情報を用意
             entity += "<h2 class=\"nothing\">nothing</h2>";
         }
         // かえす
@@ -319,6 +328,7 @@ var Jisho = /** @class */ (function () {
 }());
 // お星様
 var Hoshi = /** @class */ (function () {
+    // newされたときにする
     function Hoshi() {
         // 0~99のランダム数字生成
         var random_num = Math.floor(Math.random() * 100);
@@ -347,14 +357,13 @@ var Hoshi = /** @class */ (function () {
         // img要素を生成
         var imageElement = document.createElement('img');
         // class指定
-        imageElement.classList.add("hoshi");
+        imageElement.classList.add('hoshi');
         // 画像のパスを指定
-        imageElement.setAttribute("src", image_path);
+        imageElement.setAttribute('src', image_path);
         // かえす
         return imageElement;
     };
     Object.defineProperty(Hoshi.prototype, "_element", {
-        // privateであるelementプロパティをgetするメソッドですがget修飾子をつけてアクセサとすることでプロパティのように呼べるのです
         get: function () {
             return this.element;
         },
@@ -489,15 +498,18 @@ nyuryoku_btn.addEventListener('click', function () {
 random_btn.addEventListener('click', function () {
     // お星さまジェネレート
     var hoshi = new Hoshi();
-    // お星さまエレメントを取得
+    // お星さまエレメント
     var hoshiElement = hoshi._element;
+    // お星さまアクティベート
     all_area.appendChild(hoshiElement);
+    // できればめそっどでアニメーションさせるのさ
+    // code...
     // 一番上にスムーススクロール
     window.scrollTo({ top: 0, behavior: "smooth" });
     // ランダム一単語を表示させる
     result_area.innerHTML = jisho.createRandomOneTangoResult();
     // その単語が入力されているものとする
-    state.inputOverwrite(jisho.last_random_word);
+    state.inputOverwrite(jisho._last_random_word);
 });
 // ぐぐるボタン押されたらぐぐる
 guguru_btn.addEventListener('click', function () {

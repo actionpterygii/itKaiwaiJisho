@@ -106,6 +106,9 @@ class Jisho {
             return String.fromCharCode(text.charCodeAt(0) - 65248);
         });
     }
+    get _last_random_word() {
+        return this.last_random_word;
+    }
     // itemの内容がinput_textのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
     containing(item, input_text, exact_match) {
         // スペースを削除する
@@ -266,7 +269,9 @@ class Jisho {
                 entity += this.generateHTML(required_elements[key]);
             }
         }
+        // なければ
         else {
+            // ないって情報を用意
             entity += `<h2 class="nothing">nothing</h2>`;
         }
         // かえす
@@ -316,6 +321,7 @@ class Jisho {
 }
 // お星様
 class Hoshi {
+    // newされたときにする
     constructor() {
         // 0~99のランダム数字生成
         const random_num = Math.floor(Math.random() * 100);
@@ -344,13 +350,12 @@ class Hoshi {
         // img要素を生成
         const imageElement = document.createElement('img');
         // class指定
-        imageElement.classList.add("hoshi");
+        imageElement.classList.add('hoshi');
         // 画像のパスを指定
-        imageElement.setAttribute("src", image_path);
+        imageElement.setAttribute('src', image_path);
         // かえす
         return imageElement;
     }
-    // privateであるelementプロパティをgetするメソッドですがget修飾子をつけてアクセサとすることでプロパティのように呼べるのです
     get _element() {
         return this.element;
     }
@@ -478,15 +483,18 @@ nyuryoku_btn.addEventListener('click', function () {
 random_btn.addEventListener('click', function () {
     // お星さまジェネレート
     const hoshi = new Hoshi();
-    // お星さまエレメントを取得
+    // お星さまエレメント
     const hoshiElement = hoshi._element;
+    // お星さまアクティベート
     all_area.appendChild(hoshiElement);
+    // できればめそっどでアニメーションさせるのさ
+    // code...
     // 一番上にスムーススクロール
     window.scrollTo({ top: 0, behavior: "smooth" });
     // ランダム一単語を表示させる
     result_area.innerHTML = jisho.createRandomOneTangoResult();
     // その単語が入力されているものとする
-    state.inputOverwrite(jisho.last_random_word);
+    state.inputOverwrite(jisho._last_random_word);
 });
 // ぐぐるボタン押されたらぐぐる
 guguru_btn.addEventListener('click', function () {
