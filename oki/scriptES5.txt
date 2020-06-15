@@ -6,13 +6,15 @@
 // 状態という
 var State = /** @class */ (function () {
     // newされたときにする
-    function State() {
+    function State(style_sheet) {
         // 入力されている文字
         this.input_text = '';
         // 選択されている文字
         this.selected_text = null;
         // ダークモードかどうか
         this.darkMode_flg = false;
+        // スタイルシートげっちゅー
+        this.style_sheet = style_sheet;
         // ダークモードに関する処理
         // ダークモード情報なければ
         if (localStorage.getItem('darkMode') === null) {
@@ -29,7 +31,7 @@ var State = /** @class */ (function () {
         }
     }
     // 入力されていることにする
-    State.prototype.inputOverwrite = function (text) {
+    State.prototype.inputOverwrite = function (input_area, text) {
         // 実際の表示に反映
         input_area.value = text;
         // このプログラミング的にもそうする
@@ -41,8 +43,8 @@ var State = /** @class */ (function () {
         if (this.darkMode_flg) {
             // ダークモードじゃなくすように書き換える
             // cssの`:root`にある記述を書き換える系
-            style_sheet.setProperty('--text', black);
-            style_sheet.setProperty('--background', white);
+            this.style_sheet.setProperty('--text', black);
+            this.style_sheet.setProperty('--background', white);
             // フラグはかきかえましょうね
             this.darkMode_flg = false;
             // ローカルストレージにダークモードじゃないよって保存
@@ -51,8 +53,8 @@ var State = /** @class */ (function () {
         // ダークモードになっていないときは
         else {
             // ダークモードになるように書き換える
-            style_sheet.setProperty('--text', white);
-            style_sheet.setProperty('--background', black);
+            this.style_sheet.setProperty('--text', white);
+            this.style_sheet.setProperty('--background', black);
             // フラグはかきかえましょうね
             this.darkMode_flg = true;
             // ローカルストレージにダークモードだよって保存
@@ -405,7 +407,7 @@ var green = '#9F6';
 var orange = '#F93';
 var purple = '#96F';
 // これからの状態をもつもの
-var state = new State();
+var state = new State(document.documentElement.style);
 // 辞書というモノはいまはこのひとつ
 var jisho = new Jisho('jisho.json', 'jisho');
 ////////////////////
@@ -425,6 +427,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // 出力
             result_area.innerHTML = (function () {
                 // 前方に`--`の付いてる特殊なやつなら
+                // それってつまり`--`の最初に現れる位置が最初つまり0ってことなの
                 if (state.input_text.indexOf('--') === 0) {
                     // 基本複数あるのでふつう検索
                     return jisho.createResult(state.input_text);
@@ -432,6 +435,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // ふつうのやつなら
                 else {
                     // 完全一致検索
+                    // いまはクイックサーチボタンからの要求はは完全一致検索ということになっています。用語の解説用だしね！
                     return jisho.createExactResult(state.input_text);
                 }
             })();
@@ -444,7 +448,7 @@ document.addEventListener('DOMContentLoaded', function () {
         _loop_1(key);
     }
 });
-// 文字が入力されるたんびに
+// 入力エリアでの文字いじりそうさのたびに
 input_area.addEventListener('keyup', function () {
     // inputにあるvalueを格納(スペースを消して)
     state.input_text = input_area.value.replace(/\s+/g, '');
@@ -509,7 +513,7 @@ random_btn.addEventListener('click', function () {
     // ランダム一単語を表示させる
     result_area.innerHTML = jisho.createRandomOneTangoResult();
     // その単語が入力されているものとする
-    state.inputOverwrite(jisho._last_random_word);
+    state.inputOverwrite(input_area, jisho._last_random_word);
 });
 // ぐぐるボタン押されたらぐぐる
 guguru_btn.addEventListener('click', function () {
