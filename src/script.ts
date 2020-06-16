@@ -40,9 +40,10 @@ interface HTMLButtonElement {checked: boolean};
 class State
 {
     // newされたときに(ダークモードボタンの参照,スタイルシート)を受け取って
-    constructor(darkMode_btn: HTMLButtonElement, style_sheet: CSSStyleDeclaration)
+    constructor(input_area: HTMLInputElement, darkMode_btn: HTMLButtonElement, style_sheet: CSSStyleDeclaration)
     {
         // 各要素を私が受け持つことにします
+        this.input_area = input_area;
         this.darkMode_btn = darkMode_btn;
         this.style_sheet = style_sheet;
         // ダークモードに関する処理
@@ -63,29 +64,17 @@ class State
         }
     }
 
-    // 入力されている文字
-    public input_text: string = '';
+    // 触るインプットエリア
+    public input_area!: HTMLInputElement;
     // 選択されている文字
     public selected_text: string | null = null;
     // ダークモードかどうか
     protected darkMode_flg: boolean = false;
     // 触るダークモードボタン
     protected darkMode_btn!: HTMLButtonElement;
-    public get _darkMode_btn(): HTMLButtonElement
-    {
-        return this.darkMode_btn;
-    }
+    public get _darkMode_btn(): HTMLButtonElement {return this.darkMode_btn}
     // 触るスタイルシート
     protected style_sheet!: CSSStyleDeclaration;
-
-    // 入力されていることにする
-    public inputOverwrite(input_area: HTMLInputElement, text: string)
-    {
-        // 実際の表示に反映
-        input_area.value = text;
-        // このプログラミング的にもそうする
-        this.input_text = text;
-    }
 
     // 今のダークモード状態によってダークモード状態を変えて状態を記憶させる処理もします
     public changeDarkMode()
@@ -361,6 +350,8 @@ class Jisho
     {
         // 最後かえす文字列
         let entity: HTMLString = '';
+        // スペース文字を削除
+        input_text = input_text.replace(/\s+/g, '');
         // 必要な要素を選定する
         const required_elements: JishoData = this.search(input_text, false);
         // 返すべき結果があれば
@@ -490,10 +481,7 @@ class Hoshi
 
     // インスタンスのスターエレメント
     protected element!: HTMLImageElement;
-    public get _element(): HTMLImageElement
-    {
-        return this.element;
-    }
+    public get _element(): HTMLImageElement {return this.element}
 }
 
 
@@ -504,7 +492,7 @@ class Hoshi
 
 // HTML要素
 const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
-const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
+// const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
 const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as HTMLButtonElement;
@@ -527,7 +515,11 @@ const purple: string = '#96F';
 
 // これからの状態をもつもの
 // こうも一旦どこかにおさめずにStateに渡しているのはそこ以外から触ってほしくないからですよそれを
-const state: State = new State(document.getElementById('darkMode_btn') as HTMLButtonElement, document.documentElement.style);
+const state: State = new State(
+    document.getElementById('input_area') as HTMLInputElement,
+    document.getElementById('darkMode_btn') as HTMLButtonElement,
+    document.documentElement.style
+);
 // 辞書というモノはいまはこのひとつ
 const jisho: Jisho = new Jisho('jisho.json', 'jisho');
 
@@ -550,24 +542,24 @@ document.addEventListener('DOMContentLoaded', function()
         {
             // 一番上にスムーススクロール
             window.scrollTo({top: 0, behavior: "smooth"});
-            // その単語が入力されているものとする
-            state.inputOverwrite(input_area, quickSearch_btns[key].getAttribute('value')!);
+            // その単語が入力されているものとする(インプットエリア上書き)
+            state.input_area.value = quickSearch_btns[key].getAttribute('value')!;
             // 出力
             result_area.innerHTML = (function()
             {
                 // 前方に`--`の付いてる特殊なやつなら
                 // それってつまり`--`の最初に現れる位置が最初つまり0ってことなの
-                if (state.input_text.indexOf('--') === 0)
+                if (state.input_area.value.indexOf('--') === 0)
                 {
                     // 基本複数あるのでふつう検索
-                    return jisho.createResult(state.input_text);
+                    return jisho.createResult(state.input_area.value);
                 }
                 // ふつうのやつなら
                 else
                 {
                     // 完全一致検索
                     // いまはクイックサーチボタンからの要求はは完全一致検索ということになっています。用語の解説用だしね！
-                    return jisho.createExactResult(state.input_text);
+                    return jisho.createExactResult(state.input_area.value);
                 }
             }
             )();
@@ -576,18 +568,16 @@ document.addEventListener('DOMContentLoaded', function()
 });
 
 // 入力エリアでの文字いじりそうさのたびに
-input_area.addEventListener('keyup', function()
+state.input_area.addEventListener('keyup', function()
 {
-    // inputにあるvalueを格納(スペースを消して)
-    state.input_text = input_area.value.replace(/\s+/g, '');
     // result_areaエリアの内容を変更(描画し直す)
     result_area.innerHTML = (function()
     {
         // 入力内容があれば
-        if (state.input_text !== '')
+        if (state.input_area.value !== '')
         {
             // input_textから結果を作成して返す
-            return jisho.createResult(state.input_text);
+            return jisho.createResult(state.input_area.value);
         }
         // 入力内容がなければ
         else
@@ -638,7 +628,7 @@ qrcode_btn.addEventListener('click', function()
 nyuryoku_btn.addEventListener('click', function()
 {
     // いんぷっとえりあにフォーカス
-    input_area.focus();
+    state.input_area.focus();
 });
 
 // それはランダムの表示ボタンが押されることにより達成されます
@@ -657,7 +647,7 @@ random_btn.addEventListener('click', function()
     // ランダム一単語を表示させる
     result_area.innerHTML = jisho.createRandomOneTangoResult();
     // その単語が入力されているものとする
-    state.inputOverwrite(input_area, jisho._last_random_word);
+    state.input_area.value =  jisho._last_random_word;
 });
 
 // ぐぐるボタン押されたらぐぐる
@@ -677,6 +667,6 @@ guguru_btn.addEventListener('click', function()
     else
     {
         // 入力されている文字でぐぐる
-        window.open(guguru_url + state.input_text);
+        window.open(guguru_url + state.input_area.value);
     }
 });
