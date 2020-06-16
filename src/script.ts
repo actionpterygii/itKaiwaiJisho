@@ -57,50 +57,45 @@ class State
         // ローカルストレージがダークモードだと言っているののあら
         if (localStorage.getItem('darkMode') === 'true')
         {
-            // ダークモードにさせる各種処理
-            this.changeDarkMode();
             // ダークモードトグルボタンをチェックした状態にしちゃいましょう
             this.darkMode_btn.checked = true;
+            // ダークモードにさせる各種処理
+            this.changeDarkMode();
         }
     }
 
     // 触るインプットエリア
     public input_area!: HTMLInputElement;
-    // 選択されている文字
-    public selected_text: string | null = null;
-    // ダークモードかどうか
-    protected darkMode_flg: boolean = false;
     // 触るダークモードボタン
     protected darkMode_btn!: HTMLButtonElement;
     public get _darkMode_btn(): HTMLButtonElement {return this.darkMode_btn}
     // 触るスタイルシート
     protected style_sheet!: CSSStyleDeclaration;
+    // 選択されている文字
+    public selected_text: string | null = null;
 
     // 今のダークモード状態によってダークモード状態を変えて状態を記憶させる処理もします
     public changeDarkMode()
     {
-        // ダークモードになっていたらtrueなので
-        if (this.darkMode_flg)
-        {
-            // ダークモードじゃなくすように書き換える
-            // cssの`:root`にある記述を書き換える系
-            this.style_sheet.setProperty('--text', black);
-            this.style_sheet.setProperty('--background', white);
-            // フラグはかきかえましょうね
-            this.darkMode_flg = false;
-            // ローカルストレージにダークモードじゃないよって保存
-            localStorage.setItem('darkMode', 'false');
-        }
-        // ダークモードになっていないときは
-        else
+        // ダークモードボタンがチェックされている/ONになっている/右にあるなら、
+        // ダークモードになっていない状態から動かしたということなので
+        if (this.darkMode_btn.checked)
         {
             // ダークモードになるように書き換える
+            // cssの`:root`にある記述を書き換える系
             this.style_sheet.setProperty('--text', white);
             this.style_sheet.setProperty('--background', black);
-            // フラグはかきかえましょうね
-            this.darkMode_flg = true;
-            // ローカルストレージにダークモードだよって保存
+            // ローカルストレージに今はダークモードだよって保存
             localStorage.setItem('darkMode', 'true');
+        }
+        // 逆は
+        else
+        {
+            // シャイニングモードになるように書き換える
+            this.style_sheet.setProperty('--text', black);
+            this.style_sheet.setProperty('--background', white);
+            // ローカルストレージに今はダークモードじゃないよって保存
+            localStorage.setItem('darkMode', 'false');
         }
     }
 }
@@ -168,10 +163,7 @@ class Jisho
     protected krngJisho_instance_name!: string;
     // ランダムのときに最後に出した言葉
     protected last_random_word: string = '';
-    public get _last_random_word(): string
-    {
-        return this.last_random_word;
-    }
+    public get _last_random_word(): string {return this.last_random_word}
 
     // itemの内容がinput_textのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
     protected containing(item: string, input_text: string, exact_match: boolean): boolean
@@ -492,7 +484,6 @@ class Hoshi
 
 // HTML要素
 const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
-// const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
 const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as HTMLButtonElement;

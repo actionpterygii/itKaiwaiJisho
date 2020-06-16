@@ -9,8 +9,6 @@ var State = /** @class */ (function () {
     function State(input_area, darkMode_btn, style_sheet) {
         // 選択されている文字
         this.selected_text = null;
-        // ダークモードかどうか
-        this.darkMode_flg = false;
         // 各要素を私が受け持つことにします
         this.input_area = input_area;
         this.darkMode_btn = darkMode_btn;
@@ -24,10 +22,10 @@ var State = /** @class */ (function () {
         }
         // ローカルストレージがダークモードだと言っているののあら
         if (localStorage.getItem('darkMode') === 'true') {
-            // ダークモードにさせる各種処理
-            this.changeDarkMode();
             // ダークモードトグルボタンをチェックした状態にしちゃいましょう
             this.darkMode_btn.checked = true;
+            // ダークモードにさせる各種処理
+            this.changeDarkMode();
         }
     }
     Object.defineProperty(State.prototype, "_darkMode_btn", {
@@ -37,26 +35,23 @@ var State = /** @class */ (function () {
     });
     // 今のダークモード状態によってダークモード状態を変えて状態を記憶させる処理もします
     State.prototype.changeDarkMode = function () {
-        // ダークモードになっていたらtrueなので
-        if (this.darkMode_flg) {
-            // ダークモードじゃなくすように書き換える
-            // cssの`:root`にある記述を書き換える系
-            this.style_sheet.setProperty('--text', black);
-            this.style_sheet.setProperty('--background', white);
-            // フラグはかきかえましょうね
-            this.darkMode_flg = false;
-            // ローカルストレージにダークモードじゃないよって保存
-            localStorage.setItem('darkMode', 'false');
-        }
-        // ダークモードになっていないときは
-        else {
+        // ダークモードボタンがチェックされている/ONになっている/右にあるなら、
+        // ダークモードになっていない状態から動かしたということなので
+        if (this.darkMode_btn.checked) {
             // ダークモードになるように書き換える
+            // cssの`:root`にある記述を書き換える系
             this.style_sheet.setProperty('--text', white);
             this.style_sheet.setProperty('--background', black);
-            // フラグはかきかえましょうね
-            this.darkMode_flg = true;
-            // ローカルストレージにダークモードだよって保存
+            // ローカルストレージに今はダークモードだよって保存
             localStorage.setItem('darkMode', 'true');
+        }
+        // 逆は
+        else {
+            // シャイニングモードになるように書き換える
+            this.style_sheet.setProperty('--text', black);
+            this.style_sheet.setProperty('--background', white);
+            // ローカルストレージに今はダークモードじゃないよって保存
+            localStorage.setItem('darkMode', 'false');
         }
     };
     return State;
@@ -108,9 +103,7 @@ var Jisho = /** @class */ (function () {
         });
     };
     Object.defineProperty(Jisho.prototype, "_last_random_word", {
-        get: function () {
-            return this.last_random_word;
-        },
+        get: function () { return this.last_random_word; },
         enumerable: true,
         configurable: true
     });
@@ -383,7 +376,6 @@ var Hoshi = /** @class */ (function () {
 ////////////////////
 // HTML要素
 var all_area = document.getElementById('wrap');
-// const input_area: HTMLInputElement = document.getElementById('input_area') as HTMLInputElement;
 var result_area = document.getElementById('result_area');
 var quickSearch_btns = document.getElementsByClassName('quickSearch_btn');
 var qrcode_btn = document.getElementById('qrcode_btn');
