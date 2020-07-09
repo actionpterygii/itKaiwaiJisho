@@ -518,6 +518,8 @@ const jisho: Jisho = new Jisho('jisho.json', 'jisho');
 
 
 
+
+
 ////////////////////
 // イベント登録
 ////////////////////
@@ -558,15 +560,6 @@ document.addEventListener('DOMContentLoaded', function()
             )();
         });
     }
-});
-
-// 読み込み終わり後
-window.addEventListener('load', function()
-{
-    console.log('a');
-    
-    // 辞書の単語数を入れ
-    tangoSu_area.innerHTML = String(jisho._tango_quantity);
 });
 
 // 入力エリアでの文字いじりそうさのたびに
