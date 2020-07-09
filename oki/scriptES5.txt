@@ -409,8 +409,6 @@ var jisho = new Jisho('jisho.json', 'jisho');
 ////////////////////
 // HTMLパースが終わってから発火
 document.addEventListener('DOMContentLoaded', function () {
-    // 辞書の単語数を入れ
-    tangoSu_area.innerHTML = String(jisho._tango_quantity);
     var _loop_1 = function (key) {
         // ひとつのボタンのための処理
         quickSearch_btns[key].addEventListener('click', function () {
@@ -441,6 +439,12 @@ document.addEventListener('DOMContentLoaded', function () {
     for (var key = 0; key < quickSearch_btns['length']; key++) {
         _loop_1(key);
     }
+});
+// 読み込み終わり後
+window.addEventListener('load', function () {
+    console.log('a');
+    // 辞書の単語数を入れ
+    tangoSu_area.innerHTML = String(jisho._tango_quantity);
 });
 // 入力エリアでの文字いじりそうさのたびに
 state.input_area.addEventListener('keyup', function () {

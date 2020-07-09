@@ -525,8 +525,6 @@ const jisho: Jisho = new Jisho('jisho.json', 'jisho');
 // HTMLパースが終わってから発火
 document.addEventListener('DOMContentLoaded', function()
 {
-    // 辞書の単語数を入れ
-    tangoSu_area.innerHTML = String(jisho._tango_quantity);
     // クイックサーチボタン(readme的なとこに書いてあるJISHOで間作するためのリンク)に関する処理
     // クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
     // classからとったオブジェクトに適応するための形です。
@@ -560,6 +558,15 @@ document.addEventListener('DOMContentLoaded', function()
             )();
         });
     }
+});
+
+// 読み込み終わり後
+window.addEventListener('load', function()
+{
+    console.log('a');
+    
+    // 辞書の単語数を入れ
+    tangoSu_area.innerHTML = String(jisho._tango_quantity);
 });
 
 // 入力エリアでの文字いじりそうさのたびに

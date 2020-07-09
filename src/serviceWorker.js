@@ -1,5 +1,5 @@
 // キャッシュファイルの指定
-var CACHE_NAME = 'number';
+var CACHE_NAME = 'number_windowload';
 var urlsToCache = [
     'index.html',
     'style.css',
