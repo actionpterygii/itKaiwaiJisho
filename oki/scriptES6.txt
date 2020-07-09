@@ -97,6 +97,7 @@ class Jisho {
             return String.fromCharCode(text.charCodeAt(0) - 65248);
         });
     }
+    get _tango_quantity() { return this.tango_quantity; }
     get _last_random_word() { return this.last_random_word; }
     // itemの内容がinput_textのなかにあればtrueるなければfalseる。exact_matchは完全一致検索かどうか
     containing(item, input_text, exact_match) {
@@ -362,6 +363,7 @@ Hoshi.hoshiPath_superRare3 = 'images/hoshixxx_a4.svg';
 const all_area = document.getElementById('wrap');
 const result_area = document.getElementById('result_area');
 const quickSearch_btns = document.getElementsByClassName('quickSearch_btn');
+const tangoSu_area = document.getElementById('tangoSu');
 const qrcode_btn = document.getElementById('qrcode_btn');
 const nyuryoku_btn = document.getElementById('nyuryoku_btn');
 const random_btn = document.getElementById('random_btn');
@@ -387,6 +389,8 @@ const jisho = new Jisho('jisho.json', 'jisho');
 ////////////////////
 // HTMLパースが終わってから発火
 document.addEventListener('DOMContentLoaded', function () {
+    // 辞書の単語数を入れ
+    tangoSu_area.innerHTML = String(jisho._tango_quantity);
     // クイックサーチボタン(readme的なとこに書いてあるJISHOで間作するためのリンク)に関する処理
     // クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
     // classからとったオブジェクトに適応するための形です。

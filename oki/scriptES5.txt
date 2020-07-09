@@ -102,6 +102,11 @@ var Jisho = /** @class */ (function () {
             return String.fromCharCode(text.charCodeAt(0) - 65248);
         });
     };
+    Object.defineProperty(Jisho.prototype, "_tango_quantity", {
+        get: function () { return this.tango_quantity; },
+        enumerable: true,
+        configurable: true
+    });
     Object.defineProperty(Jisho.prototype, "_last_random_word", {
         get: function () { return this.last_random_word; },
         enumerable: true,
@@ -378,6 +383,7 @@ var Hoshi = /** @class */ (function () {
 var all_area = document.getElementById('wrap');
 var result_area = document.getElementById('result_area');
 var quickSearch_btns = document.getElementsByClassName('quickSearch_btn');
+var tangoSu_area = document.getElementById('tangoSu');
 var qrcode_btn = document.getElementById('qrcode_btn');
 var nyuryoku_btn = document.getElementById('nyuryoku_btn');
 var random_btn = document.getElementById('random_btn');
@@ -403,6 +409,8 @@ var jisho = new Jisho('jisho.json', 'jisho');
 ////////////////////
 // HTMLパースが終わってから発火
 document.addEventListener('DOMContentLoaded', function () {
+    // 辞書の単語数を入れ
+    tangoSu_area.innerHTML = String(jisho._tango_quantity);
     var _loop_1 = function (key) {
         // ひとつのボタンのための処理
         quickSearch_btns[key].addEventListener('click', function () {

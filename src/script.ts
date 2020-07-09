@@ -159,6 +159,7 @@ class Jisho
     protected jisho_data!: JishoData;
     // 辞書のデータにある単語の数
     protected tango_quantity!: number;
+    public get _tango_quantity(): number {return this.tango_quantity}
     // 関連語を開く時に呼ぶJishoインスタンスの名前
     protected krngJisho_instance_name!: string;
     // ランダムのときに最後に出した言葉
@@ -486,6 +487,7 @@ class Hoshi
 const all_area: HTMLDivElement = document.getElementById('wrap') as HTMLDivElement;
 const result_area: HTMLDivElement = document.getElementById('result_area') as HTMLDivElement;
 const quickSearch_btns: HTMLCollection = document.getElementsByClassName('quickSearch_btn') as HTMLCollection;
+const tangoSu_area: HTMLSpanElement = document.getElementById('tangoSu') as HTMLSpanElement;
 const qrcode_btn: HTMLButtonElement = document.getElementById('qrcode_btn') as HTMLButtonElement;
 const nyuryoku_btn: HTMLButtonElement = document.getElementById('nyuryoku_btn') as HTMLButtonElement;
 const random_btn: HTMLButtonElement = document.getElementById('random_btn') as HTMLButtonElement;
@@ -523,6 +525,8 @@ const jisho: Jisho = new Jisho('jisho.json', 'jisho');
 // HTMLパースが終わってから発火
 document.addEventListener('DOMContentLoaded', function()
 {
+    // 辞書の単語数を入れ
+    tangoSu_area.innerHTML = String(jisho._tango_quantity);
     // クイックサーチボタン(readme的なとこに書いてあるJISHOで間作するためのリンク)に関する処理
     // クイックサーチのためのもの複数あるのでclassでしているのでそのぶんまわす
     // classからとったオブジェクトに適応するための形です。
