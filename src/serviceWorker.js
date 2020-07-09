@@ -1,5 +1,5 @@
 // キャッシュファイルの指定
-var CACHE_NAME = 'rareStar';
+var CACHE_NAME = 'number';
 var urlsToCache = [
     'index.html',
     'style.css',
