@@ -9615,7 +9615,7 @@
         "krng": ""
     },
     {
-        "kotb": "決めの問題",
+        "kotb": "モノリシック",
         "eigo": "",
         "kwsk": " ",
         "btmi": "",
@@ -9624,7 +9624,268 @@
         "krng": ""
     },
     {
-        "kotb": "モノリシック",
+        "kotb": "サイドロード",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "bdd",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "big brother",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ベストエフォート",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サプライヤー",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エグゼキューター",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "SN比",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ワーキングアグリーメント",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "まーかぶるインターフェイス",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "design for failure",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "情報格差",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ベンダーロックイン",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "チューター",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リファラスパム",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ストライサイド効果",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "omo",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ブラクラ",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "flash",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ディストリビューター",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "r&d",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "高階関数",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "恒等関数",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "エドテック",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ERP",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "等幅フォント",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "セリフ体",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "サンセリフ",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ゴシック",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "アトリビューション分析",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "デモグラフィック配信",
         "eigo": "",
         "kwsk": " ",
         "btmi": "",
