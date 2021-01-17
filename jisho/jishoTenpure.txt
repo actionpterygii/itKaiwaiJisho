@@ -2,7 +2,7 @@
     {
         "kotb": "",
         "eigo": "",
-        "kwsk": "",
+        "kwsk": " ",
         "btmi": "",
         "mnim": "",
         "tigg": "",
