@@ -6655,11 +6655,11 @@
     {
         "kotb": "ウェブ アールティーシー",
         "eigo": "Web RTC",
-        "kwsk": "音声や映像とかの大容量データを高速にやりとるやつ。IP電話とかWeb会議とかインターネットテレビ電話のね。",
+        "kwsk": "API経由でリアルタイム通信を実現できるやつ。音声や映像とかの大容量データを高速にやりとるやつ。IP電話とかWeb会議とかインターネットテレビ電話のね。",
         "btmi": "Web Real Time Communication。",
         "mnim": "",
         "tigg": "",
-        "krng": "データ,インターネット"
+        "krng": "API,データ,インターネット"
     },
     {
         "kotb": "バルク",
@@ -10318,6 +10318,96 @@
     },
     {
         "kotb": "リーン開発",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "VOPE",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "アドテック",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "カオスエンジニアリング",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "NFT",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "DSN",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "DI",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "クリーンアーキテクチャ",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "D2C",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ロックイン",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "YMYL",
         "eigo": "",
         "kwsk": " ",
         "btmi": "",
