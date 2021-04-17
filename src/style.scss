@@ -164,12 +164,14 @@ main {
 .mnim {
     &::before {
         content: 'もとのいみ：';
+        font-size: 12px;
     }
 }
 
 .tigg {
     &::before {
         content: '対義語：';
+        font-size: 12px;
     }
 }
 .krng {
