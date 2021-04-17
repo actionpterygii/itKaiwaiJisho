@@ -10,6 +10,7 @@ var urlsToCache = [
     'manifest.json',
     'jisho.json',
     'images/favicon.ico',
+    'images/qrcode_1025.png',
     'images/hoshixxx_72.png',
     'images/hoshixxx_96.png',
     'images/hoshixxx_128.png',
@@ -18,11 +19,11 @@ var urlsToCache = [
     'images/hoshixxx_192.png',
     'images/hoshixxx_384.png',
     'images/hoshixxx_512.png',
+    'images/hoshixxx.svg',
     'images/hoshixxx_a1.svg',
     'images/hoshixxx_a2.svg',
     'images/hoshixxx_a3.svg',
-    'images/hoshixxx_a4.svg',
-    'images/qrcode_1025.png'
+    'images/hoshixxx_a4.svg'
 ];
 
 // インストール処理
