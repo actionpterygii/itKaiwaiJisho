@@ -39,6 +39,10 @@ dl,dt,dd {
     transition-timing-function: cubic-bezier(0.375, 0.520, 0.950, 0.230);
 }
 
+body {
+    background-color: var(--background);
+}
+
 #wrap {
     color: var(--text);
     background-color: var(--background);
