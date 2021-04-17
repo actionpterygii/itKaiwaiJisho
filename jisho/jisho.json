@@ -8545,7 +8545,7 @@
     },
     {
         "kotb": "パラレリズム",
-        "eigo": "",
+        "eigo": "parallelism",
         "kwsk": "複数コアを使って1つの作業を行う。",
         "btmi": "",
         "mnim": "",
@@ -8554,18 +8554,18 @@
     },
     {
         "kotb": "バーチャル リアリティー",
-        "eigo": "",
+        "eigo": "virtual reality",
         "kwsk": " ",
-        "btmi": "",
+        "btmi": "VR。仮想現実。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "オーグメンテッド リアリティー",
-        "eigo": "",
+        "eigo": "augmented reality",
         "kwsk": " ",
-        "btmi": "",
+        "btmi": "AR。拡張現実。",
         "mnim": "",
         "tigg": "",
         "krng": ""
