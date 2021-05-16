@@ -8564,29 +8564,29 @@
     {
         "kotb": "バーチャル リアリティー",
         "eigo": "virtual reality",
-        "kwsk": " ",
-        "btmi": "VR。仮想現実。",
+        "kwsk": "現実かのような機能をもつ環境を作り出すやつ。",
+        "btmi": "VR。仮想現実。人工現実感。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "オーグメンテッドリアリティー"
     },
     {
         "kotb": "オーグメンテッド リアリティー",
         "eigo": "augmented reality",
-        "kwsk": " ",
-        "btmi": "AR。拡張現実。",
+        "kwsk": "現実をにある情報に加工をして知覚する情報を拡張させるやつ。",
+        "btmi": "AR。拡張現実。増強現実。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "バーチャルリアリティー"
     },
     {
         "kotb": "メタバース",
-        "eigo": "",
-        "kwsk": " ",
+        "eigo": "metaverse",
+        "kwsk": "インターネット上の仮想世界。人間の現実ではない活動の場としていろいろできるプラットフォームがある感じ。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "バーチャルリアリティー,プラットフォーム"
     },
     {
         "kotb": "ドメイン固有言語",
@@ -10444,6 +10444,78 @@
     },
     {
         "kotb": "ROAS",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "WUS",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ドミナント",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "インセプションデッキ",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "リーンキャンバス",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "ユーザーストーリーマッピング",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "カノニカル",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "オンサイト",
+        "eigo": "",
+        "kwsk": " ",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": ""
+    },
+    {
+        "kotb": "sniffer",
         "eigo": "",
         "kwsk": " ",
         "btmi": "",
