@@ -630,11 +630,11 @@ nyuryoku_btn.addEventListener('click', function()
 random_btn.addEventListener('click', function()
 {
     // お星さまジェネレート
-    const hoshi: Hoshi = new Hoshi();
-    // お星さまエレメント
-    const hoshiElement: HTMLImageElement = hoshi._element;
-    // お星さまアクティベート
-    all_area.appendChild(hoshiElement);
+    // const hoshi: Hoshi = new Hoshi();
+    // // お星さまエレメント
+    // const hoshiElement: HTMLImageElement = hoshi._element;
+    // // お星さまアクティベート
+    // all_area.appendChild(hoshiElement);
     // できればめそっどでアニメーションさせるのさ
     // code...
     // 一番上にスムーススクロール
