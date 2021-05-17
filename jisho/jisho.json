@@ -8590,12 +8590,12 @@
     },
     {
         "kotb": "ドメイン固有言語",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
+        "eigo": "domain specific language",
+        "kwsk": "特定の用途に特化して設計された言語。例えばSQLはデータベースの操作のためにあるけどC言語はそういうのない。",
+        "btmi": "ドメイン特化言語。DSL。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "SQL"
     },
     {
         "kotb": " ",
