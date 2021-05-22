@@ -245,6 +245,7 @@
 - body要素のbackground-color指定にて余白部分の背景色をつけれますって
 - 画面下に固定したボタンがiPhoneX系の角丸+下に固定されたOS由来要素にかぶるのを防ぐ。`safe-area-inset-bottom`を使って。
 - iOSのChromeで`position: fixed`がきかなかったりするの。`viewport`の`minimum-scale=1`をする。
+- やっぱ職種いらんくね。なんとなくの定義とか本来の意味とかだるい
 
 
 ### TypeScript
