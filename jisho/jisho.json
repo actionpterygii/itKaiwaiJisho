@@ -8598,171 +8598,18 @@
         "krng": "SQL"
     },
     {
-        "kotb": " ",
+        "kotb": "フェイルド",
         "eigo": "failed",
-        "kwsk": " ",
+        "kwsk": "失敗しました。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": " ",
+        "kotb": "リゾルブ",
         "eigo": "resolve",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "エンジニア",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "フロントエンド エンジニア",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "バックエンド エンジニア",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "インフラ エンジニア",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "マークアップ エンジニア",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "コーダー",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "デザイナー",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "UI デザイナー",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "UX デザイナー",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "ディレクター",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "アート ディレクター",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "オペレーター",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "マネージャー",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "プランナー",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "マーケター",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "セールス",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
-        "mnim": "",
-        "tigg": "",
-        "krng": ""
-    },
-    {
-        "kotb": "アナリスト",
-        "eigo": "",
-        "kwsk": " ",
+        "kwsk": "解決する。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
@@ -8770,66 +8617,66 @@
     },
     {
         "kotb": "ファームウェア",
-        "eigo": "",
-        "kwsk": " ",
+        "eigo": "firmware",
+        "kwsk": "ハードウェアを制御するソフトウェア。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ハードウェア,ソフトウェア"
     },
     {
-        "kotb": " ",
+        "kotb": "ウィップ",
         "eigo": "WIP",
-        "kwsk": " ",
-        "btmi": "",
+        "kwsk": "進行中。作業中。",
+        "btmi": "work in progress。",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
-        "kotb": " ",
-        "eigo": "W3C",
-        "kwsk": " ",
-        "btmi": "",
+        "kotb": "W3C",
+        "eigo": "",
+        "kwsk": "WWWで利用されるHTMLなどの技術の標準化推進非営利団体。",
+        "btmi": "World Wide Web Consortium。ワールド ワイド ウェブ コンソーシアム。だぶさんしー。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ワールドワイドウェブ,HTML"
     },
     {
         "kotb": "ギット",
-        "eigo": "",
-        "kwsk": " ",
+        "eigo": "Git",
+        "kwsk": "ソースコードなどの変更履歴を記録して追跡できるようにするシステム。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ソースコード,システム"
     },
     {
         "kotb": "ギットハブ",
-        "eigo": "",
-        "kwsk": " ",
+        "eigo": "GitHub",
+        "kwsk": "Gitを使ってソースコードをホスティングしたりいろいろできるサービス。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ギット,ソースコード,ホスティング,サービス"
     },
     {
-        "kotb": "ギットラボ",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
+        "kotb": "ギットラブ",
+        "eigo": "GitLab",
+        "kwsk": "Gitを使ってソースコードをホスティングしたりいろいろできるサービス。",
+        "btmi": "ギットラボ。",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ギット,ソースコード,ホスティング,サービス"
     },
     {
-        "kotb": "ディレクター",
-        "eigo": "",
-        "kwsk": " ",
+        "kotb": "ホスティング",
+        "eigo": "hosting",
+        "kwsk": "ウェブを通じてアクセス可能な情報を格納する。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ワールドワイドウェブ"
     },
     {
         "kotb": "プロキシ",
