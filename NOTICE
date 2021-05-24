@@ -1,10 +1,12 @@
 IT Kaiwai Jisho
-Copyright 2020 actionpterygii
+Copyright 2021 actionpterygii
 
+PWACompat
 This software contains code derived from the pwacompat by Google.
 (https://github.com/GoogleChromeLabs/pwacompat/blob/master/LICENSE).
 Licensed under Apache-2.0
 
+Smooth Scroll behavior polyfill
 Copyright (c) 2013 Dustan Kasten
 (https://github.com/iamdustan/smoothscroll/blob/master/LICENSE).
 Released under the MIT license
