@@ -13,15 +13,18 @@ const prcs = require('child_process').exec;
 const webserver = require('gulp-webserver');
 const rename = require('gulp-rename');
 
+const lib = './lib/';
+const oki = './oki/';
 
 const src = './src/';
 const srcImages = './images/';
+const srcFont = lib + 'font/';
 
 const dist = './docs/';
 const distImages = dist + 'images/';
+const distFont = dist + 'font/';
 
-const lib = './lib/';
-const oki = './oki/';
+
 
 // const tsProject = function()
 // {
@@ -175,6 +178,19 @@ gulp.task('watchIco', function()
 });
 
 
+gulp.task('font', function()
+{
+    return gulp.src(srcFont + '*.{woff,eot,otf,ttf,ttf,svg,svgz}')
+        .pipe(changed(distFont))
+        .pipe(gulp.dest(distFont));
+})
+
+gulp.task('watchFont', function()
+{
+    return gulp.watch(srcFont + '*.{woff,eot,otf,ttf,ttf,svg,svgz}', gulp.task('font'));
+});
+
+
 gulp.task('jishoJson', function()
 {
     return prcs('python jishoJsonWoSort.py ./jisho/ ./docs/');
@@ -212,6 +228,6 @@ gulp.task('webserver', function()
 });
 
 
-gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchLibJs', 'watchTs', 'watchOki5Ts', 'watchOki6Ts', 'watchImg', 'watchIco', 'watchJson', 'watchJishoJson'));
+gulp.task('start', gulp.parallel('webserver', 'watchHtml', 'watchCss', 'watchJs', 'watchLibJs', 'watchTs', 'watchOki5Ts', 'watchOki6Ts', 'watchImg', 'watchIco', 'watchFont', 'watchJson', 'watchJishoJson'));
 
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'libJs', 'ts', 'oki5Ts', 'oki6Ts', 'img', 'ico', 'json', 'jishoJson'));
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'libJs', 'ts', 'oki5Ts', 'oki6Ts', 'img', 'ico', 'font', 'json', 'jishoJson'));

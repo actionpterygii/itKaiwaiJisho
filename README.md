@@ -246,6 +246,7 @@
 - 画面下に固定したボタンがiPhoneX系の角丸+下に固定されたOS由来要素にかぶるのを防ぐ。`safe-area-inset-bottom`を使って。
 - iOSのChromeで`position: fixed`がきかなかったりするの。`viewport`の`minimum-scale=1`をする。
 - やっぱ職種いらんくね。なんとなくの定義とか本来の意味とかだるい
+- フォント変えようと思ったけどちょっと間隔違和感あって一旦やめ
 
 
 ### TypeScript
