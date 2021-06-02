@@ -1,5 +1,5 @@
 // キャッシュファイルの指定
-var CACHE_NAME = 'number_windowload';
+var CACHE_NAME = 'stop_super_suter';
 var urlsToCache = [
     'index.html',
     'style.css',
