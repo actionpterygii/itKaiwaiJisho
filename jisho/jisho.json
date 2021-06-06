@@ -830,11 +830,11 @@
     {
         "kotb": "デーモン",
         "eigo": "deamon",
-        "kwsk": "UNIX系での常駐プログラム。",
+        "kwsk": "Unix系での常駐プログラム。",
         "btmi": "",
         "mnim": "守護神",
         "tigg": "",
-        "krng": "プログラム"
+        "krng": "Unix,プログラム"
     },
     {
         "kotb": "リドゥ",
@@ -3060,13 +3060,13 @@
         "krng": ""
     },
     {
-        "kotb": "クラウド",
-        "eigo": "cloud",
-        "kwsk": "インターネットを通じてサービスを提供する。",
+        "kotb": "クラウド コンピューティング",
+        "eigo": "cloud computing",
+        "kwsk": "インターネットを通じてコンピューターを提供する。",
         "btmi": "",
         "mnim": "雲",
-        "tigg": "",
-        "krng": "インターネット,サービス"
+        "tigg": "オンプレミス",
+        "krng": "インターネット,コンピューター"
     },
     {
         "kotb": "RFC",
@@ -4655,7 +4655,7 @@
         "krng": "コンピューター,ソフトウェア"
     },
     {
-        "kotb": "オペレーティングシステム",
+        "kotb": "オペレーティング システム",
         "eigo": "Operating System",
         "kwsk": "コンピューターの基盤となるソフトウェア。",
         "btmi": "OS。",
@@ -8715,49 +8715,85 @@
         "krng": ""
     },
     {
-        "kotb": "オンプレミス",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
+        "kotb": "オン プレミス",
+        "eigo": "on premises",
+        "kwsk": "つかうコンピューターを自分とこで物理的に持っているタイプ。",
+        "btmi": "自社運用",
         "mnim": "",
-        "tigg": "",
+        "tigg": "クラウドコンピューティング",
         "krng": ""
     },
     {
-        "kotb": "ワークフロー",
-        "eigo": "",
-        "kwsk": " ",
-        "btmi": "",
+        "kotb": "ワーク フロー",
+        "eigo": "work flow",
+        "kwsk": "業務の流れ。特に会社内の手続きのことを指す場合も。",
+        "btmi": "業務フロー",
         "mnim": "",
         "tigg": "",
         "krng": ""
     },
     {
         "kotb": "リードミー",
-        "eigo": "",
-        "kwsk": " ",
+        "eigo": "README",
+        "kwsk": "ソフトウェアの説明書という形で添付される文書によくある名前。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "ソフトウェア"
     },
     {
-        "kotb": "インプリメンツ",
-        "eigo": "",
-        "kwsk": " ",
+        "kotb": "grep",
+        "eigo": "ぐれっぷ",
+        "kwsk": "正規表現を使って文字列から検索を行い出力するLinuxコマンド。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "正規表現,Linux,目grep"
+    },
+    {
+        "kotb": "Linux",
+        "eigo": "りなっくす",
+        "kwsk": "そういうOS。UNIX系。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "オペレーティングシステム,UNIX"
+    },
+    {
+        "kotb": "UNIX",
+        "eigo": "ゆにっくす",
+        "kwsk": "そういうOS。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "オペレーティングシステム"
+    },
+    {
+        "kotb": "macOS",
+        "eigo": "まっくおーえす",
+        "kwsk": "そういうOS。UNIX系。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "オペレーティングシステム,UNIX"
+    },
+    {
+        "kotb": "Microsoft Windows",
+        "eigo": "まいくろそふと うぃんどうず",
+        "kwsk": "そういうOS。",
+        "btmi": "",
+        "mnim": "",
+        "tigg": "",
+        "krng": "オペレーティングシステム"
     },
     {
         "kotb": "目grep",
-        "eigo": "",
-        "kwsk": " ",
+        "eigo": "め ぐれっぷ",
+        "kwsk": "己の目のみを頼りに文字列の検索を行う。",
         "btmi": "",
         "mnim": "",
         "tigg": "",
-        "krng": ""
+        "krng": "grep"
     },
     {
         "kotb": "ディープ コピー",
