@@ -11,8 +11,8 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
     "@types/chrome": "0.0.81",
     "@types/smoothscroll-polyfill": "^0.3.1",
     "babel-core": "^6.26.3",
@@ -25,13 +25,13 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.1",
     "gulp-typescript": "^5.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webserver": "^0.9.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^7.0.0",
     "smoothscroll-polyfill": "^0.4.4",
-    "typescript": "^3.6.3"
+    "typescript": "^3.9.10"
   }
 }
